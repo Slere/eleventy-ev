@@ -6,7 +6,7 @@
   "scripts": {
     "start": "eleventy --serve npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch",
     "build": "eleventy && npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css && eleventy",
-    "serve": "cross-env ELEVENTY_ENV=development eleventy --serve",
+    "serve": "eleventy --serve",
     "serve:css": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
   },
   "keywords": [],
