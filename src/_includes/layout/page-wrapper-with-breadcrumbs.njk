@@ -1,0 +1,10 @@
+---
+layout: layout/app.njk
+---
+
+<div class="p-4 pb-12">
+    {%- from "components/breadcrumbs.njk" import breadcrumbs -%}
+    {% set crumbs = page.url | breadcrumbs %}
+    {{ breadcrumbs(crumbs) }}
+    {{ content | safe }}
+</div>

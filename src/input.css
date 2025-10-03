@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@import '@fontsource-variable/nunito-sans';
+@source "./src/*.{html,js}";
+/* @plugin "daisyui"; */
+@theme {  --custom-font: "Nunito Sans Variable";
+}
+@source "./node_modules/preline/dist/*.js";
+@import "../node_modules/preline/variants.css";
+
+@plugin "@tailwindcss/forms";
+@layer base{ html,:host{
+font-family:"Nunito Sans",var(--default-font-family);
+}}
