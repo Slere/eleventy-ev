@@ -23,12 +23,6 @@ module.exports = function (eleventyConfig) {
         return breadcrumbs;
     });
 
-     eleventyConfig.addGlobalData("permalink", (data) => {
-    if (data && data.page && data.page.filePathStem && !data.page.filePathStem.endsWith("index")) {
-      return `${data.page.filePathStem}/index.html`;
-    }
-    return undefined;
-  });
     return {
         pathPrefix: "/eleventy-ev/",
         dir: {
