@@ -15,7 +15,7 @@ layout: layout/page-wrapper-with-breadcrumbs.njk
                         </div>
                         <p class=" text-zinc-700 max-w-140 mb-8 font-light text-lg tracking-wide">{{ product.data.description }}</p>
                         <div class="">
-                            <img class="h-auto rounded-lg" src="{{ product.data.image }}"/>
+                            <img class="h-auto rounded-lg" src="{{ product.data.image | url }}"/>
                         </div>
                     </div>
                     <div class="flex flex-col gap-8 justify-center p-6 border border-gray-300 bg-zinc-50 shadow-xl  rounded-md  mt-12 h-fit">
@@ -24,7 +24,7 @@ layout: layout/page-wrapper-with-breadcrumbs.njk
                         <div class="text-gray-700 font-light ">
                             {{ product.data.manufacturer_information | safe }}
                             <div class="flex justify-end">
-                                <img class="w-24 h-auto self-end" src="{{ product.data.manufacturer_image_path }}"/>
+                                <img class="w-24 h-auto self-end" src="{{ product.data.manufacturer_image_path | url }}"/>
                             </div>
                         </div>
                     </div>
