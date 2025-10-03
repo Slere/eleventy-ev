@@ -6,7 +6,6 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addFilter("breadcrumbs", function (url) {
         if (!url) return [];
 
-        // Strip leading/trailing slashes
         let segments = url.replace(/^\/|\/$/g, "").split("/");
 
         let breadcrumbs = [{ label: "Home", url: "/" }];
@@ -24,6 +23,12 @@ module.exports = function (eleventyConfig) {
         return breadcrumbs;
     });
 
+     eleventyConfig.addGlobalData("permalink", (data) => {
+    if (data && data.page && data.page.filePathStem && !data.page.filePathStem.endsWith("index")) {
+      return `${data.page.filePathStem}/index.html`;
+    }
+    return undefined;
+  });
     return {
         pathPrefix: "/eleventy-ev/",
         dir: {
