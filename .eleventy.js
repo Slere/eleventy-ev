@@ -25,6 +25,7 @@ module.exports = function (eleventyConfig) {
     });
 
     return {
+        pathPrefix: process.env.ELEVENTY_ENV === "development" ? "/" : "/eleventy-ev/",
         dir: {
             input: "src",
             output: "docs"
