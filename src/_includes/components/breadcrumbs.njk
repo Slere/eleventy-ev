@@ -4,18 +4,17 @@
             {% for crumb in params %}
                 {% if loop.last %}
                     <li
-                        class="inline-flex items-center text-sm font-semibold text-gray-800 truncate dark:text-neutral-200"
+                        class="inline-flex items-center text-sm font-semibold text-foreground/75 truncate whitespace-normal"
                         aria-current="page">
                         {{ crumb.label or title }}
                     </li>
                 {% else %}
-                    <li class="inline-flex items-center">
-                        <a class="flex items-center text-sm text-gray-500 hover:text-blue-600 focus:outline-hidden focus:text-blue-600
-                                                                                                                                                                                         dark:text-neutral-500 dark:hover:text-blue-500 dark:focus:text-blue-500" href="{{ crumb.url or '#' }}">
+                    <li class="inline-flex items-center whitespace-normal">
+                        <a class="flex items-center text-sm text-foreground/50 hover:text-primary focus:outline-hidden focus:text-primary" href="{{ crumb.url or '#' }}">
                             {{ crumb.label }}
                         </a>
                         <svg
-                            class="shrink-0 size-5 text-gray-400 dark:text-neutral-600 mx-2"
+                            class="shrink-0 size-5 text-foreground/50 mx-2"
                             width="16"
                             height="16"
                             viewBox="0 0 16 16"

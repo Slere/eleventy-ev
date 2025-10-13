@@ -4,35 +4,31 @@
     <meta charset="UTF-8">
     <meta
     name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Favicon for most browsers -->
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ "/assets/favicon/favicon-32x32.png" | url }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ "/assets/favicon/favicon-16x16.png" | url }}">
     <link
     rel="shortcut icon" href="{{ "/assets/favicon/favicon.ico" | url }}"> <!-- Apple Touch Icon -->
     <link
-    rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png"> <!-- Android / Chrome -->
-    <link rel="manifest" href="/assets/favicon/site.webmanifest"> <!-- Safari pinned tab -->
+    rel="apple-touch-icon" sizes="180x180" href="{{ "/assets/favicon/apple-touch-icon.png" | url }}"> <!-- Android / Chrome -->
+    <link rel="manifest" href="{{ "/assets/favicon/site.webmanifest" | url }}">
+    <!-- Safari pinned tab -->
     {# <link
-                                    rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"> #}
+                                                        rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"> #}
     <!-- Windows tile -->
     {# <meta name="msapplication-TileColor" content="#2b5797">
-                                    <meta
-                                    name="msapplication-TileImage" content="/mstile-150x150.png"> #}
+                                                        <meta
+                                                        name="msapplication-TileImage" content="/mstile-150x150.png"> #}
     <!-- Theme colors for mobile browsers -->
-    {# <meta name="theme-color" content="#ffffff"> #} <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
-      rel="stylesheet">
-    <script src="{{ "/assets/js/preline/preline.js" | url }}"></script>
+    {# <meta name="theme-color" content="#ffffff"> #}<script src="{{ "/assets/js/preline/preline.js" | url }}"> </script>
     <link href="{{ "/output.css" | url }}" rel="stylesheet">
     <title>{{ title }}</title>
   </head>
-  <body class="min-h-screen flex flex-col justify-center items-center bg-zinc-100 ">
+  <body class="min-h-screen flex flex-col justify-center items-center  ">
     {% include "layout/header.njk" %}
-    <main class="max-w-6xl grow-1 w-full">
+    <main class=" grow-1 w-full">
       {{ content | safe }}
     </main>
-    <div class="w-full bg-zinc-100">
+    <div class="w-full bg-secondary">
       {% include "layout/footer.njk" %}
     </div>
   </body>

@@ -2,9 +2,11 @@
 layout: layout/app.njk
 ---
 
-<div class="p-4 pb-12">
+<div class=" py-4">
+    <div class="px-4 xl:px-0 max-w-7xl mx-auto">
     {%- from "components/breadcrumbs.njk" import breadcrumbs -%}
     {% set crumbs = page.url | breadcrumbs %}
     {{ breadcrumbs(crumbs) }}
+    </div>
     {{ content | safe }}
 </div>
