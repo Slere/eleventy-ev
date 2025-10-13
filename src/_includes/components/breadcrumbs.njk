@@ -10,7 +10,7 @@
                     </li>
                 {% else %}
                     <li class="inline-flex items-center whitespace-normal">
-                        <a class="flex items-center text-sm text-foreground/50 hover:text-primary focus:outline-hidden focus:text-primary" href="{{ crumb.url or '#' | url }}">
+                        <a class="flex items-center text-sm text-foreground/50 hover:text-primary focus:outline-hidden focus:text-primary" href="{{ crumb.url | url or '#' }}">
                             {{ crumb.label }}
                         </a>
                         <svg
