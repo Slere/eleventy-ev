@@ -1,18 +1,15 @@
 ---
 name: | 
-  <strong class="pr-1">FL-Filmline</strong> Bündelpacker/Straffpacker
+  <span class="pr-1">FL-Filmline</span> Bündelpacker/Straffpacker
 description: Getaktete Maschine mit Schweißsystem. Mit dieser Maschine sind einbahnig bis 35 Gebinde/min möglich
 image: /assets/img/machines/bündelpacker.jpg
 features: |
-  <ul class="space-y-3">
-    <li class="flex gap-x-2 items-center"><svg class="size-4 stroke-3 shrink-0 text-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-icon lucide-check"><path d="M20 6 9 17l-5-5"/></svg>Zuführung InLine oder seitlich</li>
-
-     <li class="flex gap-x-2 items-center"><svg class="size-4 stroke-3 shrink-0 text-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-icon lucide-check"><path d="M20 6 9 17l-5-5"/></svg>Folienwechsel optional Vollautomatisch</li>
-
-     <li class="flex gap-x-2 items-center"><svg class="size-4 stroke-3 shrink-0 text-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-icon lucide-check"><path d="M20 6 9 17l-5-5"/></svg>Druckmarkensteuerung</li>
-
-    <li class="flex gap-x-2 items-center"><svg class="size-4 stroke-3 shrink-0 text-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-icon lucide-check"><path d="M20 6 9 17l-5-5"/></svg>Einzeladerverlegung</li>
-        <li class="flex gap-x-2 items-center"><svg class="size-4 stroke-3 shrink-0 text-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-icon lucide-check"><path d="M20 6 9 17l-5-5"/></svg>Servoantriebe und Steuerung</li>
+  <ul class="space-y-2 list-disc list-inside marker:text-primary">
+    <li class="items-center">Zuführung InLine oder seitlich</li>
+    <li class="  items-center">Folienwechsel optional Vollautomatisch</li>
+    <li class=" items-center">Druckmarkensteuerung</li>
+    <li class="  items-center">Einzeladerverlegung</li>
+    <li class="  items-center">Servoantriebe und Steuerung</li>
   </ul>
 variants: Hier stehen die Varianten, sehr viele Varianten, the best probably
 manufacturer_information: |  
