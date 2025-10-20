@@ -46,7 +46,6 @@ font-family:var(--custom-font),var(--default-font-family);
     font-family: var(--font-figtree), var(--default-font-family);
     font-size: var(--text-headline);
     line-height: 2.376rem;
-    font-weight: 350;
   }
   .border-border{
     border-color: var(--color-border);
