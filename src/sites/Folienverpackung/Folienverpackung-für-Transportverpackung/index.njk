@@ -11,8 +11,8 @@ layout: layout/page-wrapper-with-breadcrumbs.njk
     {% set backUrl = '/' %}
 {% endif %}
 {% set backUrl = backUrl | replaceAll(' ', '-') %}
-<div>
-    <div class=" items-center  mt-12  gap-8  p-4  sm:px-12 xl:px-0 text-sm md:text-base">
+<div class="pt-4">
+   {#  <div class=" items-center  mt-12  gap-8  p-4  sm:px-12 xl:px-0 text-sm md:text-base">
         <div class="max-w-7xl flex flex-row mx-auto justify-between">
         <a href="{{ backUrl | url }}" class="flex items-center font-headline text-foreground/75 hover:text-primary cursor-pointer">
             <svg
@@ -31,7 +31,7 @@ layout: layout/page-wrapper-with-breadcrumbs.njk
         </a>
         <h1 class=" font-headline text-center tracking-wide text-foreground/50">{{ title }}</h1>
         </div>
-    </div>
+    </div> #}
     <div class="flex flex-col gap-8 gap-y-0 ">
         {% for product in collections['folienverpackung-fuer-transportverpackung'] %}
             {% if product.url != page.url %}
@@ -39,7 +39,7 @@ layout: layout/page-wrapper-with-breadcrumbs.njk
                 <div class="max-w-7xl mx-auto px-6 sm:px-12 xl:px-0 lg:even:bg-inherit">
                     <div class="flex flex-col  scroll-m-22" id="{{ product.data.id }}">
                         <div class="">
-                            <h1 class=" text-foreground  pb-2 text-3xl lg:text-4xl font-light md:text-headline font-headline">{{ product.data.name | safe }}</h1>
+                            <h1 class=" text-foreground  pb-2 text-3xl lg:text-4xl font-light tracking-tight  md:text-headline font-headline leading-snug">{{ product.data.name | safe }}</h1>
                         </div>
                         {#  <p class=" text-foreground/75  text tracking-wide lg:w-2/3  font-light-normal">{{ product.data.description }}</p> #}
                     </div>
@@ -52,12 +52,12 @@ layout: layout/page-wrapper-with-breadcrumbs.njk
                         </div>
                         <div class="flex flex-col md:flex-row lg:flex-col gap-4 justify-between lg:justify-center h-fit">
                             <div>
-                                <h2 class="tracking-wide text-foreground  font-light text-2xl mb-4 font-headline">Hauptmerkmale</h2>
+                                <h2 class=" text-foreground font-light   tracking-wide mb-4 text-xl font-headline">Hauptmerkmale</h2>
                                 <div class="text-foreground/75 font-light text-body-sm">{{ product.data.features | safe }}</div>
                             </div>
                             <hr class="border-gray-300 md:my-4 opacity-0 md:opacity-100"/>
                             <div class="mb-4">
-                                <h2 class="tracking-wide text-foreground font-light text-2xl  font-headline mb-4">Herstellerinformationen</h2>
+                                <h2 class="text-foreground font-light tracking-wide font-headline text-xl mb-4">Herstellerinformationen</h2>
                                 <div class="text-foreground/75 font-light  text-body-sm max-w-100">
                                     {{ product.data.manufacturer_information | safe }}
                                     <div class="flex justify-end">

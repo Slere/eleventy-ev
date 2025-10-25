@@ -3,8 +3,11 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("./src/output.css");
     eleventyConfig.addPassthroughCopy({ "./node_modules/preline/dist": "assets/js/preline" });
     eleventyConfig.addPassthroughCopy({
-  "./node_modules/@fontsource-variable/inter/files": "files"
-});
+        "./node_modules/@fontsource-variable/inter/files": "files"
+    });
+    eleventyConfig.addPassthroughCopy({
+        "./node_modules/@fontsource-variable/figtree/files": "files"
+    });
     eleventyConfig.addPassthroughCopy({ "./src/assets": "assets/" });
     eleventyConfig.addFilter("breadcrumbs", function (url) {
         if (!url) return [];
@@ -26,10 +29,10 @@ module.exports = function (eleventyConfig) {
         return breadcrumbs;
     });
 
-    eleventyConfig.addFilter('replaceAll', function(str, find, replace) {
-  if (!str) return '';
-  return str.split(find).join(replace);
-});
+    eleventyConfig.addFilter('replaceAll', function (str, find, replace) {
+        if (!str) return '';
+        return str.split(find).join(replace);
+    });
 
     return {
         pathPrefix: "/eleventy-ev/",
