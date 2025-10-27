@@ -11,7 +11,7 @@
     --breakpoint-6xl: 161rem;
 
     --color-foreground: oklch(0.15 0.0444 255.9);
-    --color-secondary: oklch(0.907 0.000 0);
+    --color-secondary: #f0f0f0;
     --color-secondary-foreground: oklch(0.25 0.0444 255.9);
     --color-primary: oklch(0.448 0.108 255.9);
     --color-primary-darkened: oklch(0.3532 0.0842 254.15);
