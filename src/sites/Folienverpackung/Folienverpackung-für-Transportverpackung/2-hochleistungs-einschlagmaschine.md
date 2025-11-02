@@ -4,7 +4,7 @@ name: |
 description: Getaktete Maschine mit Schweißsystem. Mit dieser Maschine sind einbahnig bis 35 Gebinde/min möglich
 image: /assets/img/machines/bündelpacker.jpg
 features: |
-  <ul class="space-y-2 list-disc list-inside marker:text-primary">
+  <ul class="space-y-3 list-disc list-inside marker:text-primary">
     <li class="items-center">Zuführung InLine oder seitlich</li>
     <li class="  items-center">Folienwechsel optional Vollautomatisch</li>
     <li class=" items-center">Druckmarkensteuerung</li>

@@ -35,30 +35,31 @@ layout: layout/page-wrapper-with-breadcrumbs.njk
     <div class="flex flex-col gap-8 gap-y-0 ">
         {% for product in collections['folienverpackung-fuer-transportverpackung'] %}
             {% if product.url != page.url %}
-            <div class=" even:bg-secondary/25  pt-12 pb-16 last:pb-20 last:lg:pb-28 first:pt-8">
+            <div class="   pt-12 pb-16 last:pb-20 last:lg:pb-28 first:pt-8">
                 <div class="max-w-7xl mx-auto px-6 sm:px-12 xl:px-0 lg:even:bg-inherit">
                     <div class="flex flex-col  scroll-m-22" id="{{ product.data.id }}">
                         <div class="">
+                            
                             <h1 class=" text-[#1b2941] font-light even:text-secondary-foreground pb-2 text-3xl lg:text-4xl   tracking-tight  md:text-headline font-headline leading-snug ">{{ product.data.name | safe }}</h1>
                         </div>
                         {#  <p class=" text-foreground/75  text tracking-wide lg:w-2/3  font-light-normal">{{ product.data.description }}</p> #}
                     </div>
                     <div class="grid lg:grid-cols-[2fr_1fr] gap-12 ">      
                         <div>
-                            <p class="text-[#5e5e5e] font-light text-lg ">{{ product.data.description }}</p>
-                            <div class="h-fit bg-secondary/75  mt-12">
+                            <p class="text-[#5e5e5e] font-light tracking-tight text-lg ">{{ product.data.description }}</p>
+                            <div class="h-fit mt-12">
                                 <img class=" aspect-video w-full" src="{{ product.data.image | url }}"/>
                             </div>
                         </div>
                         <div class="flex flex-col md:flex-row lg:flex-col gap-4 justify-between lg:justify-center h-fit">
                             <div class="mb-4">
-                                <h2 class=" text-primary-darkened tracking-wider mb-4  font-headline font-semibold border-primary-darkened border-b-2  w-fit pr-2 lg:w-full">Hauptmerkmale</h2>
-                                <div class="text-[#494949] text-body-sm font-light tracking-wide pl-1">{{ product.data.features | safe }}</div>
+                                <h2 class=" text-primary-darkened tracking-wider mb-3  font-headline font-semibold w-fit pr-2 lg:w-full">Hauptmerkmale</h2>
+                                <div class="text-[#5e5e5e] font-light pl-1">{{ product.data.features | safe }}</div>
                             </div>
                             {# <hr class="border-gray-300 md:my-4 opacity-0 md:opacity-100"/> #}
                             <div class="mb-4">
-                                <h2 class="text-primary-darkened  tracking-wider font-headline font-semibold mb-4  border-primary-darkened border-b-2 w-fit pr-2 lg:w-full">Herstellerinformationen</h2>
-                                <div class="text-[#494949] text-body-sm font-light tracking-wide max-w-100 leading-relaxed pl-1">
+                                <h2 class="text-primary-darkened  tracking-wider font-headline font-semibold mb-3 w-fit pr-2 lg:w-full">Herstellerinformationen</h2>
+                                <div class="text-[#5e5e5e] font-light max-w-100 md:max-w-112 lg:max-w-none pl-1 leading-relaxed">
                                     {{ product.data.manufacturer_information | safe }}
                                     <div class="flex justify-end">
                                         <img class="w-24 h-auto self-end" src="{{ product.data.manufacturer_image_path | url }}"/>
@@ -68,7 +69,7 @@ layout: layout/page-wrapper-with-breadcrumbs.njk
                                 </div>
                                
                             </div>
-                               <button class="hidden lg:block cursor-pointer w-full px-10 py-3 font-headline tracking-wider  items-center gap-1  bg-primary hover:bg-primary/90 text-white hover:text-white font-semibold  rounded mx-auto shadow-md">
+                               <button class="hidden lg:block cursor-pointer w-full px-10 py-3 font-headline tracking-wider items-center gap-1  bg-primary   hover:bg-primary/90 text-primary-foreground hover:text-white font-semibold  rounded mx-auto shadow-md">
                            Angebot anfordern</button>
                                 
                         </div>
