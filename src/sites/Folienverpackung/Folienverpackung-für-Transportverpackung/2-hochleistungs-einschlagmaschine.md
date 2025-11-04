@@ -2,9 +2,9 @@
 name: | 
   <span class="pr-1">FL-Filmline</span> Bündelpacker/Straffpacker
 description: Getaktete Maschine mit Schweißsystem. Mit dieser Maschine sind einbahnig bis 35 Gebinde/min möglich
-image: /assets/img/machines/bündelpacker.jpg
+image: /assets/img/machines/pharma_maschine.jpg
 features: |
-  <ul class="space-y-3 list-disc list-inside marker:text-primary">
+  <ul class="space-y-4 list-disc list-inside marker:text-primary">
     <li class="items-center">Zuführung InLine oder seitlich</li>
     <li class="  items-center">Folienwechsel optional Vollautomatisch</li>
     <li class=" items-center">Druckmarkensteuerung</li>

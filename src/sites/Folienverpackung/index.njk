@@ -9,9 +9,9 @@ layout: layout/page-wrapper-with-breadcrumbs.njk
         <div class="md:w-82 lg:w-100 shrink-0"><img src="{{ title_image | url }}" class=" shadow-xl h-auto rounded-sm" /></div>
         <div>
         <hr class="w-[120px] md:w-[160px] mb-4 border-3 border-t-0 md:border-2 border-primary mt-4" />
-        <h1 class="text-3xl md:text-4xl font-headline  pb-6">{{ title }}</h1>
+        <h1 class="text-3xl md:text-4xl font-light font-headline text-headline-color pb-6">{{ title }}</h1>
         
-        <p class="md:text-lg font-light md:tracking-tight leading-relaxed md:leading-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+        <p class="md:text-lg font-light md:tracking-tight leading-relaxed md:leading-normal text-foreground">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
             nulla pariatur.
@@ -27,13 +27,13 @@ layout: layout/page-wrapper-with-breadcrumbs.njk
                 <img class="size-full top-0 start-0 object-cover h-[350px]" src="{{ subdivision.data.image | url }}" alt="Card Image"/>
             </div>
             <div class="p-6 px-8 rounded  flex flex-col mt-4 gap-6">
-                <h3 class="text-2xl md:text-3xl font-headline  text-foreground font-light leading-snug">
+                <h3 class="text-2xl md:text-3xl font-headline text-headline-color font-light leading-snug">
                     {{ subdivision.data.name }}
                 </h3>
-                <p class=" text-foreground/75 font-light tracking-wide text-sm md:text-base leading-relaxed  ">
+                <p class=" text-secondary-foreground font-light tracking-wide text-sm md:text-base leading-relaxed">
                     {{ subdivision.data.description }}
                 </p>
-                <a href="{{ page.url | url }}{{ subdivision.data.subfolder }}/" class="text-sm flex items-center  py-3 px-4 font-medium tracking-wider gap-x-1  text-primary-darkened border border-primary-darkened w-fit  hover:bg-primary-darkened hover:text-primary-foreground transition-colors cursor-pointer  focus:outline-hidden focus:bg-primary disabled:opacity-50 disabled:pointer-events-none">
+                <a href="{{ page.url | url }}{{ subdivision.data.subfolder }}/" class="text-sm flex items-center  py-3 px-4 font-medium tracking-wider gap-x-1  text-primary border border-primary w-fit  hover:bg-primary hover:text-primary-foreground transition-colors cursor-pointer  focus:outline-hidden focus:bg-primary disabled:opacity-50 disabled:pointer-events-none">
                     Maschinen ansehen
                     <svg
                         xmlns="http://www.w3.org/2000/svg"

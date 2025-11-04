@@ -10,14 +10,14 @@
     --breakpoint-4xl: 128rem;
     --breakpoint-6xl: 161rem;
 
-    --color-foreground: oklch(0.15 0.0444 255.9);
+    --color-foreground: oklch(0.4111 0.0268 250.56);
     --color-secondary: #f0f0f0;
-    --color-secondary-foreground: oklch(0.25 0.0444 255.9);
+    --color-secondary-foreground: oklch(0.4498 0.0298 257.68);
     --color-primary: oklch(0.448 0.108 255.9);
-    --color-primary-darkened: oklch(0.3532 0.0842 254.15);
     --color-primary-foreground: #fafdff;
     --color-border: #efefef;
     --color-border-light: #f7f7f7;
+    --color-headline: oklch(0.2685 0.0616 267.83);
 
     --text-small: 0.9375rem;
     --text-headline: 2.125rem;
@@ -34,6 +34,9 @@ font-family:var(--custom-font),var(--default-font-family);
 @layer utilities {
   .font-headline {
     font-family: var(--font-figtree), var(--default-font-family);
+  }
+  .text-headline-color {
+    color: var(--color-headline);
   }
   .font-light-normal {
     font-weight: 350;
