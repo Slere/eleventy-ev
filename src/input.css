@@ -31,6 +31,11 @@
 font-family:var(--custom-font),var(--default-font-family);
 }}
 
+  @utility text-body-sm {
+    font-size: var(--text-small);
+    line-height: 1.4rem;
+  }
+
 @layer utilities {
   .font-headline {
     font-family: var(--font-figtree), var(--default-font-family);
@@ -40,10 +45,6 @@ font-family:var(--custom-font),var(--default-font-family);
   }
   .font-light-normal {
     font-weight: 350;
-  }
-  .text-body-sm {
-    font-size: var(--text-small);
-    line-height: 1.4rem;
   }
   .text-headline {
     font-family: var(--font-figtree), var(--default-font-family);
