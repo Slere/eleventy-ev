@@ -2,10 +2,10 @@
 name: | 
   <span class="pr-1">HEM</span> Hochleistungs-Einschlagmaschine
 description: Kontinuierlich laufende Maschine mit Folienüberlappung an der Unterseite – kein Schweißsystem. Mit dieser Maschine sind einbahnig bis 60 Gebinde/min  und Zweibahnig bis zu 85 Gebinde/min möglich
-image: /assets/img/machines/hochleistungs_einschlagmaschine.jpg
+image: /assets/img/machines/index_machine.webp
 features: |
-  <ul class="space-y-4 list-disc list-inside marker:text-primary ">
-    <li class=" ">Zuführung InLine oder seitlich</li>
+  <ul class="space-y-4 list-disc list-inside marker:text-foreground-headline ">
+    <li class="">Zuführung InLine oder seitlich</li>
      <li class="">Folienwechsel optional Vollautomatisch</li>
      <li class="">Druckmarkensteuerung</li>
     <li class="">Einzeladerverlegung</li>

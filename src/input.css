@@ -10,14 +10,16 @@
     --breakpoint-4xl: 128rem;
     --breakpoint-6xl: 161rem;
 
-    --color-foreground: oklch(0.4111 0.0268 250.56);
-    --color-secondary: #f0f0f0;
-    --color-secondary-foreground: oklch(0.4498 0.0298 257.68);
+    --color-foreground: #333638; /* oklch(0.4111 0.0268 250.56); */
+    --color-secondary: #f3f6fa; /* #f0f0f0; */
+    --color-secondary-foreground: #204163;/*  oklch(0.4498 0.0298 257.68); */
     --color-primary: oklch(0.448 0.108 255.9);
     --color-primary-foreground: #fafdff;
     --color-border: #efefef;
     --color-border-light: #f7f7f7;
-    --color-headline: oklch(0.2685 0.0616 267.83);
+    --color-secondary-headline: #0d3966; /* oklch(0.2685 0.0616 267.83); */
+    --color-foreground-headline: #14335a;
+    --color-accent: #f7c333;
 
     --text-small: 0.9375rem;
     --text-headline: 2.125rem;
@@ -33,29 +35,24 @@ font-family:var(--custom-font),var(--default-font-family);
 
   @utility text-body-sm {
     font-size: var(--text-small);
-    line-height: 1.4rem;
+    /* line-height: 1.4rem; */
   }
 
 @layer utilities {
   .font-headline {
     font-family: var(--font-figtree), var(--default-font-family);
   }
-  .text-headline-color {
-    color: var(--color-headline);
-  }
   .font-light-normal {
     font-weight: 350;
-  }
-  .text-headline {
-    font-family: var(--font-figtree), var(--default-font-family);
-    font-size: var(--text-headline);
-    line-height: 2.376rem;
   }
   .border-border{
     border-color: var(--color-border);
   }
   .border-border-light{
     border-color: var(--color-border-light);
+  }
+  .text-headline-foreground{
+    color: var(--color-foreground-headline);
   }
 
 }
