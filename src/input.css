@@ -10,7 +10,7 @@
     --breakpoint-4xl: 128rem;
     --breakpoint-6xl: 161rem;
 
-    --color-foreground: #333638; /* oklch(0.4111 0.0268 250.56); */
+    --color-foreground: #43474b; /* oklch(0.4111 0.0268 250.56); */
     --color-secondary: #f3f6fa; /* #f0f0f0; */
     --color-secondary-foreground: #204163;/*  oklch(0.4498 0.0298 257.68); */
     --color-primary: oklch(0.448 0.108 255.9);
@@ -20,6 +20,7 @@
     --color-secondary-headline: #0d3966; /* oklch(0.2685 0.0616 267.83); */
     --color-foreground-headline: #14335a;
     --color-accent: #f7c333;
+    --color-border-secondary: #dfe4ea;
 
     --text-small: 0.9375rem;
     --text-headline: 2.125rem;
