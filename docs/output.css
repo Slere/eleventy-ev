@@ -1175,9 +1175,6 @@
   .align-middle {
     vertical-align: middle;
   }
-  .font-figtree {
-    font-family: var(--font-figtree);
-  }
   .\!text-sm {
     font-size: var(--text-sm) !important;
     line-height: var(--tw-leading, var(--text-sm--line-height)) !important;
