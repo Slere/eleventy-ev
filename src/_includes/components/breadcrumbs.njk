@@ -1,6 +1,6 @@
 {% macro breadcrumbs(params) %}
     {% if params and params.length %}
-        <ol class="flex items-center whitespace-nowrap">
+        <ol class="flex items-center whitespace-nowrap font-figtree">
             {% for crumb in params %}
                 {% if loop.last %}
                     <li
@@ -14,7 +14,7 @@
                             {{ crumb.label }}
                         </a>
                         <svg
-                            class="shrink-0 size-5 text-foreground/75 sm:mx-1"
+                            class="shrink-0 size-4 text-foreground/75 sm:mx-1"
                             width="16"
                             height="16"
                             viewBox="0 0 16 16"
