@@ -4,35 +4,129 @@ title_image: /assets/img/sectors/folienverpackung.jpg
 layout: layout/page-wrapper-with-breadcrumbs.njk
 ---
 
-<div class="">
-    <div class=" text-foreground max-w-7xl mx-auto py-8 mt-4 md:mt-12 mb-16 md:mb-28 flex flex-col md:flex-row gap-8 md:gap-8
-            lg:gap-16 px-6 sm:px-16 md:px-12 lg:px-10 xl:px-16">
-        <div class="md:w-82 lg:w-100 shrink-0"><img src="{{ title_image | url }}" class=" shadow-md h-auto rounded-sm"/>
-        </div>
+<div class="relative grow-1 flex justify-center mt-10 max-w-7xl mx-auto aspect-video min-h-120">
+    <div class="absolute inset-0 bg-[#0d2642] z-10 opacity-50"></div>
+    <div class="absolute bottom-10 left-10 sm:left-20 lg:bottom-20 lg:left-20 z-10 text-white">
+        <p class=" font-bold z-20 font-headline text-5xl sm:text-5xl md:text-6xl lg:text-7xl max-w-md md:max-w-xl mb-7 tracking-[-0.01rem]">{{ title }}</p>
+        <p class="max-w-xs md:max-w-md lg:max-w-lg md:text-xl mb-6 font-bold">
+             Produkte zuverlässig schützen und Ressourcen sparen</p>
         <div>
-           {#  <hr class="w-[120px] md:w-[160px] mb-4 border-3 border-t-0 md:border-2 border-primary mt-4"/> #}
-            <h1 class="text-3xl md:text-4xl font-headline font-bold text-headline-foreground pb-4">{{ title }}</h1>
-            <p class="leading-relaxed text-body-sm md:text-base text-foreground max-w-xl">Lorem ipsum dolor
-                sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            </p>
+            <button class=" bg-white px-8 py-3 rounded-full font-bold text-sm md:text-base text-primary cursor-pointer hover:bg-primary hover:text-primary-foreground transition-colors">Zu den Maschinen</button>
+        </div>
+    </div>
+    <img src="{{ title_image | url }}" alt="{{ title }}" class="relative  w-full h-full object-cover bg-center z-0" loading="lazy"/>
+</div>
+<div class=" max-w-7xl mx-auto p-12 md:pt-24">
+    <div class="px-6 md:px-6 md:mb-8 md:mt-0 pb-12 py-6 md:pb-10">
+        <div
+            class=" text-foreground max-w-7xl  flex flex-col md:flex-row gap-8 md:gap-8 lg:gap-20 justify-center">
+            <div class="w-fit">
+                <h1 class="text-3xl md:text-4xl font-headline font-semibold md:font-bold text-foreground-headline pb-4 tracking-tight">
+                    Was ist Folienverpacking?</h1>
+                <p class="leading-relaxed text-sm md:text-base text-foreground max-w-lg pb-3 tracking-wide md:tracking-normal">
+                    Folienverpackungen gehören zu den am weitesten verbreiteten Verpackungsarten weltweit. Sie bestehen überwiegend aus
+                    Kunststofffolien, die je nach Einsatzgebiet unterschiedliche Materialeigenschaften aufweisen.
+                </p>
+                <p class="leading-relaxed text-sm md:text-base text-foreground max-w-lg tracking-wide md:tracking-normal">
+                    Typische Kunststoffe sind Polyethylen (PE), Polypropylen (PP), Polyethylenterephthalat (PET) oder Mehrschichtverbunde,
+                    die mehrere Lagen kombinieren, um optimale Barriere- und Schutzeigenschaften zu erzielen.
+                </p>
+            </div>
+            <div class="max-w-md w-full hidden md:block">
+                <div class="aspect-[4/3] bg-cover bg-center bg-[url({{ title_image | url }})] z-10 rounded-lg"></div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-[#f5f5f5] max-w-7xl w-fit mx-auto md:mx-initial md:w-full gap-24 flex flex-col items-center md:flex-row text-[#123456] p-10 md:justify-evenly">
+        <div class="max-w-[200px] w-full text-center">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-shield-check-icon lucide-shield-check size-9 mx-auto mb-3"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0
+                    1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/>
+            </svg>
+            <p class="text-xl font-medium">Produktschutz</p>
+        </div>
+        <div class="max-w-[200px] w-full text-center">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-sprout-icon lucide-sprout size-9 mx-auto mb-3"><path d="M14 9.536V7a4 4 0 0 1 4-4h1.5a.5.5 0 0 1 .5.5V5a4 4 0 0 1-4 4 4 4 0 0 0-4 4c0 2 1 3 1 5a5 5 0 0 1-1 3"/><path d="M4 9a5 5 0 0 1 8 4 5 5 0 0 1-8-4"/><path d="M5 21h14"/>
+            </svg>
+            <p class="text-xl font-medium">Nachhaltigkeit</p>
+        </div>
+        <div class="max-w-[200px] w-full text-center">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-clock-arrow-up-icon lucide-clock-arrow-up size-9 mx-auto mb-3"><path d="M12 6v6l1.56.78"/><path d="M13.227 21.925a10 10 0 1 1 8.767-9.588"/><path d="m14 18 4-4 4 4"/><path d="M18 22v-8"/>
+            </svg>
+            <p class="text-xl font-medium">Lange Haltbarkeit</p>
+        </div>
+    </div>
+    <div class="">
+        <div class=" grow-1 flex justify-center  mb-8 md:hidden pt-12">
+            <img src="{{ title_image | url }}" alt="{{ title }}" class="w-full h-full object-cover bg-center max-h-96 rounded-lg" loading="lazy"/>
+        </div>
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-6 lg:gap-20 px-4 pb-8 md:py-20 ">
+            <div class="max-w-md w-full hidden md:block">
+                <div class="aspect-[4/3] bg-cover bg-center bg-[url({{ title_image | url }})] z-10 rounded-lg"></div>
+            </div>
+            <div class=" ">
+                <h2 class="text-xl md:text-2xl text-foreground-headline md:text-secondary-headline font-bold pb-4 ">Funktion und
+                    Vorteile</h2>
+                <p class=" max-w-lg text-sm md:text-base text-secondary-foreground font-light">Der Hauptzweck von Folienverpackungen
+                    besteht darin, Produkte während Lagerung und Transport zu schützen. Sie bieten eine wirksame Barriere gegen
+                    Feuchtigkeit, Sauerstoff, Schmutz sowie mechanische Einflüsse.</P>
+                <br/>
+                <p class="max-w-lg text-sm md:text-base text-secondary-foreground font-light">
+                    Dadurch verlängern sie die Haltbarkeit vieler Lebensmittel erheblich und tragen zur Reduzierung von Lebensmittelabfällen
+                    bei. Zudem sind Folienverpackungen leicht, flexibel und lassen sich platzsparend transportieren, was Ressourcen und
+                    Energie spart.</p>
+            </div>
+            {#  <div class=" grow-1 justify-center items-center  hidden md:flex ">
+                            <img src="{{ title_image | url }}" alt="{{ title }}" class="w-full h-full object-cover bg-center  max-h-72 max-w-lg rounded-lg" loading="lazy"/>
+                        </div> #}
         </div>
     </div>
 </div>
-<div class="grid md:grid-cols-2 my-10  px-6 sm:px-16 md:px-6 xl:px-0 gap-12 md:gap-4 lg:gap-12 max-w-7xl mx-auto mb-20">
+<div class="max-w-7xl mx-auto px-6 md:mt-14 md:mb-12">
+    <h3 class="text-2xl md:text-3xl text-foreground-headline font-bold text-center">Unsere Lösungen im Bereich Folienverpackung</h3>
+</div>
+<div class="grid md:grid-cols-2 my-6 px-10 sm:px-16 md:px-6 xl:px-0 gap-12 md:gap-12 lg:gap-20 max-w-6xl mx-auto md:mb-20">
     {% for subdivision in collections['folienverpackung'] %}
-        <div class=" flex flex-col group overflow-hidden hover:z-10 md:basis-1/3 grow-1 focus:outline-hidden bg-secondary
-                rounded-lg duration-300 ease-in-out ">
-            <div class=" overflow-hidden bg-[#e8ebf2]">
+        <div class="flex flex-col group overflow-hidden hover:z-10 md:basis-1/3 grow-1 focus:outline-hidden 
+                duration-300 ease-in-out ">
+            <div class=" overflow-hidden bg-[#eee] rounded-lg">
                 <img class="size-full top-0 start-0 object-cover h-[350px]" src="{{ subdivision.data.image | url }}" alt="Card Image"/>
             </div>
-            <div class="p-7 px-10 rounded  flex flex-col mt-4 gap-6 justify-between flex-1">
+            <div class="p-4 pb-8 rounded  flex flex-col mt-4 gap-6 justify-between flex-1">
                 <div>
-                    <h3 class="text-xl md:text-2xl font-bold font-headline text-secondary-headline  leading-snug mb-4">
+                    <h3 class="text-xl md:text-2xl font-bold font-headline text-foreground-headline leading-snug mb-4">
                         {{ subdivision.data.name }}
                     </h3>
-                    <p class=" text-secondary-foreground text-sm md:text-body-sm  leading-relaxed">
+                    <p class=" text-foreground text-sm md:text-base leading-relaxed font-light">
                         {{ subdivision.data.description }}
                     </p>
                 </div>

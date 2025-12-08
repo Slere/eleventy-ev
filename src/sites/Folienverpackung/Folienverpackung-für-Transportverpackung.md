@@ -2,10 +2,8 @@
 tags: folienverpackung
 name: Folienverpackung für Transportverpackung
 subfolder: Folienverpackung-für-Transportverpackung
-image: /assets/img/machines/test_pic.webp
+image: /assets/img/sectors/folienverpackung.jpg
 description: |
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    Folienverpackungen dienen im Transportbereich als Schutz- und Sicherungsmaterial für Waren. Sie stabilisieren palettierte Güter, schützen vor Feuchtigkeit, Staub und Verschmutzungen und ermöglichen eine effiziente Bündelung von Produkten. Durch ihre Flexibilität und Reißfestigkeit tragen sie wesentlich zur Transportsicherheit und zur Reduktion von Verpackungsschäden bei.
 permalink: false
 ---
