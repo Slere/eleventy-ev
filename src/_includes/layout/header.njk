@@ -55,8 +55,8 @@ z-50 border-border border-b">
             <button
               id="hs-navbar-example-dropdown"
               type="button"
-              class=" hs-dropdown-toggle flex items-center w-full text-foreground font-medium hover:text-primary focus:outline-hidden
-                focus:text-primary font-headline"
+              class=" hs-dropdown-toggle flex items-center w-full text-foreground hover:text-primary focus:outline-hidden
+                focus:text-primary "
               aria-haspopup="menu"
               aria-expanded="false"
               aria-label="Mega Menu">
@@ -83,15 +83,15 @@ z-50 border-border border-b">
               aria-orientation="vertical"
               aria-labelledby="hs-navbar-example-dropdown">
               {% for item in navigation_collections.menu_maschines %}
-                <a class="flex items-center gap-x-3.5 py-2 px-4 text-sm font-medium  font-headline  text-foreground hover:text-primary sm:border-b last:border-none border-border focus:outline-hidden focus:text-primary" href="{{ item.url | url }}">
+                <a class="flex items-center gap-x-3.5 py-2 px-4 text-sm  text-foreground hover:text-primary sm:border-b last:border-none border-border focus:outline-hidden focus:text-primary" href="{{ item.url | url }}">
                   {{ item.label }}
                 </a>
               {% endfor %}
             </div>
           </div>
-          <a class=" text-foreground hover:text-primary focus:outline-hidden focus:text-primary  font-headline font-medium" href="{{ page.url | url}}#contact">
+          <a class=" text-foreground hover:text-primary focus:outline-hidden focus:text-primary" href="{{ page.url | url}}#contact">
             Kontakt</a>
-          <a class="tracking-wide text-foreground hover:text-primary focus:outline-hidden focus:text-primary font-medium font-headline" href="#">
+          <a class="tracking-wide text-foreground hover:text-primary focus:outline-hidden focus:text-primary " href="#">
             Impressum</a>
         </div>
       </div>
