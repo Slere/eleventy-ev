@@ -40,14 +40,14 @@ layout: layout/page-wrapper-with-breadcrumbs.njk
                      <div class="w-auto flex-1 mb-2 md:mb-0 relative">
                         <img class=" aspect-video w-full sticky top-18" src="{{ product.data.image | url }}"/>
                     </div>
-                    <div class="flex flex-col flex-1  md:max-w-xl mx-auto gap-4 md:gap-6 p-8  px-12 pt-10 pb-4 bg-[#f5f5f5] group-even/item:bg-white">
+                    <div class="flex flex-col flex-1  md:max-w-xl mx-auto gap-4 md:gap-6 p-8  sm:px-12 sm:pt-10 md:pt-8 md:px-8 lg:px-12 lg:pt-10 pb-4 bg-[#fcfbfb] group-even/item:bg-[#fefefe] shadow-xs border border-border-light">
                         <div class="">
                             
-                            <h1 class=" group-even/item:text-foreground-headline group-odd/item:text-foreground-headline text-3xl lg:text-4xl tracking-tight font-bold font-headline leading-snug break-words hyphens-auto  ">{{ product.data.name | safe }}</h1>
+                            <h1 class=" group-even/item:text-foreground-headline group-odd/item:text-foreground-headline text-2xl sm:text-3xl lg:text-4xl tracking-tight font-bold font-headline leading-snug break-words hyphens-auto  ">{{ product.data.name | safe }}</h1>
                         </div>
                         <div class="mb-2 {# p-8 group-odd/item:bg-secondary group-even/item:bg-[#eeeeee]  #}flex flex-col rounded-lg">
                            {#  <h2 class=" text-primary-darkened tracking-wider mb-3  font-headline font-semibold w-fit pr-2 lg:w-full">Hauptmerkmale</h2> #}
-                            <div class="{# group-odd/item:text-secondary-foreground group-even/item:text-foreground #} text-foreground group-even/item:text-foreground text-body-sm lg:text-body-sm tracking-wide pl-2 md:pl-3">{{ product.data.features | safe }}</div>
+                            <div class="{# group-odd/item:text-secondary-foreground group-even/item:text-foreground #} text-foreground group-even/item:text-foreground text-sm sm:text-body-sm tracking-wide pl-2 md:pl-3">{{ product.data.features | safe }}</div>
                             <button class="mt-8  w-full rounded-full  cursor-pointer text-sm lg:text-body-sm  px-10 py-3 font-headline tracking-wider items-center gap-1  bg-primary hover:bg-primary/90 text-primary-foreground hover:text-white font-semibold mx-auto ">
                                   Angebot anfordern
                             </button>
