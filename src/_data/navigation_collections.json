@@ -2,15 +2,15 @@
   "menu_maschines": [
     {
       "label": "Fl Servo Filmline",
-      "url": "/Folienverpackung/Folienverpackung-für-Transportverpackung/#fl-servo-filmline"
+      "url": "/Maschinen/Folienverpackung/Folienverpackung-für-Transportverpackung/#fl-servo-filmline"
     },
     {
       "label": "HEM Hochleistungs-Einschlagmaschine",
-      "url": "/Folienverpackung/Folienverpackung-für-Transportverpackung/#hochleistungs-einschlagmaschine"
+      "url": "/Maschinen/Folienverpackung/Folienverpackung-für-Transportverpackung/#hochleistungs-einschlagmaschine"
     },
     {
       "label": "FL-Filmline Bündelpacker/Straffpacker",
-      "url": "/Folienverpackung/Folienverpackung-für-Transportverpackung/#bündelpacker-straffpacker"
+      "url": "/Maschinen/Folienverpackung/Folienverpackung-für-Transportverpackung/#bündelpacker-straffpacker"
     }
   ]
 }

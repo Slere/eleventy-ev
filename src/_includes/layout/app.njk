@@ -23,13 +23,12 @@
     <link href="{{ "/output.css" | url }}" rel="stylesheet">
     <title>{{ title }}</title>
   </head>
-  <body class="min-h-screen flex flex-col justify-center items-center bg-white" lang="de">
+  <body class="min-h-screen flex flex-col justify-center items-center bg-background" lang="de">
+    <div id="header-sentinel" class="h-px"></div>
     {% include "layout/header.njk" %}
     <main class=" grow-1 w-full">
       {{ content | safe }}
-    </main>
-    <div class="w-full bg-primary">
-      {% include "layout/footer.njk" %}
-    </div>
+    </main> 
+      {% include "layout/footer.njk" %}   
   </body>
 </html></body></html>

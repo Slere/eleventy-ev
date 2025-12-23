@@ -1,0 +1,110 @@
+---
+title: Bereichsübersicht
+layout: layout/app.njk
+test_image: /assets/img/sectors/folienverpackung.jpg
+---
+
+<section class="pt-32 pb-16 section-gradient-light">
+    <div class="max-w-8xl mx-auto px-6">
+        <nav aria-label="breadcrumb" class="mb-8">
+            {%- from "components/breadcrumbs.njk" import breadcrumbs -%}
+            {% set crumbs = page.url | breadcrumbs %}
+            {{ breadcrumbs(crumbs) }}
+        </nav>
+        <div class="max-w-3xl mx-auto text-center">
+            <span class="inline-block px-4 py-1.5 bg-primary/10 text-primary text-sm font-medium rounded-full mb-6">Unsere
+                Produktpalette</span>
+            <h1 class="font-headline font-bold text-4xl sm:text-5xl md:text-6xl text-foreground-headline mb-6 tracking-tight hyphens-auto
+                    break-words">
+                Unsere Verpackungsmaschinen im Überblick</h1>
+            <p class="text-foreground-muted text-lg md:text-xl max-w-2xl mx-auto font-light">Entdecken Sie unser umfassendes
+                Sortiment an Verpackungsmaschinen, das speziell auf die Anforderungen der modernen Fertigung ausgelegt ist.</p>
+        </div>
+    </div>
+</section>
+<section class="py-20 bg-background">
+    <div class="max-w-8xl mx-auto px-6">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {% for sector in categories.categories %}
+                {% set idx0 = loop.index0 %}
+                {% set anim_delay = (idx0 * 0.1) %}
+                {% if sector.url != page.url %}
+                    <a class="group rounded-lg shadow-card hover:shadow-hover bg-white overflow-hidden animate-fade-up opacity-0 flex flex-col border-border hover:border-primary/10 border" style="animation-delay:{{ anim_delay }}s" href="{{ (page.url~"/"~sector.url~"/") | url }}">
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="{{ sector.image | url }}" alt="{{ sector.name }}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                                <div class="absolute inset-0 bg-gradient-to-t from-foreground-headline/30 to-transparent"></div>
+                                <div class="absolute bottom-4 left-4 flex items-center gap-2 text-primary-foreground">
+                                    <div class="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="lucide lucide-package-icon lucide-package"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1
+                                                1.73z"/><path d="M12 22V12"/><polyline points="3.29 7 12 12 20.71 7"/><path d="m7.5 4.27 9 5.15"/>
+                                        </svg>
+                                    </div>
+                                    <span class="text-primary-foreground text-sm font-medium">
+                                        {{ sector.machines_count | safe }}
+                                        {% if sector.machines_count == 1 %}&nbsp;Maschine{% else %}&nbsp;Maschinen{% endif %}
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="p-6 flex flex-col grow-1">
+                                <h3 class="font-headline text-2xl font-bold text-foreground-headline mb-2 group-hover:text-primary transition-colors">
+                                    {{ sector.name | safe }}</h3>
+                                <p class="text-foreground tracking-[0.01em] text-sm mb-4 line-clamp-3 grow-1">{{ sector.description | safe }}
+                                </p>
+                                <div class="flex items-center text-primary text-sm font-medium">Bereich ansehen<svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-arrow-right w-4 h-4 ml-2 transition-transform group-hover:translate-x-1">
+                                        <path d="M5 12h14"></path>
+                                        <path d="m12 5 7 7-7 7"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <section class="py-20 section-gradient-light">
+        <div class="max-w-8xl mx-auto px-6">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="font-headline text-3xl md:text-4xl text-foreground-headline font-semibold mb-6">Nicht gefunden nachdem Sie
+                    suchen?</h2>
+                <p class="text-foreground text-base mb-8">Wir unterstützen Sie dabei, die optimale Verpackungslösung für Ihre
+                    individuellen Anforderungen zu finden.</p>
+                <a class="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-full font-medium
+                                            hover:bg-primary/90 transition-all shadow-soft hover:shadow-hover" href="{{ "/#contact" | url }}">Kontaktieren<svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-arrow-right w-5 h-5">
+                        <path d="M5 12h14"></path>
+                        <path d="m12 5 7 7-7 7"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>

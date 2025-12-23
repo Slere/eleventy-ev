@@ -1,0 +1,22 @@
+[
+    {
+        "slug": "folienverpackung",
+        "title": "Folienverpackung",
+        "description": "Folienverpackungen gehören zu den am weitesten verbreiteten Verpackungsarten weltweit. Sie bestehen überwiegend aus Kunststofffolien, die je nach Einsatzgebiet unterschiedliche Materialeigenschaften aufweisen.",
+        "subcategories": [
+            {
+                "name": "Bündelpacker",
+                "machines_count": 17,
+                "url": "bündelpacker",
+                "image": "/assets/img/sectors/folienverpackung.jpg",
+                "description": "Bündelpacker in der Folienverpackung sind Verpackungsmaschinen, die mehrere Einzelprodukte zu stabilen Verkaufseinheiten zusammenfassen und mit Folie umhüllen. Dabei werden die Produkte meist in Reihen oder Lagen gruppiert und anschließendmit Schrumpf- oder Stretchfolie verpackt."
+            },
+            {
+                "name": "Gebindepacker",
+                "machines_count": 17,
+                "url": "gebindepacker",
+                "image": "/assets/img/sectors/folienverpackung.jpg"
+            }
+        ]
+    }
+]

@@ -1,0 +1,118 @@
+{
+    "categories": [
+        {
+            "name": "Folienverpackung",
+            "description": "Folienverpackungen gehören zu den am weitesten verbreiteten Verpackungsarten weltweit. Sie bestehen überwiegend aus Kunststofffolien, die je nach Einsatzgebiet unterschiedliche Materialeigenschaften aufweisen.",
+            "machines_count": 34,
+            "image": "/assets/img/sectors/folienverpackung.jpg",
+            "url": "folienverpackung",
+            "sub-categories": [
+                {
+                    "name": "Bündelpacker",
+                    "machines_count": 17,
+                    "url": "bündelpacker",
+                    "image": "/assets/img/sectors/folienverpackung.jpg",
+                    "description": "Bündelpacker in der Folienverpackung sind Verpackungsmaschinen, die mehrere Einzelprodukte zu stabilen Verkaufseinheiten zusammenfassen und mit Folie umhüllen. Dabei werden die Produkte meist in Reihen oder Lagen gruppiert und anschließendmit Schrumpf- oder Stretchfolie verpackt."
+                },
+                {
+                    "name": "Gebindepacker",
+                    "machines_count": 17,
+                    "url": "gebindepacker",
+                    "image": "/assets/img/sectors/folienverpackung.jpg"
+                }
+            ]
+        },
+        {
+            "name": "Speichersysteme",
+            "description": "Intelligente Speichersysteme zur Pufferung und Entkopplung von Produktions- und Verpackungsprozessen. Sorgen für einen gleichmäßigen Materialfluss und höhere Anlagenverfügbarkeit.",
+            "machines_count": 1,
+            "image": "/assets/img/sectors/folienverpackung.jpg",
+            "url": "speichersysteme"
+        },
+        {
+            "name": "Papierverpackung",
+            "description": "Nachhaltige Verpackungslösungen auf Papierbasis für umweltbewusste Verpackungskonzepte. Ideal für Unternehmen mit Fokus auf Ressourcenschonung und Recyclingfähigkeit.",
+            "machines_count": 4,
+            "image": "/assets/img/sectors/folienverpackung.jpg",
+            "url": "papierverpackung",
+            "sub-categories": [
+                {
+                    "name": "Bündelpacker",
+                    "machines_count": 2,
+                    "url": "bündelpacker"
+                },
+                {
+                    "name": "Gebindepacker",
+                    "machines_count": 2,
+                    "url": "gebindepacker"
+                }
+            ]
+        },
+        {
+            "name": "Palettiersysteme",
+            "description": "Automatisierte Palettiersysteme für präzises und leistungsstarkes Stapeln von Produkten. Flexibel anpassbar an verschiedene Formate und Produktionsanforderungen.",
+            "machines_count": 1,
+            "image": "/assets/img/sectors/folienverpackung.jpg",
+            "url": "palettiersysteme"
+        },
+        {
+            "name": "Palettenverpackung",
+            "description": "Maschinen zur sicheren Umwicklung und Stabilisierung von Palettenladungen. Schützen Ihre Produkte zuverlässig während Lagerung und Transport.",
+            "machines_count": 1,
+            "image": "/assets/img/sectors/folienverpackung.jpg",
+            "url": "pallettenverpackung"
+        },
+        {
+            "name": "Palettendefolierer",
+            "description": "Effiziente Palettendefolierer zur automatischen Entfernung von Stretch- oder Schrumpffolie. Optimiert den Wareneingang und reduziert manuelle Arbeitsaufwände.",
+            "machines_count": 1,
+            "image": "/assets/img/sectors/folienverpackung.jpg",
+            "url": "palettendefolierer"
+        },
+        {
+            "name": "Kartonverpackung",
+            "description": "Automatisierte Kartonverpackungssysteme für das Aufrichten, Befüllen und Verschließen von Kartons. Für hohe Durchsätze und gleichbleibend hohe Verpackungsqualität.",
+            "machines_count": 2,
+            "image": "/assets/img/sectors/folienverpackung.jpg",
+            "url": "kartonverpackung",
+            "sub-categories": [
+                {
+                    "name": "Bündelpacker",
+                    "machines_count": 1,
+                    "url": "bündelpacker"
+                },
+                {
+                    "name": "Gebindepacker",
+                    "machines_count": 1,
+                    "url": "gebindepacker"
+                }
+            ]
+        },
+        {
+            "name": "Fördertechnik",
+            "description": "Zuverlässige Fördertechnik für den sicheren und kontinuierlichen Transport Ihrer Produkte. Unsere Systeme lassen sich nahtlos in bestehende Verpackungslinien integrieren.",
+            "machines_count": 1,
+            "image": "/assets/img/sectors/folienverpackung.jpg",
+            "url": "foerdertechnik",
+            "sub-categories": [
+                {
+                    "name": "Produkt",
+                    "machines_count": 17,
+                    "url": "bündelpacker"
+                },
+                {
+                    "name": "Palette",
+                    "machines_count": 17,
+                    "url": "gebindepacker"
+                }
+            ]
+        },
+        {
+            "name": "Folie/Karton",
+            "description": "Maschinenlösungen für die flexible Verarbeitung von Folien- und Kartonverpackungen. Ideal für effiziente, produktschonende Verpackungsprozesse in unterschiedlichsten Branchen.",
+            "machines_count": 1,
+            "image": "/assets/img/sectors/folienverpackung.jpg",
+            "url": "folie-karton"
+        }
+    ]
+}
