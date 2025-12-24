@@ -1,7 +1,8 @@
 ---
 title: Ensle Verpackungstechnik
 layout: layout/app.njk
-hero_banner_image_1: /assets/img/sectors/folienverpackung.jpg
+hero_banner_image_1: /assets/img/sectors/papierverpackung.png
+hero_banner_image_2: /assets/img/sectors/Folienverpackung.jpg
 ---
 
 <div
@@ -22,33 +23,31 @@ hero_banner_image_1: /assets/img/sectors/folienverpackung.jpg
         <div class="hs-carousel-slide min-h-[100svh] flex">
           <div class="relative flex justify-center items-center py-24 w-full bg-gray-100 p-6 bg-[url({{ hero_banner_image_1 | url }})]
               bg-cover bg-center">
-            <div class="hidden lg:block absolute inset-0 bg-gradient-to-r from-background via-background/70 to-transparent"></div>
+            <div class="hidden lg:block absolute inset-0 "></div>
            {#  <div class="hidden lg:block absolute inset-0 bg-gradient-to-t from-background/25 via-transparent to-transparent"></div> #}
-            <div class="hidden lg:block absolute inset-0 bg-gradient-to-b from-background/25 via-transparent to-transparent"></div>
-            <div class="block lg:hidden absolute inset-0 bg-gradient-to-r from-background/90  to-background/60"></div>
-            <div class="max-w-8xl w-full mx-auto px-6 relative z-10 mt-20 flex h-full items-center">
-              <div class="max-w-3xl">
-                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/30 mb-8">
+            {# <div class="hidden lg:block absolute inset-0 bg-gradient-to-b from-background/25 via-transparent to-transparent"></div>
+            <div class="block lg:hidden absolute inset-0 bg-gradient-to-r from-background/90  to-background/60"></div> #}
+            <div class="max-w-8xl w-full mx-auto sm:px-6 relative z-10 mt-20 flex h-full items-center justify-end">
+              <div class="max-w-3xl flex flex-col justify-between min-h-92 md:min-h-120 p-8 md:p-12 bg-background/90 backdrop-blur-lg rounded-xl">
+               {#  <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/30 mb-8">
                   <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
                   <span class="text-sm text-primary font-medium uppercase tracking-wider">Beliebt bei Kunden</span>
-                </div>
-                <h1 class="font-headline tracking-tight font-bold text-4xl sm:text-5xl md:text-7xl lg:text-7xl text-foreground leading-none
+                </div> #}
+                <div>
+                <h1 class="font-headline tracking-tight font-bold text-3xl sm:text-5xl md:text-5xl lg:text-5xl text-foreground-headline leading-none
                     mb-6 hyphens-auto break-words">
-                  Nachhaltige
-                    <br/>
-                  <span class="text-primary">Technologien</span>
-                  <br/> entdecken
+                Papierverpackung
                 </h1>
-                <p class="text-lg md:text-xl text-foreground max-w-xl mb-10">
-                  Folienverpackungen gehören zu den am weitesten verbreiteten Verpackungsarten weltweit. Sie bestehen überwiegend aus
-                  Kunststofffolien, die je nach Einsatzgebiet unterschiedliche Materialeigenschaften aufweisen.</p>
+                <p class="text-base md:text-lg text-foreground max-w-xl mb-10">
+                 Für eine nachhaltigere Zukunft mit unseren Papierlösungen – Verpacken Sie mit Kraftpapier oder Papierklebestreifen.</p>
+                 </div>
                 <div class="flex flex-col sm:flex-row gap-4">
-                  <a href="{{"/maschinen" | url}}" class="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background transition-all duration-300
+                  <a href="{{"/maschinen/papierverpackung" | url}}" class="inline-flex items-center justify-center gap-2 ring-offset-background transition-all duration-300
                       focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2
                       disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary
-                      text-primary-foreground font-semibold hover:bg-primary/90 shadow-lg hover:shadow-xl hover:scale-105 tracking-wider h-14
-                      rounded-full px-10 text-base lg:text-lg cursor-pointer ">
-                    Maschinen ansehen<svg
+                      text-primary-foreground font-medium md:font-semibold hover:bg-primary/90 shadow-lg hover:shadow-xl hover:scale-105 tracking-wider h-12
+                      rounded-full px-10 text-base cursor-pointer ">
+                    Unsere Papierlösungen<svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
                       height="24"
@@ -82,7 +81,7 @@ hero_banner_image_1: /assets/img/sectors/folienverpackung.jpg
                       <polygon points="6 3 20 12 6 21 6 3"></polygon>
                     </svg>Secondary Action</button> #}
                 </div>
-                <div class="grid grid-cols-2 sm:grid-cols-3 gap-8 mt-16 pt-8 border-t border-primary/15">
+                {# <div class="grid grid-cols-2 sm:grid-cols-3 gap-8 mt-16 pt-8 border-t border-primary/15">
                   <div>
                     <p class="font-headline font-semibold text-4xl md:text-4xl text-primary">500+</p>
                     <p class="text-foreground text-sm uppercase tracking-wider mt-1">Maschinen in Betrieb</p>
@@ -94,8 +93,8 @@ hero_banner_image_1: /assets/img/sectors/folienverpackung.jpg
                   <div>
                     <p class="font-headline font-semibold text-4xl md:text-4xl text-primary">99.9%</p>
                     <p class="text-foreground text-sm uppercase tracking-wider mt-1">Uptime Rate</p>
-                  </div>
-                </div>
+                  </div> 
+                </div>#}
               </div>
             </div>
           </div>
@@ -104,7 +103,7 @@ hero_banner_image_1: /assets/img/sectors/folienverpackung.jpg
         <!-- slide -->
         <div class="hs-carousel-slide">
           <div class="relative flex justify-center h-full bg-secondary/50 p-6
-              bg-[url('https://www.packreport.de/news/media/11/Di-A-8-Max-verein-Geschwindigkei-un-Effizienz-105252.jpeg')] bg-cover
+             bg-[url({{ hero_banner_image_2 | url }})] bg-cover
               bg-center">
             <span class="self-center text-4xl text-gray-800 transition duration-700 ">{# Second slide #}</span>
           </div>
@@ -201,7 +200,7 @@ hero_banner_image_1: /assets/img/sectors/folienverpackung.jpg
       </div>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {% for product in collections.featured_machine %}
-          <div class="group rounded-lg overflow-hidden border border-border hover:border-primary/30 shadow-card hover:shadow-hover hover:-translate-y-2 transition-all bg-card
+          <div class="group rounded-lg overflow-hidden border border-border shadow-card hover:shadow-hover hover:-translate-y-2 transition-all bg-card
               duration-300 flex flex-col">
             <div class="relative h-64 overflow-hidden ">
               <img src="{{ product.data.image | url }}" alt="{{ product.data.name | safe }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -213,7 +212,7 @@ hero_banner_image_1: /assets/img/sectors/folienverpackung.jpg
               <div class="p-6 flex flex-col grow-1 justify-between">
                 <div>
                   <h3 class="font-headline font-bold text-xl text-foreground-headline mb-2">{{ product.data.name | safe }}</h3>
-                  <div class="text-foreground/90 text-sm mb-4 line-clamp-3 hyphens-auto tracking-[0.01em]">{{ product.data.description | safe }}</div>
+                  <div class="text-foreground text-body-sm mb-4 line-clamp-3 hyphens-auto tracking-[0.01em]">{{ product.data.description | safe }}</div>
                   <ul class="space-y-2 mb-6 ">
                     <div class=" flex flex-wrap gap-2 mb-6">
                       {% for feature in product.data.features %}
@@ -530,7 +529,7 @@ hero_banner_image_1: /assets/img/sectors/folienverpackung.jpg
       <section id="partners" class="py-16 md:py-20 lg:py-24 bg-muted/30">
         <div class="max-w-8xl mx-auto px-6">
           <div class="text-center mb-16">
-            <span class="inline-flex items-center gap-2 px-4 py-1.5 bg-primary/10 text-primary text-sm font-medium rounded-full mb-6">
+{#             <span class="inline-flex items-center gap-2 px-4 py-1.5 bg-primary/10 text-primary text-sm font-medium rounded-full mb-6">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -549,7 +548,7 @@ hero_banner_image_1: /assets/img/sectors/folienverpackung.jpg
                 <path d="M10 10h4"></path>
                 <path d="M10 14h4"></path>
                 <path d="M10 18h4"></path>
-              </svg>Vertrauenswürdige Partner</span>
+              </svg>Vertrauenswürdige Partner</span> #}
             <h2 class="font-headline font-bold text-4xl md:text-4xl text-foreground mb-4">Unsere Herstellerpartner</h2>
             <p class="text-foreground text-xl max-w-2xl mx-auto font-light">Gemeinsam mit weltweit führenden Herstellern liefern wir
               zuverlässige und innovative Verpackungsmaschinen.</p>
