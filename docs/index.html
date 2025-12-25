@@ -541,7 +541,7 @@
     <main class=" grow-1 w-full">
       
 <div
-  class="min-h-[100svh] w-full">
+  class="max-w-9xl w-full mx-auto">
   <!-- Slider -->
   <div data-hs-carousel='{
     "loadingClasses": "opacity-0",
@@ -555,29 +555,29 @@
         class="hs-carousel-body relative flex flex-nowrap transition-transform duration-700 opacity-0
           hs-carousel-dragging:transition-none hs-carousel-dragging:cursor-grabbing cursor-grab">
         <!-- slide -->
-        <div class="hs-carousel-slide min-h-[100svh] flex">
+        <div class="hs-carousel-slide aspect-[4/3] md:aspect-video flex">
           <div class="relative flex justify-center items-center py-24 w-full bg-gray-100 p-6 bg-[url(/eleventy-ev/assets/img/sectors/papierverpackung.png)]
-              bg-cover bg-center">
+              bg-cover ">
             <div class="hidden lg:block absolute inset-0 "></div>
            
             
-            <div class="max-w-8xl w-full mx-auto sm:px-6 relative z-10 mt-20 flex h-full items-center justify-end">
-              <div class="max-w-3xl flex flex-col justify-between min-h-92 md:min-h-120 p-8 md:p-12 bg-background/90 backdrop-blur-lg rounded-xl">
+            <div class="hidden md:flex max-w-8xl w-full mx-auto sm:px-6 relative z-10 mt-20 h-full items-end justify-end">
+              <div class=" flex flex-col justify-between  lg:min-h-112 p-8 lg:p-12 bg-background/90 backdrop-blur-lg rounded-xl max-w-md lg:max-w-xl">
                
                 <div>
-                <h1 class="font-headline tracking-tight font-bold text-3xl sm:text-5xl md:text-5xl lg:text-5xl text-foreground-headline leading-none
+                <h1 class="font-headline tracking-tight font-bold  text-2xl lg:text-4xl  text-foreground-headline leading-none
                     mb-6 hyphens-auto break-words">
                 Papierverpackung
                 </h1>
-                <p class="text-base md:text-lg text-foreground max-w-xl mb-10">
+                <p class="text-sm lg:text-lg text-foreground max-w-sm lg:max-w-md mb-10">
                  Für eine nachhaltigere Zukunft mit unseren Papierlösungen – Verpacken Sie mit Kraftpapier oder Papierklebestreifen.</p>
                  </div>
                 <div class="flex flex-col sm:flex-row gap-4">
                   <a href="/eleventy-ev/maschinen/papierverpackung" class="inline-flex items-center justify-center gap-2 ring-offset-background transition-all duration-300
                       focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2
                       disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary
-                      text-primary-foreground font-medium md:font-semibold hover:bg-primary/90 shadow-lg hover:shadow-xl hover:scale-105 tracking-wider h-12
-                      rounded-full px-10 text-base cursor-pointer ">
+                      text-primary-foreground font-medium hover:bg-primary/90 shadow-lg hover:shadow-xl hover:scale-105 tracking-wider h-10 lg:h-12
+                      rounded-full px-10 text-sm lg:text-base cursor-pointer ">
                     Unsere Papierlösungen<svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -710,12 +710,12 @@
                                                                           ">
                   Folienverpackung</a>
               </div>
-              <div class="p-6 flex flex-col grow-1 justify-between">
+              <div class="p-6 pb-4 flex flex-col grow-1 justify-between">
                 <div>
                   <h3 class="font-headline font-bold text-xl text-foreground-headline mb-2">HEM Hochleistungs-Einschlagmaschine</h3>
                   <div class="text-foreground text-body-sm mb-4 line-clamp-3 hyphens-auto tracking-[0.01em]">Kontinuierlich laufende Maschine mit Folienüberlappung an der Unterseite – kein Schweißsystem. Mit dieser Maschine sind einbahnig bis 60 Gebinde/min  und Zweibahnig bis zu 85 Gebinde/min möglich</div>
-                  <ul class="space-y-2 mb-6 ">
-                    <div class=" flex flex-wrap gap-2 mb-6">
+                  <ul class="space-y-2 mb-5">
+                    <div class=" flex flex-wrap gap-2">
                       
                         <span class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-secondary text-secondary-foreground text-xs font-medium rounded
                             tracking-[0.01em]">
@@ -736,12 +736,12 @@
                   </ul>
                 </div>
                 <a href="maschinen/folienverpackung/bündelpacker#hochleistungs-einschlagmaschine">
-                  <button class="self-end inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm font-medium
+                  <button class="justify-center inline-flex items-center gap-2 whitespace-nowrap  rounded text-xs  font-semibold
                       ring-offset-background transition-all duration-300 focus-visible:outline-none focus-visible:ring-2
                       focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50
-                      [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border border-border bg-card text-foreground-headline hover:bg-primary
-                      hover:border-primary hover:text-primary-foreground h-10 px-4 py-2 w-full group/btn cursor-pointer tracking-wide">
-                    Details anzeigen<svg
+                      [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-card text-foreground-headline hover:bg-primary
+                      hover:border-primary hover:text-primary-foreground h-10 px-6 py-2 w-full group/btn cursor-pointer tracking-wide">
+                    DETAILS ANZEIGEN<svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
                       height="24"
@@ -757,6 +757,7 @@
                     </svg>
                   </button>
                 </a>
+                
               </div>
             </div>
           
@@ -769,12 +770,12 @@
                                                                           ">
                   Folienverpackung</a>
               </div>
-              <div class="p-6 flex flex-col grow-1 justify-between">
+              <div class="p-6 pb-4 flex flex-col grow-1 justify-between">
                 <div>
                   <h3 class="font-headline font-bold text-xl text-foreground-headline mb-2">FL-Filmline Bündelpacker/Straffpacker</h3>
                   <div class="text-foreground text-body-sm mb-4 line-clamp-3 hyphens-auto tracking-[0.01em]">Getaktete Maschine mit Schweißsystem. Mit dieser Maschine sind einbahnig bis 35 Gebinde/min möglich</div>
-                  <ul class="space-y-2 mb-6 ">
-                    <div class=" flex flex-wrap gap-2 mb-6">
+                  <ul class="space-y-2 mb-5">
+                    <div class=" flex flex-wrap gap-2">
                       
                         <span class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-secondary text-secondary-foreground text-xs font-medium rounded
                             tracking-[0.01em]">
@@ -795,12 +796,12 @@
                   </ul>
                 </div>
                 <a href="maschinen/folienverpackung/bündelpacker#bündelpacker-straffpacker">
-                  <button class="self-end inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm font-medium
+                  <button class="justify-center inline-flex items-center gap-2 whitespace-nowrap  rounded text-xs  font-semibold
                       ring-offset-background transition-all duration-300 focus-visible:outline-none focus-visible:ring-2
                       focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50
-                      [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border border-border bg-card text-foreground-headline hover:bg-primary
-                      hover:border-primary hover:text-primary-foreground h-10 px-4 py-2 w-full group/btn cursor-pointer tracking-wide">
-                    Details anzeigen<svg
+                      [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-card text-foreground-headline hover:bg-primary
+                      hover:border-primary hover:text-primary-foreground h-10 px-6 py-2 w-full group/btn cursor-pointer tracking-wide">
+                    DETAILS ANZEIGEN<svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
                       height="24"
@@ -816,6 +817,7 @@
                     </svg>
                   </button>
                 </a>
+                
               </div>
             </div>
           
@@ -829,13 +831,13 @@
                                                                           ">
                   Folienverpackung</a>
               </div>
-              <div class="p-6 flex flex-col grow-1 justify-between">
+              <div class="p-6 pb-4 flex flex-col grow-1 justify-between">
                 <div>
                   <h3 class="font-headline font-bold text-xl text-foreground-headline mb-2">FL SERVO-FILMLINE
 </h3>
                   <div class="text-foreground text-body-sm mb-4 line-clamp-3 hyphens-auto tracking-[0.01em]">Getaktete Maschine mit Schweißsystem. Mit dieser Maschine sind feste Gebinde ohne Schrumpftunnel möglich. Dabei kommt eine spezielle PE-Dehnfolie mit max. 35µ Foliendicke zum Einsatz. Natürlich kann durch Einsatz eines Schrumpftunnel auch herkömmliche PE-Folie verarbeitet werden.</div>
-                  <ul class="space-y-2 mb-6 ">
-                    <div class=" flex flex-wrap gap-2 mb-6">
+                  <ul class="space-y-2 mb-5">
+                    <div class=" flex flex-wrap gap-2">
                       
                         <span class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-secondary text-secondary-foreground text-xs font-medium rounded
                             tracking-[0.01em]">
@@ -856,12 +858,12 @@
                   </ul>
                 </div>
                 <a href="maschinen/folienverpackung/bündelpacker#fl-servo-filmline">
-                  <button class="self-end inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm font-medium
+                  <button class="justify-center inline-flex items-center gap-2 whitespace-nowrap  rounded text-xs  font-semibold
                       ring-offset-background transition-all duration-300 focus-visible:outline-none focus-visible:ring-2
                       focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50
-                      [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border border-border bg-card text-foreground-headline hover:bg-primary
-                      hover:border-primary hover:text-primary-foreground h-10 px-4 py-2 w-full group/btn cursor-pointer tracking-wide">
-                    Details anzeigen<svg
+                      [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-card text-foreground-headline hover:bg-primary
+                      hover:border-primary hover:text-primary-foreground h-10 px-6 py-2 w-full group/btn cursor-pointer tracking-wide">
+                    DETAILS ANZEIGEN<svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
                       height="24"
@@ -877,6 +879,7 @@
                     </svg>
                   </button>
                 </a>
+                
               </div>
             </div>
           
@@ -1009,7 +1012,7 @@
             </h2>
             <p class="text-foreground-muted text-xl font-light">Unsere Verpackungslösungen unterstützen Produktionslinien in unterschiedlichsten Branchen.</p>
           </div>
-          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+          <div class="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             <div class="group flex flex-col items-center text-center p-6 rounded-xl bg-card/30 border border-border
                 hover:border-primary/50 hover:bg-card/60 transition-all duration-300">
               <div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20
@@ -1029,8 +1032,8 @@
                   <path d="m8.5 8.5 7 7"></path>
                 </svg>
               </div>
-              <h3 class="font-display  text-foreground-headline font-medium mb-1">Pharmazeutische Industrie</h3>
-              <p class="text-foreground text-xs">FDA-/GMP‑konforme Lösungen</p>
+              <h3 class="font-headline  text-foreground-headline font-semibold mb-1">Pharmazeutische Industrie</h3>
+              <p class="text-foreground text-xs hyphens-auto">FDA-/GMP‑konforme Lösungen</p>
             </div>
             <div class="group flex flex-col items-center text-center p-6 rounded-xl bg-card/30 border border-border
                 hover:border-primary/50 hover:bg-card/60 transition-all duration-300">
@@ -1053,7 +1056,7 @@
                   <path d="M12 15a5 5 0 0 0 5-5c0-2-.5-4-2-8H9c-1.5 4-2 6-2 8a5 5 0 0 0 5 5Z"></path>
                 </svg>
               </div>
-                <h3 class="font-display text-foreground-headline font-medium mb-1">Getränke</h3>
+                <h3 class="font-headline text-foreground-headline font-semibold mb-1">Getränke</h3>
                 <p class="text-foreground text-xs hyphens-auto">Hochgeschwindigkeits‑Abfüllanlagen</p>
             </div>
             <div class="group flex flex-col items-center text-center p-6 rounded-xl bg-card/30 border border-border
@@ -1076,8 +1079,8 @@
                   <path d="M10 2c1 .5 2 2 2 5"></path>
                 </svg>
               </div>
-              <h3 class="font-display text-foreground-headline font-medium mb-1">Lebensmittel &amp; Molkereiprodukte</h3>
-              <p class="text-foreground text-xs">Hygienische Verpackungssysteme</p>
+              <h3 class="font-headline text-foreground-headline font-semibold mb-1">Lebensmittel &amp; Molkereiprodukte</h3>
+              <p class="text-foreground text-xs hyphens-auto">Hygienische Verpackungssysteme</p>
             </div>
             <div class="group flex flex-col items-center text-center p-6 rounded-xl bg-card/30 border border-border
                 hover:border-primary/50 hover:bg-card/60 transition-all duration-300">
@@ -1103,8 +1106,8 @@
                   <path d="M5 18H3"></path>
                 </svg>
               </div>
-                <h3 class="font-display text-foreground-headline font-medium mb-1">Kosmetik</h3>
-                <p class="text-foreground text-xs">Präzises Abfüllen &amp; Etikettieren</p>
+                <h3 class="font-headline text-foreground-headline font-semibold mb-1">Kosmetik</h3>
+                <p class="text-foreground text-xs hyphens-auto">Präzises Abfüllen &amp; Etikettieren</p>
             </div>
             <div class="group flex flex-col items-center text-center p-6 rounded-xl bg-card/30 border border-border
                 hover:border-primary/50 hover:bg-card/60 transition-all duration-300">
@@ -1128,8 +1131,8 @@
                   <path d="m7.5 4.27 9 5.15"></path>
                 </svg>
               </div>
-              <h3 class="font-display text-foreground-headline font-medium mb-1">E-Commerce</h3>
-              <p class="text-foreground text-xs">Automatisierte Auftragsbearbeitung</p>
+              <h3 class="font-headline text-foreground-headline font-semibold mb-1">E-Commerce</h3>
+              <p class="text-foreground text-xs hyphens-auto">Automatisierte Auftragsbearbeitung</p>
             </div>
             <div class="group flex flex-col items-center text-center p-6 rounded-xl bg-card/30 border border-border
                 hover:border-primary/50 hover:bg-card/60 transition-all duration-300">
@@ -1149,8 +1152,8 @@
                   <path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"></path>
                 </svg>
               </div>
-              <h3 class="font-display text-foreground-headline font-medium mb-1">Chemische Industrie</h3>
-              <p class="text-foreground text-xs">Für Gefahrstoffe zertifizierte Ausrüstung</p>
+              <h3 class="font-headline text-foreground-headline font-semibold mb-1">Chemische Industrie</h3>
+              <p class="text-foreground text-xs hyphens-auto">Für Gefahrstoffe zertifizierte Ausrüstung</p>
             </div>
           </div>
         </div>
@@ -1161,34 +1164,28 @@
         <div class="max-w-8xl mx-auto px-6">
           <div class="text-center mb-16">
 
-            <h2 class="font-headline font-bold text-4xl md:text-4xl text-foreground mb-4">Unsere Herstellerpartner</h2>
+            
             <p class="text-foreground text-xl max-w-2xl mx-auto font-light">Gemeinsam mit weltweit führenden Herstellern liefern wir
               zuverlässige und innovative Verpackungsmaschinen.</p>
           </div>
-          <div class="grid grid-cols-[200px] sm:grid-cols-[200px_200px_200px] gap-8 sm:gap-4 md:gap-8 justify-center">
-            <div class="group flex flex-col items-center p-6 rounded-xl bg-background border border-border hover:border-primary/20
-                hover:shadow-card transition-all duration-300">
-              <div class="max-w-28 h-12 mb-4 flex items-center justify-center">
+          <div class="flex flex-wrap gap-12 sm:gap-16 justify-center">
+            <div class="group flex flex-col items-center 
+               ">
+              <div class="max-w-28 h-12 flex items-center justify-center">
                 <img src="/eleventy-ev/assets/img/manufacturers/meurer.png" class="max-w-full max-h-full object-contain filter grayscale-100 group-hover:grayscale-0 transition-[filter] duration-300"/>
               </div>
-              <span class="text-sm font-medium text-foreground/90 group-hover:text-foreground hyphens-auto text-center font-headline tracking-wide">meurer
-                Verpackungssysteme GmbH
-              </span>
             </div>
-            <div class="group flex flex-col items-center p-6 rounded-xl bg-background border border-border hover:border-primary/20
-                hover:shadow-card transition-all duration-300">
-              <div class="max-w-20 h-12 mb-4 flex items-center justify-center w-full">
+            <div class="group flex flex-col items-center">
+              <div class="max-w-18 h-12 flex items-center justify-center w-full">
                 <img src="/eleventy-ev/assets/img/manufacturers/msk.svg" class=" max-w-full max-h-full object-contain filter grayscale-100 group-hover:grayscale-0 transition-[filter] duration-300"/>
               </div>
-              <span class="text-sm font-medium text-foreground/90 group-hover:text-foreground text-center font-headline tracking-wide">MSK Verpackungs-Systeme GmbH</span>
+          
             </div>
-             <div class="group flex flex-col items-center p-6 rounded-xl bg-background border border-border hover:border-primary/20
-                hover:shadow-card transition-all duration-300">
-              <div class="max-w-28 h-12 mb-4 flex items-center justify-center">
-                <img src="/eleventy-ev/assets/img/manufacturers/krone_ag.png" class="max-w-full max-h-full object-contain filter grayscale-100 group-hover:grayscale-0 transition-[filter] duration-300"/>
+             <div class="group flex flex-col items-center">
+              <div class="max-w-28 h-12 flex items-center justify-center">
+                <img src="/eleventy-ev/assets/img/manufacturers/itw_hartness.png" class="max-w-full max-h-full object-contain filter grayscale-100 group-hover:grayscale-0 transition-[filter] duration-300"/>
               </div>
-              <span class="text-sm font-medium text-foreground/90 group-hover:text-foreground hyphens-auto text-center font-headline tracking-wide">Krones AG
-              </span>
+            
             </div>
           </div>
         </div>
@@ -1351,7 +1348,7 @@
         <a class="inline-flex w-fit text-xl font-semibold focus:outline-hidden focus:opacity-80 mb-2" href="/eleventy-ev/" aria-label="Brand">
           <img src="/eleventy-ev/assets/logo/logo_full_transparent.png" alt="Logo" class="max-h-12 w-auto mr-2 inline-block align-middle">
         </a>
-        <p class="text-foreground text-sm mb-6 max-w-xs">Verpackungstechnik mit Erfahrung seit 1999.</p>
+        <p class="text-foreground text-sm mb-6 max-w-xs">Verpackungstechnik mit Erfahrung seit 1996.</p>
         <div class="flex gap-3">
           <a
             href="#"
