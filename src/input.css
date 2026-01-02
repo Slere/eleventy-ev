@@ -29,6 +29,7 @@
     --color-card: #ffffff;
     --shadow-card: 0 8px 30px -8px hsla(208, 56%, 26%, 0.12);
     --shadow-hover: 0 12px 40px -10px hsl(208 56% 26% / 0.2);
+    --shadow-soft: 0 4px 20px hsl(208 56% 26% / 0.08);
 
     --text-small: 0.9375rem;
     --text-headline: 2.125rem;

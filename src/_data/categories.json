@@ -4,7 +4,7 @@
             "name": "Folienverpackung",
             "description": "Folienverpackungen gehören zu den am weitesten verbreiteten Verpackungsarten weltweit. Sie bestehen überwiegend aus Kunststofffolien, die je nach Einsatzgebiet unterschiedliche Materialeigenschaften aufweisen.",
             "machines_count": 34,
-            "image": "/assets/img/sectors/folienverpackung.jpg",
+            "image": "/assets/img/machines/hochleistungs_einschlagmaschine.jpg",
             "url": "folienverpackung",
             "sub-categories": [
                 {
@@ -52,7 +52,7 @@
             "name": "Palettiersysteme",
             "description": "Automatisierte Palettiersysteme für präzises und leistungsstarkes Stapeln von Produkten. Flexibel anpassbar an verschiedene Formate und Produktionsanforderungen.",
             "machines_count": 1,
-            "image": "/assets/img/sectors/folienverpackung.jpg",
+            "image": "/assets/img/machines/pharma_maschine.jpg",
             "url": "palettiersysteme"
         },
         {
@@ -66,14 +66,14 @@
             "name": "Palettendefolierer",
             "description": "Effiziente Palettendefolierer zur automatischen Entfernung von Stretch- oder Schrumpffolie. Optimiert den Wareneingang und reduziert manuelle Arbeitsaufwände.",
             "machines_count": 1,
-            "image": "/assets/img/sectors/folienverpackung.jpg",
+            "image": "/assets/img/sectors/hero_banner_3.png",
             "url": "palettendefolierer"
         },
         {
             "name": "Kartonverpackung",
             "description": "Automatisierte Kartonverpackungssysteme für das Aufrichten, Befüllen und Verschließen von Kartons. Für hohe Durchsätze und gleichbleibend hohe Verpackungsqualität.",
             "machines_count": 2,
-            "image": "/assets/img/sectors/folienverpackung.jpg",
+            "image": "/assets/img/machines/kartonsammelpacker.jpg",
             "url": "kartonverpackung",
             "sub-categories": [
                 {
@@ -92,7 +92,7 @@
             "name": "Fördertechnik",
             "description": "Zuverlässige Fördertechnik für den sicheren und kontinuierlichen Transport Ihrer Produkte. Unsere Systeme lassen sich nahtlos in bestehende Verpackungslinien integrieren.",
             "machines_count": 1,
-            "image": "/assets/img/sectors/folienverpackung.jpg",
+            "image": "/assets/img/machines/index_machine.webp",
             "url": "foerdertechnik",
             "sub-categories": [
                 {
