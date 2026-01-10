@@ -4,14 +4,14 @@
       "name": "Folie",
       "description": "info folgt",
       "machines_count": 4,
-      "image": "/assets/img/machines/a11.png",
+      "image": "/assets/img/machines/A11.png",
       "url": "folie",
       "sub-categories": [
         {
           "name": "kontinuierlich",
           "description": "info folgt",
           "machines_count": 2,
-          "image": "/assets/img/machines/a12.webp",
+          "image": "/assets/img/machines/A12.webp",
           "url": "kontinuierlich",
           "machines": [
             {
@@ -32,7 +32,7 @@
           "name": "getaktet",
           "description": "info folgt",
           "machines_count": 2,
-          "image": "/assets/img/machines/a21.webp",
+          "image": "/assets/img/machines/A21.webp",
           "url": "getaktet",
           "machines": [
             {
@@ -55,14 +55,14 @@
       "name": "Karton",
       "description": "info folgt",
       "machines_count": 10,
-      "image": "/assets/img/machines/b11.webp",
+      "image": "/assets/img/machines/B11.webp",
       "url": "karton",
       "sub-categories": [
         {
           "name": "kontinuierlich",
           "description": "info folgt",
           "machines_count": 3,
-          "image": "/assets/img/machines/b13.webp",
+          "image": "/assets/img/machines/B13.webp",
           "url": "kontinuierlich",
           "machines": [
             { "name": "HTW Hochleistungstraypacker", "description": "info folgt", "image": "info folgt", "url": "htw-hochleistungstraypacker" },
@@ -74,7 +74,7 @@
           "name": "getaktet",
           "description": "info folgt",
           "machines_count": 2,
-          "image": "/assets/img/machines/b21.webp",
+          "image": "/assets/img/machines/B21.webp",
           "url": "getaktet",
           "machines": [
             { "name": "TP Traypacker", "description": "info folgt", "image": "info folgt", "url": "tp-traypacker" },
@@ -85,7 +85,7 @@
           "name": "Seitenkartonierer",
           "description": "info folgt",
           "machines_count": 4,
-          "image": "/assets/img/machines/b31.jpg",
+          "image": "/assets/img/machines/B31.jpg",
           "url": "seitenkartonierer",
           "machines": [
             { "name": "Maestro", "description": "info folgt", "image": "info folgt", "url": "maestro" },
@@ -129,7 +129,7 @@
       "name": "Papierverpackung",
       "description": "info folgt",
       "machines_count": 2,
-      "image": "/assets/img/machines/d12.png",
+      "image": "/assets/img/machines/D12.png",
       "url": "papierverpackung",
       "sub-categories": [
         {
@@ -168,14 +168,14 @@
       "name": "Speichersysteme",
       "description": "info folgt",
       "machines_count": 3,
-      "image": "/assets/img/machines/f22.png",
+      "image": "/assets/img/machines/F22.png",
       "url": "speichersysteme",
       "sub-categories": [
         {
           "name": "Formatgebunden",
           "description": "info folgt",
           "machines_count": 1,
-          "image": "/assets/img/machines/f11.jpg",
+          "image": "/assets/img/machines/F11.jpg",
           "url": "formatgebunden",
           "machines": [
             { "name": "HSP Speichertisch", "description": "info folgt", "image": "info folgt", "url": "hsp-speichertisch" }
@@ -185,7 +185,7 @@
           "name": "Formatvariabel",
           "description": "info folgt",
           "machines_count": 2,
-          "image": "/assets/img/machines/f22.png",
+          "image": "/assets/img/machines/F22.png",
           "url": "formatvariabel",
           "machines": [
             { "name": "Dynac", "description": "info folgt", "image": "info folgt", "url": "dynac" },
@@ -198,14 +198,14 @@
       "name": "Palettiersysteme",
       "description": "info folgt",
       "machines_count": 5,
-      "image": "/assets/img/machines/g23.webp",
+      "image": "/assets/img/machines/G23.webp",
       "url": "palettiersysteme",
       "sub-categories": [
         {
           "name": "Robotter",
           "description": "info folgt",
           "machines_count": 2,
-          "image": "/assets/img/machines/g12.jpg",
+          "image": "/assets/img/machines/G12.jpg",
           "url": "robotter",
           "machines": [
             { "name": "CSI", "description": "info folgt", "image": "info folgt", "url": "csi" },
@@ -216,7 +216,7 @@
           "name": "Lagenpalettierer",
           "description": "info folgt",
           "machines_count": 3,
-          "image": "/assets/img/machines/g23.webp",
+          "image": "/assets/img/machines/G23.webp",
           "url": "lagenpalettierer",
           "machines": [
             { "name": "CSI", "description": "info folgt", "image": "info folgt", "url": "csi-1" },
@@ -230,14 +230,14 @@
       "name": "Palettenverpackung",
       "description": "info folgt",
       "machines_count": 10,
-      "image": "/assets/img/machines/h31.jpg",
+      "image": "/assets/img/machines/H31.jpg",
       "url": "palettenverpackung",
       "sub-categories": [
         {
           "name": "Schrumpfhaube",
           "description": "info folgt",
           "machines_count": 5,
-          "image": "/assets/img/machines/h12.webp",
+          "image": "/assets/img/machines/H12.webp",
           "url": "schrumpfhaube",
           "machines": [
             { "name": "Multitech", "description": "info folgt", "image": "info folgt", "url": "multitech" },
@@ -251,7 +251,7 @@
           "name": "Spannhaube",
           "description": "info folgt",
           "machines_count": 1,
-          "image": "/assets/img/machines/h21.jpg",
+          "image": "/assets/img/machines/H21.jpg",
           "url": "spannhaube",
           "machines": [
             { "name": "Tensiontech", "description": "info folgt", "image": "info folgt", "url": "tensiontech" }
@@ -261,7 +261,7 @@
           "name": "Hybridanlage",
           "description": "info folgt",
           "machines_count": 1,
-          "image": "/assets/img/machines/h31.jpg",
+          "image": "/assets/img/machines/H31.jpg",
           "url": "hybridanlage",
           "machines": [
             { "name": "Spannhaube/Schrumpfen", "description": "info folgt", "image": "info folgt", "url": "spannhaube-schrumpfen" }
@@ -271,7 +271,7 @@
           "name": "Sicherung",
           "description": "info folgt",
           "machines_count": 1,
-          "image": "/assets/img/machines/h41A.jpg",
+          "image": "/assets/img/machines/H41A.jpg",
           "url": "sicherung",
           "machines": [
             { "name": "Palettenloop", "description": "info folgt", "image": "info folgt", "url": "palettenloop" }
@@ -290,7 +290,7 @@
           "name": "Gebindetransport",
           "description": "info folgt",
           "machines_count": 1,
-          "image": "/assets/img/machines/i11A.jpg",
+          "image": "/assets/img/machines/I11A.jpg",
           "url": "gebindetransport",
           "machines": [
             { "name": "für Gebinde", "description": "info folgt", "image": "info folgt", "url": "fuer-gebinde" }
@@ -312,7 +312,7 @@
       "name": "Defolierer",
       "description": "info folgt",
       "machines_count": 1,
-      "image": "/assets/img/machines/j11a.jpg",
+      "image": "/assets/img/machines/J11A.jpg",
       "url": "defolierer",
       "sub-categories": [
         {

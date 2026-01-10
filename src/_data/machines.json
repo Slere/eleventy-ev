@@ -16,7 +16,7 @@
           "2-bahnige Ausführung"
         ],
         "images": [
-          "/assets/img/machines/a11.png"
+          "/assets/img/machines/A11.png"
         ],
         "variants": [
           "D11"
@@ -39,7 +39,7 @@
           "1-6 Produkte einreihig und bis zu 3 reihig"
         ],
         "images": [
-          "/assets/img/machines/a12.webp"
+          "/assets/img/machines/A12.webp"
         ],
         "variants": [
           "B12",
@@ -72,7 +72,7 @@
           "Druckmarkensteuerung"
         ],
         "images": [
-          "/assets/img/machines/a21.webp"
+          "/assets/img/machines/A21.webp"
         ],
         "variants": [
           "A21"
@@ -95,7 +95,7 @@
           "Druckmarkensteuerung"
         ],
         "images": [
-          "/assets/img/machines/a22.webp"
+          "/assets/img/machines/A22.webp"
         ],
         "variants": [
           "A22"
@@ -126,7 +126,7 @@
           "Gefachemagazin"
         ],
         "images": [
-          "/assets/img/machines/b11.webp"
+          "/assets/img/machines/B11.webp"
         ],
         "variants": [
           "B11"
@@ -146,7 +146,7 @@
           "1-6 Produkte einreihig oder 2 reihig"
         ],
         "images": [
-          "/assets/img/machines/b12.png"
+          "/assets/img/machines/B12.png"
         ],
         "variants": [
           "B12"
@@ -166,7 +166,7 @@
           "1-6 Produkte einreihig oder 2 reihig"
         ],
         "images": [
-          "/assets/img/machines/b13.webp"
+          "/assets/img/machines/B13.webp"
         ],
         "variants": [
           "B13"
@@ -197,7 +197,7 @@
           "Gefachemagazin"
         ],
         "images": [
-          "/assets/img/machines/b21.webp"
+          "/assets/img/machines/B21.webp"
         ],
         "variants": [
           "B21"
@@ -214,7 +214,7 @@
         "description": "INFO folgt",
         "features_list": [],
         "images": [
-          "/assets/img/machines/b22.webp"
+          "/assets/img/machines/B22.webp"
         ],
         "variants": [
           "B22"
@@ -239,7 +239,7 @@
         "description": "INFO folgt",
         "features_list": [],
         "images": [
-          "/assets/img/machines/b31.jpg"
+          "/assets/img/machines/B31.jpg"
         ],
         "variants": [
           "B31"
@@ -256,7 +256,7 @@
         "description": "INFO folgt",
         "features_list": [],
         "images": [
-          "/assets/img/machines/b32.jpg"
+          "/assets/img/machines/B32.jpg"
         ],
         "variants": [
           "B32"
@@ -273,7 +273,7 @@
         "description": "INFO folgt",
         "features_list": [],
         "images": [
-          "/assets/img/machines/b33.jpg"
+          "/assets/img/machines/B33.jpg"
         ],
         "variants": [
           "B33"
@@ -290,7 +290,7 @@
         "description": "INFO folgt",
         "features_list": [],
         "images": [
-          "/assets/img/machines/b34.jpg"
+          "/assets/img/machines/B34.jpg"
         ],
         "variants": [
           "B34"
@@ -315,7 +315,7 @@
         "description": "INFO folgt",
         "features_list": [],
         "images": [
-          "/assets/img/machines/b41.png"
+          "/assets/img/machines/B41.png"
         ],
         "variants": [
           "B41"
@@ -340,7 +340,7 @@
         "description": "in Verbindung mit dem HTW oder FILMLINE kann ohne Einsatz von Formatteilen auf Knopfdruck innerhalb von nur 60 sec. auf Gebinde vollautomatisch ohne Tray umgestellt werden. Somit sind nachstehende Gebinde mit einer Anlage möglich - Wrap/Arround (mit und ohne Folie) - Tray mit Folie (mit und ohne Folie) - nur Folie (ohne Karton)",
         "features_list": [],
         "images": [
-          "/assets/img/machines/c11.png"
+          "/assets/img/machines/C11.png"
         ],
         "variants": [
           "C11"
@@ -368,7 +368,7 @@
           "Verklebung mit Hotmelt"
         ],
         "images": [
-          "/assets/img/machines/d11.webp"
+          "/assets/img/machines/D11.webp"
         ],
         "variants": [
           "D11"
@@ -388,7 +388,7 @@
           "1-6 Produkte einreihig oder 2 reihig"
         ],
         "images": [
-          "/assets/img/machines/d12.png"
+          "/assets/img/machines/D12.png"
         ],
         "variants": [
           "D12"
@@ -413,7 +413,7 @@
         "description": "INFO folgt",
         "features_list": [],
         "images": [
-          "/assets/img/machines/e11.png"
+          "/assets/img/machines/E11.png"
         ],
         "variants": [
           "E11"
@@ -441,7 +441,7 @@
           "variable Staukapazität einstellbar in beide Richtungen"
         ],
         "images": [
-          "/assets/img/machines/f11.jpg"
+          "/assets/img/machines/F11.jpg"
         ],
         "variants": [
           "F11"
@@ -469,7 +469,7 @@
           "variable Staukapazität einstellbar in beide Richtungen"
         ],
         "images": [
-          "/assets/img/machines/f21.jpg"
+          "/assets/img/machines/F21.jpg"
         ],
         "variants": [
           "F21"
@@ -486,7 +486,7 @@
         "description": "Produktspeichersystem in verschiedenen Größen und längen. Produktstau Drucklos, welches die Taktleistung davor- und nachgeschalteter Maschinen ausgleicht und so den Wirkungsfrad der Linie deutlich erhöht. Für Mikrostörungen (zB. Etikettenwechsel) bestens geeignet um die Linie nicht abschalten zu müssen.",
         "features_list": [],
         "images": [
-          "/assets/img/machines/f22.png"
+          "/assets/img/machines/F22.png"
         ],
         "variants": [
           "F22"
@@ -517,7 +517,7 @@
           "Folienwickler integrierbar"
         ],
         "images": [
-          "/assets/img/machines/g11.png"
+          "/assets/img/machines/G11.png"
         ],
         "variants": [
           "G11"
@@ -534,7 +534,7 @@
         "description": "INFO folgt",
         "features_list": [],
         "images": [
-          "/assets/img/machines/g12.jpg"
+          "/assets/img/machines/G12.jpg"
         ],
         "variants": [
           "G12"
@@ -564,7 +564,7 @@
           "Verarbeitung von Tray´s mit Stapelnasen"
         ],
         "images": [
-          "/assets/img/machines/g21.png"
+          "/assets/img/machines/G21.png"
         ],
         "variants": [
           "G21"
@@ -586,7 +586,7 @@
           "Verarbeitung von Tray´s mit Stapelnasen"
         ],
         "images": [
-          "/assets/img/machines/g22.png"
+          "/assets/img/machines/G22.png"
         ],
         "variants": [
           "G22"
@@ -603,7 +603,7 @@
         "description": "INFO folgt",
         "features_list": [],
         "images": [
-          "/assets/img/machines/g23.webp"
+          "/assets/img/machines/G23.webp"
         ],
         "variants": [
           "G23"
@@ -628,7 +628,7 @@
         "description": "INFO folgt",
         "features_list": [],
         "images": [
-          "/assets/img/machines/h11.jpg"
+          "/assets/img/machines/H11.jpg"
         ],
         "variants": [
           "H11"
@@ -645,7 +645,7 @@
         "description": "INFO folgt",
         "features_list": [],
         "images": [
-          "/assets/img/machines/h12.webp"
+          "/assets/img/machines/H12.webp"
         ],
         "variants": [
           "H12"
@@ -662,7 +662,7 @@
         "description": "INFO folgt",
         "features_list": [],
         "images": [
-          "/assets/img/machines/h13.jpg"
+          "/assets/img/machines/H13.jpg"
         ],
         "variants": [
           "H13"
@@ -679,7 +679,7 @@
         "description": "INFO folgt",
         "features_list": [],
         "images": [
-          "/assets/img/machines/h14.jpg"
+          "/assets/img/machines/H14.jpg"
         ],
         "variants": [
           "H14"
@@ -696,7 +696,7 @@
         "description": "INFO folgt",
         "features_list": [],
         "images": [
-          "/assets/img/machines/h15.jpg"
+          "/assets/img/machines/H15.jpg"
         ],
         "variants": [
           "H15"
@@ -721,7 +721,7 @@
         "description": "INFO folgt",
         "features_list": [],
         "images": [
-          "/assets/img/machines/h21.jpg"
+          "/assets/img/machines/H21.jpg"
         ],
         "variants": [
           "H21"
@@ -746,7 +746,7 @@
         "description": "INFO folgt",
         "features_list": [],
         "images": [
-          "/assets/img/machines/h31.jpg"
+          "/assets/img/machines/H31.jpg"
         ],
         "variants": [
           "H31"
@@ -771,8 +771,8 @@
         "description": "INFO folgt",
         "features_list": [],
         "images": [
-          "/assets/img/machines/h41A.jpg",
-          "/assets/img/machines/h41B.jpg"
+          "/assets/img/machines/H41A.jpg",
+          "/assets/img/machines/H41B.jpg"
         ],
         "variants": [
           "H41"
@@ -797,9 +797,9 @@
         "description": "INFO folgt",
         "features_list": [],
         "images": [
-          "/assets/img/machines/i11A.jpg",
-          "/assets/img/machines/i11B.jpg",
-          "/assets/img/machines/i11C.jpg"
+          "/assets/img/machines/I11A.jpg",
+          "/assets/img/machines/I11B.jpg",
+          "/assets/img/machines/I11C.jpg"
         ],
         "variants": [
           "I11"
@@ -849,8 +849,8 @@
         "description": "INFO folgt",
         "features_list": [],
         "images": [
-          "/assets/img/machines/j11a.jpg",
-          "/assets/img/machines/j11b.jpg"
+          "/assets/img/machines/J11a.jpg",
+          "/assets/img/machines/J11b.jpg"
         ],
         "variants": [
           "J11"
@@ -875,7 +875,7 @@
         "description": "info folgt",
         "features_list": [],
         "images": [
-          "/assets/img/machines/k11.png"
+          "/assets/img/machines/K11.png"
         ],
         "variants": [
           "K11"
