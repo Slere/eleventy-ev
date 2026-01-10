@@ -38,12 +38,12 @@
 </script>
 <header
   id="site-header"
-  class="flex flex-wrap md:justify-start md:flex-nowrap w-full py-3 fixed min-h-18 top-0 z-50 transition-colors
-    duration-300 bg-transparent shadow-none /* Scroll state */ has-[#header-navbar.is-out-of-view]:bg-white
-    has-[#header-navbar.is-out-of-view]:shadow-md /* Mobile menu open overrides */ has-[#hs-navbar-example.open]:bg-white
-    has-[#hs-navbar-example.open]:shadow-md /* Desktop keeps transparent even if menu open */
-    md:has-[#hs-navbar-example.open]:bg-transparent md:has-[#hs-navbar-example.open]:shadow-none">
-  <nav class="max-w-8xl w-full mx-auto px-6 md:flex md:items-center md:justify-between" id="header-navbar">
+  class="flex flex-wrap md:justify-start shadow-xs md:flex-nowrap w-full py-3 fixed min-h-18 top-0 z-50
+         bg-white transition-shadow duration-300
+         has-[#header-navbar.is-out-of-view]:shadow-md ">
+  <nav
+  class="max-w-8xl w-full mx-auto px-6 md:flex md:items-center md:justify-between"
+  id="header-navbar">
     <div class="flex items-center justify-between shrink-0">
       <a class="flex-none w-fit text-xl font-semibold focus:outline-hidden focus:opacity-80" href="/eleventy-ev/" aria-label="Brand">
         <img src="/eleventy-ev/assets/logo/logo_full_transparent.png" alt="Logo" class="max-h-12 w-auto mr-2 inline-block align-middle"></a>
@@ -151,7 +151,7 @@
                 <div
                   class="md:relative hs-dropdown hs-dropdown-hover [--strategy:static] md:[--trigger:hover] md:[--adaptive:adaptive]">
                   <!-- Trigger -->
-                  <a href="/eleventy-ev/maschinen/folienverpackung/" class=" flex items-center gap-3 p-3 rounded-lg hover:bg-muted transition-colors text-foreground-muted">
+                  <a href="/eleventy-ev/maschinen/folie/" class=" flex items-center gap-3 p-3 rounded-lg hover:bg-muted transition-colors text-foreground-muted">
                     <div
                       class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
                       <svg
@@ -170,95 +170,7 @@
                     </div>
                     <div class="flex-1">
                       <p class="font-medium text-sm text-foreground-headline">
-                        Folienverpackung
-                      </p>
-                      <p class="text-xs text-foreground-muted">
-                        34&nbsp;Maschinen
-                      </p>
-                    </div>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="size-4 hidden md:block"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2">
-                      <path d="m9 18 6-6-6-6"/>
-                    </svg>
-                    <p class="text-xs text-foreground-muted md:hidden">2&nbsp;Unterkategorien</p>
-                  </a>
-                  <!-- Dropdown -->
-                  <div class="hs-dropdown-menu md:absolute left-full top-0 pl-2 hidden min-w-48 z-10">
-                    <div class="border-border p-2 shadow-lg border rounded-lg bg-background">
-                      
-                      <a href="/eleventy-ev/maschinen/folienverpackung/bündelpacker/" class="block rounded-md px-3 py-2 text-sm hover:bg-muted">
-                        <div>
-                          <p class="font-medium text-foreground-headline text-sm">Bündelpacker</p>
-                          <p class="text-xs text-foreground-muted">17&nbsp;Maschinen</p>
-                        </div>
-                      </a>
-                      
-                      <a href="/eleventy-ev/maschinen/folienverpackung/gebindepacker/" class="block rounded-md px-3 py-2 text-sm hover:bg-muted">
-                        <div>
-                          <p class="font-medium text-foreground-headline text-sm">Gebindepacker</p>
-                          <p class="text-xs text-foreground-muted">17&nbsp;Maschinen</p>
-                        </div>
-                      </a>
-                      
-                     
-                    </div>
-                  </div>
-                </div>
-                
-                
-                
-                <a href="/eleventy-ev/maschinen/speichersysteme/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-muted transition-colors text-foreground-muted">
-                  <div class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="lucide lucide-package-icon lucide-package size-4"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1
-                        1.73z"/><path d="M12 22V12"/><polyline points="3.29 7 12 12 20.71 7"/><path d="m7.5 4.27 9 5.15"/>
-                    </svg>
-                  </div>
-                  <div class="flex-1">
-                    <p class="font-medium text-foreground-headline text-sm">Speichersysteme</p>
-                    <p class="text-xs text-foreground-muted"> 1&nbsp;Maschine</p>
-                  </div>
-                </a>
-                
-                
-                
-                <div
-                  class="md:relative hs-dropdown hs-dropdown-hover [--strategy:static] md:[--trigger:hover] md:[--adaptive:adaptive]">
-                  <!-- Trigger -->
-                  <a href="/eleventy-ev/maschinen/papierverpackung/" class=" flex items-center gap-3 p-3 rounded-lg hover:bg-muted transition-colors text-foreground-muted">
-                    <div
-                      class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
-                      <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="lucide lucide-package-icon lucide-package size-4"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1
-                        1.73z"/><path d="M12 22V12"/><polyline points="3.29 7 12 12 20.71 7"/><path d="m7.5 4.27 9 5.15"/>
-                    </svg>
-                    </div>
-                    <div class="flex-1">
-                      <p class="font-medium text-sm text-foreground-headline">
-                        Papierverpackung
+                        Folie
                       </p>
                       <p class="text-xs text-foreground-muted">
                         4&nbsp;Maschinen
@@ -279,16 +191,16 @@
                   <div class="hs-dropdown-menu md:absolute left-full top-0 pl-2 hidden min-w-48 z-10">
                     <div class="border-border p-2 shadow-lg border rounded-lg bg-background">
                       
-                      <a href="/eleventy-ev/maschinen/papierverpackung/bündelpacker/" class="block rounded-md px-3 py-2 text-sm hover:bg-muted">
+                      <a href="/eleventy-ev/maschinen/folie/kontinuierlich/" class="block rounded-md px-3 py-2 text-sm hover:bg-muted">
                         <div>
-                          <p class="font-medium text-foreground-headline text-sm">Bündelpacker</p>
+                          <p class="font-medium text-foreground-headline text-sm">kontinuierlich</p>
                           <p class="text-xs text-foreground-muted">2&nbsp;Maschinen</p>
                         </div>
                       </a>
                       
-                      <a href="/eleventy-ev/maschinen/papierverpackung/gebindepacker/" class="block rounded-md px-3 py-2 text-sm hover:bg-muted">
+                      <a href="/eleventy-ev/maschinen/folie/getaktet/" class="block rounded-md px-3 py-2 text-sm hover:bg-muted">
                         <div>
-                          <p class="font-medium text-foreground-headline text-sm">Gebindepacker</p>
+                          <p class="font-medium text-foreground-headline text-sm">getaktet</p>
                           <p class="text-xs text-foreground-muted">2&nbsp;Maschinen</p>
                         </div>
                       </a>
@@ -300,82 +212,10 @@
                 
                 
                 
-                <a href="/eleventy-ev/maschinen/palettiersysteme/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-muted transition-colors text-foreground-muted">
-                  <div class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="lucide lucide-package-icon lucide-package size-4"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1
-                        1.73z"/><path d="M12 22V12"/><polyline points="3.29 7 12 12 20.71 7"/><path d="m7.5 4.27 9 5.15"/>
-                    </svg>
-                  </div>
-                  <div class="flex-1">
-                    <p class="font-medium text-foreground-headline text-sm">Palettiersysteme</p>
-                    <p class="text-xs text-foreground-muted"> 1&nbsp;Maschine</p>
-                  </div>
-                </a>
-                
-                
-                
-                <a href="/eleventy-ev/maschinen/pallettenverpackung/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-muted transition-colors text-foreground-muted">
-                  <div class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="lucide lucide-package-icon lucide-package size-4"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1
-                        1.73z"/><path d="M12 22V12"/><polyline points="3.29 7 12 12 20.71 7"/><path d="m7.5 4.27 9 5.15"/>
-                    </svg>
-                  </div>
-                  <div class="flex-1">
-                    <p class="font-medium text-foreground-headline text-sm">Palettenverpackung</p>
-                    <p class="text-xs text-foreground-muted"> 1&nbsp;Maschine</p>
-                  </div>
-                </a>
-                
-                
-                
-                <a href="/eleventy-ev/maschinen/palettendefolierer/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-muted transition-colors text-foreground-muted">
-                  <div class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="lucide lucide-package-icon lucide-package size-4"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1
-                        1.73z"/><path d="M12 22V12"/><polyline points="3.29 7 12 12 20.71 7"/><path d="m7.5 4.27 9 5.15"/>
-                    </svg>
-                  </div>
-                  <div class="flex-1">
-                    <p class="font-medium text-foreground-headline text-sm">Palettendefolierer</p>
-                    <p class="text-xs text-foreground-muted"> 1&nbsp;Maschine</p>
-                  </div>
-                </a>
-                
-                
-                
                 <div
                   class="md:relative hs-dropdown hs-dropdown-hover [--strategy:static] md:[--trigger:hover] md:[--adaptive:adaptive]">
                   <!-- Trigger -->
-                  <a href="/eleventy-ev/maschinen/kartonverpackung/" class=" flex items-center gap-3 p-3 rounded-lg hover:bg-muted transition-colors text-foreground-muted">
+                  <a href="/eleventy-ev/maschinen/karton/" class=" flex items-center gap-3 p-3 rounded-lg hover:bg-muted transition-colors text-foreground-muted">
                     <div
                       class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
                       <svg
@@ -394,10 +234,10 @@
                     </div>
                     <div class="flex-1">
                       <p class="font-medium text-sm text-foreground-headline">
-                        Kartonverpackung
+                        Karton
                       </p>
                       <p class="text-xs text-foreground-muted">
-                        2&nbsp;Maschinen
+                        10&nbsp;Maschinen
                       </p>
                     </div>
                     <svg
@@ -409,87 +249,37 @@
                       stroke-width="2">
                       <path d="m9 18 6-6-6-6"/>
                     </svg>
-                    <p class="text-xs text-foreground-muted md:hidden">2&nbsp;Unterkategorien</p>
+                    <p class="text-xs text-foreground-muted md:hidden">4&nbsp;Unterkategorien</p>
                   </a>
                   <!-- Dropdown -->
                   <div class="hs-dropdown-menu md:absolute left-full top-0 pl-2 hidden min-w-48 z-10">
                     <div class="border-border p-2 shadow-lg border rounded-lg bg-background">
                       
-                      <a href="/eleventy-ev/maschinen/kartonverpackung/bündelpacker/" class="block rounded-md px-3 py-2 text-sm hover:bg-muted">
+                      <a href="/eleventy-ev/maschinen/karton/kontinuierlich/" class="block rounded-md px-3 py-2 text-sm hover:bg-muted">
                         <div>
-                          <p class="font-medium text-foreground-headline text-sm">Bündelpacker</p>
+                          <p class="font-medium text-foreground-headline text-sm">kontinuierlich</p>
+                          <p class="text-xs text-foreground-muted">3&nbsp;Maschinen</p>
+                        </div>
+                      </a>
+                      
+                      <a href="/eleventy-ev/maschinen/karton/getaktet/" class="block rounded-md px-3 py-2 text-sm hover:bg-muted">
+                        <div>
+                          <p class="font-medium text-foreground-headline text-sm">getaktet</p>
+                          <p class="text-xs text-foreground-muted">2&nbsp;Maschinen</p>
+                        </div>
+                      </a>
+                      
+                      <a href="/eleventy-ev/maschinen/karton/seitenkartonierer/" class="block rounded-md px-3 py-2 text-sm hover:bg-muted">
+                        <div>
+                          <p class="font-medium text-foreground-headline text-sm">Seitenkartonierer</p>
+                          <p class="text-xs text-foreground-muted">4&nbsp;Maschinen</p>
+                        </div>
+                      </a>
+                      
+                      <a href="/eleventy-ev/maschinen/karton/aufrichter/" class="block rounded-md px-3 py-2 text-sm hover:bg-muted">
+                        <div>
+                          <p class="font-medium text-foreground-headline text-sm">Aufrichter</p>
                           <p class="text-xs text-foreground-muted">1&nbsp;Maschine</p>
-                        </div>
-                      </a>
-                      
-                      <a href="/eleventy-ev/maschinen/kartonverpackung/gebindepacker/" class="block rounded-md px-3 py-2 text-sm hover:bg-muted">
-                        <div>
-                          <p class="font-medium text-foreground-headline text-sm">Gebindepacker</p>
-                          <p class="text-xs text-foreground-muted">1&nbsp;Maschine</p>
-                        </div>
-                      </a>
-                      
-                     
-                    </div>
-                  </div>
-                </div>
-                
-                
-                
-                <div
-                  class="md:relative hs-dropdown hs-dropdown-hover [--strategy:static] md:[--trigger:hover] md:[--adaptive:adaptive]">
-                  <!-- Trigger -->
-                  <a href="/eleventy-ev/maschinen/foerdertechnik/" class=" flex items-center gap-3 p-3 rounded-lg hover:bg-muted transition-colors text-foreground-muted">
-                    <div
-                      class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
-                      <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="lucide lucide-package-icon lucide-package size-4"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1
-                        1.73z"/><path d="M12 22V12"/><polyline points="3.29 7 12 12 20.71 7"/><path d="m7.5 4.27 9 5.15"/>
-                    </svg>
-                    </div>
-                    <div class="flex-1">
-                      <p class="font-medium text-sm text-foreground-headline">
-                        Fördertechnik
-                      </p>
-                      <p class="text-xs text-foreground-muted">
-                        1&nbsp;Maschine
-                      </p>
-                    </div>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="size-4 hidden md:block"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2">
-                      <path d="m9 18 6-6-6-6"/>
-                    </svg>
-                    <p class="text-xs text-foreground-muted md:hidden">2&nbsp;Unterkategorien</p>
-                  </a>
-                  <!-- Dropdown -->
-                  <div class="hs-dropdown-menu md:absolute left-full top-0 pl-2 hidden min-w-48 z-10">
-                    <div class="border-border p-2 shadow-lg border rounded-lg bg-background">
-                      
-                      <a href="/eleventy-ev/maschinen/foerdertechnik/bündelpacker/" class="block rounded-md px-3 py-2 text-sm hover:bg-muted">
-                        <div>
-                          <p class="font-medium text-foreground-headline text-sm">Produkt</p>
-                          <p class="text-xs text-foreground-muted">17&nbsp;Maschinen</p>
-                        </div>
-                      </a>
-                      
-                      <a href="/eleventy-ev/maschinen/foerdertechnik/gebindepacker/" class="block rounded-md px-3 py-2 text-sm hover:bg-muted">
-                        <div>
-                          <p class="font-medium text-foreground-headline text-sm">Palette</p>
-                          <p class="text-xs text-foreground-muted">17&nbsp;Maschinen</p>
                         </div>
                       </a>
                       
@@ -518,6 +308,372 @@
                   </div>
                   <div class="flex-1">
                     <p class="font-medium text-foreground-headline text-sm">Folie/Karton</p>
+                    <p class="text-xs text-foreground-muted"> 1&nbsp;Maschine</p>
+                  </div>
+                </a>
+                
+                
+                
+                <a href="/eleventy-ev/maschinen/papierverpackung/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-muted transition-colors text-foreground-muted">
+                  <div class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-package-icon lucide-package size-4"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1
+                        1.73z"/><path d="M12 22V12"/><polyline points="3.29 7 12 12 20.71 7"/><path d="m7.5 4.27 9 5.15"/>
+                    </svg>
+                  </div>
+                  <div class="flex-1">
+                    <p class="font-medium text-foreground-headline text-sm">Papierverpackung</p>
+                    <p class="text-xs text-foreground-muted"> 2&nbsp;Maschinen</p>
+                  </div>
+                </a>
+                
+                
+                
+                <a href="/eleventy-ev/maschinen/tragegriff/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-muted transition-colors text-foreground-muted">
+                  <div class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-package-icon lucide-package size-4"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1
+                        1.73z"/><path d="M12 22V12"/><polyline points="3.29 7 12 12 20.71 7"/><path d="m7.5 4.27 9 5.15"/>
+                    </svg>
+                  </div>
+                  <div class="flex-1">
+                    <p class="font-medium text-foreground-headline text-sm">Tragegriff</p>
+                    <p class="text-xs text-foreground-muted"> 1&nbsp;Maschine</p>
+                  </div>
+                </a>
+                
+                
+                
+                <div
+                  class="md:relative hs-dropdown hs-dropdown-hover [--strategy:static] md:[--trigger:hover] md:[--adaptive:adaptive]">
+                  <!-- Trigger -->
+                  <a href="/eleventy-ev/maschinen/speichersysteme/" class=" flex items-center gap-3 p-3 rounded-lg hover:bg-muted transition-colors text-foreground-muted">
+                    <div
+                      class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+                      <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-package-icon lucide-package size-4"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1
+                        1.73z"/><path d="M12 22V12"/><polyline points="3.29 7 12 12 20.71 7"/><path d="m7.5 4.27 9 5.15"/>
+                    </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="font-medium text-sm text-foreground-headline">
+                        Speichersysteme
+                      </p>
+                      <p class="text-xs text-foreground-muted">
+                        3&nbsp;Maschinen
+                      </p>
+                    </div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="size-4 hidden md:block"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2">
+                      <path d="m9 18 6-6-6-6"/>
+                    </svg>
+                    <p class="text-xs text-foreground-muted md:hidden">2&nbsp;Unterkategorien</p>
+                  </a>
+                  <!-- Dropdown -->
+                  <div class="hs-dropdown-menu md:absolute left-full top-0 pl-2 hidden min-w-48 z-10">
+                    <div class="border-border p-2 shadow-lg border rounded-lg bg-background">
+                      
+                      <a href="/eleventy-ev/maschinen/speichersysteme/formatgebunden/" class="block rounded-md px-3 py-2 text-sm hover:bg-muted">
+                        <div>
+                          <p class="font-medium text-foreground-headline text-sm">Formatgebunden</p>
+                          <p class="text-xs text-foreground-muted">1&nbsp;Maschine</p>
+                        </div>
+                      </a>
+                      
+                      <a href="/eleventy-ev/maschinen/speichersysteme/formatvariabel/" class="block rounded-md px-3 py-2 text-sm hover:bg-muted">
+                        <div>
+                          <p class="font-medium text-foreground-headline text-sm">Formatvariabel</p>
+                          <p class="text-xs text-foreground-muted">2&nbsp;Maschinen</p>
+                        </div>
+                      </a>
+                      
+                     
+                    </div>
+                  </div>
+                </div>
+                
+                
+                
+                <div
+                  class="md:relative hs-dropdown hs-dropdown-hover [--strategy:static] md:[--trigger:hover] md:[--adaptive:adaptive]">
+                  <!-- Trigger -->
+                  <a href="/eleventy-ev/maschinen/palettiersysteme/" class=" flex items-center gap-3 p-3 rounded-lg hover:bg-muted transition-colors text-foreground-muted">
+                    <div
+                      class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+                      <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-package-icon lucide-package size-4"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1
+                        1.73z"/><path d="M12 22V12"/><polyline points="3.29 7 12 12 20.71 7"/><path d="m7.5 4.27 9 5.15"/>
+                    </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="font-medium text-sm text-foreground-headline">
+                        Palettiersysteme
+                      </p>
+                      <p class="text-xs text-foreground-muted">
+                        5&nbsp;Maschinen
+                      </p>
+                    </div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="size-4 hidden md:block"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2">
+                      <path d="m9 18 6-6-6-6"/>
+                    </svg>
+                    <p class="text-xs text-foreground-muted md:hidden">2&nbsp;Unterkategorien</p>
+                  </a>
+                  <!-- Dropdown -->
+                  <div class="hs-dropdown-menu md:absolute left-full top-0 pl-2 hidden min-w-48 z-10">
+                    <div class="border-border p-2 shadow-lg border rounded-lg bg-background">
+                      
+                      <a href="/eleventy-ev/maschinen/palettiersysteme/robotter/" class="block rounded-md px-3 py-2 text-sm hover:bg-muted">
+                        <div>
+                          <p class="font-medium text-foreground-headline text-sm">Robotter</p>
+                          <p class="text-xs text-foreground-muted">2&nbsp;Maschinen</p>
+                        </div>
+                      </a>
+                      
+                      <a href="/eleventy-ev/maschinen/palettiersysteme/lagenpalettierer/" class="block rounded-md px-3 py-2 text-sm hover:bg-muted">
+                        <div>
+                          <p class="font-medium text-foreground-headline text-sm">Lagenpalettierer</p>
+                          <p class="text-xs text-foreground-muted">3&nbsp;Maschinen</p>
+                        </div>
+                      </a>
+                      
+                     
+                    </div>
+                  </div>
+                </div>
+                
+                
+                
+                <div
+                  class="md:relative hs-dropdown hs-dropdown-hover [--strategy:static] md:[--trigger:hover] md:[--adaptive:adaptive]">
+                  <!-- Trigger -->
+                  <a href="/eleventy-ev/maschinen/palettenverpackung/" class=" flex items-center gap-3 p-3 rounded-lg hover:bg-muted transition-colors text-foreground-muted">
+                    <div
+                      class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+                      <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-package-icon lucide-package size-4"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1
+                        1.73z"/><path d="M12 22V12"/><polyline points="3.29 7 12 12 20.71 7"/><path d="m7.5 4.27 9 5.15"/>
+                    </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="font-medium text-sm text-foreground-headline">
+                        Palettenverpackung
+                      </p>
+                      <p class="text-xs text-foreground-muted">
+                        10&nbsp;Maschinen
+                      </p>
+                    </div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="size-4 hidden md:block"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2">
+                      <path d="m9 18 6-6-6-6"/>
+                    </svg>
+                    <p class="text-xs text-foreground-muted md:hidden">4&nbsp;Unterkategorien</p>
+                  </a>
+                  <!-- Dropdown -->
+                  <div class="hs-dropdown-menu md:absolute left-full top-0 pl-2 hidden min-w-48 z-10">
+                    <div class="border-border p-2 shadow-lg border rounded-lg bg-background">
+                      
+                      <a href="/eleventy-ev/maschinen/palettenverpackung/schrumpfhaube/" class="block rounded-md px-3 py-2 text-sm hover:bg-muted">
+                        <div>
+                          <p class="font-medium text-foreground-headline text-sm">Schrumpfhaube</p>
+                          <p class="text-xs text-foreground-muted">5&nbsp;Maschinen</p>
+                        </div>
+                      </a>
+                      
+                      <a href="/eleventy-ev/maschinen/palettenverpackung/spannhaube/" class="block rounded-md px-3 py-2 text-sm hover:bg-muted">
+                        <div>
+                          <p class="font-medium text-foreground-headline text-sm">Spannhaube</p>
+                          <p class="text-xs text-foreground-muted">1&nbsp;Maschine</p>
+                        </div>
+                      </a>
+                      
+                      <a href="/eleventy-ev/maschinen/palettenverpackung/hybridanlage/" class="block rounded-md px-3 py-2 text-sm hover:bg-muted">
+                        <div>
+                          <p class="font-medium text-foreground-headline text-sm">Hybridanlage</p>
+                          <p class="text-xs text-foreground-muted">1&nbsp;Maschine</p>
+                        </div>
+                      </a>
+                      
+                      <a href="/eleventy-ev/maschinen/palettenverpackung/sicherung/" class="block rounded-md px-3 py-2 text-sm hover:bg-muted">
+                        <div>
+                          <p class="font-medium text-foreground-headline text-sm">Sicherung</p>
+                          <p class="text-xs text-foreground-muted">1&nbsp;Maschine</p>
+                        </div>
+                      </a>
+                      
+                     
+                    </div>
+                  </div>
+                </div>
+                
+                
+                
+                <div
+                  class="md:relative hs-dropdown hs-dropdown-hover [--strategy:static] md:[--trigger:hover] md:[--adaptive:adaptive]">
+                  <!-- Trigger -->
+                  <a href="/eleventy-ev/maschinen/fördertechnik/" class=" flex items-center gap-3 p-3 rounded-lg hover:bg-muted transition-colors text-foreground-muted">
+                    <div
+                      class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+                      <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-package-icon lucide-package size-4"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1
+                        1.73z"/><path d="M12 22V12"/><polyline points="3.29 7 12 12 20.71 7"/><path d="m7.5 4.27 9 5.15"/>
+                    </svg>
+                    </div>
+                    <div class="flex-1">
+                      <p class="font-medium text-sm text-foreground-headline">
+                        Fördertechnik
+                      </p>
+                      <p class="text-xs text-foreground-muted">
+                        2&nbsp;Maschinen
+                      </p>
+                    </div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="size-4 hidden md:block"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2">
+                      <path d="m9 18 6-6-6-6"/>
+                    </svg>
+                    <p class="text-xs text-foreground-muted md:hidden">2&nbsp;Unterkategorien</p>
+                  </a>
+                  <!-- Dropdown -->
+                  <div class="hs-dropdown-menu md:absolute left-full top-0 pl-2 hidden min-w-48 z-10">
+                    <div class="border-border p-2 shadow-lg border rounded-lg bg-background">
+                      
+                      <a href="/eleventy-ev/maschinen/fördertechnik/gebindetransport/" class="block rounded-md px-3 py-2 text-sm hover:bg-muted">
+                        <div>
+                          <p class="font-medium text-foreground-headline text-sm">Gebindetransport</p>
+                          <p class="text-xs text-foreground-muted">1&nbsp;Maschine</p>
+                        </div>
+                      </a>
+                      
+                      <a href="/eleventy-ev/maschinen/fördertechnik/palettentransport/" class="block rounded-md px-3 py-2 text-sm hover:bg-muted">
+                        <div>
+                          <p class="font-medium text-foreground-headline text-sm">Palettentransport</p>
+                          <p class="text-xs text-foreground-muted">1&nbsp;Maschine</p>
+                        </div>
+                      </a>
+                      
+                     
+                    </div>
+                  </div>
+                </div>
+                
+                
+                
+                <a href="/eleventy-ev/maschinen/defolierer/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-muted transition-colors text-foreground-muted">
+                  <div class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-package-icon lucide-package size-4"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1
+                        1.73z"/><path d="M12 22V12"/><polyline points="3.29 7 12 12 20.71 7"/><path d="m7.5 4.27 9 5.15"/>
+                    </svg>
+                  </div>
+                  <div class="flex-1">
+                    <p class="font-medium text-foreground-headline text-sm">Defolierer</p>
+                    <p class="text-xs text-foreground-muted"> 1&nbsp;Maschine</p>
+                  </div>
+                </a>
+                
+                
+                
+                <a href="/eleventy-ev/maschinen/sonderlösungen/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-muted transition-colors text-foreground-muted">
+                  <div class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-package-icon lucide-package size-4"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1
+                        1.73z"/><path d="M12 22V12"/><polyline points="3.29 7 12 12 20.71 7"/><path d="m7.5 4.27 9 5.15"/>
+                    </svg>
+                  </div>
+                  <div class="flex-1">
+                    <p class="font-medium text-foreground-headline text-sm">Sonderlösungen</p>
                     <p class="text-xs text-foreground-muted"> 1&nbsp;Maschine</p>
                   </div>
                 </a>
@@ -581,8 +737,8 @@
         <div class="max-w-3xl mx-auto text-center">
             <span class="inline-block px-4 py-1.5 bg-primary/10 text-primary text-sm font-medium rounded-full mb-6">Unsere
                 Produktpalette</span>
-            <h1 class="font-headline font-bold text-4xl sm:text-5xl md:text-6xl text-foreground-headline mb-6 tracking-tight hyphens-auto
-                    break-words">
+            <h1 class="font-headline font-semibold text-4xl sm:text-4xl md:text-5xl text-foreground-headline mb-6 tracking-tight
+                    hyphens-auto break-words">
                 Unsere Verpackungsmaschinen im Überblick</h1>
             <p class="text-foreground-muted text-lg md:text-xl max-w-2xl mx-auto font-light">Entdecken Sie unser umfassendes
                 Sortiment an Verpackungsmaschinen, das speziell auf die Anforderungen der modernen Fertigung ausgelegt ist.</p>
@@ -591,514 +747,777 @@
 </section>
 <section class="py-20 bg-background">
     <div class="max-w-8xl mx-auto px-6">
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="divide-y divide-border">
+        
             
-                
-                
-                
-                    <a class="group rounded-lg shadow-card hover:shadow-hover bg-white overflow-hidden animate-fade-up opacity-0 flex flex-col border-border hover:border-primary/10 border" style="animation-delay:0s" href="/eleventy-ev/maschinen/folienverpackung/">
-                        <div class="relative h-48 overflow-hidden">
-                            <img src="/eleventy-ev/assets/img/machines/hochleistungs_einschlagmaschine.jpg" alt="Folienverpackung" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                                <div class="absolute inset-0 bg-gradient-to-t from-foreground-headline/30 to-transparent"></div>
-                                <div class="absolute bottom-4 left-4 flex items-center gap-2 text-primary-foreground">
-                                    <div class="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            class="lucide lucide-package-icon lucide-package"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1
-                                                1.73z"/><path d="M12 22V12"/><polyline points="3.29 7 12 12 20.71 7"/><path d="m7.5 4.27 9 5.15"/>
-                                        </svg>
-                                    </div>
-                                    <span class="text-primary-foreground text-sm font-medium">
-                                        34
-                                        &nbsp;Maschinen
-                                    </span>
-                                </div>
+            
+            <a class="group block py-8 first:pt-0 last:pb-0 animate-fade-up opacity-0" style="animation-delay:0s" href="/eleventy-ev/maschinen/folie/">
+                <div class="flex flex-col lg:flex-row gap-6 lg:gap-10">
+                    <div class="relative w-full lg:w-2/5 aspect-[21/9] overflow-hidden rounded-lg ">
+                        <img
+                            src="/eleventy-ev/assets/img/machines/a11.png" 
+                            alt="Folie"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            
+                        </div>
+                        <div class="flex-1 flex flex-col justify-center">
+                        
+                            <h3 class="font-headline text-3xl md:text-3xl text-foreground-headline mb-3 group-hover:text-primary transition-colors font-semibold">Folie</h3>
+                            <p class="text-foreground text-base mb-4 max-w-xl">info folgt</p>
+                            <div class="flex items-center text-primary text-sm font-semibold">Bereich ansehen<svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-arrow-right w-4 h-4 ml-2 transition-transform group-hover:translate-x-2">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
                             </div>
-                            <div class="p-6 flex flex-col grow-1">
-                                <h3 class="font-headline text-2xl font-bold text-foreground-headline mb-2 group-hover:text-primary transition-colors">
-                                    Folienverpackung</h3>
-                                <p class="text-foreground tracking-[0.01em] text-sm mb-4 line-clamp-3 grow-1">Folienverpackungen gehören zu den am weitesten verbreiteten Verpackungsarten weltweit. Sie bestehen überwiegend aus Kunststofffolien, die je nach Einsatzgebiet unterschiedliche Materialeigenschaften aufweisen.
-                                </p>
-                                <div class="flex items-center text-primary text-sm font-medium">Bereich ansehen<svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="24"
-                                        height="24"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="lucide lucide-arrow-right w-4 h-4 ml-2 transition-transform group-hover:translate-x-1">
-                                        <path d="M5 12h14"></path>
-                                        <path d="m12 5 7 7-7 7"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </a>
-                    
-                
-                
-                
-                
-                    <a class="group rounded-lg shadow-card hover:shadow-hover bg-white overflow-hidden animate-fade-up opacity-0 flex flex-col border-border hover:border-primary/10 border" style="animation-delay:0.1s" href="/eleventy-ev/maschinen/speichersysteme/">
-                        <div class="relative h-48 overflow-hidden">
-                            <img src="/eleventy-ev/assets/img/sectors/folienverpackung.jpg" alt="Speichersysteme" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                                <div class="absolute inset-0 bg-gradient-to-t from-foreground-headline/30 to-transparent"></div>
-                                <div class="absolute bottom-4 left-4 flex items-center gap-2 text-primary-foreground">
-                                    <div class="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            class="lucide lucide-package-icon lucide-package"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1
-                                                1.73z"/><path d="M12 22V12"/><polyline points="3.29 7 12 12 20.71 7"/><path d="m7.5 4.27 9 5.15"/>
-                                        </svg>
-                                    </div>
-                                    <span class="text-primary-foreground text-sm font-medium">
-                                        1
-                                        &nbsp;Maschine
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="p-6 flex flex-col grow-1">
-                                <h3 class="font-headline text-2xl font-bold text-foreground-headline mb-2 group-hover:text-primary transition-colors">
-                                    Speichersysteme</h3>
-                                <p class="text-foreground tracking-[0.01em] text-sm mb-4 line-clamp-3 grow-1">Intelligente Speichersysteme zur Pufferung und Entkopplung von Produktions- und Verpackungsprozessen. Sorgen für einen gleichmäßigen Materialfluss und höhere Anlagenverfügbarkeit.
-                                </p>
-                                <div class="flex items-center text-primary text-sm font-medium">Bereich ansehen<svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="24"
-                                        height="24"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="lucide lucide-arrow-right w-4 h-4 ml-2 transition-transform group-hover:translate-x-1">
-                                        <path d="M5 12h14"></path>
-                                        <path d="m12 5 7 7-7 7"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </a>
-                    
-                
-                
-                
-                
-                    <a class="group rounded-lg shadow-card hover:shadow-hover bg-white overflow-hidden animate-fade-up opacity-0 flex flex-col border-border hover:border-primary/10 border" style="animation-delay:0.2s" href="/eleventy-ev/maschinen/papierverpackung/">
-                        <div class="relative h-48 overflow-hidden">
-                            <img src="/eleventy-ev/assets/img/sectors/folienverpackung.jpg" alt="Papierverpackung" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                                <div class="absolute inset-0 bg-gradient-to-t from-foreground-headline/30 to-transparent"></div>
-                                <div class="absolute bottom-4 left-4 flex items-center gap-2 text-primary-foreground">
-                                    <div class="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            class="lucide lucide-package-icon lucide-package"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1
-                                                1.73z"/><path d="M12 22V12"/><polyline points="3.29 7 12 12 20.71 7"/><path d="m7.5 4.27 9 5.15"/>
-                                        </svg>
-                                    </div>
-                                    <span class="text-primary-foreground text-sm font-medium">
-                                        4
-                                        &nbsp;Maschinen
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="p-6 flex flex-col grow-1">
-                                <h3 class="font-headline text-2xl font-bold text-foreground-headline mb-2 group-hover:text-primary transition-colors">
-                                    Papierverpackung</h3>
-                                <p class="text-foreground tracking-[0.01em] text-sm mb-4 line-clamp-3 grow-1">Nachhaltige Verpackungslösungen auf Papierbasis für umweltbewusste Verpackungskonzepte. Ideal für Unternehmen mit Fokus auf Ressourcenschonung und Recyclingfähigkeit.
-                                </p>
-                                <div class="flex items-center text-primary text-sm font-medium">Bereich ansehen<svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="24"
-                                        height="24"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="lucide lucide-arrow-right w-4 h-4 ml-2 transition-transform group-hover:translate-x-1">
-                                        <path d="M5 12h14"></path>
-                                        <path d="m12 5 7 7-7 7"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </a>
-                    
-                
-                
-                
-                
-                    <a class="group rounded-lg shadow-card hover:shadow-hover bg-white overflow-hidden animate-fade-up opacity-0 flex flex-col border-border hover:border-primary/10 border" style="animation-delay:0.30000000000000004s" href="/eleventy-ev/maschinen/palettiersysteme/">
-                        <div class="relative h-48 overflow-hidden">
-                            <img src="/eleventy-ev/assets/img/machines/pharma_maschine.jpg" alt="Palettiersysteme" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                                <div class="absolute inset-0 bg-gradient-to-t from-foreground-headline/30 to-transparent"></div>
-                                <div class="absolute bottom-4 left-4 flex items-center gap-2 text-primary-foreground">
-                                    <div class="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            class="lucide lucide-package-icon lucide-package"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1
-                                                1.73z"/><path d="M12 22V12"/><polyline points="3.29 7 12 12 20.71 7"/><path d="m7.5 4.27 9 5.15"/>
-                                        </svg>
-                                    </div>
-                                    <span class="text-primary-foreground text-sm font-medium">
-                                        1
-                                        &nbsp;Maschine
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="p-6 flex flex-col grow-1">
-                                <h3 class="font-headline text-2xl font-bold text-foreground-headline mb-2 group-hover:text-primary transition-colors">
-                                    Palettiersysteme</h3>
-                                <p class="text-foreground tracking-[0.01em] text-sm mb-4 line-clamp-3 grow-1">Automatisierte Palettiersysteme für präzises und leistungsstarkes Stapeln von Produkten. Flexibel anpassbar an verschiedene Formate und Produktionsanforderungen.
-                                </p>
-                                <div class="flex items-center text-primary text-sm font-medium">Bereich ansehen<svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="24"
-                                        height="24"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="lucide lucide-arrow-right w-4 h-4 ml-2 transition-transform group-hover:translate-x-1">
-                                        <path d="M5 12h14"></path>
-                                        <path d="m12 5 7 7-7 7"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </a>
-                    
-                
-                
-                
-                
-                    <a class="group rounded-lg shadow-card hover:shadow-hover bg-white overflow-hidden animate-fade-up opacity-0 flex flex-col border-border hover:border-primary/10 border" style="animation-delay:0.4s" href="/eleventy-ev/maschinen/pallettenverpackung/">
-                        <div class="relative h-48 overflow-hidden">
-                            <img src="/eleventy-ev/assets/img/sectors/folienverpackung.jpg" alt="Palettenverpackung" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                                <div class="absolute inset-0 bg-gradient-to-t from-foreground-headline/30 to-transparent"></div>
-                                <div class="absolute bottom-4 left-4 flex items-center gap-2 text-primary-foreground">
-                                    <div class="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            class="lucide lucide-package-icon lucide-package"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1
-                                                1.73z"/><path d="M12 22V12"/><polyline points="3.29 7 12 12 20.71 7"/><path d="m7.5 4.27 9 5.15"/>
-                                        </svg>
-                                    </div>
-                                    <span class="text-primary-foreground text-sm font-medium">
-                                        1
-                                        &nbsp;Maschine
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="p-6 flex flex-col grow-1">
-                                <h3 class="font-headline text-2xl font-bold text-foreground-headline mb-2 group-hover:text-primary transition-colors">
-                                    Palettenverpackung</h3>
-                                <p class="text-foreground tracking-[0.01em] text-sm mb-4 line-clamp-3 grow-1">Maschinen zur sicheren Umwicklung und Stabilisierung von Palettenladungen. Schützen Ihre Produkte zuverlässig während Lagerung und Transport.
-                                </p>
-                                <div class="flex items-center text-primary text-sm font-medium">Bereich ansehen<svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="24"
-                                        height="24"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="lucide lucide-arrow-right w-4 h-4 ml-2 transition-transform group-hover:translate-x-1">
-                                        <path d="M5 12h14"></path>
-                                        <path d="m12 5 7 7-7 7"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </a>
-                    
-                
-                
-                
-                
-                    <a class="group rounded-lg shadow-card hover:shadow-hover bg-white overflow-hidden animate-fade-up opacity-0 flex flex-col border-border hover:border-primary/10 border" style="animation-delay:0.5s" href="/eleventy-ev/maschinen/palettendefolierer/">
-                        <div class="relative h-48 overflow-hidden">
-                            <img src="/eleventy-ev/assets/img/sectors/hero_banner_3.png" alt="Palettendefolierer" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                                <div class="absolute inset-0 bg-gradient-to-t from-foreground-headline/30 to-transparent"></div>
-                                <div class="absolute bottom-4 left-4 flex items-center gap-2 text-primary-foreground">
-                                    <div class="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            class="lucide lucide-package-icon lucide-package"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1
-                                                1.73z"/><path d="M12 22V12"/><polyline points="3.29 7 12 12 20.71 7"/><path d="m7.5 4.27 9 5.15"/>
-                                        </svg>
-                                    </div>
-                                    <span class="text-primary-foreground text-sm font-medium">
-                                        1
-                                        &nbsp;Maschine
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="p-6 flex flex-col grow-1">
-                                <h3 class="font-headline text-2xl font-bold text-foreground-headline mb-2 group-hover:text-primary transition-colors">
-                                    Palettendefolierer</h3>
-                                <p class="text-foreground tracking-[0.01em] text-sm mb-4 line-clamp-3 grow-1">Effiziente Palettendefolierer zur automatischen Entfernung von Stretch- oder Schrumpffolie. Optimiert den Wareneingang und reduziert manuelle Arbeitsaufwände.
-                                </p>
-                                <div class="flex items-center text-primary text-sm font-medium">Bereich ansehen<svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="24"
-                                        height="24"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="lucide lucide-arrow-right w-4 h-4 ml-2 transition-transform group-hover:translate-x-1">
-                                        <path d="M5 12h14"></path>
-                                        <path d="m12 5 7 7-7 7"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </a>
-                    
-                
-                
-                
-                
-                    <a class="group rounded-lg shadow-card hover:shadow-hover bg-white overflow-hidden animate-fade-up opacity-0 flex flex-col border-border hover:border-primary/10 border" style="animation-delay:0.6000000000000001s" href="/eleventy-ev/maschinen/kartonverpackung/">
-                        <div class="relative h-48 overflow-hidden">
-                            <img src="/eleventy-ev/assets/img/machines/kartonsammelpacker.jpg" alt="Kartonverpackung" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                                <div class="absolute inset-0 bg-gradient-to-t from-foreground-headline/30 to-transparent"></div>
-                                <div class="absolute bottom-4 left-4 flex items-center gap-2 text-primary-foreground">
-                                    <div class="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            class="lucide lucide-package-icon lucide-package"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1
-                                                1.73z"/><path d="M12 22V12"/><polyline points="3.29 7 12 12 20.71 7"/><path d="m7.5 4.27 9 5.15"/>
-                                        </svg>
-                                    </div>
-                                    <span class="text-primary-foreground text-sm font-medium">
-                                        2
-                                        &nbsp;Maschinen
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="p-6 flex flex-col grow-1">
-                                <h3 class="font-headline text-2xl font-bold text-foreground-headline mb-2 group-hover:text-primary transition-colors">
-                                    Kartonverpackung</h3>
-                                <p class="text-foreground tracking-[0.01em] text-sm mb-4 line-clamp-3 grow-1">Automatisierte Kartonverpackungssysteme für das Aufrichten, Befüllen und Verschließen von Kartons. Für hohe Durchsätze und gleichbleibend hohe Verpackungsqualität.
-                                </p>
-                                <div class="flex items-center text-primary text-sm font-medium">Bereich ansehen<svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="24"
-                                        height="24"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="lucide lucide-arrow-right w-4 h-4 ml-2 transition-transform group-hover:translate-x-1">
-                                        <path d="M5 12h14"></path>
-                                        <path d="m12 5 7 7-7 7"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </a>
-                    
-                
-                
-                
-                
-                    <a class="group rounded-lg shadow-card hover:shadow-hover bg-white overflow-hidden animate-fade-up opacity-0 flex flex-col border-border hover:border-primary/10 border" style="animation-delay:0.7000000000000001s" href="/eleventy-ev/maschinen/foerdertechnik/">
-                        <div class="relative h-48 overflow-hidden">
-                            <img src="/eleventy-ev/assets/img/machines/index_machine.webp" alt="Fördertechnik" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                                <div class="absolute inset-0 bg-gradient-to-t from-foreground-headline/30 to-transparent"></div>
-                                <div class="absolute bottom-4 left-4 flex items-center gap-2 text-primary-foreground">
-                                    <div class="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            class="lucide lucide-package-icon lucide-package"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1
-                                                1.73z"/><path d="M12 22V12"/><polyline points="3.29 7 12 12 20.71 7"/><path d="m7.5 4.27 9 5.15"/>
-                                        </svg>
-                                    </div>
-                                    <span class="text-primary-foreground text-sm font-medium">
-                                        1
-                                        &nbsp;Maschine
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="p-6 flex flex-col grow-1">
-                                <h3 class="font-headline text-2xl font-bold text-foreground-headline mb-2 group-hover:text-primary transition-colors">
-                                    Fördertechnik</h3>
-                                <p class="text-foreground tracking-[0.01em] text-sm mb-4 line-clamp-3 grow-1">Zuverlässige Fördertechnik für den sicheren und kontinuierlichen Transport Ihrer Produkte. Unsere Systeme lassen sich nahtlos in bestehende Verpackungslinien integrieren.
-                                </p>
-                                <div class="flex items-center text-primary text-sm font-medium">Bereich ansehen<svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="24"
-                                        height="24"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="lucide lucide-arrow-right w-4 h-4 ml-2 transition-transform group-hover:translate-x-1">
-                                        <path d="M5 12h14"></path>
-                                        <path d="m12 5 7 7-7 7"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </a>
-                    
-                
-                
-                
-                
-                    <a class="group rounded-lg shadow-card hover:shadow-hover bg-white overflow-hidden animate-fade-up opacity-0 flex flex-col border-border hover:border-primary/10 border" style="animation-delay:0.8s" href="/eleventy-ev/maschinen/folie-karton/">
-                        <div class="relative h-48 overflow-hidden">
-                            <img src="/eleventy-ev/assets/img/sectors/folienverpackung.jpg" alt="Folie/Karton" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                                <div class="absolute inset-0 bg-gradient-to-t from-foreground-headline/30 to-transparent"></div>
-                                <div class="absolute bottom-4 left-4 flex items-center gap-2 text-primary-foreground">
-                                    <div class="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            class="lucide lucide-package-icon lucide-package"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1
-                                                1.73z"/><path d="M12 22V12"/><polyline points="3.29 7 12 12 20.71 7"/><path d="m7.5 4.27 9 5.15"/>
-                                        </svg>
-                                    </div>
-                                    <span class="text-primary-foreground text-sm font-medium">
-                                        1
-                                        &nbsp;Maschine
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="p-6 flex flex-col grow-1">
-                                <h3 class="font-headline text-2xl font-bold text-foreground-headline mb-2 group-hover:text-primary transition-colors">
-                                    Folie/Karton</h3>
-                                <p class="text-foreground tracking-[0.01em] text-sm mb-4 line-clamp-3 grow-1">Maschinenlösungen für die flexible Verarbeitung von Folien- und Kartonverpackungen. Ideal für effiziente, produktschonende Verpackungsprozesse in unterschiedlichsten Branchen.
-                                </p>
-                                <div class="flex items-center text-primary text-sm font-medium">Bereich ansehen<svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="24"
-                                        height="24"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="lucide lucide-arrow-right w-4 h-4 ml-2 transition-transform group-hover:translate-x-1">
-                                        <path d="M5 12h14"></path>
-                                        <path d="m12 5 7 7-7 7"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </a>
-                    
-                
-            </div>
-        </div>
-    </section>
-    <section class="py-20 section-gradient-light">
-        <div class="max-w-8xl mx-auto px-6">
-            <div class="max-w-3xl mx-auto text-center">
-                <h2 class="font-headline text-3xl md:text-4xl text-foreground-headline font-semibold mb-6">Nicht gefunden nachdem Sie
-                    suchen?</h2>
-                <p class="text-foreground text-base mb-8">Wir unterstützen Sie dabei, die optimale Verpackungslösung für Ihre
-                    individuellen Anforderungen zu finden.</p>
-                <a class="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-full font-medium
-                                                                                                                                                                hover:bg-primary/90 transition-all shadow-soft hover:shadow-hover" href="/eleventy-ev/#contact">Kontaktieren<svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="lucide lucide-arrow-right w-5 h-5">
-                        <path d="M5 12h14"></path>
-                        <path d="m12 5 7 7-7 7"></path>
-                    </svg>
+                        </div>
+                    </div>
                 </a>
+            
+            
+            
+            <a class="group block py-8 first:pt-0 last:pb-0 animate-fade-up opacity-0" style="animation-delay:0.1s" href="/eleventy-ev/maschinen/karton/">
+                <div class="flex flex-col lg:flex-row gap-6 lg:gap-10">
+                    <div class="relative w-full lg:w-2/5 aspect-[21/9] overflow-hidden rounded-lg ">
+                        <img
+                            src="/eleventy-ev/assets/img/machines/b11.webp" 
+                            alt="Karton"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            
+                        </div>
+                        <div class="flex-1 flex flex-col justify-center">
+                        
+                            <h3 class="font-headline text-3xl md:text-3xl text-foreground-headline mb-3 group-hover:text-primary transition-colors font-semibold">Karton</h3>
+                            <p class="text-foreground text-base mb-4 max-w-xl">info folgt</p>
+                            <div class="flex items-center text-primary text-sm font-semibold">Bereich ansehen<svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-arrow-right w-4 h-4 ml-2 transition-transform group-hover:translate-x-2">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            
+            
+            
+            <a class="group block py-8 first:pt-0 last:pb-0 animate-fade-up opacity-0" style="animation-delay:0.2s" href="/eleventy-ev/maschinen/folie-karton/">
+                <div class="flex flex-col lg:flex-row gap-6 lg:gap-10">
+                    <div class="relative w-full lg:w-2/5 aspect-[21/9] overflow-hidden rounded-lg ">
+                        <img
+                            src="info folgt" 
+                            alt="Folie/Karton"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            
+                        </div>
+                        <div class="flex-1 flex flex-col justify-center">
+                        
+                            <h3 class="font-headline text-3xl md:text-3xl text-foreground-headline mb-3 group-hover:text-primary transition-colors font-semibold">Folie/Karton</h3>
+                            <p class="text-foreground text-base mb-4 max-w-xl">info folgt</p>
+                            <div class="flex items-center text-primary text-sm font-semibold">Bereich ansehen<svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-arrow-right w-4 h-4 ml-2 transition-transform group-hover:translate-x-2">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            
+            
+            
+            <a class="group block py-8 first:pt-0 last:pb-0 animate-fade-up opacity-0" style="animation-delay:0.30000000000000004s" href="/eleventy-ev/maschinen/papierverpackung/">
+                <div class="flex flex-col lg:flex-row gap-6 lg:gap-10">
+                    <div class="relative w-full lg:w-2/5 aspect-[21/9] overflow-hidden rounded-lg ">
+                        <img
+                            src="/eleventy-ev/assets/img/machines/d12.png" 
+                            alt="Papierverpackung"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            
+                        </div>
+                        <div class="flex-1 flex flex-col justify-center">
+                        
+                            <h3 class="font-headline text-3xl md:text-3xl text-foreground-headline mb-3 group-hover:text-primary transition-colors font-semibold">Papierverpackung</h3>
+                            <p class="text-foreground text-base mb-4 max-w-xl">info folgt</p>
+                            <div class="flex items-center text-primary text-sm font-semibold">Bereich ansehen<svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-arrow-right w-4 h-4 ml-2 transition-transform group-hover:translate-x-2">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            
+            
+            
+            <a class="group block py-8 first:pt-0 last:pb-0 animate-fade-up opacity-0" style="animation-delay:0.4s" href="/eleventy-ev/maschinen/tragegriff/">
+                <div class="flex flex-col lg:flex-row gap-6 lg:gap-10">
+                    <div class="relative w-full lg:w-2/5 aspect-[21/9] overflow-hidden rounded-lg ">
+                        <img
+                            src="info folgt" 
+                            alt="Tragegriff"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            
+                        </div>
+                        <div class="flex-1 flex flex-col justify-center">
+                        
+                            <h3 class="font-headline text-3xl md:text-3xl text-foreground-headline mb-3 group-hover:text-primary transition-colors font-semibold">Tragegriff</h3>
+                            <p class="text-foreground text-base mb-4 max-w-xl">info folgt</p>
+                            <div class="flex items-center text-primary text-sm font-semibold">Bereich ansehen<svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-arrow-right w-4 h-4 ml-2 transition-transform group-hover:translate-x-2">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            
+            
+            
+            <a class="group block py-8 first:pt-0 last:pb-0 animate-fade-up opacity-0" style="animation-delay:0.5s" href="/eleventy-ev/maschinen/speichersysteme/">
+                <div class="flex flex-col lg:flex-row gap-6 lg:gap-10">
+                    <div class="relative w-full lg:w-2/5 aspect-[21/9] overflow-hidden rounded-lg ">
+                        <img
+                            src="/eleventy-ev/assets/img/machines/f22.png" 
+                            alt="Speichersysteme"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            
+                        </div>
+                        <div class="flex-1 flex flex-col justify-center">
+                        
+                            <h3 class="font-headline text-3xl md:text-3xl text-foreground-headline mb-3 group-hover:text-primary transition-colors font-semibold">Speichersysteme</h3>
+                            <p class="text-foreground text-base mb-4 max-w-xl">info folgt</p>
+                            <div class="flex items-center text-primary text-sm font-semibold">Bereich ansehen<svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-arrow-right w-4 h-4 ml-2 transition-transform group-hover:translate-x-2">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            
+            
+            
+            <a class="group block py-8 first:pt-0 last:pb-0 animate-fade-up opacity-0" style="animation-delay:0.6000000000000001s" href="/eleventy-ev/maschinen/palettiersysteme/">
+                <div class="flex flex-col lg:flex-row gap-6 lg:gap-10">
+                    <div class="relative w-full lg:w-2/5 aspect-[21/9] overflow-hidden rounded-lg ">
+                        <img
+                            src="/eleventy-ev/assets/img/machines/g23.webp" 
+                            alt="Palettiersysteme"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            
+                        </div>
+                        <div class="flex-1 flex flex-col justify-center">
+                        
+                            <h3 class="font-headline text-3xl md:text-3xl text-foreground-headline mb-3 group-hover:text-primary transition-colors font-semibold">Palettiersysteme</h3>
+                            <p class="text-foreground text-base mb-4 max-w-xl">info folgt</p>
+                            <div class="flex items-center text-primary text-sm font-semibold">Bereich ansehen<svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-arrow-right w-4 h-4 ml-2 transition-transform group-hover:translate-x-2">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            
+            
+            
+            <a class="group block py-8 first:pt-0 last:pb-0 animate-fade-up opacity-0" style="animation-delay:0.7000000000000001s" href="/eleventy-ev/maschinen/palettenverpackung/">
+                <div class="flex flex-col lg:flex-row gap-6 lg:gap-10">
+                    <div class="relative w-full lg:w-2/5 aspect-[21/9] overflow-hidden rounded-lg ">
+                        <img
+                            src="/eleventy-ev/assets/img/machines/h31.jpg" 
+                            alt="Palettenverpackung"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            
+                        </div>
+                        <div class="flex-1 flex flex-col justify-center">
+                        
+                            <h3 class="font-headline text-3xl md:text-3xl text-foreground-headline mb-3 group-hover:text-primary transition-colors font-semibold">Palettenverpackung</h3>
+                            <p class="text-foreground text-base mb-4 max-w-xl">info folgt</p>
+                            <div class="flex items-center text-primary text-sm font-semibold">Bereich ansehen<svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-arrow-right w-4 h-4 ml-2 transition-transform group-hover:translate-x-2">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            
+            
+            
+            <a class="group block py-8 first:pt-0 last:pb-0 animate-fade-up opacity-0" style="animation-delay:0.8s" href="/eleventy-ev/maschinen/fördertechnik/">
+                <div class="flex flex-col lg:flex-row gap-6 lg:gap-10">
+                    <div class="relative w-full lg:w-2/5 aspect-[21/9] overflow-hidden rounded-lg ">
+                        <img
+                            src="/eleventy-ev/assets/img/machines/I21A.jpg" 
+                            alt="Fördertechnik"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            
+                        </div>
+                        <div class="flex-1 flex flex-col justify-center">
+                        
+                            <h3 class="font-headline text-3xl md:text-3xl text-foreground-headline mb-3 group-hover:text-primary transition-colors font-semibold">Fördertechnik</h3>
+                            <p class="text-foreground text-base mb-4 max-w-xl">info folgt</p>
+                            <div class="flex items-center text-primary text-sm font-semibold">Bereich ansehen<svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-arrow-right w-4 h-4 ml-2 transition-transform group-hover:translate-x-2">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            
+            
+            
+            <a class="group block py-8 first:pt-0 last:pb-0 animate-fade-up opacity-0" style="animation-delay:0.9s" href="/eleventy-ev/maschinen/defolierer/">
+                <div class="flex flex-col lg:flex-row gap-6 lg:gap-10">
+                    <div class="relative w-full lg:w-2/5 aspect-[21/9] overflow-hidden rounded-lg ">
+                        <img
+                            src="/eleventy-ev/assets/img/machines/j11a.jpg" 
+                            alt="Defolierer"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            
+                        </div>
+                        <div class="flex-1 flex flex-col justify-center">
+                        
+                            <h3 class="font-headline text-3xl md:text-3xl text-foreground-headline mb-3 group-hover:text-primary transition-colors font-semibold">Defolierer</h3>
+                            <p class="text-foreground text-base mb-4 max-w-xl">info folgt</p>
+                            <div class="flex items-center text-primary text-sm font-semibold">Bereich ansehen<svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-arrow-right w-4 h-4 ml-2 transition-transform group-hover:translate-x-2">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            
+            
+            
+            <a class="group block py-8 first:pt-0 last:pb-0 animate-fade-up opacity-0" style="animation-delay:1s" href="/eleventy-ev/maschinen/sonderlösungen/">
+                <div class="flex flex-col lg:flex-row gap-6 lg:gap-10">
+                    <div class="relative w-full lg:w-2/5 aspect-[21/9] overflow-hidden rounded-lg ">
+                        <img
+                            src="info folgt" 
+                            alt="Sonderlösungen"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            
+                        </div>
+                        <div class="flex-1 flex flex-col justify-center">
+                        
+                            <h3 class="font-headline text-3xl md:text-3xl text-foreground-headline mb-3 group-hover:text-primary transition-colors font-semibold">Sonderlösungen</h3>
+                            <p class="text-foreground text-base mb-4 max-w-xl">info folgt</p>
+                            <div class="flex items-center text-primary text-sm font-semibold">Bereich ansehen<svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-arrow-right w-4 h-4 ml-2 transition-transform group-hover:translate-x-2">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            
             </div>
-        </div>
-    </section>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                    
+                    
+                    
+                        <a class="group rounded-lg shadow-card hover:shadow-hover bg-white overflow-hidden animate-fade-up opacity-0 flex flex-col" style="animation-delay:0s" href="/eleventy-ev/maschinen/folie/">
+                            <div class="relative h-48 overflow-hidden bg-background border-b border-border-light">
+                                <img
+                                    src="/eleventy-ev/assets/img/machines/a11.png" alt="Folie" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                                </div>
+                                <div class="p-6 flex flex-col grow-1">
+                                    <h3 class="font-headline text-xl font-semibold tracking-[0.01em] text-foreground-headline mb-2 group-hover:text-primary
+                                            transition-colors">
+                                        Folie</h3>
+                                    <p class="text-foreground tracking-[0.01em] text-sm mb-4 line-clamp-3 grow-1">info folgt
+                                    </p>
+                                    <div class="flex items-center text-primary text-sm font-medium">Bereich ansehen<svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="lucide lucide-arrow-right w-4 h-4 ml-2 transition-transform group-hover:translate-x-1">
+                                            <path d="M5 12h14"></path>
+                                            <path d="m12 5 7 7-7 7"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        
+                    
+                    
+                    
+                    
+                        <a class="group rounded-lg shadow-card hover:shadow-hover bg-white overflow-hidden animate-fade-up opacity-0 flex flex-col" style="animation-delay:0.1s" href="/eleventy-ev/maschinen/karton/">
+                            <div class="relative h-48 overflow-hidden bg-background border-b border-border-light">
+                                <img
+                                    src="/eleventy-ev/assets/img/machines/b11.webp" alt="Karton" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                                </div>
+                                <div class="p-6 flex flex-col grow-1">
+                                    <h3 class="font-headline text-xl font-semibold tracking-[0.01em] text-foreground-headline mb-2 group-hover:text-primary
+                                            transition-colors">
+                                        Karton</h3>
+                                    <p class="text-foreground tracking-[0.01em] text-sm mb-4 line-clamp-3 grow-1">info folgt
+                                    </p>
+                                    <div class="flex items-center text-primary text-sm font-medium">Bereich ansehen<svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="lucide lucide-arrow-right w-4 h-4 ml-2 transition-transform group-hover:translate-x-1">
+                                            <path d="M5 12h14"></path>
+                                            <path d="m12 5 7 7-7 7"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        
+                    
+                    
+                    
+                    
+                        <a class="group rounded-lg shadow-card hover:shadow-hover bg-white overflow-hidden animate-fade-up opacity-0 flex flex-col" style="animation-delay:0.2s" href="/eleventy-ev/maschinen/folie-karton/">
+                            <div class="relative h-48 overflow-hidden bg-background border-b border-border-light">
+                                <img
+                                    src="info folgt" alt="Folie/Karton" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                                </div>
+                                <div class="p-6 flex flex-col grow-1">
+                                    <h3 class="font-headline text-xl font-semibold tracking-[0.01em] text-foreground-headline mb-2 group-hover:text-primary
+                                            transition-colors">
+                                        Folie/Karton</h3>
+                                    <p class="text-foreground tracking-[0.01em] text-sm mb-4 line-clamp-3 grow-1">info folgt
+                                    </p>
+                                    <div class="flex items-center text-primary text-sm font-medium">Bereich ansehen<svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="lucide lucide-arrow-right w-4 h-4 ml-2 transition-transform group-hover:translate-x-1">
+                                            <path d="M5 12h14"></path>
+                                            <path d="m12 5 7 7-7 7"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        
+                    
+                    
+                    
+                    
+                        <a class="group rounded-lg shadow-card hover:shadow-hover bg-white overflow-hidden animate-fade-up opacity-0 flex flex-col" style="animation-delay:0.30000000000000004s" href="/eleventy-ev/maschinen/papierverpackung/">
+                            <div class="relative h-48 overflow-hidden bg-background border-b border-border-light">
+                                <img
+                                    src="/eleventy-ev/assets/img/machines/d12.png" alt="Papierverpackung" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                                </div>
+                                <div class="p-6 flex flex-col grow-1">
+                                    <h3 class="font-headline text-xl font-semibold tracking-[0.01em] text-foreground-headline mb-2 group-hover:text-primary
+                                            transition-colors">
+                                        Papierverpackung</h3>
+                                    <p class="text-foreground tracking-[0.01em] text-sm mb-4 line-clamp-3 grow-1">info folgt
+                                    </p>
+                                    <div class="flex items-center text-primary text-sm font-medium">Bereich ansehen<svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="lucide lucide-arrow-right w-4 h-4 ml-2 transition-transform group-hover:translate-x-1">
+                                            <path d="M5 12h14"></path>
+                                            <path d="m12 5 7 7-7 7"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        
+                    
+                    
+                    
+                    
+                        <a class="group rounded-lg shadow-card hover:shadow-hover bg-white overflow-hidden animate-fade-up opacity-0 flex flex-col" style="animation-delay:0.4s" href="/eleventy-ev/maschinen/tragegriff/">
+                            <div class="relative h-48 overflow-hidden bg-background border-b border-border-light">
+                                <img
+                                    src="info folgt" alt="Tragegriff" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                                </div>
+                                <div class="p-6 flex flex-col grow-1">
+                                    <h3 class="font-headline text-xl font-semibold tracking-[0.01em] text-foreground-headline mb-2 group-hover:text-primary
+                                            transition-colors">
+                                        Tragegriff</h3>
+                                    <p class="text-foreground tracking-[0.01em] text-sm mb-4 line-clamp-3 grow-1">info folgt
+                                    </p>
+                                    <div class="flex items-center text-primary text-sm font-medium">Bereich ansehen<svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="lucide lucide-arrow-right w-4 h-4 ml-2 transition-transform group-hover:translate-x-1">
+                                            <path d="M5 12h14"></path>
+                                            <path d="m12 5 7 7-7 7"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        
+                    
+                    
+                    
+                    
+                        <a class="group rounded-lg shadow-card hover:shadow-hover bg-white overflow-hidden animate-fade-up opacity-0 flex flex-col" style="animation-delay:0.5s" href="/eleventy-ev/maschinen/speichersysteme/">
+                            <div class="relative h-48 overflow-hidden bg-background border-b border-border-light">
+                                <img
+                                    src="/eleventy-ev/assets/img/machines/f22.png" alt="Speichersysteme" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                                </div>
+                                <div class="p-6 flex flex-col grow-1">
+                                    <h3 class="font-headline text-xl font-semibold tracking-[0.01em] text-foreground-headline mb-2 group-hover:text-primary
+                                            transition-colors">
+                                        Speichersysteme</h3>
+                                    <p class="text-foreground tracking-[0.01em] text-sm mb-4 line-clamp-3 grow-1">info folgt
+                                    </p>
+                                    <div class="flex items-center text-primary text-sm font-medium">Bereich ansehen<svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="lucide lucide-arrow-right w-4 h-4 ml-2 transition-transform group-hover:translate-x-1">
+                                            <path d="M5 12h14"></path>
+                                            <path d="m12 5 7 7-7 7"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        
+                    
+                    
+                    
+                    
+                        <a class="group rounded-lg shadow-card hover:shadow-hover bg-white overflow-hidden animate-fade-up opacity-0 flex flex-col" style="animation-delay:0.6000000000000001s" href="/eleventy-ev/maschinen/palettiersysteme/">
+                            <div class="relative h-48 overflow-hidden bg-background border-b border-border-light">
+                                <img
+                                    src="/eleventy-ev/assets/img/machines/g23.webp" alt="Palettiersysteme" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                                </div>
+                                <div class="p-6 flex flex-col grow-1">
+                                    <h3 class="font-headline text-xl font-semibold tracking-[0.01em] text-foreground-headline mb-2 group-hover:text-primary
+                                            transition-colors">
+                                        Palettiersysteme</h3>
+                                    <p class="text-foreground tracking-[0.01em] text-sm mb-4 line-clamp-3 grow-1">info folgt
+                                    </p>
+                                    <div class="flex items-center text-primary text-sm font-medium">Bereich ansehen<svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="lucide lucide-arrow-right w-4 h-4 ml-2 transition-transform group-hover:translate-x-1">
+                                            <path d="M5 12h14"></path>
+                                            <path d="m12 5 7 7-7 7"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        
+                    
+                    
+                    
+                    
+                        <a class="group rounded-lg shadow-card hover:shadow-hover bg-white overflow-hidden animate-fade-up opacity-0 flex flex-col" style="animation-delay:0.7000000000000001s" href="/eleventy-ev/maschinen/palettenverpackung/">
+                            <div class="relative h-48 overflow-hidden bg-background border-b border-border-light">
+                                <img
+                                    src="/eleventy-ev/assets/img/machines/h31.jpg" alt="Palettenverpackung" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                                </div>
+                                <div class="p-6 flex flex-col grow-1">
+                                    <h3 class="font-headline text-xl font-semibold tracking-[0.01em] text-foreground-headline mb-2 group-hover:text-primary
+                                            transition-colors">
+                                        Palettenverpackung</h3>
+                                    <p class="text-foreground tracking-[0.01em] text-sm mb-4 line-clamp-3 grow-1">info folgt
+                                    </p>
+                                    <div class="flex items-center text-primary text-sm font-medium">Bereich ansehen<svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="lucide lucide-arrow-right w-4 h-4 ml-2 transition-transform group-hover:translate-x-1">
+                                            <path d="M5 12h14"></path>
+                                            <path d="m12 5 7 7-7 7"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        
+                    
+                    
+                    
+                    
+                        <a class="group rounded-lg shadow-card hover:shadow-hover bg-white overflow-hidden animate-fade-up opacity-0 flex flex-col" style="animation-delay:0.8s" href="/eleventy-ev/maschinen/fördertechnik/">
+                            <div class="relative h-48 overflow-hidden bg-background border-b border-border-light">
+                                <img
+                                    src="/eleventy-ev/assets/img/machines/I21A.jpg" alt="Fördertechnik" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                                </div>
+                                <div class="p-6 flex flex-col grow-1">
+                                    <h3 class="font-headline text-xl font-semibold tracking-[0.01em] text-foreground-headline mb-2 group-hover:text-primary
+                                            transition-colors">
+                                        Fördertechnik</h3>
+                                    <p class="text-foreground tracking-[0.01em] text-sm mb-4 line-clamp-3 grow-1">info folgt
+                                    </p>
+                                    <div class="flex items-center text-primary text-sm font-medium">Bereich ansehen<svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="lucide lucide-arrow-right w-4 h-4 ml-2 transition-transform group-hover:translate-x-1">
+                                            <path d="M5 12h14"></path>
+                                            <path d="m12 5 7 7-7 7"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        
+                    
+                    
+                    
+                    
+                        <a class="group rounded-lg shadow-card hover:shadow-hover bg-white overflow-hidden animate-fade-up opacity-0 flex flex-col" style="animation-delay:0.9s" href="/eleventy-ev/maschinen/defolierer/">
+                            <div class="relative h-48 overflow-hidden bg-background border-b border-border-light">
+                                <img
+                                    src="/eleventy-ev/assets/img/machines/j11a.jpg" alt="Defolierer" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                                </div>
+                                <div class="p-6 flex flex-col grow-1">
+                                    <h3 class="font-headline text-xl font-semibold tracking-[0.01em] text-foreground-headline mb-2 group-hover:text-primary
+                                            transition-colors">
+                                        Defolierer</h3>
+                                    <p class="text-foreground tracking-[0.01em] text-sm mb-4 line-clamp-3 grow-1">info folgt
+                                    </p>
+                                    <div class="flex items-center text-primary text-sm font-medium">Bereich ansehen<svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="lucide lucide-arrow-right w-4 h-4 ml-2 transition-transform group-hover:translate-x-1">
+                                            <path d="M5 12h14"></path>
+                                            <path d="m12 5 7 7-7 7"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        
+                    
+                    
+                    
+                    
+                        <a class="group rounded-lg shadow-card hover:shadow-hover bg-white overflow-hidden animate-fade-up opacity-0 flex flex-col" style="animation-delay:1s" href="/eleventy-ev/maschinen/sonderlösungen/">
+                            <div class="relative h-48 overflow-hidden bg-background border-b border-border-light">
+                                <img
+                                    src="info folgt" alt="Sonderlösungen" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                                </div>
+                                <div class="p-6 flex flex-col grow-1">
+                                    <h3 class="font-headline text-xl font-semibold tracking-[0.01em] text-foreground-headline mb-2 group-hover:text-primary
+                                            transition-colors">
+                                        Sonderlösungen</h3>
+                                    <p class="text-foreground tracking-[0.01em] text-sm mb-4 line-clamp-3 grow-1">info folgt
+                                    </p>
+                                    <div class="flex items-center text-primary text-sm font-medium">Bereich ansehen<svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="lucide lucide-arrow-right w-4 h-4 ml-2 transition-transform group-hover:translate-x-1">
+                                            <path d="M5 12h14"></path>
+                                            <path d="m12 5 7 7-7 7"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        
+                    
+                </div>
+            </div>
+        </section>
+        <section class="py-20 section-gradient-light">
+            <div class="max-w-8xl mx-auto px-6">
+                <div class="max-w-3xl mx-auto text-center">
+                    <h2 class="font-headline text-3xl md:text-4xl text-foreground-headline font-semibold mb-6">Nicht gefunden nachdem Sie
+                        suchen?</h2>
+                    <p class="text-foreground text-base mb-8">Wir unterstützen Sie dabei, die optimale Verpackungslösung für Ihre
+                        individuellen Anforderungen zu finden.</p>
+                    <a class="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-full font-medium
+                                                                                                                                                                                        hover:bg-primary/90 transition-all shadow-soft hover:shadow-hover" href="/eleventy-ev/#contact">Kontaktieren<svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="lucide lucide-arrow-right w-5 h-5">
+                            <path d="M5 12h14"></path>
+                            <path d="m12 5 7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
     </main> 
       <footer class="mt-auto w-full bg-card border-t border-border">
   <div class="max-w-8xl mx-auto px-6">

@@ -1,118 +1,338 @@
 {
-    "categories": [
+  "categories": [
+    {
+      "name": "Folie",
+      "description": "info folgt",
+      "machines_count": 4,
+      "image": "/assets/img/machines/a11.png",
+      "url": "folie",
+      "sub-categories": [
         {
-            "name": "Folienverpackung",
-            "description": "Folienverpackungen gehören zu den am weitesten verbreiteten Verpackungsarten weltweit. Sie bestehen überwiegend aus Kunststofffolien, die je nach Einsatzgebiet unterschiedliche Materialeigenschaften aufweisen.",
-            "machines_count": 34,
-            "image": "/assets/img/machines/hochleistungs_einschlagmaschine.jpg",
-            "url": "folienverpackung",
-            "sub-categories": [
-                {
-                    "name": "Bündelpacker",
-                    "machines_count": 17,
-                    "url": "bündelpacker",
-                    "image": "/assets/img/sectors/folienverpackung.jpg",
-                    "description": "Bündelpacker in der Folienverpackung sind Verpackungsmaschinen, die mehrere Einzelprodukte zu stabilen Verkaufseinheiten zusammenfassen und mit Folie umhüllen. Dabei werden die Produkte meist in Reihen oder Lagen gruppiert und anschließendmit Schrumpf- oder Stretchfolie verpackt."
-                },
-                {
-                    "name": "Gebindepacker",
-                    "machines_count": 17,
-                    "url": "gebindepacker",
-                    "image": "/assets/img/sectors/folienverpackung.jpg"
-                }
-            ]
+          "name": "kontinuierlich",
+          "description": "info folgt",
+          "machines_count": 2,
+          "image": "/assets/img/machines/a12.webp",
+          "url": "kontinuierlich",
+          "machines": [
+            {
+              "name": "HEM Einschlagmaschine",
+              "description": "info folgt",
+              "image": "info folgt",
+              "url": "hem-einschlagmaschine"
+            },
+            {
+              "name": "HHS Schlauchbeutel",
+              "description": "info folgt",
+              "image": "info folgt",
+              "url": "hhs-schlauchbeutel"
+            }
+          ]
         },
         {
-            "name": "Speichersysteme",
-            "description": "Intelligente Speichersysteme zur Pufferung und Entkopplung von Produktions- und Verpackungsprozessen. Sorgen für einen gleichmäßigen Materialfluss und höhere Anlagenverfügbarkeit.",
-            "machines_count": 1,
-            "image": "/assets/img/sectors/folienverpackung.jpg",
-            "url": "speichersysteme"
-        },
-        {
-            "name": "Papierverpackung",
-            "description": "Nachhaltige Verpackungslösungen auf Papierbasis für umweltbewusste Verpackungskonzepte. Ideal für Unternehmen mit Fokus auf Ressourcenschonung und Recyclingfähigkeit.",
-            "machines_count": 4,
-            "image": "/assets/img/sectors/folienverpackung.jpg",
-            "url": "papierverpackung",
-            "sub-categories": [
-                {
-                    "name": "Bündelpacker",
-                    "machines_count": 2,
-                    "url": "bündelpacker"
-                },
-                {
-                    "name": "Gebindepacker",
-                    "machines_count": 2,
-                    "url": "gebindepacker"
-                }
-            ]
-        },
-        {
-            "name": "Palettiersysteme",
-            "description": "Automatisierte Palettiersysteme für präzises und leistungsstarkes Stapeln von Produkten. Flexibel anpassbar an verschiedene Formate und Produktionsanforderungen.",
-            "machines_count": 1,
-            "image": "/assets/img/machines/pharma_maschine.jpg",
-            "url": "palettiersysteme"
-        },
-        {
-            "name": "Palettenverpackung",
-            "description": "Maschinen zur sicheren Umwicklung und Stabilisierung von Palettenladungen. Schützen Ihre Produkte zuverlässig während Lagerung und Transport.",
-            "machines_count": 1,
-            "image": "/assets/img/sectors/folienverpackung.jpg",
-            "url": "pallettenverpackung"
-        },
-        {
-            "name": "Palettendefolierer",
-            "description": "Effiziente Palettendefolierer zur automatischen Entfernung von Stretch- oder Schrumpffolie. Optimiert den Wareneingang und reduziert manuelle Arbeitsaufwände.",
-            "machines_count": 1,
-            "image": "/assets/img/sectors/hero_banner_3.png",
-            "url": "palettendefolierer"
-        },
-        {
-            "name": "Kartonverpackung",
-            "description": "Automatisierte Kartonverpackungssysteme für das Aufrichten, Befüllen und Verschließen von Kartons. Für hohe Durchsätze und gleichbleibend hohe Verpackungsqualität.",
-            "machines_count": 2,
-            "image": "/assets/img/machines/kartonsammelpacker.jpg",
-            "url": "kartonverpackung",
-            "sub-categories": [
-                {
-                    "name": "Bündelpacker",
-                    "machines_count": 1,
-                    "url": "bündelpacker"
-                },
-                {
-                    "name": "Gebindepacker",
-                    "machines_count": 1,
-                    "url": "gebindepacker"
-                }
-            ]
-        },
-        {
-            "name": "Fördertechnik",
-            "description": "Zuverlässige Fördertechnik für den sicheren und kontinuierlichen Transport Ihrer Produkte. Unsere Systeme lassen sich nahtlos in bestehende Verpackungslinien integrieren.",
-            "machines_count": 1,
-            "image": "/assets/img/machines/index_machine.webp",
-            "url": "foerdertechnik",
-            "sub-categories": [
-                {
-                    "name": "Produkt",
-                    "machines_count": 17,
-                    "url": "bündelpacker"
-                },
-                {
-                    "name": "Palette",
-                    "machines_count": 17,
-                    "url": "gebindepacker"
-                }
-            ]
-        },
-        {
-            "name": "Folie/Karton",
-            "description": "Maschinenlösungen für die flexible Verarbeitung von Folien- und Kartonverpackungen. Ideal für effiziente, produktschonende Verpackungsprozesse in unterschiedlichsten Branchen.",
-            "machines_count": 1,
-            "image": "/assets/img/sectors/folienverpackung.jpg",
-            "url": "folie-karton"
+          "name": "getaktet",
+          "description": "info folgt",
+          "machines_count": 2,
+          "image": "/assets/img/machines/a21.webp",
+          "url": "getaktet",
+          "machines": [
+            {
+              "name": "FL Filmline",
+              "description": "info folgt",
+              "image": "info folgt",
+              "url": "fl-filmline"
+            },
+            {
+              "name": "FL Servostraffer",
+              "description": "info folgt",
+              "image": "info folgt",
+              "url": "fl-servostraffer"
+            }
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "name": "Karton",
+      "description": "info folgt",
+      "machines_count": 10,
+      "image": "/assets/img/machines/b11.webp",
+      "url": "karton",
+      "sub-categories": [
+        {
+          "name": "kontinuierlich",
+          "description": "info folgt",
+          "machines_count": 3,
+          "image": "/assets/img/machines/b13.webp",
+          "url": "kontinuierlich",
+          "machines": [
+            { "name": "HTW Hochleistungstraypacker", "description": "info folgt", "image": "info folgt", "url": "htw-hochleistungstraypacker" },
+            { "name": "CSP Carton-Sleeve Packer 100", "description": "info folgt", "image": "info folgt", "url": "csp-carton-sleeve-packer-100" },
+            { "name": "CSP Carton-Sleeve Packer 160", "description": "info folgt", "image": "info folgt", "url": "csp-carton-sleeve-packer-160" }
+          ]
+        },
+        {
+          "name": "getaktet",
+          "description": "info folgt",
+          "machines_count": 2,
+          "image": "/assets/img/machines/b21.webp",
+          "url": "getaktet",
+          "machines": [
+            { "name": "TP Traypacker", "description": "info folgt", "image": "info folgt", "url": "tp-traypacker" },
+            { "name": "Setzpacker", "description": "info folgt", "image": "info folgt", "url": "setzpacker" }
+          ]
+        },
+        {
+          "name": "Seitenkartonierer",
+          "description": "info folgt",
+          "machines_count": 4,
+          "image": "/assets/img/machines/b31.jpg",
+          "url": "seitenkartonierer",
+          "machines": [
+            { "name": "Maestro", "description": "info folgt", "image": "info folgt", "url": "maestro" },
+            { "name": "Vento", "description": "info folgt", "image": "info folgt", "url": "vento" },
+            { "name": "Air", "description": "info folgt", "image": "info folgt", "url": "air" },
+            { "name": "BRC", "description": "info folgt", "image": "info folgt", "url": "brc" }
+          ]
+        },
+        {
+          "name": "Aufrichter",
+          "description": "info folgt",
+          "machines_count": 1,
+          "image": "/assets/img/machines/b41.png",
+          "url": "aufrichter",
+          "machines": [
+            { "name": "TRF", "description": "info folgt", "image": "info folgt", "url": "trf" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Folie/Karton",
+      "description": "info folgt",
+      "machines_count": 1,
+      "image": "info folgt",
+      "url": "folie-karton",
+      "sub-categories": [
+        {
+          "name": "kontinuierlich",
+          "description": "info folgt",
+          "machines_count": 1,
+          "image": "info folgt",
+          "url": "kontinuierlich",
+          "machines": [
+            { "name": "HTW/HEM", "description": "info folgt", "image": "info folgt", "url": "htw-hem" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Papierverpackung",
+      "description": "info folgt",
+      "machines_count": 2,
+      "image": "/assets/img/machines/d12.png",
+      "url": "papierverpackung",
+      "sub-categories": [
+        {
+          "name": "kontinuierlich",
+          "description": "info folgt",
+          "machines_count": 2,
+          "image": "info folgt",
+          "url": "kontinuierlich",
+          "machines": [
+            { "name": "PHM Gebindepacker mit Papier", "description": "info folgt", "image": "info folgt", "url": "phm-gebindepacker-mit-papier" },
+            { "name": "HBP Gebindepacker mit Klebepapier", "description": "info folgt", "image": "info folgt", "url": "hbp-gebindepacker-mit-klebepapier" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Tragegriff",
+      "description": "info folgt",
+      "machines_count": 1,
+      "image": "info folgt",
+      "url": "tragegriff",
+      "sub-categories": [
+        {
+          "name": "kontinuierlich",
+          "description": "info folgt",
+          "machines_count": 1,
+          "image": "info folgt",
+          "url": "kontinuierlich",
+          "machines": [
+            { "name": "HA Tragegriffapplikator", "description": "info folgt", "image": "info folgt", "url": "ha-tragegriffapplikator" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Speichersysteme",
+      "description": "info folgt",
+      "machines_count": 3,
+      "image": "/assets/img/machines/f22.png",
+      "url": "speichersysteme",
+      "sub-categories": [
+        {
+          "name": "Formatgebunden",
+          "description": "info folgt",
+          "machines_count": 1,
+          "image": "/assets/img/machines/f11.jpg",
+          "url": "formatgebunden",
+          "machines": [
+            { "name": "HSP Speichertisch", "description": "info folgt", "image": "info folgt", "url": "hsp-speichertisch" }
+          ]
+        },
+        {
+          "name": "Formatvariabel",
+          "description": "info folgt",
+          "machines_count": 2,
+          "image": "/assets/img/machines/f22.png",
+          "url": "formatvariabel",
+          "machines": [
+            { "name": "Dynac", "description": "info folgt", "image": "info folgt", "url": "dynac" },
+            { "name": "Dynac", "description": "info folgt", "image": "info folgt", "url": "dynac-2" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Palettiersysteme",
+      "description": "info folgt",
+      "machines_count": 5,
+      "image": "/assets/img/machines/g23.webp",
+      "url": "palettiersysteme",
+      "sub-categories": [
+        {
+          "name": "Robotter",
+          "description": "info folgt",
+          "machines_count": 2,
+          "image": "/assets/img/machines/g12.jpg",
+          "url": "robotter",
+          "machines": [
+            { "name": "CSI", "description": "info folgt", "image": "info folgt", "url": "csi" },
+            { "name": "MSK", "description": "info folgt", "image": "info folgt", "url": "msk" }
+          ]
+        },
+        {
+          "name": "Lagenpalettierer",
+          "description": "info folgt",
+          "machines_count": 3,
+          "image": "/assets/img/machines/g23.webp",
+          "url": "lagenpalettierer",
+          "machines": [
+            { "name": "CSI", "description": "info folgt", "image": "info folgt", "url": "csi-1" },
+            { "name": "CSI", "description": "info folgt", "image": "info folgt", "url": "csi-2" },
+            { "name": "MSK", "description": "info folgt", "image": "info folgt", "url": "msk-1" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Palettenverpackung",
+      "description": "info folgt",
+      "machines_count": 10,
+      "image": "/assets/img/machines/h31.jpg",
+      "url": "palettenverpackung",
+      "sub-categories": [
+        {
+          "name": "Schrumpfhaube",
+          "description": "info folgt",
+          "machines_count": 5,
+          "image": "/assets/img/machines/h12.webp",
+          "url": "schrumpfhaube",
+          "machines": [
+            { "name": "Multitech", "description": "info folgt", "image": "info folgt", "url": "multitech" },
+            { "name": "Paratech", "description": "info folgt", "image": "info folgt", "url": "paratech" },
+            { "name": "Schrumpfrahmen", "description": "info folgt", "image": "info folgt", "url": "schrumpfrahmen" },
+            { "name": "Haubenüberzieher", "description": "info folgt", "image": "info folgt", "url": "haubenuberzieher" },
+            { "name": "Haubenkonfektionierer", "description": "info folgt", "image": "info folgt", "url": "haubenkonfektionierer" }
+          ]
+        },
+        {
+          "name": "Spannhaube",
+          "description": "info folgt",
+          "machines_count": 1,
+          "image": "/assets/img/machines/h21.jpg",
+          "url": "spannhaube",
+          "machines": [
+            { "name": "Tensiontech", "description": "info folgt", "image": "info folgt", "url": "tensiontech" }
+          ]
+        },
+        {
+          "name": "Hybridanlage",
+          "description": "info folgt",
+          "machines_count": 1,
+          "image": "/assets/img/machines/h31.jpg",
+          "url": "hybridanlage",
+          "machines": [
+            { "name": "Spannhaube/Schrumpfen", "description": "info folgt", "image": "info folgt", "url": "spannhaube-schrumpfen" }
+          ]
+        },
+        {
+          "name": "Sicherung",
+          "description": "info folgt",
+          "machines_count": 1,
+          "image": "/assets/img/machines/h41A.jpg",
+          "url": "sicherung",
+          "machines": [
+            { "name": "Palettenloop", "description": "info folgt", "image": "info folgt", "url": "palettenloop" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Fördertechnik",
+      "description": "info folgt",
+      "machines_count": 2,
+      "image": "/assets/img/machines/I21A.jpg",
+      "url": "fördertechnik",
+      "sub-categories": [
+        {
+          "name": "Gebindetransport",
+          "description": "info folgt",
+          "machines_count": 1,
+          "image": "/assets/img/machines/i11A.jpg",
+          "url": "gebindetransport",
+          "machines": [
+            { "name": "für Gebinde", "description": "info folgt", "image": "info folgt", "url": "fuer-gebinde" }
+          ]
+        },
+        {
+          "name": "Palettentransport",
+          "description": "info folgt",
+          "machines_count": 1,
+          "image": "/assets/img/machines/I21A.jpg",
+          "url": "palettentransport",
+          "machines": [
+            { "name": "für Paletten", "description": "info folgt", "image": "info folgt", "url": "fuer-paletten" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Defolierer",
+      "description": "info folgt",
+      "machines_count": 1,
+      "image": "/assets/img/machines/j11a.jpg",
+      "url": "defolierer",
+      "sub-categories": [
+        {
+          "name": "Defolierer",
+          "description": "info folgt",
+          "machines_count": 1,
+          "image": "info folgt",
+          "url": "defolierer",
+          "machines": [
+            { "name": "Defotech", "description": "info folgt", "image": "info folgt", "url": "defotech" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sonderlösungen",
+      "description": "info folgt",
+      "machines_count": 1,
+      "image": "info folgt",
+      "url": "sonderlösungen"
+    }
+  ]
 }

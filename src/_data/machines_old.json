@@ -1,0 +1,863 @@
+[
+    {
+        "title": "kontinuierlich",
+        "slug": "folie/kontinuierlich",
+        "parent_category": "Folie",
+        "description": "info folgt",
+        "machines": [
+            {
+                "name": "HEM Hochleistungs-Einschlagmaschine",
+                "id": "hem-hochleistungs-einschlagmaschine",
+                "description": "Kontinuierlich laufende Maschine mit Folienüberlappung an der Unterseite – kein Schweißsystem. Mit dieser Maschine sind einbahnig bis 60 Gebinde/min und zweibahnig bis zu 85 Gebinde/min möglich.",
+                "features_list": [
+                    "Zuführung InLine oder seitlich",
+                    "Folienwechsel optional vollautomatisch",
+                    "Druckmarkensteuerung",
+                    "2-bahnige Ausführung"
+                ],
+                "images": [
+                    "/assets/img/machines/a11.png"
+                ],
+                "variants": [
+                    "D11"
+                ],
+                "position": 1,
+                "manufacturer_name": "meurer Verpackungssysteme GmbH",
+                "manufacturer_logo": "/assets/img/manufacturers/meurer.svg",
+                "manufacturer_information": "Alle MEURER-Maschinen werden in modularer und robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.",
+                "manufacturer_product_page": "Folienverpackung"
+            },
+            {
+                "name": "HHS-Hochleistungsschlauchbeutel",
+                "id": "hhs-hochleistungsschlauchbeutel",
+                "description": "Kontinuierlich laufende Maschine für einzel, oder Sammelgebinde in Folienvolleinschlag mit bis zu 160 Gebinde/min",
+                "features_list": [
+                    "Zuführung InLine bis zu 3-Bahnen",
+                    "Folienwechsel optional vollauromatisch",
+                    "Druckmarkensteuerung",
+                    "Blatteinleger",
+                    "1-6 Produkte einreihig und bis zu 3 reihig"
+                ],
+                "images": [
+                    "/assets/img/machines/a12.webp"
+                ],
+                "variants": [
+                    "B12",
+                    "B13",
+                    "D12"
+                ],
+                "position": 2,
+                "manufacturer_name": "meurer Verpackungssysteme GmbH",
+                "manufacturer_logo": "/assets/img/manufacturers/meurer.svg",
+                "manufacturer_information": "Alle MEURER-Maschinen werden in Modularer und robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.\n- Maschineneffiktivität bis 99%\n- schneller und einfacher Formatwechsel durch Schnellverschlüsse\n- Durchgehende Einzeladerbeschriftung\n- optional Einzeraderverlegung\n- optional automatische Formatverstellung\n- Clean Design\n- Servoantrieb und Steuerung",
+                "manufacturer_product_page": "Folienverpackung"
+            }
+        ]
+    },
+    {
+        "title": "getaktet",
+        "slug": "folie/getaktet",
+        "parent_category": "Folie",
+        "description": "info folgt",
+        "machines": [
+            {
+                "name": "FL Filmline-Bündelpacker/Straffpacker",
+                "id": "fl-filmline",
+                "description": "Getaktete Maschine mit Schweißsystem. Mit dieser Maschine sind einbahnig bis 35 Gebinde/min möglich ",
+                "features_list": [
+                    "Zuführung InLine oder seitlich",
+                    "Straffeinrichtung für Folien- und Energiereduzierung",
+                    "Seitliche Folienabwicklung optional",
+                    "Folienbwechsel optional vollautomatisch",
+                    "Druckmarkensteuerung"
+                ],
+                "images": [
+                    "/assets/img/machines/a21.webp"
+                ],
+                "variants": [
+                    "A21"
+                ],
+                "position": 1,
+                "manufacturer_name": "meurer Verpackungssysteme GmbH",
+                "manufacturer_logo": "/assets/img/manufacturers/meurer.svg",
+                "manufacturer_information": "Alle MEURER-Maschinen werden in Modularer und robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.\n- Maschineneffiktivität bis 99%\n- schneller und einfacher Formatwechsel durch Schnellverschlüsse\n- Durchgehende Einzeladerbeschriftung\n- optional Einzeraderverlegung\n- Clean Design\n- Servoantrieb und Steuerung",
+                "manufacturer_product_page": "Folienverpackung"
+            },
+            {
+                "name": "FL Servostraffer",
+                "id": "fl-servostraffer",
+                "description": "Getaktete Folienverpackungsmaschine mit servogesteuerter Folienstreckung.",
+                "features_list": [
+                    "Servogesteuerte Folienstraffung",
+                    "Hohe Packstabilität",
+                    "Reproduzierbare Verpackungsqualität"
+                ],
+                "images": [
+                    "/assets/img/machines/a22.webp"
+                ],
+                "variants": [
+                    "A22"
+                ],
+                "position": 2,
+                "manufacturer_name": "meurer Verpackungssysteme GmbH",
+                "manufacturer_logo": "/assets/img/manufacturers/meurer.svg",
+                "manufacturer_information": "Alle MEURER-Maschinen werden in modularer und robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.",
+                "manufacturer_product_page": "Folienverpackung"
+            }
+        ]
+    },
+    {
+        "title": "kontinuierlich",
+        "slug": "karton/kontinuierlich",
+        "parent_category": "Karton",
+        "description": "info folgt",
+        "machines": [
+            {
+                "name": "HTW Hochleistungstraypacker",
+                "id": "htw-hochleistungstraypacker",
+                "description": "Kontinuierlich arbeitender Hochleistungstraypacker zur effizienten Verpackung von Gebinden in Kartontrays.",
+                "features_list": [
+                    "Hohe Leistung bei kontinuierlichem Betrieb",
+                    "Schonende Produktverarbeitung",
+                    "Schneller Formatwechsel"
+                ],
+                "images": [
+                    "/assets/img/machines/b11.webp"
+                ],
+                "variants": [
+                    "B11"
+                ],
+                "position": 1,
+                "manufacturer_name": "MEURER",
+                "manufacturer_logo": "info folgt",
+                "manufacturer_information": "Alle MEURER-Maschinen werden in modularer und robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.",
+                "manufacturer_product_page": "Kartonverpackung"
+            },
+            {
+                "name": "CSP Carton-Sleeve Packer 100",
+                "id": "csp-carton-sleeve-packer-100",
+                "description": "Kontinuierlich arbeitender Carton-Sleeve-Packer für kleinere Leistungsbereiche.",
+                "features_list": [
+                    "Kompakte Bauweise",
+                    "Kontinuierlicher Betrieb",
+                    "Hohe Verpackungsqualität"
+                ],
+                "images": [
+                    "/assets/img/machines/b12.png"
+                ],
+                "variants": [
+                    "B12"
+                ],
+                "position": 2,
+                "manufacturer_name": "MEURER",
+                "manufacturer_logo": "info folgt",
+                "manufacturer_information": "Alle MEURER-Maschinen werden in modularer und robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.",
+                "manufacturer_product_page": "Kartonverpackung"
+            },
+            {
+                "name": "CSP Carton-Sleeve Packer 160",
+                "id": "csp-carton-sleeve-packer-160",
+                "description": "Kontinuierlich arbeitender Carton-Sleeve-Packer für höhere Leistungsanforderungen.",
+                "features_list": [
+                    "Hohe Ausstoßleistung",
+                    "Robuste Bauweise",
+                    "Zuverlässiger Dauerbetrieb"
+                ],
+                "images": [
+                    "/assets/img/machines/b13.webp"
+                ],
+                "variants": [
+                    "B13"
+                ],
+                "position": 3,
+                "manufacturer_name": "MEURER",
+                "manufacturer_logo": "info folgt",
+                "manufacturer_information": "Alle MEURER-Maschinen werden in modularer und robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.",
+                "manufacturer_product_page": "Kartonverpackung"
+            }
+        ]
+    },
+    {
+        "title": "getaktet",
+        "slug": "karton/getaktet",
+        "parent_category": "Karton",
+        "description": "info folgt",
+        "machines": [
+            {
+                "name": "TP Traypacker",
+                "id": "tp-traypacker",
+                "description": "Getaktet arbeitender Traypacker zur zuverlässigen Verpackung von Gebinden in Kartontrays.",
+                "features_list": [
+                    "Getakteter Betrieb",
+                    "Hohe Prozesssicherheit",
+                    "Flexibel für unterschiedliche Formate"
+                ],
+                "images": [
+                    "/assets/img/machines/b21.webp"
+                ],
+                "variants": [
+                    "B21"
+                ],
+                "position": 1,
+                "manufacturer_name": "MEURER",
+                "manufacturer_logo": "info folgt",
+                "manufacturer_information": "Alle MEURER-Maschinen werden in modularer und robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.",
+                "manufacturer_product_page": "Kartonverpackung"
+            },
+            {
+                "name": "Setzpacker",
+                "id": "setzpacker",
+                "description": "Getaktet arbeitende Setzpacker-Lösung zur präzisen Gruppierung und Verpackung von Produkten.",
+                "features_list": [
+                    "Präzise Produktplatzierung",
+                    "Modular erweiterbar",
+                    "Hohe Verpackungsqualität"
+                ],
+                "images": [
+                    "/assets/img/machines/b22.webp"
+                ],
+                "variants": [
+                    "B22"
+                ],
+                "position": 2,
+                "manufacturer_name": "MEURER",
+                "manufacturer_logo": "info folgt",
+                "manufacturer_information": "Alle MEURER-Maschinen werden in modularer und robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.",
+                "manufacturer_product_page": "Kartonverpackung"
+            }
+        ]
+    },
+    {
+        "title": "Seitenkartonierer",
+        "slug": "karton/seitenkartonierer",
+        "parent_category": "Karton",
+        "description": "info folgt",
+        "machines": [
+            {
+                "name": "Maestro",
+                "id": "maestro",
+                "description": "info folgt",
+                "features_list": "info folgt",
+                "images": [
+                    "/assets/img/machines/b31.jpg"
+                ],
+                "variants": [
+                    "B31"
+                ],
+                "position": 1,
+                "manufacturer_name": "MEURER",
+                "manufacturer_logo": "info folgt",
+                "manufacturer_information": "info folgt",
+                "manufacturer_product_page": "Kartonverpackung"
+            },
+            {
+                "name": "Vento",
+                "id": "vento",
+                "description": "info folgt",
+                "features_list": "info folgt",
+                "images": [
+                    "/assets/img/machines/b32.jpg"
+                ],
+                "variants": [
+                    "B32"
+                ],
+                "position": 2,
+                "manufacturer_name": "MEURER",
+                "manufacturer_logo": "info folgt",
+                "manufacturer_information": "info folgt",
+                "manufacturer_product_page": "Kartonverpackung"
+            },
+            {
+                "name": "Air",
+                "id": "air",
+                "description": "info folgt",
+                "features_list": "info folgt",
+                "images": [
+                    "/assets/img/machines/b33.jpg"
+                ],
+                "variants": [
+                    "B33"
+                ],
+                "position": 3,
+                "manufacturer_name": "MEURER",
+                "manufacturer_logo": "info folgt",
+                "manufacturer_information": "info folgt",
+                "manufacturer_product_page": "Kartonverpackung"
+            },
+            {
+                "name": "BRC",
+                "id": "brc",
+                "description": "info folgt",
+                "features_list": "info folgt",
+                "images": [
+                    "/assets/img/machines/b34.jpg"
+                ],
+                "variants": [
+                    "B34"
+                ],
+                "position": 4,
+                "manufacturer_name": "MEURER",
+                "manufacturer_logo": "info folgt",
+                "manufacturer_information": "info folgt",
+                "manufacturer_product_page": "Kartonverpackung"
+            }
+        ]
+    },
+    {
+        "title": "Aufrichter",
+        "slug": "karton/aufrichter",
+        "parent_category": "Karton",
+        "description": "info folgt",
+        "machines": [
+            {
+                "name": "TRF",
+                "id": "trf",
+                "description": "info folgt",
+                "features_list": "info folgt",
+                "images": [
+                    "/assets/img/machines/b41.png"
+                ],
+                "variants": [
+                    "B41"
+                ],
+                "position": 1,
+                "manufacturer_name": "MEURER",
+                "manufacturer_logo": "info folgt",
+                "manufacturer_information": "info folgt",
+                "manufacturer_product_page": "Kartonverpackung"
+            }
+        ]
+    },
+    {
+        "title": "kontinuierlich",
+        "slug": "folie-karton/kontinuierlich",
+        "parent_category": "Folie/Karton",
+        "description": "info folgt",
+        "machines": [
+            {
+                "name": "HTW/HEM",
+                "id": "htw-hem",
+                "description": "info folgt",
+                "features_list": "info folgt",
+                "images": [
+                    "/assets/img/machines/c11.png"
+                ],
+                "variants": [
+                    "C11"
+                ],
+                "position": 1,
+                "manufacturer_name": "MEURER",
+                "manufacturer_logo": "info folgt",
+                "manufacturer_information": "info folgt",
+                "manufacturer_product_page": "info folgt"
+            }
+        ]
+    },
+    {
+        "title": "kontinuierlich",
+        "slug": "papierverpackung",
+        "parent_category": "Papierverpackung",
+        "description": "info folgt",
+        "machines": [
+            {
+                "name": "PHM Gebindepacker mit Papier",
+                "id": "phm-gebindepacker-mit-papier",
+                "description": "info folgt",
+                "features_list": "info folgt",
+                "images": [
+                    "/assets/img/machines/d11.webp"
+                ],
+                "variants": [
+                    "D11"
+                ],
+                "position": 1,
+                "manufacturer_name": "MEURER",
+                "manufacturer_logo": "info folgt",
+                "manufacturer_information": "info folgt",
+                "manufacturer_product_page": "info folgt"
+            },
+            {
+                "name": "HBP Gebindepacker mit Klebepapier",
+                "id": "hbp-gebindepacker-mit-klebepapier",
+                "description": "info folgt",
+                "features_list": "info folgt",
+                "images": [
+                    "/assets/img/machines/d12.png"
+                ],
+                "variants": [
+                    "D12"
+                ],
+                "position": 2,
+                "manufacturer_name": "MEURER",
+                "manufacturer_logo": "info folgt",
+                "manufacturer_information": "info folgt",
+                "manufacturer_product_page": "info folgt"
+            }
+        ]
+    },
+    {
+        "title": "kontinuierlich",
+        "slug": "tragegriff/kontinuierlich",
+        "parent_category": "Tragegriff",
+        "description": "info folgt",
+        "machines": [
+            {
+                "name": "HA Tragegriffapplikator",
+                "id": "ha-tragegriffapplikator",
+                "description": "info folgt",
+                "features_list": "info folgt",
+                "images": [
+                    "/assets/img/machines/e11.png"
+                ],
+                "variants": [
+                    "E11"
+                ],
+                "position": 1,
+                "manufacturer_name": "MEURER",
+                "manufacturer_logo": "info folgt",
+                "manufacturer_information": "info folgt",
+                "manufacturer_product_page": "info folgt"
+            }
+        ]
+    },
+    {
+        "title": "Formatgebunden",
+        "slug": "speichersysteme/formatgebunden",
+        "parent_category": "Speichersysteme",
+        "description": "info folgt",
+        "machines": [
+            {
+                "name": "HSP Speichertisch",
+                "id": "hsp-speichertisch",
+                "description": "info folgt",
+                "features_list": "info folgt",
+                "images": [
+                    "/assets/img/machines/f11.jpg"
+                ],
+                "variants": [
+                    "F11"
+                ],
+                "position": 1,
+                "manufacturer_name": "MEURER",
+                "manufacturer_logo": "info folgt",
+                "manufacturer_information": "info folgt",
+                "manufacturer_product_page": "info folgt"
+            }
+        ]
+    },
+    {
+        "title": "Formatvariabel",
+        "slug": "speichersysteme/formatvariabel",
+        "parent_category": "Speichersysteme",
+        "description": "info folgt",
+        "machines": [
+            {
+                "name": "Dynac",
+                "id": "dynac",
+                "description": "info folgt",
+                "features_list": "info folgt",
+                "images": [
+                    "/assets/img/machines/f21.jpg"
+                ],
+                "variants": [
+                    "F21"
+                ],
+                "position": 1,
+                "manufacturer_name": "MEURER",
+                "manufacturer_logo": "info folgt",
+                "manufacturer_information": "info folgt",
+                "manufacturer_product_page": "info folgt"
+            },
+            {
+                "name": "Dynac",
+                "id": "dynac-2",
+                "description": "info folgt",
+                "features_list": "info folgt",
+                "images": [
+                    "/assets/img/machines/f22.png"
+                ],
+                "variants": [
+                    "F22"
+                ],
+                "position": 2,
+                "manufacturer_name": "MEURER",
+                "manufacturer_logo": "info folgt",
+                "manufacturer_information": "info folgt",
+                "manufacturer_product_page": "info folgt"
+            }
+        ]
+    },
+    {
+        "title": "Robotter",
+        "slug": "palettiersysteme/robotter",
+        "parent_category": "Palettiersysteme",
+        "description": "info folgt",
+        "machines": [
+            {
+                "name": "CSI",
+                "id": "csi-robotter",
+                "description": "info folgt",
+                "features_list": "info folgt",
+                "images": [
+                    "/assets/img/machines/g11.png"
+                ],
+                "variants": [
+                    "G11"
+                ],
+                "position": 1,
+                "manufacturer_name": "MEURER",
+                "manufacturer_logo": "info folgt",
+                "manufacturer_information": "info folgt",
+                "manufacturer_product_page": "info folgt"
+            },
+            {
+                "name": "MSK",
+                "id": "msk-robotter",
+                "description": "info folgt",
+                "features_list": "info folgt",
+                "images": [
+                    "/assets/img/machines/g12.jpg"
+                ],
+                "variants": [
+                    "G12"
+                ],
+                "position": 2,
+                "manufacturer_name": "MEURER",
+                "manufacturer_logo": "info folgt",
+                "manufacturer_information": "info folgt",
+                "manufacturer_product_page": "info folgt"
+            }
+        ]
+    },
+    {
+        "title": "Lagenpalettierer",
+        "slug": "palettiersysteme/lagenpalettierer",
+        "parent_category": "Palettiersysteme",
+        "description": "info folgt",
+        "machines": [
+            {
+                "name": "CSI",
+                "id": "csi-lagenpalettierer-1",
+                "description": "info folgt",
+                "features_list": "info folgt",
+                "images": [
+                    "/assets/img/machines/g21.png"
+                ],
+                "variants": [
+                    "G21"
+                ],
+                "position": 1,
+                "manufacturer_name": "MEURER",
+                "manufacturer_logo": "info folgt",
+                "manufacturer_information": "info folgt",
+                "manufacturer_product_page": "info folgt"
+            },
+            {
+                "name": "CSI",
+                "id": "csi-lagenpalettierer-2",
+                "description": "info folgt",
+                "features_list": "info folgt",
+                "images": [
+                    "/assets/img/machines/g22.png"
+                ],
+                "variants": [
+                    "G22"
+                ],
+                "position": 2,
+                "manufacturer_name": "MEURER",
+                "manufacturer_logo": "info folgt",
+                "manufacturer_information": "info folgt",
+                "manufacturer_product_page": "info folgt"
+            },
+            {
+                "name": "MSK",
+                "id": "msk-lagenpalettierer",
+                "description": "info folgt",
+                "features_list": "info folgt",
+                "images": [
+                    "/assets/img/machines/g23.webp"
+                ],
+                "variants": [
+                    "G23"
+                ],
+                "position": 3,
+                "manufacturer_name": "MEURER",
+                "manufacturer_logo": "info folgt",
+                "manufacturer_information": "info folgt",
+                "manufacturer_product_page": "info folgt"
+            }
+        ]
+    },
+    {
+        "title": "Schrumpfhaube",
+        "slug": "palettenverpackung/schrumpfhaube",
+        "parent_category": "Palettenverpackung",
+        "description": "info folgt",
+        "machines": [
+            {
+                "name": "Multitech",
+                "id": "multitech",
+                "description": "info folgt",
+                "features_list": "info folgt",
+                "images": [
+                    "/assets/img/machines/h11.jpg"
+                ],
+                "variants": [
+                    "H11"
+                ],
+                "position": 1,
+                "manufacturer_name": "MEURER",
+                "manufacturer_logo": "info folgt",
+                "manufacturer_information": "info folgt",
+                "manufacturer_product_page": "info folgt"
+            },
+            {
+                "name": "Paratech",
+                "id": "paratech",
+                "description": "info folgt",
+                "features_list": "info folgt",
+                "images": [
+                    "/assets/img/machines/h12.webp"
+                ],
+                "variants": [
+                    "H12"
+                ],
+                "position": 2,
+                "manufacturer_name": "MEURER",
+                "manufacturer_logo": "info folgt",
+                "manufacturer_information": "info folgt",
+                "manufacturer_product_page": "info folgt"
+            },
+            {
+                "name": "Schrumpfrahmen",
+                "id": "schrumpfrahmen",
+                "description": "info folgt",
+                "features_list": "info folgt",
+                "images": [
+                    "/assets/img/machines/h13.jpg"
+                ],
+                "variants": [
+                    "H13"
+                ],
+                "position": 3,
+                "manufacturer_name": "MEURER",
+                "manufacturer_logo": "info folgt",
+                "manufacturer_information": "info folgt",
+                "manufacturer_product_page": "info folgt"
+            },
+            {
+                "name": "Haubenüberzieher",
+                "id": "haubenueberzieher",
+                "description": "info folgt",
+                "features_list": "info folgt",
+                "images": [
+                    "/assets/img/machines/h14.jpg"
+                ],
+                "variants": [
+                    "H14"
+                ],
+                "position": 4,
+                "manufacturer_name": "MEURER",
+                "manufacturer_logo": "info folgt",
+                "manufacturer_information": "info folgt",
+                "manufacturer_product_page": "info folgt"
+            },
+            {
+                "name": "Haubenkonfektionierer",
+                "id": "haubenkonfektionierer",
+                "description": "info folgt",
+                "features_list": "info folgt",
+                "images": [
+                    "/assets/img/machines/h15.jpg"
+                ],
+                "variants": [
+                    "H15"
+                ],
+                "position": 5,
+                "manufacturer_name": "MEURER",
+                "manufacturer_logo": "info folgt",
+                "manufacturer_information": "info folgt",
+                "manufacturer_product_page": "info folgt"
+            }
+        ]
+    },
+    {
+        "title": "Spannhaube",
+        "slug": "palettenverpackung/spannhaube",
+        "parent_category": "Palettenverpackung",
+        "description": "info folgt",
+        "machines": [
+            {
+                "name": "Tensiontech",
+                "id": "tensiontech",
+                "description": "info folgt",
+                "features_list": "info folgt",
+                "images": [
+                    "/assets/img/machines/h21.jpg"
+                ],
+                "variants": [
+                    "H21"
+                ],
+                "position": 1,
+                "manufacturer_name": "MEURER",
+                "manufacturer_logo": "info folgt",
+                "manufacturer_information": "info folgt",
+                "manufacturer_product_page": "info folgt"
+            }
+        ]
+    },
+    {
+        "title": "Hybridanlage",
+        "slug": "palettenverpackung/hybridanlage",
+        "parent_category": "Palettenverpackung",
+        "description": "info folgt",
+        "machines": [
+            {
+                "name": "Spannhaube / Schrumpfen",
+                "id": "spannhaube-schrumpfen",
+                "description": "info folgt",
+                "features_list": "info folgt",
+                "images": [
+                    "/assets/img/machines/h31.jpg"
+                ],
+                "variants": [
+                    "H31"
+                ],
+                "position": 1,
+                "manufacturer_name": "MEURER",
+                "manufacturer_logo": "info folgt",
+                "manufacturer_information": "info folgt",
+                "manufacturer_product_page": "info folgt"
+            }
+        ]
+    },
+    {
+        "title": "Sicherung",
+        "slug": "palettenverpackung/sicherung",
+        "parent_category": "Palettenverpackung",
+        "description": "info folgt",
+        "machines": [
+            {
+                "name": "Palettenloop",
+                "id": "palettenloop",
+                "description": "info folgt",
+                "features_list": "info folgt",
+                "images": [
+                    "/assets/img/machines/h41A.jpg",
+                    "/assets/img/machines/h41B.jpg"
+                ],
+                "variants": [
+                    "H41"
+                ],
+                "position": 1,
+                "manufacturer_name": "MEURER",
+                "manufacturer_logo": "info folgt",
+                "manufacturer_information": "info folgt",
+                "manufacturer_product_page": "info folgt"
+            }
+        ]
+    },
+    {
+        "title": "Gebindetransport",
+        "slug": "fördertechnik/gebindetransport",
+        "parent_category": "Fördertechnik",
+        "description": "info folgt",
+        "machines": [
+            {
+                "name": "Fördertechnik für Gebinde",
+                "id": "foerdertechnik-gebinde",
+                "description": "info folgt",
+                "features_list": "info folgt",
+                "images": [
+                    "/assets/img/machines/i11A.jpg",
+                    "/assets/img/machines/i11B.jpg",
+                    "/assets/img/machines/i11C.jpg"
+                ],
+                "variants": [
+                    "I11"
+                ],
+                "position": 1,
+                "manufacturer_name": "MEURER",
+                "manufacturer_logo": "info folgt",
+                "manufacturer_information": "info folgt",
+                "manufacturer_product_page": "info folgt"
+            }
+        ]
+    },
+    {
+        "title": "Palettentransport",
+        "slug": "fördertechnik/palettentransport",
+        "parent_category": "Fördertechnik",
+        "description": "info folgt",
+        "machines": [
+            {
+                "name": "Fördertechnik für Paletten",
+                "id": "foerdertechnik-paletten",
+                "description": "info folgt",
+                "features_list": "info folgt",
+                "images": [
+                    "/assets/img/machines/I21A.jpg"
+                ],
+                "variants": [
+                    "I21"
+                ],
+                "position": 1,
+                "manufacturer_name": "MEURER",
+                "manufacturer_logo": "info folgt",
+                "manufacturer_information": "info folgt",
+                "manufacturer_product_page": "info folgt"
+            }
+        ]
+    },
+    {
+        "title": "Defolierer",
+        "slug": "defolierer",
+        "parent_category": "Defolierer",
+        "description": "info folgt",
+        "machines": [
+            {
+                "name": "Defotech",
+                "id": "defotech",
+                "description": "info folgt",
+                "features_list": "info folgt",
+                "images": [
+                    "/assets/img/machines/j11a.jpg",
+                    "/assets/img/machines/j11b.jpg"
+                ],
+                "variants": [
+                    "J11"
+                ],
+                "position": 1,
+                "manufacturer_name": "MEURER",
+                "manufacturer_logo": "info folgt",
+                "manufacturer_information": "info folgt",
+                "manufacturer_product_page": "info folgt"
+            }
+        ]
+    },
+    {
+        "title": "Sonderlösungen",
+        "slug": "sonderlösungen",
+        "parent_category": "Sonderlösungen",
+        "description": "info folgt",
+        "machines": [
+            {
+                "name": "x",
+                "id": "x",
+                "description": "info folgt",
+                "features_list": "info folgt",
+                "images": [
+                    "/assets/img/machines/k11.png"
+                ],
+                "variants": [
+                    "K11"
+                ],
+                "position": 1,
+                "manufacturer_name": "MEURER",
+                "manufacturer_logo": "info folgt",
+                "manufacturer_information": "info folgt",
+                "manufacturer_product_page": "info folgt"
+            }
+        ]
+    }
+]

@@ -1,12 +1,22 @@
----
-pagination:
-    data: category_sub_categories
-    size: 1
-    alias: subcategories
-layout: layout/app.njk
-eleventyComputed:
-    title: "{{ subcategories.parent_category }}"
-    permalink: "maschinen/{{ subcategories.slug }}/"
+---js
+{
+  pagination: {
+    data: "categories.categories",
+    size: 1,
+    alias: "subcategories",
+    before: function (paginationData) {
+      return paginationData.filter(cat =>
+        Array.isArray(cat["sub-categories"]) &&
+        cat["sub-categories"].length > 1
+      );
+    }
+  },
+  layout: "layout/app.njk",
+  eleventyComputed: {
+    title: data => data.subcategories.name,
+    permalink: data => `maschinen/${data.subcategories.url}/`
+  }
+}
 ---
 
 <section class="pt-32 pb-16 section-gradient-light">
@@ -17,10 +27,10 @@ eleventyComputed:
             {{ breadcrumbs(crumbs) }}
         </nav>
         <div class="max-w-3xl">
-            <span class="inline-block px-4 py-1.5 bg-primary/10 text-primary text-sm font-medium rounded-full mb-6">{{ subcategories.subcategories | length }} Unterbereiche</span>
-            <h1 class="font-headline font-bold text-4xl sm:text-5xl md:text-6xl text-foreground-headline mb-6 tracking-tight hyphens-auto
+            <span class="inline-block px-4 py-1.5 bg-primary/10 text-primary text-sm font-medium rounded-full mb-6">{{ subcategories["sub-categories"] | length }} Unterbereiche</span>
+            <h1 class="font-headline font-semibold tracking-tight text-4xl sm:text-4xl md:text-5xl text-foreground-headline mb-6  hyphens-auto
                 break-words">
-                {{ subcategories.title }}</h1>
+                {{ subcategories.name }}</h1>
             <p class="text-foreground-muted text-lg md:text-xl max-w-2xl font-light mb-8">{{ subcategories.description | safe }}
             </p>
             <p class="text-foreground italic">
@@ -33,14 +43,14 @@ eleventyComputed:
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {% set folien = categories.categories | selectattr("name", "equalto", "Folienverpackung") | first %}
             {% if folien and folien["sub-categories"] %}
-                {% for sector in folien["sub-categories"] %}
+                {% for sector in subcategories["sub-categories"] %}
                 {% set idx0 = loop.index0 %}
                 {% set anim_delay = (idx0 * 0.1) %}
                 {% if sector.url != page.url %}
-                    <a class="group rounded-lg shadow-card hover:shadow-hover bg-white overflow-hidden animate-fade-up opacity-0 flex flex-col border-border hover:border-primary/10 border" style="animation-delay:{{ anim_delay }}s" href="{{ (page.url~"/"~sector.url~"/") | url }}">
-                        <div class="relative h-48 overflow-hidden">
+                    <a class="group rounded-lg shadow-card hover:shadow-hover bg-card overflow-hidden animate-fade-up opacity-0 flex flex-col border-border hover:border-primary/10 border" style="animation-delay:{{ anim_delay }}s" href="{{ (page.url~"/"~sector.url~"/") | url }}">
+                        <div class="relative h-48 overflow-hidden bg-background border-b border-border-light">
                             <img src="{{ sector.image | url }}" alt="{{ sector.name }}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                                <div class="absolute inset-0 bg-gradient-to-t from-foreground-headline/40 to-transparent"></div>
+                                {# <div class="absolute inset-0 bg-gradient-to-t from-foreground-headline/40 to-transparent"></div>
                                 <div class="absolute bottom-4 left-4 flex items-center gap-2 text-primary-foreground">
                                     <div class="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
                                         <svg
@@ -61,10 +71,10 @@ eleventyComputed:
                                         {{ sector.machines_count | safe }}
                                         {% if sector.machines_count == 1 %}&nbsp;Maschine{% else %}&nbsp;Maschinen{% endif %}
                                     </span>
-                                </div>
+                                </div> #}
                             </div>
                             <div class="p-6 flex flex-col grow-1">
-                                <h3 class="font-headline text-2xl font-bold text-foreground-headline mb-2 group-hover:text-primary transition-colors">
+                                <h3 class="font-headline text-xl font-semibold tracking-[0.01em] text-foreground-headline mb-2 group-hover:text-primary transition-colors capitalize">
                                     {{ sector.name | safe }}</h3>
                                 <p class="text-foreground text-sm mb-4 line-clamp-3 grow-1 tracking-[0.01em]">{{ sector.description | safe }}
                                 </p>

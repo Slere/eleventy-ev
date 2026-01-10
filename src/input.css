@@ -2,16 +2,24 @@
 /* @import '@fontsource-variable/nunito-sans'; */
 @import "@fontsource-variable/inter";
 @import "@fontsource-variable/figtree";
+@import '@fontsource/bebas-neue';
+@import '@fontsource-variable/ibm-plex-sans';
+@import '@fontsource-variable/oswald';
+@import '@fontsource-variable/montserrat';
 @source "./src/*.{html,js}";
 @theme {  
     --custom-font: "Inter Variable";
     --font-figtree: "Figtree Variable";
+    --font-bebasneue: "Bebas Neue";
+    --font-ibmplexsans: "IBM Plex Sans Variable";
+    --font-oswald: "Oswald Variable";
+    --font-montserrat: "Montserrat Variable";
      --breakpoint-xs: 30rem;
     --breakpoint-3xl: 112rem;
     --breakpoint-4xl: 128rem;
     --breakpoint-6xl: 161rem;
 
-    --color-foreground: #2E333A; /* oklch(0.4111 0.0268 250.56); */
+    --color-foreground: #212831; /* oklch(0.4111 0.0268 250.56); */
     --color-secondary: #f3f6fa; /* #f0f0f0; */
     --color-foreground-muted: #566171;
     --color-secondary-foreground: #204163;/*  oklch(0.4498 0.0298 257.68); */
@@ -64,7 +72,7 @@ font-family:var(--custom-font),var(--default-font-family);
 
 @layer utilities {
   .font-headline {
-    font-family: var(--font-figtree), var(--default-font-family);
+    font-family: var(--font-montserrat), var(--default-font-family);
   }
   .font-light-normal {
     font-weight: 350;

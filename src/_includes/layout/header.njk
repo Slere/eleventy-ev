@@ -13,12 +13,12 @@
 </script>
 <header
   id="site-header"
-  class="flex flex-wrap md:justify-start md:flex-nowrap w-full py-3 fixed min-h-18 top-0 z-50 transition-colors
-    duration-300 bg-transparent shadow-none /* Scroll state */ has-[#header-navbar.is-out-of-view]:bg-white
-    has-[#header-navbar.is-out-of-view]:shadow-md /* Mobile menu open overrides */ has-[#hs-navbar-example.open]:bg-white
-    has-[#hs-navbar-example.open]:shadow-md /* Desktop keeps transparent even if menu open */
-    md:has-[#hs-navbar-example.open]:bg-transparent md:has-[#hs-navbar-example.open]:shadow-none">
-  <nav class="max-w-8xl w-full mx-auto px-6 md:flex md:items-center md:justify-between" id="header-navbar">
+  class="flex flex-wrap md:justify-start shadow-xs md:flex-nowrap w-full py-3 fixed min-h-18 top-0 z-50
+         bg-white transition-shadow duration-300
+         has-[#header-navbar.is-out-of-view]:shadow-md ">
+  <nav
+  class="max-w-8xl w-full mx-auto px-6 md:flex md:items-center md:justify-between"
+  id="header-navbar">
     <div class="flex items-center justify-between shrink-0">
       <a class="flex-none w-fit text-xl font-semibold focus:outline-hidden focus:opacity-80" href="{{ "/" | url }}" aria-label="Brand">
         <img src="{{ "/assets/logo/logo_full_transparent.png" | url }}" alt="Logo" class="max-h-12 w-auto mr-2 inline-block align-middle"></a>
@@ -122,7 +122,7 @@
               <div
                 class="grid sm:grid-cols-2 md:grid-cols-3">
                 {% for category in categories.categories %}
-                {% if category["sub-categories"] and category["sub-categories"].length %}
+                {% if category["sub-categories"] and category["sub-categories"].length > 1 %}
                 <div
                   class="md:relative hs-dropdown hs-dropdown-hover [--strategy:static] md:[--trigger:hover] md:[--adaptive:adaptive]">
                   <!-- Trigger -->

@@ -8,6 +8,18 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy({
         "./node_modules/@fontsource-variable/figtree/files": "files"
     });
+      eleventyConfig.addPassthroughCopy({
+        "./node_modules/@fontsource-variable/ibm-plex-sans/files": "files"
+    });
+          eleventyConfig.addPassthroughCopy({
+        "./node_modules/@fontsource-variable/oswald/files": "files"
+    });
+              eleventyConfig.addPassthroughCopy({
+        "./node_modules/@fontsource-variable/montserrat/files": "files"
+    });
+     eleventyConfig.addPassthroughCopy({
+        "./node_modules/@fontsource/bebas-neue/files": "files"
+    });
     eleventyConfig.addPassthroughCopy({ "./src/assets": "assets/" });
     eleventyConfig.addFilter("breadcrumbs", function (url) {
         if (!url) return [];
