@@ -28,8 +28,8 @@
         </nav>
         <div class="max-w-3xl">
             <span class="inline-block px-4 py-1.5 bg-primary/10 text-primary text-sm font-medium rounded-full mb-6">{{ subcategories["sub-categories"] | length }} Unterbereiche</span>
-            <h1 class="font-headline font-semibold tracking-tight text-4xl sm:text-4xl md:text-5xl text-foreground-headline mb-6  hyphens-auto
-                break-words">
+            <h1 class="font-headline font-semibold tracking-tight text-4xl sm:text-4xl md:text-5xl text-foreground-headline mb-6
+                    hyphens-auto break-words">
                 {{ subcategories.name }}</h1>
             <p class="text-foreground-muted text-lg md:text-xl max-w-2xl font-light mb-8">{{ subcategories.description | safe }}
             </p>
@@ -40,43 +40,76 @@
 </section>
 <section class="py-20 bg-background">
     <div class="max-w-8xl mx-auto px-6">
+        <div class="divide-y divide-border mb-24">
+        {% for sector in subcategories["sub-categories"] %}
+         {% set idx0 = loop.index0 %}
+            {% set anim_delay = (idx0 * 0.1) %}
+            <a class="group block py-8 first:pt-0 last:pb-0 animate-fade-up opacity-0" style="animation-delay:{{ anim_delay }}s" href="{{ (page.url~"/"~sector.url~"/") | url }}">
+                <div class="flex flex-col lg:flex-row gap-6 lg:gap-10">
+                    <div class="relative w-full lg:w-2/5 aspect-[21/9] overflow-hidden rounded-lg ">
+                        <img
+                            src="{{ sector.image | url }}" 
+                            alt="{{ sector.name }}"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            {# <div class="absolute inset-0 bg-gradient-to-r from-foreground/40 via-transparent to-transparent"></div> #}
+                        </div>
+                        <div class="flex-1 flex flex-col justify-center">
+                        {#     <div class="flex items-center gap-3 mb-3">
+                                <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-droplets w-5 h-5 text-primary">
+                                        <path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0
+                                            2.22 1.8 4.05 4 4.05z"></path>
+                                        <path d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97"></path>
+                                    </svg>
+                                </div>
+                                <span class="text-muted-foreground text-sm font-medium">12 Machines</span>
+                            </div> #}
+                            <h3 class="font-headline text-3xl md:text-3xl text-foreground-headline mb-3 group-hover:text-primary transition-colors font-semibold">{{ sector.name | safe}}</h3>
+                            <p class="text-foreground text-base mb-4 max-w-xl">{{ sector.description | safe }}</p>
+                            <div class="flex items-center text-primary text-sm font-semibold">Bereich ansehen<svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-arrow-right w-4 h-4 ml-2 transition-transform group-hover:translate-x-2">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+        {% endfor %}
+        </div>
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {% set folien = categories.categories | selectattr("name", "equalto", "Folienverpackung") | first %}
-            {% if folien and folien["sub-categories"] %}
-                {% for sector in subcategories["sub-categories"] %}
+            {% for sector in subcategories["sub-categories"] %}
                 {% set idx0 = loop.index0 %}
                 {% set anim_delay = (idx0 * 0.1) %}
                 {% if sector.url != page.url %}
                     <a class="group rounded-lg shadow-card hover:shadow-hover bg-card overflow-hidden animate-fade-up opacity-0 flex flex-col border-border hover:border-primary/10 border" style="animation-delay:{{ anim_delay }}s" href="{{ (page.url~"/"~sector.url~"/") | url }}">
                         <div class="relative h-48 overflow-hidden bg-background border-b border-border-light">
-                            <img src="{{ sector.image | url }}" alt="{{ sector.name }}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                                {# <div class="absolute inset-0 bg-gradient-to-t from-foreground-headline/40 to-transparent"></div>
-                                <div class="absolute bottom-4 left-4 flex items-center gap-2 text-primary-foreground">
-                                    <div class="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            class="lucide lucide-package-icon lucide-package"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1
-                                                1.73z"/><path d="M12 22V12"/><polyline points="3.29 7 12 12 20.71 7"/><path d="m7.5 4.27 9 5.15"/>
-                                        </svg>
-                                    </div>
-                                    <span class="text-primary-foreground text-sm font-medium">
-                                        {{ sector.machines_count | safe }}
-                                        {% if sector.machines_count == 1 %}&nbsp;Maschine{% else %}&nbsp;Maschinen{% endif %}
-                                    </span>
-                                </div> #}
-                            </div>
+                            <img src="{{ sector.image | url }}" alt="{{ sector.name }}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"></div>
                             <div class="p-6 flex flex-col grow-1">
-                                <h3 class="font-headline text-xl font-semibold tracking-[0.01em] text-foreground-headline mb-2 group-hover:text-primary transition-colors capitalize">
-                                    {{ sector.name | safe }}</h3>
-                                <p class="text-foreground text-sm mb-4 line-clamp-3 grow-1 tracking-[0.01em]">{{ sector.description | safe }}
+                                <h3 class="font-headline text-xl font-semibold tracking-[0.01em] text-foreground-headline mb-2 group-hover:text-primary
+                                        transition-colors capitalize">
+                                    {{ sector.name | safe }}
+                                </h3>
+                                <p class="text-foreground text-sm mb-4 line-clamp-3 grow tracking-[0.01em]">{{ sector.description | safe }}
                                 </p>
                                 <div class="flex items-center text-primary text-sm font-medium">Maschinen ansehen<svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -97,7 +130,6 @@
                         </a>
                     {% endif %}
                 {% endfor %}
-                {% endif %}
             </div>
         </div>
     </section>
@@ -109,7 +141,7 @@
                 <p class="text-foreground text-base mb-8">Wir unterstützen Sie dabei, die optimale Verpackungslösung für Ihre
                     individuellen Anforderungen zu finden.</p>
                 <a class="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-full font-medium
-                                            hover:bg-primary/90 transition-all shadow-soft hover:shadow-hover" href="{{ "/#contact" | url }}">Kontaktieren<svg
+                                                                                    hover:bg-primary/90 transition-all shadow-soft hover:shadow-hover" href="{{ "/#contact" | url }}">Kontaktieren<svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
                         height="24"
@@ -127,4 +159,3 @@
             </div>
         </div>
     </section>
-    
