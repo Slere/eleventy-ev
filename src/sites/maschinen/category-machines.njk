@@ -47,7 +47,7 @@ eleventyComputed:
             {% for product in machines.machines %}
                 {% if product.url != page.url %}
                     <div class="group scroll-my-24" id="{{ product.id }}">
-                        <div class="grid md:grid-cols-3  gap-8 md:gap-12 mb-8 md:mb-16">
+                        <div class="grid md:grid-cols-3  gap-8 md:gap-12 mb-8">
                             <div class="col-span-2">
                                 <h2 class="font-headline text-2xl text-foreground-headline font-semibold  mb-4 uppercase">{{ product.name | safe }}</h2>
                                 <p class="text-foreground leading-relaxed text-body-sm md:text-base max-w-3xl">{{ product.description | safe }}</p>

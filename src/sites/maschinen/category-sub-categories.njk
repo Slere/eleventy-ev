@@ -45,7 +45,7 @@
             {% set anim_delay = (idx0 * 0.1) %}
             <a class="group block py-8 first:pt-0 last:pb-0 animate-fade-up opacity-0" style="animation-delay:{{ anim_delay }}s" href="{{ (page.url~"/"~sector.url~"/") | url }}">
                 <div class="flex flex-col lg:flex-row gap-6 lg:gap-10">
-                    <div class="relative w-full lg:w-2/5 aspect-[21/9] overflow-hidden rounded-lg ">
+                    <div class="relative w-full lg:w-2/5 aspect-[21/9] overflow-hidden rounded-lg bg-[#f8f8f9]">
                         <img
                             src="{{ sector.image | url }}" 
                             alt="{{ sector.name }}"

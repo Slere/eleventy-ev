@@ -1,0 +1,124 @@
+---
+
+layout: layout/app.njk
+title: Messetermine
+---
+
+{% set crumbs = page.url | breadcrumbs %}
+{% set idx = (crumbs | length) - 2 %}
+{% if idx >= 0 %}
+    {% set backUrl = crumbs[idx].url %}
+{% else %}
+    {% set backUrl = '/' %}
+{% endif %}
+{% set backUrl = backUrl | replaceAll(' ', '-') %}
+<section class="pt-32 pb-16 bg-[#f9fafb]">
+    <div class="max-w-8xl mx-auto px-6">
+        <nav aria-label="breadcrumb" class="mb-8">
+            {%- from "components/breadcrumbs.njk" import breadcrumbs -%}
+            {% set crumbs = page.url | breadcrumbs %}
+            {{ breadcrumbs(crumbs) }}
+        </nav>
+        <div class="max-w-3xl ">
+            <span class="inline-block px-4 py-1.5 bg-primary/10 text-primary text-sm font-medium rounded-full mb-6 capitalize">
+                Lösungen hautnah erleben
+            </span>
+            <h1 class="font-headline font-semibold text-4xl sm:text-4xl md:text-5xl text-foreground-headline mb-6 break-words
+                    hyphens-auto md:hyphens-none tracking-tight">
+                Ausstellungen & Messen
+            </h1>
+            <p class="text-foreground-muted text-lg md:text-xl max-w-2xl hyphens-auto break-words font-light leading-normal">
+                Besuchen Sie uns auf führenden Veranstaltungen der Verpackungsindustrie weltweit. Erleben Sie unsere Maschinen im
+                Live-Einsatz und lernen Sie unser Expertenteam persönlich kennen.</p>
+        </div>
+    </div>
+</section>
+<section class="max-w-8xl mx-auto py-20 px-6">
+    <div class="mb-8">
+        <h2 class="font-headline font-semibold text-3xl md:text-4xl text-foreground-headline mb-4">Interpack Düsseldorf 2026</h2>
+        <div class="flex flex-wrap gap-6 text-foreground">
+            <div class="flex items-center gap-2">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-calendar w-5 h-5 text-primary">
+                    <path d="M8 2v4"></path>
+                    <path d="M16 2v4"></path>
+                    <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                    <path d="M3 10h18"></path>
+                </svg>
+                <span>7-13 Mai, 2026</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-map-pin w-5 h-5 text-primary">
+                    <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Düsseldorf, Deutschland</span>
+            </div>
+        </div>
+    </div>
+    <div class="overflow-hidden">
+        <div class="relative w-full overflow-auto">
+            <table class="w-full caption-bottom text-sm">
+                <thead class="">
+                    <tr class="border-b border-border">
+                        <th class="h-12 px-4 text-left align-middle font-semibold text-foreground">Aussteller</th>
+                        <th class="h-12 px-4 text-left align-middle font-semibold text-foreground">unter anderem ausgestellte Maschinen</th>
+                    </tr>
+                </thead>
+                <tbody class="">
+                    <tr class="">
+                        <td class="p-4 align-middle text-foreground  font-medium text-base">MEURER / HARTNESS
+                            <p class="text-sm font-normal">
+                                Halle 11/ Stand C40 – C44
+                            </p>
+                        </td>
+                        <td class="p-4 align-middle">Maschine 1<br/> Maschine 2<br/> Maschine 3</td>
+                    </tr>
+                    <tr class="">
+                        <td class="p-4 align-middle text-foreground  font-medium text-base">MSK
+                            <p class="text-sm font-normal">
+                                Halle 12/Stand C52
+                            </p>
+                        </td>
+                        <td class="p-4 align-middle">Maschine 1<br/> Maschine 2<br/> Maschine 3</td>
+                    </tr>
+                    <tr class="">
+                        <td class="p-4 align-middle text-foreground  font-medium text-base">LANGENPAC
+                            <p class="text-sm font-normal">
+                                Halle 6/Stand C43
+                            </p>
+                        </td>
+                        <td class="p-4 align-middle">Maschine 1<br/> Maschine 2<br/> Maschine 3</td>
+                    </tr>
+                    <tr class="">
+                        <td class="p-4 align-middle text-foreground  font-medium text-base">CSI
+                            <p class="text-sm font-normal">
+                                Halle 6/Stand C43
+                            </p>
+                        </td>
+                        <td class="p-4 align-middle">Maschine 1<br/> Maschine 2<br/> Maschine 3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
