@@ -20,6 +20,7 @@
     --breakpoint-6xl: 161rem;
 
     --color-foreground: #212831; /* oklch(0.4111 0.0268 250.56); */
+    --color-foreground-darker: #0f1318;
     --color-secondary: #f3f6fa; /* #f0f0f0; */
     --color-foreground-muted: #566171;
     --color-secondary-foreground: #204163;/*  oklch(0.4498 0.0298 257.68); */
@@ -27,6 +28,7 @@
     --color-primary-foreground: #fafdff;
     --color-border: #efefef;
     --color-border-light: #f7f7f7;
+    --color-border-blue: #5984bb;
     --color-secondary-headline: #0d3966; /* oklch(0.2685 0.0616 267.83); */
     --color-foreground-headline: #14335a;
     --color-accent: #f7c333;
