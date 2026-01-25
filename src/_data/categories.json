@@ -202,11 +202,11 @@
       "url": "palettiersysteme",
       "sub-categories": [
         {
-          "name": "Robotter",
+          "name": "Roboter",
           "description": "info folgt",
           "machines_count": 2,
           "image": "/assets/img/machines/G12.jpg",
-          "url": "robotter",
+          "url": "Roboter",
           "machines": [
             { "name": "CSI", "description": "info folgt", "image": "info folgt", "url": "csi" },
             { "name": "MSK", "description": "info folgt", "image": "info folgt", "url": "msk" }

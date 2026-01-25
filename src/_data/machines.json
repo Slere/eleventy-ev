@@ -1,11 +1,12 @@
 [
   {
     "title": "kontinuierlich",
-    "slug": "folie/kontinuierlich",
+    "slug": "folie-kontinuierlich",
     "parent_category": "Folie",
     "description": "info folgt",
     "machines": [
       {
+        "machine_id": "A11",
         "name": "HEM Hochleistungs-Einschlagmaschine",
         "id": "hem-hochleistungs-einschlagmaschine",
         "description": "Kontinuierlich laufende Maschine mit Folienüberlappung an der Unterseite – kein Schweißsystem. Mit dieser Maschine sind einbahnig bis 60 Gebinde/min und zweibahnig bis zu 85 Gebinde/min möglich.",
@@ -24,16 +25,17 @@
         "position": 1,
         "manufacturer_name": "meurer Verpackungssysteme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/meurer.svg",
-        "manufacturer_information": "Alle MEURER-Maschinen werden in modularer und robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.<br>- Maschineneffiktivität bis 99%<br>- schneller und einfacher Formatwechsel durch Schnellverschlüsse<br>- Durchgehende Einzeladerbeschriftung<br>- optional Einzeraderverlegung<br>- Clean Design<br>- Servoantrieb und Steuerung",
+        "manufacturer_information": "Alle MEURER-Maschinen werden in Modularer und robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.<br>- Maschineneffiktivität bis 98%<br>- Durchgehende Einzeladerbeschriftung<br>- optional Einzeraderverlegung<br>- Clean Design<br>- Servoantrieb und Steuerung",
         "manufacturer_product_page": "Folienverpackung"
       },
       {
+        "machine_id": "A12",
         "name": "HHS-Hochleistungsschlauchbeutel",
         "id": "hhs-hochleistungsschlauchbeutel",
         "description": "Kontinuierlich laufende Maschine für einzel, oder Sammelgebinde in Folienvolleinschlag mit bis zu 160 Gebinde/min",
         "features_list": [
           "Zuführung InLine bis zu 3-Bahnen",
-          "Folienwechsel optional vollauromatisch",
+          "Folienwechsel optional vollautomatisch",
           "Druckmarkensteuerung",
           "Blatteinleger",
           "1-6 Produkte einreihig und bis zu 3 reihig"
@@ -49,18 +51,19 @@
         "position": 2,
         "manufacturer_name": "meurer Verpackungssysteme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/meurer.svg",
-        "manufacturer_information": "Alle MEURER-Maschinen werden in Modularer und robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.<br>- Maschineneffiktivität bis 99%<br>- schneller und einfacher Formatwechsel durch Schnellverschlüsse<br>- Durchgehende Einzeladerbeschriftung<br>- optional Einzeraderverlegung<br>- optional automatische Formatverstellung<br>- Clean Design<br>- Servoantrieb und Steuerung",
+        "manufacturer_information": "Alle MEURER-Maschinen werden in Modularer und robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.<br>- Maschineneffiktivität bis 98%<br>- Durchgehende Einzeladerbeschriftung<br>- optional Einzeraderverlegung<br>- Clean Design<br>- Servoantrieb und Steuerung",
         "manufacturer_product_page": "Folienverpackung"
       }
     ]
   },
   {
     "title": "getaktet",
-    "slug": "folie/getaktet",
+    "slug": "folie-getaktet",
     "parent_category": "Folie",
     "description": "info folgt",
     "machines": [
       {
+        "machine_id": "A21",
         "name": "FL Filmline-Bündelpacker/Straffpacker",
         "id": "fl-filmline",
         "description": "Getaktete Maschine mit Schweißsystem. Mit dieser Maschine sind einbahnig bis 35 Gebinde/min möglich",
@@ -72,18 +75,18 @@
           "Druckmarkensteuerung"
         ],
         "images": [
+          "/assets/img/machines/FL.jpg",
           "/assets/img/machines/A21.webp"
         ],
-        "variants": [
-          "A21"
-        ],
+        "variants": [],
         "position": 1,
         "manufacturer_name": "meurer Verpackungssysteme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/meurer.svg",
-        "manufacturer_information": "Alle MEURER-Maschinen werden in Modularer und robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.<br>- Maschineneffiktivität bis 99%<br>- schneller und einfacher Formatwechsel durch Schnellverschlüsse<br>- Durchgehende Einzeladerbeschriftung<br>- optional Einzeraderverlegung<br>- Clean Design<br>- Servoantrieb und Steuerung",
+        "manufacturer_information": "Alle MEURER-Maschinen werden in Modularer und robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.<br>- Maschineneffiktivität bis 98%<br>- Durchgehende Einzeladerbeschriftung<br>- optional Einzeraderverlegung<br>- Clean Design<br>- Servoantrieb und Steuerung",
         "manufacturer_product_page": "Folienverpackung"
       },
       {
+        "machine_id": "A22",
         "name": "FL SERVOSTRAFFER-Filmline",
         "id": "fl-servostraffer",
         "description": "Getaktete Maschine mit Schweißsystem. Mit dieser Maschine sind feste Gebinde ohne Schrumpftunnel möglich. Dabei kommt eine spezielle PE-Dehnfolie mit max. 35° zum Einsatz, die sich bei Verpacken sauber über die Kanten legt. Natürlich kann durch Einsatz eines Schrumpftunnel herkömmliche PE-Folie auch verarbeitet werden.",
@@ -97,24 +100,23 @@
         "images": [
           "/assets/img/machines/A22.webp"
         ],
-        "variants": [
-          "A22"
-        ],
+        "variants": [],
         "position": 2,
         "manufacturer_name": "meurer Verpackungssysteme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/meurer.svg",
-        "manufacturer_information": "Alle MEURER-Maschinen werden in Modularer und robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.<br>- Maschineneffiktivität bis 99%<br>- schneller und einfacher Formatwechsel durch Schnellverschlüsse<br>- Durchgehende Einzeladerbeschriftung<br>- optional Einzeraderverlegung<br>- Clean Design<br>- Servoantrieb und Steuerung",
+        "manufacturer_information": "Alle MEURER-Maschinen werden in Modularer und robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.<br>- Maschineneffiktivität bis 98%<br>- Durchgehende Einzeladerbeschriftung<br>- optional Einzeraderverlegung<br>- Clean Design<br>- Servoantrieb und Steuerung",
         "manufacturer_product_page": "Folienverpackung"
       }
     ]
   },
   {
     "title": "kontinuierlich",
-    "slug": "karton/kontinuierlich",
+    "slug": "karton-kontinuierlich",
     "parent_category": "Karton",
     "description": "info folgt",
     "machines": [
       {
+        "machine_id": "B11",
         "name": "HTW-Hochleistungstraypacker",
         "id": "htw-hochleistungstraypacker",
         "description": "Kontinuierlich laufende Maschine für Tray, Produkthoher Tray oder War/Around. Mit dieser Maschine sind einbahnig bis 80 Gebinde/min möglich.",
@@ -129,15 +131,16 @@
           "/assets/img/machines/B11.webp"
         ],
         "variants": [
-          "B11"
+          "C11"
         ],
         "position": 1,
         "manufacturer_name": "meurer Verpackungssysteme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/meurer.svg",
-        "manufacturer_information": "Alle MEURER-Maschinen werden in Modularer und robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.<br>- Maschineneffiktivität bis 99%<br>- schneller und einfacher Formatwechsel durch Schnellverschlüsse<br>- Durchgehende Einzeladerbeschriftung<br>- optional Einzeraderverlegung<br>- Clean Design<br>- Servoantrieb und Steuerung",
+        "manufacturer_information": "Alle MEURER-Maschinen werden in Modularer und robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.<br>- Maschineneffiktivität bis 98%<br>- Durchgehende Einzeladerbeschriftung<br>- optional Einzeraderverlegung<br>- Clean Design<br>- Servoantrieb und Steuerung",
         "manufacturer_product_page": "Kartonverpackung"
       },
       {
+        "machine_id": "B12",
         "name": "CSP-Cartonsleev 120",
         "id": "csp-cartonsleev-120",
         "description": "Kontinuierlich laufende Maschine für einzel, oder Sammelgebinde in Karton oder Kraftpapier mit bis zu 120 Gebinde/min",
@@ -149,15 +152,17 @@
           "/assets/img/machines/B12.png"
         ],
         "variants": [
-          "B12"
+          "A12",
+          "D12"
         ],
         "position": 2,
         "manufacturer_name": "meurer Verpackungssysteme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/meurer.svg",
-        "manufacturer_information": "Alle MEURER-Maschinen werden in Modularer und robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.<br>- Maschineneffiktivität bis 99%<br>- schneller und einfacher Formatwechsel durch Schnellverschlüsse<br>- Durchgehende Einzeladerbeschriftung<br>- optional Einzeraderverlegung<br>- Clean Design<br>- Servoantrieb und Steuerung",
+        "manufacturer_information": "Alle MEURER-Maschinen werden in Modularer und robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.<br>- Maschineneffiktivität bis 98%<br>- Durchgehende Einzeladerbeschriftung<br>- optional Einzeraderverlegung<br>- Clean Design<br>- Servoantrieb und Steuerung",
         "manufacturer_product_page": "Papierverpackung"
       },
       {
+        "machine_id": "B13",
         "name": "CSP-Cartonsleev 160",
         "id": "csp-cartonsleev-160",
         "description": "Kontinuierlich laufende Maschine für einzel, oder Sammelgebinde in Karton oder Kraftpapier mit bis zu 160 Gebinde/min",
@@ -169,23 +174,25 @@
           "/assets/img/machines/B13.webp"
         ],
         "variants": [
-          "B13"
+          "A12",
+          "D12"
         ],
         "position": 3,
         "manufacturer_name": "meurer Verpackungssysteme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/meurer.svg",
-        "manufacturer_information": "Alle MEURER-Maschinen werden in Modularer und robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.<br>- Maschineneffiktivität bis 98%<br>- schneller und einfacher Formatwechsel durch Schnellverschlüsse<br>- Durchgehende Einzeladerbeschriftung<br>- optional Einzeraderverlegung<br>- Clean Design<br>- Servoantrieb und Steuerung",
+        "manufacturer_information": "Alle MEURER-Maschinen werden in Modularer und robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.<br>- Maschineneffiktivität bis 98%<br>- Durchgehende Einzeladerbeschriftung<br>- optional Einzeraderverlegung<br>- Clean Design<br>- Servoantrieb und Steuerung",
         "manufacturer_product_page": "Papierverpackung"
       }
     ]
   },
   {
     "title": "getaktet",
-    "slug": "karton/getaktet",
+    "slug": "karton-getaktet",
     "parent_category": "Karton",
     "description": "info folgt",
     "machines": [
       {
+        "machine_id": "B21",
         "name": "TP-Traypacker",
         "id": "tp-traypacker",
         "description": "getaktet laufende Maschine für Tray, Produkthoher Tray oder War/Around auch Tray mit Deckel innen-außenliegend und Stufentray. Mit dieser Maschine sind einbahnig bis 28 Gebinde/min möglich.",
@@ -200,15 +207,16 @@
           "/assets/img/machines/B21.webp"
         ],
         "variants": [
-          "B21"
+          "ja"
         ],
         "position": 1,
         "manufacturer_name": "meurer Verpackungssysteme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/meurer.svg",
-        "manufacturer_information": "Alle MEURER-Maschinen werden in Modularer und robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.<br>- Maschineneffiktivität bis 99%<br>- schneller und einfacher Formatwechsel durch Schnellverschlüsse<br>- Durchgehende Einzeladerbeschriftung<br>- optional Einzeraderverlegung<br>- Clean Design<br>- Servoantrieb und Steuerung",
+        "manufacturer_information": "Alle MEURER-Maschinen werden in Modularer und robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.<br>- Maschineneffiktivität bis 98%<br>- Durchgehende Einzeladerbeschriftung<br>- optional Einzeraderverlegung<br>- Clean Design<br>- Servoantrieb und Steuerung",
         "manufacturer_product_page": "Kartonverpackung"
       },
       {
+        "machine_id": "B22",
         "name": "Setzpacker",
         "id": "setzpacker",
         "description": "INFO folgt",
@@ -216,24 +224,23 @@
         "images": [
           "/assets/img/machines/B22.webp"
         ],
-        "variants": [
-          "B22"
-        ],
+        "variants": [],
         "position": 2,
         "manufacturer_name": "meurer Verpackungssysteme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/meurer.svg",
-        "manufacturer_information": "",
+        "manufacturer_information": "Alle MEURER-Maschinen werden in Modularer und robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.<br>- Maschineneffiktivität bis 98%<br>- Durchgehende Einzeladerbeschriftung<br>- optional Einzeraderverlegung<br>- Clean Design<br>- Servoantrieb und Steuerung",
         "manufacturer_product_page": "Kartonverpackung"
       }
     ]
   },
   {
     "title": "Seitenkartonierer",
-    "slug": "karton/seitenkartonierer",
+    "slug": "karton-seitenkartonierer",
     "parent_category": "Karton",
     "description": "info folgt",
     "machines": [
       {
+        "machine_id": "B31",
         "name": "MAESTRO-Kartonierer",
         "id": "maestro",
         "description": "INFO folgt",
@@ -241,9 +248,7 @@
         "images": [
           "/assets/img/machines/B31.jpg"
         ],
-        "variants": [
-          "B31"
-        ],
+        "variants": [],
         "position": 1,
         "manufacturer_name": "LANGEN Packaging Automation",
         "manufacturer_logo": "/assets/img/manufacturers/langen.jpg",
@@ -251,6 +256,7 @@
         "manufacturer_product_page": "Langen MAESTRO-c - Mpac Automation Ökosysteme"
       },
       {
+        "machine_id": "B32",
         "name": "VENTO-Kartonierer",
         "id": "vento",
         "description": "INFO folgt",
@@ -258,9 +264,7 @@
         "images": [
           "/assets/img/machines/B32.jpg"
         ],
-        "variants": [
-          "B32"
-        ],
+        "variants": [],
         "position": 2,
         "manufacturer_name": "LANGEN Packaging Automation",
         "manufacturer_logo": "/assets/img/manufacturers/langen.jpg",
@@ -268,6 +272,7 @@
         "manufacturer_product_page": "Langen VENTO-i - Mpac Automation Ökosysteme"
       },
       {
+        "machine_id": "B33",
         "name": "AIR-Halbautomatischer Kartonierer",
         "id": "air",
         "description": "INFO folgt",
@@ -275,9 +280,7 @@
         "images": [
           "/assets/img/machines/B33.jpg"
         ],
-        "variants": [
-          "B33"
-        ],
+        "variants": [],
         "position": 3,
         "manufacturer_name": "LANGEN Packaging Automation",
         "manufacturer_logo": "/assets/img/manufacturers/langen.jpg",
@@ -285,6 +288,7 @@
         "manufacturer_product_page": "Langen AIR - Kartonierer mit Seitenlade - Mpac Automation Ecosystems"
       },
       {
+        "machine_id": "B34",
         "name": "BRC-Seitenlader",
         "id": "brc",
         "description": "INFO folgt",
@@ -292,9 +296,7 @@
         "images": [
           "/assets/img/machines/B34.jpg"
         ],
-        "variants": [
-          "B34"
-        ],
+        "variants": [],
         "position": 4,
         "manufacturer_name": "LANGEN Packaging Automation",
         "manufacturer_logo": "/assets/img/manufacturers/langen.jpg",
@@ -305,11 +307,12 @@
   },
   {
     "title": "Aufrichter",
-    "slug": "karton/aufrichter",
+    "slug": "karton-aufrichter",
     "parent_category": "Karton",
     "description": "info folgt",
     "machines": [
       {
+        "machine_id": "B41",
         "name": "Trayformer",
         "id": "trf",
         "description": "INFO folgt",
@@ -317,9 +320,7 @@
         "images": [
           "/assets/img/machines/B41.png"
         ],
-        "variants": [
-          "B41"
-        ],
+        "variants": [],
         "position": 1,
         "manufacturer_name": "LANGEN Packaging Automation",
         "manufacturer_logo": "/assets/img/manufacturers/langen.jpg",
@@ -335,20 +336,27 @@
     "description": "info folgt",
     "machines": [
       {
+        "machine_id": "C11",
         "name": "FOLIE/KARTON; HEM/HTW Teleskop",
         "id": "htw-hem",
         "description": "in Verbindung mit dem HTW oder FILMLINE kann ohne Einsatz von Formatteilen auf Knopfdruck innerhalb von nur 60 sec. auf Gebinde vollautomatisch ohne Tray umgestellt werden. Somit sind nachstehende Gebinde mit einer Anlage möglich - Wrap/Arround (mit und ohne Folie) - Tray mit Folie (mit und ohne Folie) - nur Folie (ohne Karton)",
-        "features_list": [],
+        "features_list": [
+          "Zuführung InLine oder seitlich",
+          "seitliches, liegendes Traymagazin in Bodennähe",
+          "automatischer Traystapelnachschub",
+          "Zwischenstegeinleger",
+          "Gefachemagazin",
+          "<strong>Ohne Formatteile,</strong> wie zB. Einlegeplatten",
+          "<strong>Max. 60sec. Umstellung auf Knopfdruck</strong>"
+        ],
         "images": [
           "/assets/img/machines/C11.png"
         ],
-        "variants": [
-          "C11"
-        ],
+        "variants": [],
         "position": 1,
         "manufacturer_name": "meurer Verpackungssysteme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/meurer.svg",
-        "manufacturer_information": "",
+        "manufacturer_information": "Alle MEURER-Maschinen werden in Modularer und robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.<br>- Maschineneffiktivität bis 98%<br>- Durchgehende Einzeladerbeschriftung<br>- optional Einzeraderverlegung<br>- Clean Design<br>- Servoantrieb und Steuerung",
         "manufacturer_product_page": "Folienverpackung"
       }
     ]
@@ -360,6 +368,7 @@
     "description": "info folgt",
     "machines": [
       {
+        "machine_id": "D11",
         "name": "PHM PaperHoodMaschine, Gebindepacker mit Papier",
         "id": "phm-gebindepacker-mit-papier",
         "description": "kontinuierliche Maschine mit Kraftpapierbanderole für nachhaltige Verpackung Papier statt Folie für Gebindeverpackung bis zu 45 Takte/min",
@@ -370,16 +379,15 @@
         "images": [
           "/assets/img/machines/D11.webp"
         ],
-        "variants": [
-          "D11"
-        ],
+        "variants": [],
         "position": 1,
         "manufacturer_name": "meurer Verpackungssysteme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/meurer.svg",
-        "manufacturer_information": "Alle MEURER-Maschinen werden in Modularer und robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.<br>- Maschineneffiktivität bis 98%<br>- schneller und einfacher Formatwechsel durch Schnellverschlüsse<br>- Durchgehende Einzeladerbeschriftung<br>- optional Einzeraderverlegung<br>- Clean Design<br>- Servoantrieb und Steuerung",
+        "manufacturer_information": "Alle MEURER-Maschinen werden in Modularer und robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.<br>- Maschineneffiktivität bis 98%<br>- Durchgehende Einzeladerbeschriftung<br>- optional Einzeraderverlegung<br>- Clean Design<br>- Servoantrieb und Steuerung",
         "manufacturer_product_page": "Papierverpackung"
       },
       {
+        "machine_id": "D12",
         "name": "HBP Horizontalbündelpacker mit Klebepapier",
         "id": "hbp-gebindepacker-mit-klebepapier",
         "description": "Kontinuierlich laufende Maschine für Sammelgebinde mit Kraft-klebepapier mit bis zu 160 Gebinde/min mit bis zu 90% Energieeinsparung",
@@ -391,12 +399,12 @@
           "/assets/img/machines/D12.png"
         ],
         "variants": [
-          "D12"
+          "A12"
         ],
         "position": 2,
         "manufacturer_name": "meurer Verpackungssysteme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/meurer.svg",
-        "manufacturer_information": "Alle MEURER-Maschinen werden in Modularer und robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.<br>- Maschineneffiktivität bis 99%<br>- schneller und einfacher Formatwechsel durch Schnellverschlüsse<br>- Durchgehende Einzeladerbeschriftung<br>- optional Einzeraderverlegung<br>- Clean Design<br>- Servoantrieb und Steuerung",
+        "manufacturer_information": "Alle MEURER-Maschinen werden in Modularer und robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.<br>- Maschineneffiktivität bis 98%<br>- Durchgehende Einzeladerbeschriftung<br>- optional Einzeraderverlegung<br>- Clean Design<br>- Servoantrieb und Steuerung",
         "manufacturer_product_page": "Papierverpackung"
       }
     ]
@@ -408,6 +416,7 @@
     "description": "info folgt",
     "machines": [
       {
+        "machine_id": "E11",
         "name": "HA Tragegriffapplikator",
         "id": "ha-tragegriffapplikator",
         "description": "INFO folgt",
@@ -415,24 +424,23 @@
         "images": [
           "/assets/img/machines/E11.png"
         ],
-        "variants": [
-          "E11"
-        ],
+        "variants": [],
         "position": 1,
         "manufacturer_name": "meurer Verpackungssysteme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/meurer.svg",
-        "manufacturer_information": "Alle MEURER-Maschinen werden in Modularer und robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.<br>- Maschineneffiktivität bis 99%<br>- schneller und einfacher Formatwechsel durch Schnellverschlüsse<br>- Durchgehende Einzeladerbeschriftung<br>- optional Einzeraderverlegung<br>- Clean Design<br>- Servoantrieb und Steuerung",
+        "manufacturer_information": "Alle MEURER-Maschinen werden in Modularer und robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.<br>- Maschineneffiktivität bis 98%<br>- Durchgehende Einzeladerbeschriftung<br>- optional Einzeraderverlegung<br>- Clean Design<br>- Servoantrieb und Steuerung",
         "manufacturer_product_page": "info folgt"
       }
     ]
   },
   {
     "title": "Formatgebunden",
-    "slug": "speichersysteme/formatgebunden",
+    "slug": "speichersysteme-formatgebunden",
     "parent_category": "Speichersysteme",
     "description": "info folgt",
     "machines": [
       {
+        "machine_id": "F11",
         "name": "HSP-Horizintalspeichertisch",
         "id": "hsp-speichertisch",
         "description": "Produktspeichersystem in verschiedenen Größen und längen. Produkt-Berührungssloses System, welches die Taktleistung davor- und nachgeschalteter Maschinen ausgleicht und so den Wirkungsfrad der Linie deutlich erhöht. Für Mikrostörungen (zB. Etikettenwechsel) bestens geeignet um die Linie nicht abschalten zu müssen.",
@@ -443,24 +451,23 @@
         "images": [
           "/assets/img/machines/F11.jpg"
         ],
-        "variants": [
-          "F11"
-        ],
+        "variants": [],
         "position": 1,
         "manufacturer_name": "meurer Verpackungssysteme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/meurer.svg",
-        "manufacturer_information": "Alle MEURER-Maschinen werden in Modularer und robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.<br>- Maschineneffiktivität bis 99%<br>- Durchgehende Einzeladerbeschriftung<br>- optional Einzeraderverlegung<br>- Clean Design<br>- Servoantrieb und Steuerung",
+        "manufacturer_information": "Alle MEURER-Maschinen werden in Modularer und robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.<br>- Maschineneffiktivität bis 98%<br>- Durchgehende Einzeladerbeschriftung<br>- optional Einzeraderverlegung<br>- Clean Design<br>- Servoantrieb und Steuerung",
         "manufacturer_product_page": "Speicher- und Fördersysteme"
       }
     ]
   },
   {
     "title": "Formatvariabel",
-    "slug": "speichersysteme/formatvariabel",
+    "slug": "speichersysteme-formatvariabel",
     "parent_category": "Speichersysteme",
     "description": "info folgt",
     "machines": [
       {
+        "machine_id": "F21",
         "name": "DYNAC-singleFile",
         "id": "dynac",
         "description": "Produktspeichersystem in verschiedenen Größen und längen. Produkt-Berührungssloses System, welches die Taktleistung davor- und nachgeschalteter Maschinen ausgleicht und so den Wirkungsfrad der Linie deutlich erhöht. Für Mikrostörungen (zB. Etikettenwechsel) bestens geeignet um die Linie nicht abschalten zu müssen.",
@@ -471,9 +478,7 @@
         "images": [
           "/assets/img/machines/F21.jpg"
         ],
-        "variants": [
-          "F21"
-        ],
+        "variants": [],
         "position": 1,
         "manufacturer_name": "ITW HARTNESS",
         "manufacturer_logo": "/assets/img/manufacturers/itw_hartness.png",
@@ -481,6 +486,7 @@
         "manufacturer_product_page": "Accumulation | ITW Hartness"
       },
       {
+        "machine_id": "F22",
         "name": "DYNAC-MassFlow",
         "id": "dynac-2",
         "description": "Produktspeichersystem in verschiedenen Größen und längen. Produktstau Drucklos, welches die Taktleistung davor- und nachgeschalteter Maschinen ausgleicht und so den Wirkungsfrad der Linie deutlich erhöht. Für Mikrostörungen (zB. Etikettenwechsel) bestens geeignet um die Linie nicht abschalten zu müssen.",
@@ -488,9 +494,7 @@
         "images": [
           "/assets/img/machines/F22.png"
         ],
-        "variants": [
-          "F22"
-        ],
+        "variants": [],
         "position": 2,
         "manufacturer_name": "ITW HARTNESS",
         "manufacturer_logo": "/assets/img/manufacturers/itw_hartness.png",
@@ -500,14 +504,15 @@
     ]
   },
   {
-    "title": "Robotter",
-    "slug": "palettiersysteme/robotter",
+    "title": "Roboter",
+    "slug": "palettiersysteme-Roboter",
     "parent_category": "Palettiersysteme",
     "description": "info folgt",
     "machines": [
       {
+        "machine_id": "G11",
         "name": "i-Pal und c-Pal Palettierroboter",
-        "id": "csi-robotter",
+        "id": "csi-Roboter",
         "description": "kostengünstiger Palettierroboter von der flexiblen Palettierzelle bis zum Multipalettierer, wo gleichzeitig mehrere Linien auf mehreren Paletten palettiert werden. Die Leistung beträgt bis zu 24 Gebinde/min. i-pal auch als Mietvariante verfügbar",
         "features_list": [
           "geringer Platzbedarf",
@@ -519,9 +524,7 @@
         "images": [
           "/assets/img/machines/G11.png"
         ],
-        "variants": [
-          "G11"
-        ],
+        "variants": [],
         "position": 1,
         "manufacturer_name": "CSi palletising",
         "manufacturer_logo": "/assets/img/manufacturers/csi.png",
@@ -529,16 +532,15 @@
         "manufacturer_product_page": "i-Pal robot palletiser | Palletising cell by CSi Palletising Systems"
       },
       {
-        "name": "MSK-Robotterlösung",
-        "id": "msk-robotter",
+        "machine_id": "G12",
+        "name": "MSK-Roboterlösung",
+        "id": "msk-Roboter",
         "description": "INFO folgt",
         "features_list": [],
         "images": [
           "/assets/img/machines/G12.jpg"
         ],
-        "variants": [
-          "G12"
-        ],
+        "variants": [],
         "position": 2,
         "manufacturer_name": "MSK Verpackungs-Systeme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/msk.svg",
@@ -549,11 +551,12 @@
   },
   {
     "title": "Lagenpalettierer",
-    "slug": "palettiersysteme/lagenpalettierer",
+    "slug": "palettiersysteme-lagenpalettierer",
     "parent_category": "Palettiersysteme",
     "description": "info folgt",
     "machines": [
       {
+        "machine_id": "G21",
         "name": "C5000-Lagenpalettierer",
         "id": "csi-lagenpalettierer-1",
         "description": "Ein sehr ausgereifter Hochleistungs-Palettierer mit Obeneinlauf für eine Leistung bis zu 110 Gebinde/min",
@@ -566,9 +569,7 @@
         "images": [
           "/assets/img/machines/G21.png"
         ],
-        "variants": [
-          "G21"
-        ],
+        "variants": [],
         "position": 1,
         "manufacturer_name": "CSi palletising",
         "manufacturer_logo": "/assets/img/manufacturers/csi.png",
@@ -576,6 +577,7 @@
         "manufacturer_product_page": "C5000 layer palletiser | A high-level infeed layer palletiser by CSi"
       },
       {
+        "machine_id": "G22",
         "name": "Taros-Lagenpalettierer",
         "id": "csi-lagenpalettierer-2",
         "description": "Ein sehr ausgereifter Lagenpalettierer mit Obeneinlauf für eine Leistung bis zu 60 Gebinde/min",
@@ -588,9 +590,7 @@
         "images": [
           "/assets/img/machines/G22.png"
         ],
-        "variants": [
-          "G22"
-        ],
+        "variants": [],
         "position": 2,
         "manufacturer_name": "CSi palletising",
         "manufacturer_logo": "/assets/img/manufacturers/csi.png",
@@ -598,6 +598,7 @@
         "manufacturer_product_page": "Taros infeed layer palletiser | Automated box palletiser by CSi"
       },
       {
+        "machine_id": "G23",
         "name": "MSK-Palettierlösung",
         "id": "msk-lagenpalettierer",
         "description": "INFO folgt",
@@ -605,9 +606,7 @@
         "images": [
           "/assets/img/machines/G23.webp"
         ],
-        "variants": [
-          "G23"
-        ],
+        "variants": [],
         "position": 3,
         "manufacturer_name": "MSK Verpackungs-Systeme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/msk.svg",
@@ -618,11 +617,12 @@
   },
   {
     "title": "Schrumpfhaube",
-    "slug": "palettenverpackung/schrumpfhaube",
+    "slug": "palettenverpackung-schrumpfhaube",
     "parent_category": "Palettenverpackung",
     "description": "info folgt",
     "machines": [
       {
+        "machine_id": "H11",
         "name": "Multitech",
         "id": "multitech",
         "description": "INFO folgt",
@@ -630,9 +630,7 @@
         "images": [
           "/assets/img/machines/H11.jpg"
         ],
-        "variants": [
-          "H11"
-        ],
+        "variants": [],
         "position": 1,
         "manufacturer_name": "MSK Verpackungs-Systeme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/msk.svg",
@@ -640,6 +638,7 @@
         "manufacturer_product_page": "MSK Haubenstretchanlagen – Stretch-Verpackungslösungen für Paletten"
       },
       {
+        "machine_id": "H12",
         "name": "Banderole",
         "id": "paratech",
         "description": "INFO folgt",
@@ -647,9 +646,7 @@
         "images": [
           "/assets/img/machines/H12.webp"
         ],
-        "variants": [
-          "H12"
-        ],
+        "variants": [],
         "position": 2,
         "manufacturer_name": "MSK Verpackungs-Systeme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/msk.svg",
@@ -657,6 +654,7 @@
         "manufacturer_product_page": "MSK Haubenstretchanlagen – Stretch-Verpackungslösungen für Paletten"
       },
       {
+        "machine_id": "H13",
         "name": "Schrumpfrahmen",
         "id": "schrumpfrahmen",
         "description": "INFO folgt",
@@ -664,9 +662,7 @@
         "images": [
           "/assets/img/machines/H13.jpg"
         ],
-        "variants": [
-          "H13"
-        ],
+        "variants": [],
         "position": 3,
         "manufacturer_name": "MSK Verpackungs-Systeme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/msk.svg",
@@ -674,6 +670,7 @@
         "manufacturer_product_page": ""
       },
       {
+        "machine_id": "H14",
         "name": "Haubenspender",
         "id": "haubenueberzieher",
         "description": "INFO folgt",
@@ -681,9 +678,7 @@
         "images": [
           "/assets/img/machines/H14.jpg"
         ],
-        "variants": [
-          "H14"
-        ],
+        "variants": [],
         "position": 4,
         "manufacturer_name": "MSK Verpackungs-Systeme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/msk.svg",
@@ -691,6 +686,7 @@
         "manufacturer_product_page": ""
       },
       {
+        "machine_id": "H15",
         "name": "Haubenkonfektionierer",
         "id": "haubenkonfektionierer",
         "description": "INFO folgt",
@@ -698,9 +694,7 @@
         "images": [
           "/assets/img/machines/H15.jpg"
         ],
-        "variants": [
-          "H15"
-        ],
+        "variants": [],
         "position": 5,
         "manufacturer_name": "MSK Verpackungs-Systeme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/msk.svg",
@@ -711,11 +705,12 @@
   },
   {
     "title": "Spannhaube",
-    "slug": "palettenverpackung/spannhaube",
+    "slug": "palettenverpackung-spannhaube",
     "parent_category": "Palettenverpackung",
     "description": "info folgt",
     "machines": [
       {
+        "machine_id": "H21",
         "name": "Spannhaube",
         "id": "tensiontech",
         "description": "INFO folgt",
@@ -723,9 +718,7 @@
         "images": [
           "/assets/img/machines/H21.jpg"
         ],
-        "variants": [
-          "H21"
-        ],
+        "variants": [],
         "position": 1,
         "manufacturer_name": "MSK Verpackungs-Systeme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/msk.svg",
@@ -736,11 +729,12 @@
   },
   {
     "title": "Hybridanlage",
-    "slug": "palettenverpackung/hybridanlage",
+    "slug": "palettenverpackung-hybridanlage",
     "parent_category": "Palettenverpackung",
     "description": "info folgt",
     "machines": [
       {
+        "machine_id": "H31",
         "name": "Hybrid",
         "id": "spannhaube-schrumpfen",
         "description": "INFO folgt",
@@ -748,9 +742,7 @@
         "images": [
           "/assets/img/machines/H31.jpg"
         ],
-        "variants": [
-          "H31"
-        ],
+        "variants": [],
         "position": 1,
         "manufacturer_name": "MSK Verpackungs-Systeme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/msk.svg",
@@ -761,11 +753,12 @@
   },
   {
     "title": "Sicherung",
-    "slug": "palettenverpackung/sicherung",
+    "slug": "palettenverpackung-sicherung",
     "parent_category": "Palettenverpackung",
     "description": "info folgt",
     "machines": [
       {
+        "machine_id": "H41",
         "name": "LOOPTECH-Palettensicherung",
         "id": "palettenloop",
         "description": "INFO folgt",
@@ -774,9 +767,7 @@
           "/assets/img/machines/H41A.jpg",
           "/assets/img/machines/H41B.jpg"
         ],
-        "variants": [
-          "H41"
-        ],
+        "variants": [],
         "position": 1,
         "manufacturer_name": "MSK Verpackungs-Systeme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/msk.svg",
@@ -787,11 +778,12 @@
   },
   {
     "title": "Gebindetransport",
-    "slug": "fördertechnik/gebindetransport",
+    "slug": "fördertechnik-gebindetransport",
     "parent_category": "Fördertechnik",
     "description": "info folgt",
     "machines": [
       {
+        "machine_id": "I11",
         "name": "für Gebinde",
         "id": "foerdertechnik-gebinde",
         "description": "INFO folgt",
@@ -801,34 +793,37 @@
           "/assets/img/machines/I11B.jpg",
           "/assets/img/machines/I11C.jpg"
         ],
-        "variants": [
-          "I11"
-        ],
+        "variants": [],
         "position": 1,
         "manufacturer_name": "meurer Verpackungssysteme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/meurer.svg",
-        "manufacturer_information": "Alle MEURER-Maschinen werden in Modularer und robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.<br>- Maschineneffiktivität bis 99%<br>- Durchgehende Einzeladerbeschriftung<br>- Clean Design",
+        "manufacturer_information": "Alle MEURER-Maschinen werden in Modularer und robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.<br>- Maschineneffiktivität bis 98%<br>- Durchgehende Einzeladerbeschriftung<br>- optional Einzeraderverlegung<br>- Clean Design<br>- Servoantrieb und Steuerung",
         "manufacturer_product_page": "Speicher- und Fördersysteme"
       }
     ]
   },
   {
     "title": "Palettentransport",
-    "slug": "fördertechnik/palettentransport",
+    "slug": "fördertechnik-palettentransport",
     "parent_category": "Fördertechnik",
     "description": "info folgt",
     "machines": [
       {
+        "machine_id": "I21",
         "name": "füe Paletten",
         "id": "foerdertechnik-paletten",
         "description": "INFO folgt",
         "features_list": [],
         "images": [
-          "/assets/img/machines/I21A.jpg"
+          "/assets/img/machines/I21A.jpg",
+          "/assets/img/machines/I21B.jpg",
+          "/assets/img/machines/I21C.jpg",
+          "/assets/img/machines/I21D.jpg",
+          "/assets/img/machines/I21E.jpg",
+          "/assets/img/machines/I21F.jpg",
+          "/assets/img/machines/I21G.jpg"
         ],
-        "variants": [
-          "I21"
-        ],
+        "variants": [],
         "position": 1,
         "manufacturer_name": "MSK Verpackungs-Systeme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/msk.svg",
@@ -844,6 +839,7 @@
     "description": "info folgt",
     "machines": [
       {
+        "machine_id": "J11",
         "name": "Defotech",
         "id": "defotech",
         "description": "INFO folgt",
@@ -852,9 +848,7 @@
           "/assets/img/machines/J11a.jpg",
           "/assets/img/machines/J11b.jpg"
         ],
-        "variants": [
-          "J11"
-        ],
+        "variants": [],
         "position": 1,
         "manufacturer_name": "MSK Verpackungs-Systeme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/msk.svg",
@@ -883,7 +877,7 @@
         "position": 1,
         "manufacturer_name": "meurer Verpackungssysteme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/meurer.svg",
-        "manufacturer_information": "info folgt",
+        "manufacturer_information": "Alle MEURER-Maschinen werden in Modularer und robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.<br>- Maschineneffiktivität bis 98%<br>- Durchgehende Einzeladerbeschriftung<br>- optional Einzeraderverlegung<br>- Clean Design<br>- Servoantrieb und Steuerung",
         "manufacturer_product_page": "info folgt"
       }
     ]

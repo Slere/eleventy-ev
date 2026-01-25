@@ -14,7 +14,8 @@
 <header
   id="site-header"
   class="flex flex-wrap md:justify-start md:flex-nowrap w-full py-3 fixed min-h-18 top-0 z-50 transition-shadow
-    duration-300 has-[#header-navbar.is-out-of-view]:shadow-md has-[#hs-navbar-example.open]:bg-white has-[#hs-navbar-example.open]:shadow-md {% if isHome %} bg-white shadow-xs {% else %}
+    duration-300 has-[#header-navbar.is-out-of-view]:shadow-md has-[#hs-navbar-example.open]:bg-white
+    has-[#hs-navbar-example.open]:shadow-md {% if isHome %} bg-white shadow-xs {% else %}
     has-[#header-navbar.is-out-of-view]:bg-white {% endif %}">
   <nav class="max-w-8xl w-full mx-auto px-6 md:flex md:items-center md:justify-between" id="header-navbar">
     <div class="flex items-center justify-between shrink-0">
@@ -61,18 +62,18 @@
       </div>
       <div
         id="hs-navbar-example"
-        class="hidden hs-collapse overflow-hidden transition-all duration-300 basis-full grow md:block"
+        class="hidden hs-collapse overflow-y-hidden overflow-x-visible transition-all duration-300 basis-full grow md:block"
         aria-labelledby="hs-navbar-example-collapse">
         <div
-          class="flex flex-col gap-5 mt-5 md:flex-row md:items-center md:justify-end md:mt-0 md:ps-5">
+          class="flex flex-col gap-5 mt-5 md:flex-row md:items-center md:justify-end md:mt-0 md:ps-5 max-h-[calc(100vh-92px)] overflow-y-auto">
           <!-- mega menu -->
           <div class="hs-dropdown [--strategy:static] md:[--strategy:fixed] [--adaptive:none] md:[--adaptive:adaptive]
-              [--is-collapse:true] md:[--is-collapse:false] ">
+              [--is-collapse:true] md:[--is-collapse:false]">
             <button
               id="hs-mega-menu"
               type="button"
-              class="hs-dropdown-toggle md:p-2 flex items-center w-full text-foreground-darker  tracking-wide 
-                hover:text-primary focus:outline-hidden focus:text-primary cursor-pointer"
+              class="hs-dropdown-toggle md:p-2 flex items-center w-full text-foreground-darker tracking-wide hover:text-primary
+                focus:outline-hidden focus:text-primary cursor-pointer"
               aria-haspopup="menu"
               aria-expanded="false"
               aria-label="Bereiche">
@@ -92,61 +93,21 @@
             </button>
             <div
               class="hs-dropdown-menu md:transition-[opacity,margin] md:ease-in-out md:duration-[150ms] hs-dropdown-open:opacity-100
-                opacity-0 w-full md:w-fit hidden z-10 top-full start-0 min-w-60 bg-white md:shadow-md rounded-lg py-2 md:px-2
-                before:absolute"
+                opacity-0 w-full md:w-fit hidden z-10 min-w-60 bg-white md:shadow-md rounded-lg py-2 md:px-2 "
               role="menu"
               aria-orientation="vertical"
               aria-labelledby="hs-mega-menu">
-              <a href="{{ "/maschinen/" | url }}" class="flex items-center gap-3 p-3 rounded-lg hover:bg-muted transition-colors ">
-                <div class="w-10 h-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="lucide lucide-chevron-right-icon lucide-chevron-right size-5"><path d="m9 18 6-6-6-6"/>
-                  </svg>
-                </div>
-                <div>
-                  <p class="font-semibold text-foreground-headline">Alle Maschinen</p>
-                  <p class="text-sm text-foreground-muted">Maschinenkategorien ansehen</p>
-                </div>
-              </a>
-              <div class="border-t border-border m-2"></div>
-              <div class="grid sm:grid-cols-2 md:grid-cols-3">
+              <div class="">
                 {% for category in categories.categories %}
                   {% if category["sub-categories"] and category["sub-categories"].length > 1 %}
                     <div
-                      class="md:relative hs-dropdown hs-dropdown-hover [--strategy:static] md:[--trigger:hover] md:[--adaptive:adaptive]">
+                      class="md:relative hs-dropdown md:[--strategy:absolute] md:[--trigger:hover] [--adaptive:none] md:[--adaptive:adaptive]
+                        [--is-collapse:true] md:[--is-collapse:false] ">
                       <!-- Trigger -->
-                      <a href="{{ ("/maschinen/"~category.url~"/") | url }}" class=" flex items-center gap-3 p-3 rounded-lg hover:bg-muted transition-colors text-foreground-muted">
-                        <div class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            class="lucide lucide-package-icon lucide-package size-4"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1
-                              1.73z"/><path d="M12 22V12"/><polyline points="3.29 7 12 12 20.71 7"/><path d="m7.5 4.27 9 5.15"/>
-                          </svg>
-                        </div>
+                      <a class="hs-dropdown-toggle flex items-center gap-3 p-3 py-2 rounded-lg hover:bg-muted hs-dropdown-open:bg-muted transition-colors text-foreground-muted">
                         <div class="flex-1">
-                          <p class="font-medium text-sm text-foreground-headline">
+                          <p class=" text-sm text-foreground-darker">
                             {{ category.name }}
-                          </p>
-                          <p class="text-xs text-foreground-muted">
-                            {{ category.machines_count }}
-                            {% if category.machines_count == 1 %}&nbsp;Maschine{% else %}&nbsp;Maschinen{% endif %}
                           </p>
                         </div>
                         <svg
@@ -158,30 +119,8 @@
                           stroke-width="2">
                           <path d="m9 18 6-6-6-6"/>
                         </svg>
-                        <p class="text-xs text-foreground-muted md:hidden">{{ category["sub-categories"] | length }}
-                          {% if category["sub-categories"] | length == 1 %}&nbsp;Unterkategorie{% else %}&nbsp;Unterkategorien{% endif %}
-                        </p>
-                      </a>
-                      <!-- Dropdown -->
-                      <div class="hs-dropdown-menu md:absolute left-full top-0 pl-2 hidden min-w-48 z-10">
-                        <div class="border-border p-2 shadow-lg border rounded-lg bg-background">
-                          {% for subcategory in category["sub-categories"] %}
-                            <a href="{{ ("/maschinen/"~category.url~"/"~subcategory.url~"/") | url }}" class="block rounded-md px-3 py-2 text-sm hover:bg-muted">
-                              <div>
-                                <p class="font-medium text-foreground-headline text-sm">{{ subcategory.name }}</p>
-                                <p class="text-xs text-foreground-muted">{{ subcategory.machines_count }}
-                                  {% if subcategory.machines_count == 1 %}&nbsp;Maschine{% else %}&nbsp;Maschinen{% endif %}
-                                </p>
-                              </div>
-                            </a>
-                          {% endfor %}
-                        </div>
-                      </div>
-                    </div>
-                  {% else %}
-                    <a href="{{ ("/maschinen/"~category.url~"/") | url }}" class="flex items-center gap-3 p-3 rounded-lg hover:bg-muted transition-colors text-foreground-muted">
-                      <div class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
                         <svg
+                          class="md:hidden hs-dropdown-open:-rotate-180 md:hs-dropdown-open:rotate-0 duration-300 ms-auto md:ms-2 shrink-0 size-4"
                           xmlns="http://www.w3.org/2000/svg"
                           width="24"
                           height="24"
@@ -190,17 +129,26 @@
                           stroke="currentColor"
                           stroke-width="2"
                           stroke-linecap="round"
-                          stroke-linejoin="round"
-                          class="lucide lucide-package-icon lucide-package size-4"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1
-                            1.73z"/><path d="M12 22V12"/><polyline points="3.29 7 12 12 20.71 7"/><path d="m7.5 4.27 9 5.15"/>
+                          stroke-linejoin="round"><path d="m6 9 6 6 6-6"/>
                         </svg>
+                      </a>
+                      <!-- Dropdown -->
+                      <div class="hs-dropdown-menu md:absolute  -top-[calc(100%+20px)] left-full hidden pl-3 min-w-48 z-10">
+                        <div class="border-border-light p-2 md:shadow-lg md:border rounded-lg bg-white md:bg-white">
+                          {% for subcategory in category["sub-categories"] %}
+                            <a href="{{ ("/maschinen/"~category.url~"-"~subcategory.url~"/") | url }}" class="block md:rounded-md px-3 py-2 text-sm hover:bg-muted border-b md:border-none border-border">
+                              <div>
+                                <p class=" text-foreground-darker text-sm capitalize">{{ subcategory.name }}</p>
+                              </div>
+                            </a>
+                          {% endfor %}
+                        </div>
                       </div>
+                    </div>
+                  {% else %}
+                    <a href="{{ ("/maschinen/"~category.url~"/") | url }}" class="flex items-center gap-3 p-3 py-2 rounded-lg hover:bg-muted transition-colors text-foreground-muted">
                       <div class="flex-1">
-                        <p class="font-medium text-foreground-headline text-sm">{{ category.name }}</p>
-                        <p class="text-xs text-foreground-muted">
-                          {{ category.machines_count }}
-                          {% if category.machines_count == 1 %}&nbsp;Maschine{% else %}&nbsp;Maschinen{% endif %}
-                        </p>
+                        <p class=" text-foreground-darker text-sm">{{ category.name }}</p>
                       </div>
                     </a>
                   {% endif %}
@@ -209,49 +157,12 @@
             </div>
           </div>
           <!-- mega menu  end-->
-          {#  <div class="md:relative hs-dropdown [--strategy:static] sm:[--strategy:fixed] [--adaptive:none] sm:[--adaptive:adaptive] ">
-                                                              <button
-                                                                id="hs-navbar-example-dropdown"
-                                                                type="button"
-                                                                class="hs-dropdown-toggle flex items-center w-full text-foreground text-sm uppercase tracking-widest font-medium
-                                                                  hover:text-primary focus:outline-hidden focus:text-primary "
-                                                                aria-haspopup="menu"
-                                                                aria-expanded="false"
-                                                                aria-label="Mega Menu">
-                                                                Maschinen
-                                                                <svg
-                                                                  class="hs-dropdown-open:-rotate-180 sm:hs-dropdown-open:rotate-0 duration-300 ms-1 shrink-0 size-4"
-                                                                  xmlns="http://www.w3.org/2000/svg"
-                                                                  width="24"
-                                                                  height="24"
-                                                                  viewbox="0 0 24 24"
-                                                                  fill="none"
-                                                                  stroke="currentColor"
-                                                                  stroke-width="2"
-                                                                  stroke-linecap="round"
-                                                                  stroke-linejoin="round"><path d="m6 9 6 6 6-6"/>
-                                                                </svg>
-                                                              </button>
-                                                              <div
-                                                                class="md:absolute hs-dropdown-menu transition-[opacity,margin] ease-in-out duration-[150ms] hs-dropdown-open:opacity-100
-                                                                  opacity-0 md:max-w-82 xl:max-w-82 md:w-auto z-10 bg-white md:shadow-md rounded p-1 space-y-1 border border-border-light
-                                                                  before:absolute top-full before:-top-5 before:start-0 before:w-full before:h-5 hidden"
-                                                                role="menu"
-                                                                aria-orientation="vertical"
-                                                                aria-labelledby="hs-navbar-example-dropdown">
-                                                                {% for item in navigation_collections.menu_maschines %}
-                                                                  <a class="flex items-center gap-x-3.5 py-2 px-4 text-sm  text-foreground hover:text-primary md:border-b last:border-none border-border focus:outline-hidden focus:text-primary" href="{{ item.url | url }}">
-                                                                    {{ item.label }}
-                                                                  </a>
-                                                                {% endfor %}
-                                                              </div>
-                                                            </div> #}
           <a class=" text-foreground-darker  tracking-wide font-normal hover:text-primary focus:outline-hidden focus:text-primary" href="{{ "/messetermine" | url }}">
             Messetermine</a>
           <a class=" text-foreground-darker  tracking-wide   hover:text-primary focus:outline-hidden focus:text-primary" href="{{ "/#contact" | url }}">
             Kontakt</a>
           <a class=" text-foreground-darker  tracking-wide   hover:text-primary focus:outline-hidden
-                                                                          focus:text-primary " href="{{ "/Impressum/" | url }}">
+                                                                                      focus:text-primary " href="{{ "/Impressum/" | url }}">
             Impressum</a>
         </div>
       </div>

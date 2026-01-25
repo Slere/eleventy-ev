@@ -18,6 +18,8 @@
     <!-- Theme colors for mobile browsers -->
     <script src="/eleventy-ev/assets/js/preline/preline.js"> </script>
     <script src="/eleventy-ev/assets/js/main.js" defer></script>
+    <script src="/eleventy-ev/assets/js/embla-carousel/embla-carousel.umd.js"></script>
+
     <link href="/eleventy-ev/output.css" rel="stylesheet">
     <title>Inhalt nicht gefunden</title>
   </head>
@@ -39,7 +41,8 @@
 <header
   id="site-header"
   class="flex flex-wrap md:justify-start md:flex-nowrap w-full py-3 fixed min-h-18 top-0 z-50 transition-shadow
-    duration-300 has-[#header-navbar.is-out-of-view]:shadow-md has-[#hs-navbar-example.open]:bg-white has-[#hs-navbar-example.open]:shadow-md 
+    duration-300 has-[#header-navbar.is-out-of-view]:shadow-md has-[#hs-navbar-example.open]:bg-white
+    has-[#hs-navbar-example.open]:shadow-md 
     has-[#header-navbar.is-out-of-view]:bg-white ">
   <nav class="max-w-8xl w-full mx-auto px-6 md:flex md:items-center md:justify-between" id="header-navbar">
     <div class="flex items-center justify-between shrink-0">
@@ -86,18 +89,18 @@
       </div>
       <div
         id="hs-navbar-example"
-        class="hidden hs-collapse overflow-hidden transition-all duration-300 basis-full grow md:block"
+        class="hidden hs-collapse overflow-y-hidden overflow-x-visible transition-all duration-300 basis-full grow md:block"
         aria-labelledby="hs-navbar-example-collapse">
         <div
-          class="flex flex-col gap-5 mt-5 md:flex-row md:items-center md:justify-end md:mt-0 md:ps-5">
+          class="flex flex-col gap-5 mt-5 md:flex-row md:items-center md:justify-end md:mt-0 md:ps-5 max-h-[calc(100vh-92px)] overflow-y-auto">
           <!-- mega menu -->
           <div class="hs-dropdown [--strategy:static] md:[--strategy:fixed] [--adaptive:none] md:[--adaptive:adaptive]
-              [--is-collapse:true] md:[--is-collapse:false] ">
+              [--is-collapse:true] md:[--is-collapse:false]">
             <button
               id="hs-mega-menu"
               type="button"
-              class="hs-dropdown-toggle md:p-2 flex items-center w-full text-foreground-darker  tracking-wide 
-                hover:text-primary focus:outline-hidden focus:text-primary cursor-pointer"
+              class="hs-dropdown-toggle md:p-2 flex items-center w-full text-foreground-darker tracking-wide hover:text-primary
+                focus:outline-hidden focus:text-primary cursor-pointer"
               aria-haspopup="menu"
               aria-expanded="false"
               aria-label="Bereiche">
@@ -117,62 +120,22 @@
             </button>
             <div
               class="hs-dropdown-menu md:transition-[opacity,margin] md:ease-in-out md:duration-[150ms] hs-dropdown-open:opacity-100
-                opacity-0 w-full md:w-fit hidden z-10 top-full start-0 min-w-60 bg-white md:shadow-md rounded-lg py-2 md:px-2
-                before:absolute"
+                opacity-0 w-full md:w-fit hidden z-10 min-w-60 bg-white md:shadow-md rounded-lg py-2 md:px-2 "
               role="menu"
               aria-orientation="vertical"
               aria-labelledby="hs-mega-menu">
-              <a href="/eleventy-ev/maschinen/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-muted transition-colors ">
-                <div class="w-10 h-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="lucide lucide-chevron-right-icon lucide-chevron-right size-5"><path d="m9 18 6-6-6-6"/>
-                  </svg>
-                </div>
-                <div>
-                  <p class="font-semibold text-foreground-headline">Alle Maschinen</p>
-                  <p class="text-sm text-foreground-muted">Maschinenkategorien ansehen</p>
-                </div>
-              </a>
-              <div class="border-t border-border m-2"></div>
-              <div class="grid sm:grid-cols-2 md:grid-cols-3">
+              <div class="">
                 
                   
                     <div
-                      class="md:relative hs-dropdown hs-dropdown-hover [--strategy:static] md:[--trigger:hover] md:[--adaptive:adaptive]">
+                      class="md:relative hs-dropdown md:[--strategy:absolute] md:[--trigger:hover] [--adaptive:none] md:[--adaptive:adaptive]
+                        [--is-collapse:true] md:[--is-collapse:false] ">
                       <!-- Trigger -->
-                      <a href="/eleventy-ev/maschinen/folie/" class=" flex items-center gap-3 p-3 rounded-lg hover:bg-muted transition-colors text-foreground-muted">
-                        <div class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            class="lucide lucide-package-icon lucide-package size-4"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1
-                              1.73z"/><path d="M12 22V12"/><polyline points="3.29 7 12 12 20.71 7"/><path d="m7.5 4.27 9 5.15"/>
-                          </svg>
-                        </div>
+                      <a class="hs-dropdown-toggle flex items-center gap-3 p-3 py-2 rounded-lg hover:bg-muted hs-dropdown-open:bg-muted transition-colors text-foreground-muted">
                         <div class="flex-1">
-                          <p class="font-medium text-sm text-foreground-headline">
+                          <p class=" text-sm text-foreground-darker">
                             Folie
                           </p>
-                          <p class="text-xs text-foreground-muted">
-                            4
-                            &nbsp;Maschinen
-                          </p>
                         </div>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -183,29 +146,32 @@
                           stroke-width="2">
                           <path d="m9 18 6-6-6-6"/>
                         </svg>
-                        <p class="text-xs text-foreground-muted md:hidden">2
-                          &nbsp;Unterkategorien
-                        </p>
+                        <svg
+                          class="md:hidden hs-dropdown-open:-rotate-180 md:hs-dropdown-open:rotate-0 duration-300 ms-auto md:ms-2 shrink-0 size-4"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"><path d="m6 9 6 6 6-6"/>
+                        </svg>
                       </a>
                       <!-- Dropdown -->
-                      <div class="hs-dropdown-menu md:absolute left-full top-0 pl-2 hidden min-w-48 z-10">
-                        <div class="border-border p-2 shadow-lg border rounded-lg bg-background">
+                      <div class="hs-dropdown-menu md:absolute  -top-[calc(100%+20px)] left-full hidden pl-3 min-w-48 z-10">
+                        <div class="border-border-light p-2 md:shadow-lg md:border rounded-lg bg-white md:bg-white">
                           
-                            <a href="/eleventy-ev/maschinen/folie/kontinuierlich/" class="block rounded-md px-3 py-2 text-sm hover:bg-muted">
+                            <a href="/eleventy-ev/maschinen/folie-kontinuierlich/" class="block md:rounded-md px-3 py-2 text-sm hover:bg-muted border-b md:border-none border-border">
                               <div>
-                                <p class="font-medium text-foreground-headline text-sm">kontinuierlich</p>
-                                <p class="text-xs text-foreground-muted">2
-                                  &nbsp;Maschinen
-                                </p>
+                                <p class=" text-foreground-darker text-sm capitalize">kontinuierlich</p>
                               </div>
                             </a>
                           
-                            <a href="/eleventy-ev/maschinen/folie/getaktet/" class="block rounded-md px-3 py-2 text-sm hover:bg-muted">
+                            <a href="/eleventy-ev/maschinen/folie-getaktet/" class="block md:rounded-md px-3 py-2 text-sm hover:bg-muted border-b md:border-none border-border">
                               <div>
-                                <p class="font-medium text-foreground-headline text-sm">getaktet</p>
-                                <p class="text-xs text-foreground-muted">2
-                                  &nbsp;Maschinen
-                                </p>
+                                <p class=" text-foreground-darker text-sm capitalize">getaktet</p>
                               </div>
                             </a>
                           
@@ -216,32 +182,14 @@
                 
                   
                     <div
-                      class="md:relative hs-dropdown hs-dropdown-hover [--strategy:static] md:[--trigger:hover] md:[--adaptive:adaptive]">
+                      class="md:relative hs-dropdown md:[--strategy:absolute] md:[--trigger:hover] [--adaptive:none] md:[--adaptive:adaptive]
+                        [--is-collapse:true] md:[--is-collapse:false] ">
                       <!-- Trigger -->
-                      <a href="/eleventy-ev/maschinen/karton/" class=" flex items-center gap-3 p-3 rounded-lg hover:bg-muted transition-colors text-foreground-muted">
-                        <div class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            class="lucide lucide-package-icon lucide-package size-4"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1
-                              1.73z"/><path d="M12 22V12"/><polyline points="3.29 7 12 12 20.71 7"/><path d="m7.5 4.27 9 5.15"/>
-                          </svg>
-                        </div>
+                      <a class="hs-dropdown-toggle flex items-center gap-3 p-3 py-2 rounded-lg hover:bg-muted hs-dropdown-open:bg-muted transition-colors text-foreground-muted">
                         <div class="flex-1">
-                          <p class="font-medium text-sm text-foreground-headline">
+                          <p class=" text-sm text-foreground-darker">
                             Karton
                           </p>
-                          <p class="text-xs text-foreground-muted">
-                            10
-                            &nbsp;Maschinen
-                          </p>
                         </div>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -252,47 +200,44 @@
                           stroke-width="2">
                           <path d="m9 18 6-6-6-6"/>
                         </svg>
-                        <p class="text-xs text-foreground-muted md:hidden">4
-                          &nbsp;Unterkategorien
-                        </p>
+                        <svg
+                          class="md:hidden hs-dropdown-open:-rotate-180 md:hs-dropdown-open:rotate-0 duration-300 ms-auto md:ms-2 shrink-0 size-4"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"><path d="m6 9 6 6 6-6"/>
+                        </svg>
                       </a>
                       <!-- Dropdown -->
-                      <div class="hs-dropdown-menu md:absolute left-full top-0 pl-2 hidden min-w-48 z-10">
-                        <div class="border-border p-2 shadow-lg border rounded-lg bg-background">
+                      <div class="hs-dropdown-menu md:absolute  -top-[calc(100%+20px)] left-full hidden pl-3 min-w-48 z-10">
+                        <div class="border-border-light p-2 md:shadow-lg md:border rounded-lg bg-white md:bg-white">
                           
-                            <a href="/eleventy-ev/maschinen/karton/kontinuierlich/" class="block rounded-md px-3 py-2 text-sm hover:bg-muted">
+                            <a href="/eleventy-ev/maschinen/karton-kontinuierlich/" class="block md:rounded-md px-3 py-2 text-sm hover:bg-muted border-b md:border-none border-border">
                               <div>
-                                <p class="font-medium text-foreground-headline text-sm">kontinuierlich</p>
-                                <p class="text-xs text-foreground-muted">3
-                                  &nbsp;Maschinen
-                                </p>
+                                <p class=" text-foreground-darker text-sm capitalize">kontinuierlich</p>
                               </div>
                             </a>
                           
-                            <a href="/eleventy-ev/maschinen/karton/getaktet/" class="block rounded-md px-3 py-2 text-sm hover:bg-muted">
+                            <a href="/eleventy-ev/maschinen/karton-getaktet/" class="block md:rounded-md px-3 py-2 text-sm hover:bg-muted border-b md:border-none border-border">
                               <div>
-                                <p class="font-medium text-foreground-headline text-sm">getaktet</p>
-                                <p class="text-xs text-foreground-muted">2
-                                  &nbsp;Maschinen
-                                </p>
+                                <p class=" text-foreground-darker text-sm capitalize">getaktet</p>
                               </div>
                             </a>
                           
-                            <a href="/eleventy-ev/maschinen/karton/seitenkartonierer/" class="block rounded-md px-3 py-2 text-sm hover:bg-muted">
+                            <a href="/eleventy-ev/maschinen/karton-seitenkartonierer/" class="block md:rounded-md px-3 py-2 text-sm hover:bg-muted border-b md:border-none border-border">
                               <div>
-                                <p class="font-medium text-foreground-headline text-sm">Seitenkartonierer</p>
-                                <p class="text-xs text-foreground-muted">4
-                                  &nbsp;Maschinen
-                                </p>
+                                <p class=" text-foreground-darker text-sm capitalize">Seitenkartonierer</p>
                               </div>
                             </a>
                           
-                            <a href="/eleventy-ev/maschinen/karton/aufrichter/" class="block rounded-md px-3 py-2 text-sm hover:bg-muted">
+                            <a href="/eleventy-ev/maschinen/karton-aufrichter/" class="block md:rounded-md px-3 py-2 text-sm hover:bg-muted border-b md:border-none border-border">
                               <div>
-                                <p class="font-medium text-foreground-headline text-sm">Aufrichter</p>
-                                <p class="text-xs text-foreground-muted">1
-                                  &nbsp;Maschine
-                                </p>
+                                <p class=" text-foreground-darker text-sm capitalize">Aufrichter</p>
                               </div>
                             </a>
                           
@@ -302,114 +247,39 @@
                   
                 
                   
-                    <a href="/eleventy-ev/maschinen/folie-karton/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-muted transition-colors text-foreground-muted">
-                      <div class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          class="lucide lucide-package-icon lucide-package size-4"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1
-                            1.73z"/><path d="M12 22V12"/><polyline points="3.29 7 12 12 20.71 7"/><path d="m7.5 4.27 9 5.15"/>
-                        </svg>
-                      </div>
+                    <a href="/eleventy-ev/maschinen/folie-karton/" class="flex items-center gap-3 p-3 py-2 rounded-lg hover:bg-muted transition-colors text-foreground-muted">
                       <div class="flex-1">
-                        <p class="font-medium text-foreground-headline text-sm">Folie/Karton</p>
-                        <p class="text-xs text-foreground-muted">
-                          1
-                          &nbsp;Maschine
-                        </p>
+                        <p class=" text-foreground-darker text-sm">Folie/Karton</p>
                       </div>
                     </a>
                   
                 
                   
-                    <a href="/eleventy-ev/maschinen/papierverpackung/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-muted transition-colors text-foreground-muted">
-                      <div class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          class="lucide lucide-package-icon lucide-package size-4"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1
-                            1.73z"/><path d="M12 22V12"/><polyline points="3.29 7 12 12 20.71 7"/><path d="m7.5 4.27 9 5.15"/>
-                        </svg>
-                      </div>
+                    <a href="/eleventy-ev/maschinen/papierverpackung/" class="flex items-center gap-3 p-3 py-2 rounded-lg hover:bg-muted transition-colors text-foreground-muted">
                       <div class="flex-1">
-                        <p class="font-medium text-foreground-headline text-sm">Papierverpackung</p>
-                        <p class="text-xs text-foreground-muted">
-                          2
-                          &nbsp;Maschinen
-                        </p>
+                        <p class=" text-foreground-darker text-sm">Papierverpackung</p>
                       </div>
                     </a>
                   
                 
                   
-                    <a href="/eleventy-ev/maschinen/tragegriff/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-muted transition-colors text-foreground-muted">
-                      <div class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          class="lucide lucide-package-icon lucide-package size-4"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1
-                            1.73z"/><path d="M12 22V12"/><polyline points="3.29 7 12 12 20.71 7"/><path d="m7.5 4.27 9 5.15"/>
-                        </svg>
-                      </div>
+                    <a href="/eleventy-ev/maschinen/tragegriff/" class="flex items-center gap-3 p-3 py-2 rounded-lg hover:bg-muted transition-colors text-foreground-muted">
                       <div class="flex-1">
-                        <p class="font-medium text-foreground-headline text-sm">Tragegriff</p>
-                        <p class="text-xs text-foreground-muted">
-                          1
-                          &nbsp;Maschine
-                        </p>
+                        <p class=" text-foreground-darker text-sm">Tragegriff</p>
                       </div>
                     </a>
                   
                 
                   
                     <div
-                      class="md:relative hs-dropdown hs-dropdown-hover [--strategy:static] md:[--trigger:hover] md:[--adaptive:adaptive]">
+                      class="md:relative hs-dropdown md:[--strategy:absolute] md:[--trigger:hover] [--adaptive:none] md:[--adaptive:adaptive]
+                        [--is-collapse:true] md:[--is-collapse:false] ">
                       <!-- Trigger -->
-                      <a href="/eleventy-ev/maschinen/speichersysteme/" class=" flex items-center gap-3 p-3 rounded-lg hover:bg-muted transition-colors text-foreground-muted">
-                        <div class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            class="lucide lucide-package-icon lucide-package size-4"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1
-                              1.73z"/><path d="M12 22V12"/><polyline points="3.29 7 12 12 20.71 7"/><path d="m7.5 4.27 9 5.15"/>
-                          </svg>
-                        </div>
+                      <a class="hs-dropdown-toggle flex items-center gap-3 p-3 py-2 rounded-lg hover:bg-muted hs-dropdown-open:bg-muted transition-colors text-foreground-muted">
                         <div class="flex-1">
-                          <p class="font-medium text-sm text-foreground-headline">
+                          <p class=" text-sm text-foreground-darker">
                             Speichersysteme
                           </p>
-                          <p class="text-xs text-foreground-muted">
-                            3
-                            &nbsp;Maschinen
-                          </p>
                         </div>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -420,266 +290,8 @@
                           stroke-width="2">
                           <path d="m9 18 6-6-6-6"/>
                         </svg>
-                        <p class="text-xs text-foreground-muted md:hidden">2
-                          &nbsp;Unterkategorien
-                        </p>
-                      </a>
-                      <!-- Dropdown -->
-                      <div class="hs-dropdown-menu md:absolute left-full top-0 pl-2 hidden min-w-48 z-10">
-                        <div class="border-border p-2 shadow-lg border rounded-lg bg-background">
-                          
-                            <a href="/eleventy-ev/maschinen/speichersysteme/formatgebunden/" class="block rounded-md px-3 py-2 text-sm hover:bg-muted">
-                              <div>
-                                <p class="font-medium text-foreground-headline text-sm">Formatgebunden</p>
-                                <p class="text-xs text-foreground-muted">1
-                                  &nbsp;Maschine
-                                </p>
-                              </div>
-                            </a>
-                          
-                            <a href="/eleventy-ev/maschinen/speichersysteme/formatvariabel/" class="block rounded-md px-3 py-2 text-sm hover:bg-muted">
-                              <div>
-                                <p class="font-medium text-foreground-headline text-sm">Formatvariabel</p>
-                                <p class="text-xs text-foreground-muted">2
-                                  &nbsp;Maschinen
-                                </p>
-                              </div>
-                            </a>
-                          
-                        </div>
-                      </div>
-                    </div>
-                  
-                
-                  
-                    <div
-                      class="md:relative hs-dropdown hs-dropdown-hover [--strategy:static] md:[--trigger:hover] md:[--adaptive:adaptive]">
-                      <!-- Trigger -->
-                      <a href="/eleventy-ev/maschinen/palettiersysteme/" class=" flex items-center gap-3 p-3 rounded-lg hover:bg-muted transition-colors text-foreground-muted">
-                        <div class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            class="lucide lucide-package-icon lucide-package size-4"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1
-                              1.73z"/><path d="M12 22V12"/><polyline points="3.29 7 12 12 20.71 7"/><path d="m7.5 4.27 9 5.15"/>
-                          </svg>
-                        </div>
-                        <div class="flex-1">
-                          <p class="font-medium text-sm text-foreground-headline">
-                            Palettiersysteme
-                          </p>
-                          <p class="text-xs text-foreground-muted">
-                            5
-                            &nbsp;Maschinen
-                          </p>
-                        </div>
                         <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="size-4 hidden md:block"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="2">
-                          <path d="m9 18 6-6-6-6"/>
-                        </svg>
-                        <p class="text-xs text-foreground-muted md:hidden">2
-                          &nbsp;Unterkategorien
-                        </p>
-                      </a>
-                      <!-- Dropdown -->
-                      <div class="hs-dropdown-menu md:absolute left-full top-0 pl-2 hidden min-w-48 z-10">
-                        <div class="border-border p-2 shadow-lg border rounded-lg bg-background">
-                          
-                            <a href="/eleventy-ev/maschinen/palettiersysteme/robotter/" class="block rounded-md px-3 py-2 text-sm hover:bg-muted">
-                              <div>
-                                <p class="font-medium text-foreground-headline text-sm">Robotter</p>
-                                <p class="text-xs text-foreground-muted">2
-                                  &nbsp;Maschinen
-                                </p>
-                              </div>
-                            </a>
-                          
-                            <a href="/eleventy-ev/maschinen/palettiersysteme/lagenpalettierer/" class="block rounded-md px-3 py-2 text-sm hover:bg-muted">
-                              <div>
-                                <p class="font-medium text-foreground-headline text-sm">Lagenpalettierer</p>
-                                <p class="text-xs text-foreground-muted">3
-                                  &nbsp;Maschinen
-                                </p>
-                              </div>
-                            </a>
-                          
-                        </div>
-                      </div>
-                    </div>
-                  
-                
-                  
-                    <div
-                      class="md:relative hs-dropdown hs-dropdown-hover [--strategy:static] md:[--trigger:hover] md:[--adaptive:adaptive]">
-                      <!-- Trigger -->
-                      <a href="/eleventy-ev/maschinen/palettenverpackung/" class=" flex items-center gap-3 p-3 rounded-lg hover:bg-muted transition-colors text-foreground-muted">
-                        <div class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            class="lucide lucide-package-icon lucide-package size-4"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1
-                              1.73z"/><path d="M12 22V12"/><polyline points="3.29 7 12 12 20.71 7"/><path d="m7.5 4.27 9 5.15"/>
-                          </svg>
-                        </div>
-                        <div class="flex-1">
-                          <p class="font-medium text-sm text-foreground-headline">
-                            Palettenverpackung
-                          </p>
-                          <p class="text-xs text-foreground-muted">
-                            10
-                            &nbsp;Maschinen
-                          </p>
-                        </div>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="size-4 hidden md:block"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="2">
-                          <path d="m9 18 6-6-6-6"/>
-                        </svg>
-                        <p class="text-xs text-foreground-muted md:hidden">4
-                          &nbsp;Unterkategorien
-                        </p>
-                      </a>
-                      <!-- Dropdown -->
-                      <div class="hs-dropdown-menu md:absolute left-full top-0 pl-2 hidden min-w-48 z-10">
-                        <div class="border-border p-2 shadow-lg border rounded-lg bg-background">
-                          
-                            <a href="/eleventy-ev/maschinen/palettenverpackung/schrumpfhaube/" class="block rounded-md px-3 py-2 text-sm hover:bg-muted">
-                              <div>
-                                <p class="font-medium text-foreground-headline text-sm">Schrumpfhaube</p>
-                                <p class="text-xs text-foreground-muted">5
-                                  &nbsp;Maschinen
-                                </p>
-                              </div>
-                            </a>
-                          
-                            <a href="/eleventy-ev/maschinen/palettenverpackung/spannhaube/" class="block rounded-md px-3 py-2 text-sm hover:bg-muted">
-                              <div>
-                                <p class="font-medium text-foreground-headline text-sm">Spannhaube</p>
-                                <p class="text-xs text-foreground-muted">1
-                                  &nbsp;Maschine
-                                </p>
-                              </div>
-                            </a>
-                          
-                            <a href="/eleventy-ev/maschinen/palettenverpackung/hybridanlage/" class="block rounded-md px-3 py-2 text-sm hover:bg-muted">
-                              <div>
-                                <p class="font-medium text-foreground-headline text-sm">Hybridanlage</p>
-                                <p class="text-xs text-foreground-muted">1
-                                  &nbsp;Maschine
-                                </p>
-                              </div>
-                            </a>
-                          
-                            <a href="/eleventy-ev/maschinen/palettenverpackung/sicherung/" class="block rounded-md px-3 py-2 text-sm hover:bg-muted">
-                              <div>
-                                <p class="font-medium text-foreground-headline text-sm">Sicherung</p>
-                                <p class="text-xs text-foreground-muted">1
-                                  &nbsp;Maschine
-                                </p>
-                              </div>
-                            </a>
-                          
-                        </div>
-                      </div>
-                    </div>
-                  
-                
-                  
-                    <div
-                      class="md:relative hs-dropdown hs-dropdown-hover [--strategy:static] md:[--trigger:hover] md:[--adaptive:adaptive]">
-                      <!-- Trigger -->
-                      <a href="/eleventy-ev/maschinen/fördertechnik/" class=" flex items-center gap-3 p-3 rounded-lg hover:bg-muted transition-colors text-foreground-muted">
-                        <div class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            class="lucide lucide-package-icon lucide-package size-4"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1
-                              1.73z"/><path d="M12 22V12"/><polyline points="3.29 7 12 12 20.71 7"/><path d="m7.5 4.27 9 5.15"/>
-                          </svg>
-                        </div>
-                        <div class="flex-1">
-                          <p class="font-medium text-sm text-foreground-headline">
-                            Fördertechnik
-                          </p>
-                          <p class="text-xs text-foreground-muted">
-                            2
-                            &nbsp;Maschinen
-                          </p>
-                        </div>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="size-4 hidden md:block"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="2">
-                          <path d="m9 18 6-6-6-6"/>
-                        </svg>
-                        <p class="text-xs text-foreground-muted md:hidden">2
-                          &nbsp;Unterkategorien
-                        </p>
-                      </a>
-                      <!-- Dropdown -->
-                      <div class="hs-dropdown-menu md:absolute left-full top-0 pl-2 hidden min-w-48 z-10">
-                        <div class="border-border p-2 shadow-lg border rounded-lg bg-background">
-                          
-                            <a href="/eleventy-ev/maschinen/fördertechnik/gebindetransport/" class="block rounded-md px-3 py-2 text-sm hover:bg-muted">
-                              <div>
-                                <p class="font-medium text-foreground-headline text-sm">Gebindetransport</p>
-                                <p class="text-xs text-foreground-muted">1
-                                  &nbsp;Maschine
-                                </p>
-                              </div>
-                            </a>
-                          
-                            <a href="/eleventy-ev/maschinen/fördertechnik/palettentransport/" class="block rounded-md px-3 py-2 text-sm hover:bg-muted">
-                              <div>
-                                <p class="font-medium text-foreground-headline text-sm">Palettentransport</p>
-                                <p class="text-xs text-foreground-muted">1
-                                  &nbsp;Maschine
-                                </p>
-                              </div>
-                            </a>
-                          
-                        </div>
-                      </div>
-                    </div>
-                  
-                
-                  
-                    <a href="/eleventy-ev/maschinen/defolierer/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-muted transition-colors text-foreground-muted">
-                      <div class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
-                        <svg
+                          class="md:hidden hs-dropdown-open:-rotate-180 md:hs-dropdown-open:rotate-0 duration-300 ms-auto md:ms-2 shrink-0 size-4"
                           xmlns="http://www.w3.org/2000/svg"
                           width="24"
                           height="24"
@@ -688,44 +300,216 @@
                           stroke="currentColor"
                           stroke-width="2"
                           stroke-linecap="round"
-                          stroke-linejoin="round"
-                          class="lucide lucide-package-icon lucide-package size-4"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1
-                            1.73z"/><path d="M12 22V12"/><polyline points="3.29 7 12 12 20.71 7"/><path d="m7.5 4.27 9 5.15"/>
+                          stroke-linejoin="round"><path d="m6 9 6 6 6-6"/>
                         </svg>
+                      </a>
+                      <!-- Dropdown -->
+                      <div class="hs-dropdown-menu md:absolute  -top-[calc(100%+20px)] left-full hidden pl-3 min-w-48 z-10">
+                        <div class="border-border-light p-2 md:shadow-lg md:border rounded-lg bg-white md:bg-white">
+                          
+                            <a href="/eleventy-ev/maschinen/speichersysteme-formatgebunden/" class="block md:rounded-md px-3 py-2 text-sm hover:bg-muted border-b md:border-none border-border">
+                              <div>
+                                <p class=" text-foreground-darker text-sm capitalize">Formatgebunden</p>
+                              </div>
+                            </a>
+                          
+                            <a href="/eleventy-ev/maschinen/speichersysteme-formatvariabel/" class="block md:rounded-md px-3 py-2 text-sm hover:bg-muted border-b md:border-none border-border">
+                              <div>
+                                <p class=" text-foreground-darker text-sm capitalize">Formatvariabel</p>
+                              </div>
+                            </a>
+                          
+                        </div>
                       </div>
+                    </div>
+                  
+                
+                  
+                    <div
+                      class="md:relative hs-dropdown md:[--strategy:absolute] md:[--trigger:hover] [--adaptive:none] md:[--adaptive:adaptive]
+                        [--is-collapse:true] md:[--is-collapse:false] ">
+                      <!-- Trigger -->
+                      <a class="hs-dropdown-toggle flex items-center gap-3 p-3 py-2 rounded-lg hover:bg-muted hs-dropdown-open:bg-muted transition-colors text-foreground-muted">
+                        <div class="flex-1">
+                          <p class=" text-sm text-foreground-darker">
+                            Palettiersysteme
+                          </p>
+                        </div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="size-4 hidden md:block"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2">
+                          <path d="m9 18 6-6-6-6"/>
+                        </svg>
+                        <svg
+                          class="md:hidden hs-dropdown-open:-rotate-180 md:hs-dropdown-open:rotate-0 duration-300 ms-auto md:ms-2 shrink-0 size-4"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"><path d="m6 9 6 6 6-6"/>
+                        </svg>
+                      </a>
+                      <!-- Dropdown -->
+                      <div class="hs-dropdown-menu md:absolute  -top-[calc(100%+20px)] left-full hidden pl-3 min-w-48 z-10">
+                        <div class="border-border-light p-2 md:shadow-lg md:border rounded-lg bg-white md:bg-white">
+                          
+                            <a href="/eleventy-ev/maschinen/palettiersysteme-Roboter/" class="block md:rounded-md px-3 py-2 text-sm hover:bg-muted border-b md:border-none border-border">
+                              <div>
+                                <p class=" text-foreground-darker text-sm capitalize">Roboter</p>
+                              </div>
+                            </a>
+                          
+                            <a href="/eleventy-ev/maschinen/palettiersysteme-lagenpalettierer/" class="block md:rounded-md px-3 py-2 text-sm hover:bg-muted border-b md:border-none border-border">
+                              <div>
+                                <p class=" text-foreground-darker text-sm capitalize">Lagenpalettierer</p>
+                              </div>
+                            </a>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  
+                
+                  
+                    <div
+                      class="md:relative hs-dropdown md:[--strategy:absolute] md:[--trigger:hover] [--adaptive:none] md:[--adaptive:adaptive]
+                        [--is-collapse:true] md:[--is-collapse:false] ">
+                      <!-- Trigger -->
+                      <a class="hs-dropdown-toggle flex items-center gap-3 p-3 py-2 rounded-lg hover:bg-muted hs-dropdown-open:bg-muted transition-colors text-foreground-muted">
+                        <div class="flex-1">
+                          <p class=" text-sm text-foreground-darker">
+                            Palettenverpackung
+                          </p>
+                        </div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="size-4 hidden md:block"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2">
+                          <path d="m9 18 6-6-6-6"/>
+                        </svg>
+                        <svg
+                          class="md:hidden hs-dropdown-open:-rotate-180 md:hs-dropdown-open:rotate-0 duration-300 ms-auto md:ms-2 shrink-0 size-4"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"><path d="m6 9 6 6 6-6"/>
+                        </svg>
+                      </a>
+                      <!-- Dropdown -->
+                      <div class="hs-dropdown-menu md:absolute  -top-[calc(100%+20px)] left-full hidden pl-3 min-w-48 z-10">
+                        <div class="border-border-light p-2 md:shadow-lg md:border rounded-lg bg-white md:bg-white">
+                          
+                            <a href="/eleventy-ev/maschinen/palettenverpackung-schrumpfhaube/" class="block md:rounded-md px-3 py-2 text-sm hover:bg-muted border-b md:border-none border-border">
+                              <div>
+                                <p class=" text-foreground-darker text-sm capitalize">Schrumpfhaube</p>
+                              </div>
+                            </a>
+                          
+                            <a href="/eleventy-ev/maschinen/palettenverpackung-spannhaube/" class="block md:rounded-md px-3 py-2 text-sm hover:bg-muted border-b md:border-none border-border">
+                              <div>
+                                <p class=" text-foreground-darker text-sm capitalize">Spannhaube</p>
+                              </div>
+                            </a>
+                          
+                            <a href="/eleventy-ev/maschinen/palettenverpackung-hybridanlage/" class="block md:rounded-md px-3 py-2 text-sm hover:bg-muted border-b md:border-none border-border">
+                              <div>
+                                <p class=" text-foreground-darker text-sm capitalize">Hybridanlage</p>
+                              </div>
+                            </a>
+                          
+                            <a href="/eleventy-ev/maschinen/palettenverpackung-sicherung/" class="block md:rounded-md px-3 py-2 text-sm hover:bg-muted border-b md:border-none border-border">
+                              <div>
+                                <p class=" text-foreground-darker text-sm capitalize">Sicherung</p>
+                              </div>
+                            </a>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  
+                
+                  
+                    <div
+                      class="md:relative hs-dropdown md:[--strategy:absolute] md:[--trigger:hover] [--adaptive:none] md:[--adaptive:adaptive]
+                        [--is-collapse:true] md:[--is-collapse:false] ">
+                      <!-- Trigger -->
+                      <a class="hs-dropdown-toggle flex items-center gap-3 p-3 py-2 rounded-lg hover:bg-muted hs-dropdown-open:bg-muted transition-colors text-foreground-muted">
+                        <div class="flex-1">
+                          <p class=" text-sm text-foreground-darker">
+                            Fördertechnik
+                          </p>
+                        </div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="size-4 hidden md:block"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2">
+                          <path d="m9 18 6-6-6-6"/>
+                        </svg>
+                        <svg
+                          class="md:hidden hs-dropdown-open:-rotate-180 md:hs-dropdown-open:rotate-0 duration-300 ms-auto md:ms-2 shrink-0 size-4"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"><path d="m6 9 6 6 6-6"/>
+                        </svg>
+                      </a>
+                      <!-- Dropdown -->
+                      <div class="hs-dropdown-menu md:absolute  -top-[calc(100%+20px)] left-full hidden pl-3 min-w-48 z-10">
+                        <div class="border-border-light p-2 md:shadow-lg md:border rounded-lg bg-white md:bg-white">
+                          
+                            <a href="/eleventy-ev/maschinen/fördertechnik-gebindetransport/" class="block md:rounded-md px-3 py-2 text-sm hover:bg-muted border-b md:border-none border-border">
+                              <div>
+                                <p class=" text-foreground-darker text-sm capitalize">Gebindetransport</p>
+                              </div>
+                            </a>
+                          
+                            <a href="/eleventy-ev/maschinen/fördertechnik-palettentransport/" class="block md:rounded-md px-3 py-2 text-sm hover:bg-muted border-b md:border-none border-border">
+                              <div>
+                                <p class=" text-foreground-darker text-sm capitalize">Palettentransport</p>
+                              </div>
+                            </a>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  
+                
+                  
+                    <a href="/eleventy-ev/maschinen/defolierer/" class="flex items-center gap-3 p-3 py-2 rounded-lg hover:bg-muted transition-colors text-foreground-muted">
                       <div class="flex-1">
-                        <p class="font-medium text-foreground-headline text-sm">Defolierer</p>
-                        <p class="text-xs text-foreground-muted">
-                          1
-                          &nbsp;Maschine
-                        </p>
+                        <p class=" text-foreground-darker text-sm">Defolierer</p>
                       </div>
                     </a>
                   
                 
                   
-                    <a href="/eleventy-ev/maschinen/sonderlösungen/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-muted transition-colors text-foreground-muted">
-                      <div class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          class="lucide lucide-package-icon lucide-package size-4"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1
-                            1.73z"/><path d="M12 22V12"/><polyline points="3.29 7 12 12 20.71 7"/><path d="m7.5 4.27 9 5.15"/>
-                        </svg>
-                      </div>
+                    <a href="/eleventy-ev/maschinen/sonderlösungen/" class="flex items-center gap-3 p-3 py-2 rounded-lg hover:bg-muted transition-colors text-foreground-muted">
                       <div class="flex-1">
-                        <p class="font-medium text-foreground-headline text-sm">Sonderlösungen</p>
-                        <p class="text-xs text-foreground-muted">
-                          1
-                          &nbsp;Maschine
-                        </p>
+                        <p class=" text-foreground-darker text-sm">Sonderlösungen</p>
                       </div>
                     </a>
                   
@@ -734,13 +518,12 @@
             </div>
           </div>
           <!-- mega menu  end-->
-          
           <a class=" text-foreground-darker  tracking-wide font-normal hover:text-primary focus:outline-hidden focus:text-primary" href="/eleventy-ev/messetermine">
             Messetermine</a>
           <a class=" text-foreground-darker  tracking-wide   hover:text-primary focus:outline-hidden focus:text-primary" href="/eleventy-ev/#contact">
             Kontakt</a>
           <a class=" text-foreground-darker  tracking-wide   hover:text-primary focus:outline-hidden
-                                                                          focus:text-primary " href="/eleventy-ev/Impressum/">
+                                                                                      focus:text-primary " href="/eleventy-ev/Impressum/">
             Impressum</a>
         </div>
       </div>
