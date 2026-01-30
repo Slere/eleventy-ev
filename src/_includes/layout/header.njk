@@ -106,7 +106,7 @@
                       <!-- Trigger -->
                       <a class="hs-dropdown-toggle flex items-center gap-3 p-3 py-2 rounded-lg hover:bg-muted hs-dropdown-open:bg-muted transition-colors text-foreground-muted">
                         <div class="flex-1">
-                          <p class=" text-sm text-foreground-darker">
+                          <p class=" text-xs uppercase tracking-wider font-medium text-foreground">
                             {{ category.name }}
                           </p>
                         </div>
@@ -138,7 +138,7 @@
                           {% for subcategory in category["sub-categories"] %}
                             <a href="{{ ("/maschinen/"~category.url~"-"~subcategory.url~"/") | url }}" class="block md:rounded-md px-3 py-2 text-sm hover:bg-muted border-b md:border-none border-border">
                               <div>
-                                <p class=" text-foreground-darker text-sm capitalize">{{ subcategory.name }}</p>
+                                <p class=" text-xs uppercase tracking-wider font-medium text-foreground">{{ subcategory.name }}</p>
                               </div>
                             </a>
                           {% endfor %}
@@ -148,7 +148,7 @@
                   {% else %}
                     <a href="{{ ("/maschinen/"~category.url~"/") | url }}" class="flex items-center gap-3 p-3 py-2 rounded-lg hover:bg-muted transition-colors text-foreground-muted">
                       <div class="flex-1">
-                        <p class=" text-foreground-darker text-sm">{{ category.name }}</p>
+                        <p class="  text-xs uppercase tracking-wider font-medium text-foreground">{{ category.name }}</p>
                       </div>
                     </a>
                   {% endif %}
