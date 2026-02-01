@@ -21,6 +21,9 @@
     --color-gray-700: oklch(37.3% 0.034 259.733);
     --color-gray-800: oklch(27.8% 0.033 256.848);
     --color-gray-900: oklch(21% 0.034 264.665);
+    --color-zinc-50: oklch(98.5% 0 0);
+    --color-zinc-100: oklch(96.7% 0.001 286.375);
+    --color-neutral-50: oklch(98.5% 0 0);
     --color-neutral-200: oklch(92.2% 0 0);
     --color-neutral-300: oklch(87% 0 0);
     --color-neutral-400: oklch(70.8% 0 0);
@@ -69,6 +72,8 @@
     --tracking-wide: 0.025em;
     --tracking-wider: 0.05em;
     --tracking-widest: 0.1em;
+    --leading-tight: 1.25;
+    --leading-snug: 1.375;
     --leading-normal: 1.5;
     --leading-relaxed: 1.625;
     --leading-loose: 2;
@@ -681,14 +686,14 @@
   .max-h-72 {
     max-height: calc(var(--spacing) * 72);
   }
-  .max-h-172 {
-    max-height: calc(var(--spacing) * 172);
-  }
   .max-h-\[90vh\] {
     max-height: 90vh;
   }
   .max-h-\[calc\(100vh-92px\)\] {
     max-height: calc(100vh - 92px);
+  }
+  .max-h-\[min\(70vh\,43rem\)\] {
+    max-height: min(70vh, 43rem);
   }
   .max-h-full {
     max-height: 100%;
@@ -755,9 +760,6 @@
   }
   .w-24 {
     width: calc(var(--spacing) * 24);
-  }
-  .w-28 {
-    width: calc(var(--spacing) * 28);
   }
   .w-30 {
     width: calc(var(--spacing) * 30);
@@ -1041,9 +1043,6 @@
   }
   .gap-8 {
     gap: calc(var(--spacing) * 8);
-  }
-  .gap-12 {
-    gap: calc(var(--spacing) * 12);
   }
   .gap-16 {
     gap: calc(var(--spacing) * 16);
@@ -1425,14 +1424,8 @@
     --tw-gradient-position: to top in oklab;
     background-image: linear-gradient(var(--tw-gradient-stops));
   }
-  .bg-\[url\(\/eleventy-ev\/assets\/img\/machines\/A21\.webp\)\] {
-    background-image: url(/eleventy-ev/assets/img/machines/A21.webp);
-  }
   .bg-\[url\(\/eleventy-ev\/assets\/img\/machines\/B31\.jpg\)\] {
     background-image: url(/eleventy-ev/assets/img/machines/B31.jpg);
-  }
-  .bg-\[url\(\/eleventy-ev\/assets\/img\/machines\/FL\.jpg\)\] {
-    background-image: url(/eleventy-ev/assets/img/machines/FL.jpg);
   }
   .bg-\[url\(\/eleventy-ev\/assets\/img\/machines\/H41A\.jpg\)\] {
     background-image: url(/eleventy-ev/assets/img/machines/H41A.jpg);
@@ -1727,8 +1720,14 @@
   .pt-8 {
     padding-top: calc(var(--spacing) * 8);
   }
+  .pt-12 {
+    padding-top: calc(var(--spacing) * 12);
+  }
   .pt-32 {
     padding-top: calc(var(--spacing) * 32);
+  }
+  .pb-2 {
+    padding-bottom: calc(var(--spacing) * 2);
   }
   .pb-3 {
     padding-bottom: calc(var(--spacing) * 3);
@@ -1736,8 +1735,14 @@
   .pb-4 {
     padding-bottom: calc(var(--spacing) * 4);
   }
+  .pb-8 {
+    padding-bottom: calc(var(--spacing) * 8);
+  }
   .pb-16 {
     padding-bottom: calc(var(--spacing) * 16);
+  }
+  .pb-20 {
+    padding-bottom: calc(var(--spacing) * 20);
   }
   .pl-1 {
     padding-left: calc(var(--spacing) * 1);
@@ -1947,11 +1952,8 @@
   .underline {
     text-decoration-line: underline;
   }
-  .decoration-primary {
-    text-decoration-color: var(--color-primary);
-  }
-  .decoration-2 {
-    text-decoration-thickness: 2px;
+  .decoration-muted {
+    text-decoration-color: var(--color-muted);
   }
   .underline-offset-2 {
     text-underline-offset: 2px;
@@ -2757,9 +2759,9 @@
       height: calc(var(--spacing) * 56);
     }
   }
-  .md\:w-32 {
+  .md\:w-28 {
     @media (width >= 48rem) {
-      width: calc(var(--spacing) * 32);
+      width: calc(var(--spacing) * 28);
     }
   }
   .md\:w-auto {
@@ -2837,6 +2839,11 @@
       justify-content: flex-start;
     }
   }
+  .md\:gap-4 {
+    @media (width >= 48rem) {
+      gap: calc(var(--spacing) * 4);
+    }
+  }
   .md\:gap-12 {
     @media (width >= 48rem) {
       gap: calc(var(--spacing) * 12);
@@ -2845,11 +2852,6 @@
   .md\:gap-16 {
     @media (width >= 48rem) {
       gap: calc(var(--spacing) * 16);
-    }
-  }
-  .md\:rounded-full {
-    @media (width >= 48rem) {
-      border-radius: calc(infinity * 1px);
     }
   }
   .md\:rounded-md {
@@ -2899,9 +2901,24 @@
       padding-block: calc(var(--spacing) * 20);
     }
   }
+  .md\:py-28 {
+    @media (width >= 48rem) {
+      padding-block: calc(var(--spacing) * 28);
+    }
+  }
   .md\:ps-5 {
     @media (width >= 48rem) {
       padding-inline-start: calc(var(--spacing) * 5);
+    }
+  }
+  .md\:pt-0 {
+    @media (width >= 48rem) {
+      padding-top: calc(var(--spacing) * 0);
+    }
+  }
+  .md\:pb-2 {
+    @media (width >= 48rem) {
+      padding-bottom: calc(var(--spacing) * 2);
     }
   }
   .md\:pb-20 {
@@ -2950,15 +2967,15 @@
       line-height: var(--tw-leading, var(--text-xl--line-height));
     }
   }
-  .md\:text-body-sm {
-    @media (width >= 48rem) {
-      font-size: var(--text-small);
-    }
-  }
   .md\:hyphens-none {
     @media (width >= 48rem) {
       -webkit-hyphens: none;
       hyphens: none;
+    }
+  }
+  .md\:underline {
+    @media (width >= 48rem) {
+      text-decoration-line: underline;
     }
   }
   .md\:shadow-lg {
@@ -3027,11 +3044,6 @@
       margin-inline: calc(var(--spacing) * 0);
     }
   }
-  .lg\:mr-12 {
-    @media (width >= 64rem) {
-      margin-right: calc(var(--spacing) * 12);
-    }
-  }
   .lg\:block {
     @media (width >= 64rem) {
       display: block;
@@ -3055,6 +3067,11 @@
   .lg\:w-2\/5 {
     @media (width >= 64rem) {
       width: calc(2/5 * 100%);
+    }
+  }
+  .lg\:w-32 {
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 32);
     }
   }
   .lg\:max-w-md {
@@ -3135,6 +3152,11 @@
   .lg\:py-24 {
     @media (width >= 64rem) {
       padding-block: calc(var(--spacing) * 24);
+    }
+  }
+  .lg\:py-32 {
+    @media (width >= 64rem) {
+      padding-block: calc(var(--spacing) * 32);
     }
   }
   .lg\:pr-12 {
@@ -3870,7 +3892,7 @@
     color: var(--color-foreground-headline);
   }
   .section-gradient-light {
-    background: linear-gradient(180deg, hsl(210 30% 99%) 0%, hsl(210, 33.3%, 97.6%) 100%);
+    background: linear-gradient(180deg, hsl(210 30% 99%) 0%, hsl(210, 17%, 98%) 100%);
   }
   .animate-fade-up {
     animation: fade-up 0.6s ease-out forwards;

@@ -26,7 +26,7 @@
         "manufacturer_name": "meurer Verpackungssysteme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/meurer.svg",
         "manufacturer_information": "Alle MEURER-Maschinen werden in Modularer und robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.<br>- Maschineneffiktivität bis 98%<br>- Durchgehende Einzeladerbeschriftung<br>- optional Einzeraderverlegung<br>- Clean Design<br>- Servoantrieb und Steuerung",
-        "manufacturer_product_page": "Folienverpackung"
+        "manufacturer_product_page": "https://itwmeurer.com/loesungen/folienverpackung/"
       },
       {
         "machine_id": "A12",
@@ -52,7 +52,7 @@
         "manufacturer_name": "meurer Verpackungssysteme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/meurer.svg",
         "manufacturer_information": "Alle MEURER-Maschinen werden in Modularer und robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.<br>- Maschineneffiktivität bis 98%<br>- Durchgehende Einzeladerbeschriftung<br>- optional Einzeraderverlegung<br>- Clean Design<br>- Servoantrieb und Steuerung",
-        "manufacturer_product_page": "Folienverpackung"
+        "manufacturer_product_page": "https://itwmeurer.com/loesungen/folienverpackung/"
       }
     ]
   },
@@ -75,15 +75,14 @@
           "Druckmarkensteuerung"
         ],
         "images": [
-          "/assets/img/machines/FL.jpg",
-          "/assets/img/machines/A21.webp"
+          "/assets/img/machines/FL.jpg"
         ],
         "variants": [],
         "position": 1,
         "manufacturer_name": "meurer Verpackungssysteme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/meurer.svg",
         "manufacturer_information": "Alle MEURER-Maschinen werden in Modularer und robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.<br>- Maschineneffiktivität bis 98%<br>- Durchgehende Einzeladerbeschriftung<br>- optional Einzeraderverlegung<br>- Clean Design<br>- Servoantrieb und Steuerung",
-        "manufacturer_product_page": "Folienverpackung"
+        "manufacturer_product_page": "https://itwmeurer.com/loesungen/folienverpackung/"
       },
       {
         "machine_id": "A22",
@@ -105,7 +104,7 @@
         "manufacturer_name": "meurer Verpackungssysteme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/meurer.svg",
         "manufacturer_information": "Alle MEURER-Maschinen werden in Modularer und robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.<br>- Maschineneffiktivität bis 98%<br>- Durchgehende Einzeladerbeschriftung<br>- optional Einzeraderverlegung<br>- Clean Design<br>- Servoantrieb und Steuerung",
-        "manufacturer_product_page": "Folienverpackung"
+        "manufacturer_product_page": "https://itwmeurer.com/loesungen/folienverpackung/"
       }
     ]
   },
@@ -137,7 +136,7 @@
         "manufacturer_name": "meurer Verpackungssysteme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/meurer.svg",
         "manufacturer_information": "Alle MEURER-Maschinen werden in Modularer und robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.<br>- Maschineneffiktivität bis 98%<br>- Durchgehende Einzeladerbeschriftung<br>- optional Einzeraderverlegung<br>- Clean Design<br>- Servoantrieb und Steuerung",
-        "manufacturer_product_page": "Kartonverpackung"
+        "manufacturer_product_page": "https://itwmeurer.com/loesungen/kartonverpackung/"
       },
       {
         "machine_id": "B12",
@@ -159,7 +158,7 @@
         "manufacturer_name": "meurer Verpackungssysteme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/meurer.svg",
         "manufacturer_information": "Alle MEURER-Maschinen werden in Modularer und robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.<br>- Maschineneffiktivität bis 98%<br>- Durchgehende Einzeladerbeschriftung<br>- optional Einzeraderverlegung<br>- Clean Design<br>- Servoantrieb und Steuerung",
-        "manufacturer_product_page": "Papierverpackung"
+        "manufacturer_product_page": "https://itwmeurer.com/loesungen/papierverpackung/"
       },
       {
         "machine_id": "B13",
@@ -181,7 +180,7 @@
         "manufacturer_name": "meurer Verpackungssysteme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/meurer.svg",
         "manufacturer_information": "Alle MEURER-Maschinen werden in Modularer und robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.<br>- Maschineneffiktivität bis 98%<br>- Durchgehende Einzeladerbeschriftung<br>- optional Einzeraderverlegung<br>- Clean Design<br>- Servoantrieb und Steuerung",
-        "manufacturer_product_page": "Papierverpackung"
+        "manufacturer_product_page": "https://itwmeurer.com/loesungen/papierverpackung/"
       }
     ]
   },
@@ -213,7 +212,7 @@
         "manufacturer_name": "meurer Verpackungssysteme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/meurer.svg",
         "manufacturer_information": "Alle MEURER-Maschinen werden in Modularer und robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.<br>- Maschineneffiktivität bis 98%<br>- Durchgehende Einzeladerbeschriftung<br>- optional Einzeraderverlegung<br>- Clean Design<br>- Servoantrieb und Steuerung",
-        "manufacturer_product_page": "Kartonverpackung"
+        "manufacturer_product_page": "https://itwmeurer.com/loesungen/kartonverpackung/"
       },
       {
         "machine_id": "B22",
@@ -253,7 +252,7 @@
         "manufacturer_name": "LANGEN Packaging Automation",
         "manufacturer_logo": "/assets/img/manufacturers/langen.jpg",
         "manufacturer_information": "",
-        "manufacturer_product_page": "Langen MAESTRO-c - Mpac Automation Ökosysteme"
+        "manufacturer_product_page": "https://mpac-group.com/products/cartoning-machines-mpac-automation-ecosystems/langen-maestro-c/"
       },
       {
         "machine_id": "B32",
@@ -269,7 +268,7 @@
         "manufacturer_name": "LANGEN Packaging Automation",
         "manufacturer_logo": "/assets/img/manufacturers/langen.jpg",
         "manufacturer_information": "",
-        "manufacturer_product_page": "Langen VENTO-i - Mpac Automation Ökosysteme"
+        "manufacturer_product_page": "https://mpac-group.com/products/cartoning-machines-mpac-automation-ecosystems/langen-vento-i/"
       },
       {
         "machine_id": "B33",
@@ -285,7 +284,7 @@
         "manufacturer_name": "LANGEN Packaging Automation",
         "manufacturer_logo": "/assets/img/manufacturers/langen.jpg",
         "manufacturer_information": "",
-        "manufacturer_product_page": "Langen AIR - Kartonierer mit Seitenlade - Mpac Automation Ecosystems"
+        "manufacturer_product_page": "https://mpac-group.com/products/cartoning-machines-mpac-automation-ecosystems/langen-air-side-load-cartoner/"
       },
       {
         "machine_id": "B34",
@@ -301,7 +300,7 @@
         "manufacturer_name": "LANGEN Packaging Automation",
         "manufacturer_logo": "/assets/img/manufacturers/langen.jpg",
         "manufacturer_information": "",
-        "manufacturer_product_page": ""
+        "manufacturer_product_page": "https://mpac-group.com/products/"
       }
     ]
   },
@@ -358,6 +357,27 @@
         "manufacturer_logo": "/assets/img/manufacturers/meurer.svg",
         "manufacturer_information": "Alle MEURER-Maschinen werden in Modularer und robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.<br>- Maschineneffiktivität bis 98%<br>- Durchgehende Einzeladerbeschriftung<br>- optional Einzeraderverlegung<br>- Clean Design<br>- Servoantrieb und Steuerung",
         "manufacturer_product_page": "Folienverpackung"
+      },
+      {
+        "machine_id": "C12",
+        "name": "Palettentrayformer",
+        "id": "palettentrayformer",
+        "description": "MSK Palettentrayformer für Palettengroße Trays",
+        "features_list": [
+          "alle gängigen Palettenformate - auch EWP",
+          "bis zu Doppelwelle",
+          "Heißleimverklebung",
+          "bis zu 6 Trays/min"
+        ],
+        "images": [
+          "/assets/img/machines/C12.png"
+        ],
+        "variants": [],
+        "position": 2,
+        "manufacturer_name": "MSK Verpackungs-Systeme GmbH",
+        "manufacturer_logo": "/assets/img/manufacturers/msk.svg",
+        "manufacturer_information": "info folgt",
+        "manufacturer_product_page": "Folienverpackung"
       }
     ]
   },
@@ -384,7 +404,7 @@
         "manufacturer_name": "meurer Verpackungssysteme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/meurer.svg",
         "manufacturer_information": "Alle MEURER-Maschinen werden in Modularer und robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.<br>- Maschineneffiktivität bis 98%<br>- Durchgehende Einzeladerbeschriftung<br>- optional Einzeraderverlegung<br>- Clean Design<br>- Servoantrieb und Steuerung",
-        "manufacturer_product_page": "Papierverpackung"
+        "manufacturer_product_page": "https://itwmeurer.com/loesungen/papierverpackung/"
       },
       {
         "machine_id": "D12",
@@ -405,7 +425,7 @@
         "manufacturer_name": "meurer Verpackungssysteme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/meurer.svg",
         "manufacturer_information": "Alle MEURER-Maschinen werden in Modularer und robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.<br>- Maschineneffiktivität bis 98%<br>- Durchgehende Einzeladerbeschriftung<br>- optional Einzeraderverlegung<br>- Clean Design<br>- Servoantrieb und Steuerung",
-        "manufacturer_product_page": "Papierverpackung"
+        "manufacturer_product_page": "https://itwmeurer.com/loesungen/papierverpackung/"
       }
     ]
   },
@@ -456,7 +476,7 @@
         "manufacturer_name": "meurer Verpackungssysteme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/meurer.svg",
         "manufacturer_information": "Alle MEURER-Maschinen werden in Modularer und robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.<br>- Maschineneffiktivität bis 98%<br>- Durchgehende Einzeladerbeschriftung<br>- optional Einzeraderverlegung<br>- Clean Design<br>- Servoantrieb und Steuerung",
-        "manufacturer_product_page": "Speicher- und Fördersysteme"
+        "manufacturer_product_page": "https://itwmeurer.com/loesungen/speicher-und-foerdersysteme/"
       }
     ]
   },
@@ -483,7 +503,7 @@
         "manufacturer_name": "ITW HARTNESS",
         "manufacturer_logo": "/assets/img/manufacturers/itw_hartness.png",
         "manufacturer_information": "Alle HARTNESS-Maschinen werden in robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.<br>- schneller und einfacher Formatwechsel durch Schnellverschlüsse<br>- Maschineneffiktivität bis 99%",
-        "manufacturer_product_page": "Accumulation | ITW Hartness"
+        "manufacturer_product_page": "https://hartness.com/accumulation/#mass-flow-accumulation"
       },
       {
         "machine_id": "F22",
@@ -499,7 +519,7 @@
         "manufacturer_name": "ITW HARTNESS",
         "manufacturer_logo": "/assets/img/manufacturers/itw_hartness.png",
         "manufacturer_information": "Alle HARTNESS-Maschinen werden in robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.<br>- schneller und einfacher Formatwechsel durch Schnellverschlüsse<br>- Maschineneffiktivität bis 99%",
-        "manufacturer_product_page": "Accumulation | ITW Hartness"
+        "manufacturer_product_page": "https://hartness.com/accumulation/#mass-flow-accumulation"
       }
     ]
   },
@@ -529,14 +549,18 @@
         "manufacturer_name": "CSi palletising",
         "manufacturer_logo": "/assets/img/manufacturers/csi.png",
         "manufacturer_information": "Multigreifer für alle Arten an Umkartons und Gebinde<br>- Maschineneffiktivität bis 99,8%<br>- geringer Platzbedarf<br>- werkzeuglose Formatumstellung<br>- einfaches und rasches generieren von Lagenbilder",
-        "manufacturer_product_page": "i-Pal robot palletiser | Palletising cell by CSi Palletising Systems"
+        "manufacturer_product_page": "https://www.csiportal.com/solutions/palletising-solutions/end-of-line-palletising/i-pal/"
       },
       {
         "machine_id": "G12",
         "name": "MSK-Roboterlösung",
         "id": "msk-Roboter",
-        "description": "INFO folgt",
-        "features_list": [],
+        "description": "MSK Palettierroboter palettieren Produkte flexibel und präzise in gewünschten Lagenbildern oder depalettieren Produkte im Wareneingang auf engstem Raum und mit hoher Effizienz.",
+        "features_list": [
+          "Lagengerechte Palettierung",
+          "alle gängigen Palettenformate - auch EWP",
+          "Zwischenblatteinleger"
+        ],
         "images": [
           "/assets/img/machines/G12.jpg"
         ],
@@ -544,7 +568,7 @@
         "position": 2,
         "manufacturer_name": "MSK Verpackungs-Systeme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/msk.svg",
-        "manufacturer_information": "",
+        "manufacturer_information": "- EMSY Visualisierungssystem in 6. Generation<br>- hohe, intuitive Bedienfreundlichkeit<br>- Massive Stahl-Schweißkonstruktion<br>- Siemenssteuerung",
         "manufacturer_product_page": ""
       }
     ]
@@ -574,7 +598,7 @@
         "manufacturer_name": "CSi palletising",
         "manufacturer_logo": "/assets/img/manufacturers/csi.png",
         "manufacturer_information": "Die Palettierer von CSI aus Holland werden in robuster Bauweise gefertigt.<br>- Maschineneffiktivität bis 99,8%<br>- geringer Platzbedarf (ca. 10m_)<br>- werkzeuglose Formatumstellung<br>- einfaches und rasches generieren von Lagenbilder",
-        "manufacturer_product_page": "C5000 layer palletiser | A high-level infeed layer palletiser by CSi"
+        "manufacturer_product_page": "https://www.csiportal.com/solutions/palletising-solutions/end-of-line-palletising/c5000/"
       },
       {
         "machine_id": "G22",
@@ -595,14 +619,18 @@
         "manufacturer_name": "CSi palletising",
         "manufacturer_logo": "/assets/img/manufacturers/csi.png",
         "manufacturer_information": "Die Palettierer von CSI aus Holland werden in robuster Bauweise gefertigt.<br>- Maschineneffiktivität bis 99,8%<br>- geringer Platzbedarf (ca. 6m_)<br>- werkzeuglose Formatumstellung<br>- einfaches und rasches generieren von Lagenbilder",
-        "manufacturer_product_page": "Taros infeed layer palletiser | Automated box palletiser by CSi"
+        "manufacturer_product_page": "https://www.csiportal.com/solutions/palletising-solutions/end-of-line-palletising/taros/"
       },
       {
         "machine_id": "G23",
         "name": "MSK-Palettierlösung",
         "id": "msk-lagenpalettierer",
-        "description": "INFO folgt",
-        "features_list": [],
+        "description": "Für das automatische Palettieren und Depalettieren unterschiedlicher Produkte und jede erforderliche Maschinenleistung",
+        "features_list": [
+          "Lagengerechte Palettierung",
+          "alle gängigen Palettenformate - auch EWP",
+          "Zwischenblatteinleger"
+        ],
         "images": [
           "/assets/img/machines/G23.webp"
         ],
@@ -610,7 +638,7 @@
         "position": 3,
         "manufacturer_name": "MSK Verpackungs-Systeme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/msk.svg",
-        "manufacturer_information": "",
+        "manufacturer_information": "- EMSY Visualisierungssystem in 6. Generation<br>- hohe, intuitive Bedienfreundlichkeit<br>- Massive Stahl-Schweißkonstruktion<br>- Siemenssteuerung",
         "manufacturer_product_page": ""
       }
     ]
@@ -625,8 +653,17 @@
         "machine_id": "H11",
         "name": "Multitech",
         "id": "multitech",
-        "description": "INFO folgt",
-        "features_list": [],
+        "description": "Die Haubenschrumpfmaschine Multitech ist ein Haubenüberzieher, der sich flexibel auf wechselnde Produkte und Abläufe einstellt.",
+        "features_list": [
+          "stufenlose Palettenhöhenanpassung",
+          "alle gängigen Palettenformate - auch EWP",
+          "bis zu 6 Folienformate im Wechsel",
+          "Foliendicke bis 250µ",
+          "Palettenfußausformvorrichtung",
+          "auch mit Elektrorahmen erhältlich",
+          "Unterschrumpf",
+          "Wartungsarbeiten bodennahe, ohne Bühne"
+        ],
         "images": [
           "/assets/img/machines/H11.jpg"
         ],
@@ -634,15 +671,19 @@
         "position": 1,
         "manufacturer_name": "MSK Verpackungs-Systeme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/msk.svg",
-        "manufacturer_information": "",
-        "manufacturer_product_page": "MSK Haubenstretchanlagen – Stretch-Verpackungslösungen für Paletten"
+        "manufacturer_information": "- EMSY Visualisierungssystem in 6. Generation<br>- hohe, intuitive Bedienfreundlichkeit<br>- Massive Stahl-Schweißkonstruktion<br>- Siemenssteuerung<br>- optional mit Covershrink für bis zu 40% Energieeinsparung",
+        "manufacturer_product_page": "https://www.msk.de/loesungen/verpackungssysteme/stretchverpackungsanlagen/"
       },
       {
         "machine_id": "H12",
         "name": "Banderole",
         "id": "paratech",
-        "description": "INFO folgt",
-        "features_list": [],
+        "description": "Die Schrumpffolien-Banderoliermaschine Flowtech wurde speziell für das kosteneffiziente Verpacken von beliebig vielen und sehr unterschiedlichen Paletten- oder Produktformaten entwickelt.",
+        "features_list": [
+          "stufenlose Anpassung der Palettenlänge und Breite",
+          "Foliendicke bis 250µ",
+          "Wartungsarbeiten bodennahe, ohne Bühne"
+        ],
         "images": [
           "/assets/img/machines/H12.webp"
         ],
@@ -650,15 +691,22 @@
         "position": 2,
         "manufacturer_name": "MSK Verpackungs-Systeme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/msk.svg",
-        "manufacturer_information": "",
-        "manufacturer_product_page": "MSK Haubenstretchanlagen – Stretch-Verpackungslösungen für Paletten"
+        "manufacturer_information": "- EMSY Visualisierungssystem in 6. Generation<br>- hohe, intuitive Bedienfreundlichkeit<br>- Massive Stahl-Schweißkonstruktion<br>- Siemenssteuerung",
+        "manufacturer_product_page": "https://www.msk.de/loesungen/verpackungssysteme/stretchverpackungsanlagen/"
       },
       {
         "machine_id": "H13",
         "name": "Schrumpfrahmen",
         "id": "schrumpfrahmen",
-        "description": "INFO folgt",
-        "features_list": [],
+        "description": "MSK Palettenschrumpfmaschinen zeichnen sich besonders durch die sanfte Wärmedosierung der MSK Schrumpfrahmen aus",
+        "features_list": [
+          "stufenlose Palettenhöhenanpassung",
+          "alle gängigen Palettenformate - auch EWP",
+          "Foliendicke bis 250µ",
+          "Palettenfußausformvorrichtung",
+          "Unterschrumpf",
+          "Wartungsarbeiten bodennahe, ohne Bühne"
+        ],
         "images": [
           "/assets/img/machines/H13.jpg"
         ],
@@ -666,15 +714,19 @@
         "position": 3,
         "manufacturer_name": "MSK Verpackungs-Systeme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/msk.svg",
-        "manufacturer_information": "",
+        "manufacturer_information": "- EMSY Visualisierungssystem in 6. Generation<br>- hohe, intuitive Bedienfreundlichkeit<br>- Massive Stahl-Schweißkonstruktion<br>- Siemenssteuerung<br>- auch mit Elektrorahmen erhältlich",
         "manufacturer_product_page": ""
       },
       {
         "machine_id": "H14",
         "name": "Haubenspender",
         "id": "haubenueberzieher",
-        "description": "INFO folgt",
-        "features_list": [],
+        "description": "Der MSK Haubenspender bereitet Folienhauben automatisch aus einem Endlosschlauch vor und positioniert sie über der Palette.",
+        "features_list": [
+          "wählbare Palettenhöhenanpassung",
+          "alle gängigen Palettenformate - auch EWP",
+          "Foliendicke bis 250µ"
+        ],
         "images": [
           "/assets/img/machines/H14.jpg"
         ],
@@ -682,15 +734,19 @@
         "position": 4,
         "manufacturer_name": "MSK Verpackungs-Systeme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/msk.svg",
-        "manufacturer_information": "",
+        "manufacturer_information": "- EMSY Visualisierungssystem in 6. Generation<br>- hohe, intuitive Bedienfreundlichkeit<br>- Massive Stahl-Schweißkonstruktion<br>- Siemenssteuerung",
         "manufacturer_product_page": ""
       },
       {
         "machine_id": "H15",
         "name": "Haubenkonfektionierer",
         "id": "haubenkonfektionierer",
-        "description": "INFO folgt",
-        "features_list": [],
+        "description": "Das MSK Folienkonfektioniergerät macht aus einem Folienendlosschlauch einfach und preiswert passende Folienhauben für alle Ladungsstücke.",
+        "features_list": [
+          "wählbare Haubenlänge",
+          "für alle gängigen Palettenformate - auch EWP",
+          "Foliendicke bis 250µ"
+        ],
         "images": [
           "/assets/img/machines/H15.jpg"
         ],
@@ -698,7 +754,7 @@
         "position": 5,
         "manufacturer_name": "MSK Verpackungs-Systeme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/msk.svg",
-        "manufacturer_information": "",
+        "manufacturer_information": "- hohe, intuitive Bedienfreundlichkeit<br>- Massive Stahl-Schweißkonstruktion<br>- Siemenssteuerung",
         "manufacturer_product_page": ""
       }
     ]
@@ -713,8 +769,15 @@
         "machine_id": "H21",
         "name": "Spannhaube",
         "id": "tensiontech",
-        "description": "INFO folgt",
-        "features_list": [],
+        "description": "MSK Haubenstretcher sind Verpackungsanlagen mit hoher Effektivität bei der Ladungssicherung von Paletteneinheiten.",
+        "features_list": [
+          "stufenlose Palettenhöhenanpassung",
+          "alle gängigen Palettenformate - auch EWP",
+          "bis zu 6 Folienformate im Wechsel",
+          "Foliendicke bis 250µ",
+          "Wartungsarbeiten bodennahe, ohne Bühne",
+          "verschiedene Modelle, bis zu 120 Paletten/Stunde"
+        ],
         "images": [
           "/assets/img/machines/H21.jpg"
         ],
@@ -722,8 +785,8 @@
         "position": 1,
         "manufacturer_name": "MSK Verpackungs-Systeme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/msk.svg",
-        "manufacturer_information": "",
-        "manufacturer_product_page": "MSK Haubenschrumpfmaschinen - Paletten Verpackungsanlagen"
+        "manufacturer_information": "- EMSY Visualisierungssystem in 6. Generation<br>- hohe, intuitive Bedienfreundlichkeit<br>- Massive Stahl-Schweißkonstruktion<br>- Siemenssteuerung",
+        "manufacturer_product_page": "https://www.msk.de/loesungen/verpackungssysteme/schrumpfverpackungsanlagen/"
       }
     ]
   },
@@ -737,8 +800,13 @@
         "machine_id": "H31",
         "name": "Hybrid",
         "id": "spannhaube-schrumpfen",
-        "description": "INFO folgt",
-        "features_list": [],
+        "description": "MSK bietet auch Hybridlösungen an, d.h. Verpackungsanlagen, die Paletten sowohl mit einer Stretchhaube als auch mit einer Schrumpfhaube verpacken können. ",
+        "features_list": [
+          "stufenlose Palettenhöhenanpassung",
+          "alle gängigen Palettenformate - auch EWP",
+          "Foliendicke bis 250µ",
+          "Wartungsarbeiten bodennahe, ohne Bühne"
+        ],
         "images": [
           "/assets/img/machines/H31.jpg"
         ],
@@ -746,8 +814,8 @@
         "position": 1,
         "manufacturer_name": "MSK Verpackungs-Systeme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/msk.svg",
-        "manufacturer_information": "",
-        "manufacturer_product_page": "MSK Haubenschrumpfmaschinen - Paletten Verpackungsanlagen"
+        "manufacturer_information": "- EMSY Visualisierungssystem in 6. Generation<br>- hohe, intuitive Bedienfreundlichkeit<br>- Massive Stahl-Schweißkonstruktion<br>- Siemenssteuerung",
+        "manufacturer_product_page": "https://www.msk.de/loesungen/verpackungssysteme/schrumpfverpackungsanlagen/"
       }
     ]
   },
@@ -761,8 +829,13 @@
         "machine_id": "H41",
         "name": "LOOPTECH-Palettensicherung",
         "id": "palettenloop",
-        "description": "INFO folgt",
-        "features_list": [],
+        "description": "Um standkritische Ladungen auf ihrem Weg von der Palettierung bis zur Verpackungsanlage zu sichern",
+        "features_list": [
+          "stufenlose Anpassung der Palettenlänge und Breite",
+          "bedruckbare Folie zu Werbezweck",
+          "Foliendicke bis 50µ",
+          "Wartungsarbeiten bodennahe, ohne Bühne"
+        ],
         "images": [
           "/assets/img/machines/H41A.jpg",
           "/assets/img/machines/H41B.jpg"
@@ -771,8 +844,8 @@
         "position": 1,
         "manufacturer_name": "MSK Verpackungs-Systeme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/msk.svg",
-        "manufacturer_information": "",
-        "manufacturer_product_page": "MSK Palettiersysteme – Palettierroboter für die Logistikbranche"
+        "manufacturer_information": "- EMSY Visualisierungssystem in 6. Generation<br>- hohe, intuitive Bedienfreundlichkeit<br>- Massive Stahl-Schweißkonstruktion<br>- Siemenssteuerung",
+        "manufacturer_product_page": "https://www.msk.de/loesungen/palettiersysteme/palettiersysteme-fuer-die-logistikbranche/"
       }
     ]
   },
@@ -786,8 +859,14 @@
         "machine_id": "I11",
         "name": "für Gebinde",
         "id": "foerdertechnik-gebinde",
-        "description": "INFO folgt",
-        "features_list": [],
+        "description": "MEURER Gebinde/Produktfördertechnik wird im eigenen Werk gefertigt und an die Produktbedürfnisse angepasst",
+        "features_list": [
+          "an das Produkt angepasstes Transportsystem",
+          "Rolle, Kette, Kunststoffgliederband",
+          "an das Produkt angepasste Breite bis 600mm",
+          "Produktwender",
+          "Eckumsetzer"
+        ],
         "images": [
           "/assets/img/machines/I11A.jpg",
           "/assets/img/machines/I11B.jpg",
@@ -797,8 +876,8 @@
         "position": 1,
         "manufacturer_name": "meurer Verpackungssysteme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/meurer.svg",
-        "manufacturer_information": "Alle MEURER-Maschinen werden in Modularer und robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.<br>- Maschineneffiktivität bis 98%<br>- Durchgehende Einzeladerbeschriftung<br>- optional Einzeraderverlegung<br>- Clean Design<br>- Servoantrieb und Steuerung",
-        "manufacturer_product_page": "Speicher- und Fördersysteme"
+        "manufacturer_information": "Alle MEURER-Maschinen werden in Modularer und robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.",
+        "manufacturer_product_page": "https://itwmeurer.com/loesungen/speicher-und-foerdersysteme/"
       }
     ]
   },
@@ -810,10 +889,18 @@
     "machines": [
       {
         "machine_id": "I21",
-        "name": "füe Paletten",
+        "name": "für Paletten",
         "id": "foerdertechnik-paletten",
-        "description": "INFO folgt",
-        "features_list": [],
+        "description": "MSK Palettenfördertechnik wird im eigenen Werk gefertigt und bietet für jede Branche die optimalen Fördersysteme mit verschiedenen Transportmedien wie Rolle, Kette, Stahlplatten oder Kunststoffgliederband",
+        "features_list": [
+          "an das Produkt angepasstes Transportsystem",
+          "an das Produkt angepasste Breite bis 2.500mm",
+          "Drehsegmente",
+          "Eckumsetzer",
+          "Hubelemente",
+          "Palettendoppler",
+          "Palettenaufzüge"
+        ],
         "images": [
           "/assets/img/machines/I21A.jpg",
           "/assets/img/machines/I21B.jpg",
@@ -827,7 +914,7 @@
         "position": 1,
         "manufacturer_name": "MSK Verpackungs-Systeme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/msk.svg",
-        "manufacturer_information": "",
+        "manufacturer_information": "- EMSY Visualisierungssystem in 6. Generation<br>- Massive Stahl-Schweißkonstruktion<br>- Siemenssteuerung",
         "manufacturer_product_page": "info folgt"
       }
     ]
@@ -842,8 +929,13 @@
         "machine_id": "J11",
         "name": "Defotech",
         "id": "defotech",
-        "description": "INFO folgt",
-        "features_list": [],
+        "description": "Das automatsche Auspacken folierter Paletten und das Entfernen von Umreifungsbändern bietet MSK als Einzellösungen oder als Gesamtsystem an.",
+        "features_list": [
+          "für alle Folienverpackte Paletten geeignet",
+          "alle gängigen Palettenformate - auch EWP",
+          "für Foliendicke bis 250µ",
+          "Wartungsarbeiten bodennahe, ohne Bühne"
+        ],
         "images": [
           "/assets/img/machines/J11A.jpg",
           "/assets/img/machines/J11B.jpg"
@@ -852,7 +944,7 @@
         "position": 1,
         "manufacturer_name": "MSK Verpackungs-Systeme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/msk.svg",
-        "manufacturer_information": "",
+        "manufacturer_information": "- EMSY Visualisierungssystem in 6. Generation<br>- Massive Stahl-Schweißkonstruktion<br>- Siemenssteuerung",
         "manufacturer_product_page": "info folgt"
       }
     ]

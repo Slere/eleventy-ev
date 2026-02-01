@@ -6,7 +6,7 @@ pagination:
 layout: layout/app.njk
 eleventyComputed:
     title: "{{ machines.title | capitalize }}"
-    permalink: "maschinen/{{ machines.slug }}/"
+    permalink: "{{ machines.slug }}/"
 ---
 
 <script type="text/javascript">
@@ -63,31 +63,32 @@ eleventyComputed:
     {% set backUrl = '/' %}
 {% endif %}
 {% set backUrl = backUrl | replaceAll(' ', '-') %}
-<section class="pt-32 pb-16 section-gradient-light">
+<section class="pt-32 pb-8 section-gradient-light border-b border-border-light">
     <div class="max-w-8xl mx-auto px-6">
         <nav aria-label="breadcrumb" class="mb-8">
             {%- from "components/breadcrumbs.njk" import breadcrumbs -%}
             {% set crumbs = page.url | breadcrumbs %}
             {{ breadcrumbs(crumbs) }}
         </nav>
-        <div class="max-w-3xl ">
-            <span class="inline-block pl-1 mb-2  text-[#bdc8d3] uppercase text-sm tracking-wider font-medium">
+        <div class="max-w-3xl">  
+               
+            <h1 class="font-headline font-semibold text-4xl sm:text-4xl md:text-5xl text-foreground-headline  break-words 
+                    hyphens-auto md:hyphens-none tracking-tight">
+                {{ machines.parent_category | safe }}
+            </h1>
+            <span class="font-headline inline-block pl-1  text-[#bdc8d3] capitalize  text-base tracking-wider font-medium">
                 {% if machines.parent_category %}
                     {{ machines.title | safe }}
                 {% else %}
                     {{ machines.machines | length }}
                     {% if machines.machines | length == 1 %}&nbsp;Maschine{% else %}&nbsp;Maschinen{% endif %}
                 {% endif %}
-            </span>
-            <h1 class="font-headline font-semibold text-4xl sm:text-4xl md:text-5xl text-foreground-headline mb-6 break-words
-                    hyphens-auto md:hyphens-none tracking-tight">
-                {{ machines.parent_category | safe }}
-            </h1>
-            <p class="text-foreground-muted text-lg md:text-xl max-w-2xl hyphens-auto break-words font-light leading-normal">{{ machines.description | safe }}</p>
+            </span>    
+            
         </div>
     </div>
 </section>
-<section class="py-20">
+<section class="pt-12 pb-20">
     <div class="max-w-8xl mx-auto px-6">
         <div class="space-y-16">
             {% for product in machines.machines %}
@@ -97,19 +98,19 @@ eleventyComputed:
                             <div class="col-span-3 md:col-span-2 h-full flex flex-col gap-7">
                                 <div class= "">
                                     <h2 class="font-headline text-2xl text-foreground-headline font-semibold  mb-4 uppercase hyphens-auto break-words">{{ product.name | safe }}</h2>
-                                    <p class="text-foreground leading-relaxed text-body-sm md:text-base max-w-4xl hyphens-auto break-words lg:pr-12">{{ product.description | safe }}</p>
+                                    <p class="text-foreground leading-relaxed text-body-sm md:text-base  max-w-4xl hyphens-auto break-words lg:pr-12">{{ product.description | safe }}</p>
                                 </div>
                                 {% if product.variants and product.variants.length > 0 %}
-                                    <div class="">
-                                        <h3 class="font-headline border-none border-border font-semibold text-xs mb-2 text-foreground-darker  uppercase tracking-wide underline-none
-                                                decoration-2 decoration-primary underline-offset-4 lg:mr-12">
+                                    <div class="flex flex-col md:flex-row gap-4 md:gap-4">
+                                        <h3 class="font-headline border-none border-border font-semibold text-xs text-foreground-darker  uppercase tracking-wide 
+                                                 ">
                                             Ähnliche Maschinen
                                         </h3>
-                                        <div class="flex flex-wrap flex-col md:flex-row gap-4">
+                                        <div class="flex flex-wrap flex-col md:flex-col gap-2">
                                             {% for variant in product.variants %}
                                                 {% set variant_machine = machines.byId[variant] %}
                                                 {# eleventy and nunjucks is weird this is a good way of looking up machines but we do not look inside machines of this file #}
-                                                <a href="{{ ("/maschinen/" ~ variant_machine.category_slug ~"#"~variant_machine.id) | url }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs md:text-sm tracking-[0.01em]   bg-transparent border-b md:border px-4 py-2 md:rounded-full border-border
+                                                <a href="{{ ("/" ~ variant_machine.category_slug ~"#"~variant_machine.id) | url }}" class="leading-none inline-flex items-center gap-1.5 text-xs md:text-sm tracking-[0.01em]   bg-transparent border-b md:border-none md:underline decoration-muted underline-offset-4   pb-2 md:pb-2 md:pt-0  border-border
                                                                                                                                                                 text-foreground transition-colors">
                                                     {{ variant_machine.name }}<svg
                                                         xmlns="http://www.w3.org/2000/svg"
@@ -134,7 +135,7 @@ eleventyComputed:
                                             <div class="embla__container flex  touch-pan-y touch-pinch-zoom">
                                                 {% for image in product.images %}
                                                     <div class="embla__slide min-w-0 basis-full shrink-0 grow-0 flex items-center justify-center">
-                                                        <div class="embla__slide__number rounded-md overflow-hidden"><img src="{{ image | url }}" alt="{{ product.name }}" class=" max-h-172  object-contain"/>
+                                                        <div class="embla__slide__number rounded-md overflow-hidden"><img src="{{ image | url }}" alt="{{ product.name }}" class="max-h-[min(70vh,43rem)]   object-contain"/>
                                                         </div>
                                                     </div>
                                                 {% endfor %}
@@ -144,7 +145,7 @@ eleventyComputed:
                                             <div class="embla-thumbs__viewport overflow-hidden">
                                                 <div class="embla-thumbs__container flex flex-row gap-2">
                                                     {% for image in product.images %}
-                                                        <div class="embla-thumbs__slide embla-thumbs__slide--selected flex w-28 aspect-[4/3] md:w-32  overflow-hidden border-transparent p-0 border-2 shrink-0
+                                                        <div class="embla-thumbs__slide embla-thumbs__slide--selected flex w-24 aspect-[4/3] md:w-28 lg:w-32  overflow-hidden border-transparent p-0 border-2 shrink-0
                                                                 rounded-md transition-all bg-muted/50">
                                                             <button
                                                                 type="button"
@@ -158,18 +159,18 @@ eleventyComputed:
                                 {% else %}
                                     <div class="grow-1 flex items-center justify-center ">
                                         <div class="rounded-md overflow-hidden ">
-                                            <img src="{{ product.images[0] | url }}" alt="{{ product.name }}" class=" inset-0  max-h-172  object-contain"/>
+                                            <img src="{{ product.images[0] | url }}" alt="{{ product.name }}" class=" inset-0 max-h-[min(70vh,43rem)] object-contain "/>
                                         </div>
                                     </div>
                                 {% endif %}
                             </div>
-                            <div class="col-span-3 md:col-span-1 flex flex-col h-full gap-12">
+                            <div class="col-span-3 md:col-span-1 flex flex-col h-full gap-8">
                                 <div class=" flex items-start flex-col gap-2 ">
                                     <div class=" flex flex-col items-center gap-2">
                                         <div class="flex self-start w-fit h-fit shrink-0 justify-center items-center rounded-lg">
                                             <img src="{{ product.manufacturer_logo | url }}" alt="manufacturer_logo" class="w-24 h-auto "/>
                                         </div>
-                                        <p class="text-sm font-semibold text-foreground font-headline">{{ product.manufacturer_name }}</p>
+                                       {#  <p class="text-sm font-semibold text-foreground font-headline">{{ product.manufacturer_name }}</p> #}
                                     </div>
                                     <button
                                         class="hidden items-center justify-center gap-2 whitespace-nowrap rounded-full text-sm font-medium ring-offset-background
@@ -216,7 +217,7 @@ eleventyComputed:
                                     {# <h3 class="text-sm font-semibold text-foreground-headline font-headline uppercase mb-3">Hauptmerkmale</h3> #}
                                     <ul class="space-y-2">
                                         {% for feat in product.features_list %}
-                                            <li class="flex items-center gap-2 text-foreground text-body-sm md:text-body-sm">
+                                            <li class="flex items-center gap-2 text-foreground text-body-sm md:text-base ">
                                                 <span class="w-4 h-4 text-primary mt-0.5 flex-shrink-0">
                                                     <svg
                                                         xmlns="http://www.w3.org/2000/svg"
@@ -239,10 +240,10 @@ eleventyComputed:
                                 <div class="max-w-md sm:max-w-lg">
                                     <div class="flex flex-col sm:flex-col  md:flex-col lg:flex-col items-start gap-3  ">
                                         <div>
-                                            <h3 class="font-headline text-xs tracking-wider uppercase font-semibold text-foreground-darker  underline-offset-4 decoration-primary decoration-2 mb-2
+                                            <h3 class="font-headline text-xs tracking-wider uppercase font-semibold text-foreground-darker mb-1
                                                     ">
                                                 Merkmale</h3>
-                                            <div class="text-sm text-foreground hyphens-auto break-words leading-normal tracking-[0.01em]">
+                                            <div class="text-body-sm md:text-base  text-foreground hyphens-auto break-words leading-normal tracking-[0.01em]">
                                                 {{ product.manufacturer_information | safe }}
                                             </div>
                                         </div>
@@ -250,9 +251,9 @@ eleventyComputed:
                                 </div>
                                 <div
                                     class="mx-auto w-full max-w-sm lg:px-8">
-                                    {# <a href="{{ "/#contact" | url }}"> #}
+                                     <a href="{{ product.manufacturer_product_page | url }}" target="_blank" rel="noopener noreferrer"> 
                                     <button
-                                        class=" inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full text-sm font-medium 
+                                        class=" inline-flex items-center justify-center gap-2 whitespace-wrap rounded-full text-sm font-medium 
                                             ring-offset-background transition-all duration-300 focus-visible:outline-none focus-visible:ring-2
                                             focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50
                                             [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0  text-secondary-foreground hover:text-primary-foreground
@@ -260,20 +261,11 @@ eleventyComputed:
                                             cursor-pointer"
                                         aria-haspopup="dialog"
                                         aria-expanded="false"
-                                        aria-controls="hs-medium-modal-{{ loop.index }}"
-                                        data-hs-overlay="#hs-medium-modal-{{ loop.index }}">
-                                        {# <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2.5"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            class="lucide lucide-info-icon lucide-info"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/> </svg> #}<span class="tracking-wide ">Weitere Informationen</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right-icon lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
+                                      
+                                        >
+                                        <span class="tracking-wide ">Weitere Infos beim Hersteller</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right-icon lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
                                     </button>
+                                    </a>
                                     <!-- Modal -->
                                     <div
                                         id="hs-medium-modal-{{ loop.index }}"

@@ -136,7 +136,7 @@
                       <div class="hs-dropdown-menu md:absolute  -top-[calc(100%+20px)] left-full hidden pl-3 min-w-48 z-10">
                         <div class="border-border-light p-2 md:shadow-lg md:border rounded-lg bg-white md:bg-white">
                           {% for subcategory in category["sub-categories"] %}
-                            <a href="{{ ("/maschinen/"~category.url~"-"~subcategory.url~"/") | url }}" class="block md:rounded-md px-3 py-2 text-sm hover:bg-muted border-b md:border-none border-border">
+                            <a href="{{ ("/"~category.url~"-"~subcategory.url~"/") | url }}" class="block md:rounded-md px-3 py-2 text-sm hover:bg-muted border-b md:border-none border-border">
                               <div>
                                 <p class=" text-xs uppercase tracking-wider font-medium text-foreground">{{ subcategory.name }}</p>
                               </div>
@@ -146,7 +146,7 @@
                       </div>
                     </div>
                   {% else %}
-                    <a href="{{ ("/maschinen/"~category.url~"/") | url }}" class="flex items-center gap-3 p-3 py-2 rounded-lg hover:bg-muted transition-colors text-foreground-muted">
+                    <a href="{{ ("/"~category.url~"/") | url }}" class="flex items-center gap-3 p-3 py-2 rounded-lg hover:bg-muted transition-colors text-foreground-muted">
                       <div class="flex-1">
                         <p class="  text-xs uppercase tracking-wider font-medium text-foreground">{{ category.name }}</p>
                       </div>
@@ -159,7 +159,7 @@
           <!-- mega menu  end-->
           <a class=" text-foreground-darker tracking-widest font-medium uppercase text-xs hover:text-primary focus:outline-hidden focus:text-primary" href="{{ "/messetermine" | url }}">
             Messetermine</a>
-          <a class=" text-foreground-darker tracking-widest font-medium uppercase text-xs hover:text-primary focus:outline-hidden focus:text-primary" href="{{ "/#contact" | url }}">
+          <a class=" text-foreground-darker tracking-widest font-medium uppercase text-xs hover:text-primary focus:outline-hidden focus:text-primary" href="{{ "/Kontakt/" | url }}">
             Kontakt</a>
           <a class=" text-foreground-darker tracking-widest font-medium uppercase text-xs hover:text-primary focus:outline-hidden focus:text-primary" href="{{ "/Impressum/" | url }}">
             Impressum</a>
