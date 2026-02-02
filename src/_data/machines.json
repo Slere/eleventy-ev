@@ -465,7 +465,7 @@
         "id": "hsp-speichertisch",
         "description": "Produktspeichersystem in verschiedenen Größen und längen. Produkt-Berührungssloses System, welches die Taktleistung davor- und nachgeschalteter Maschinen ausgleicht und so den Wirkungsfrad der Linie deutlich erhöht. Für Mikrostörungen (zB. Etikettenwechsel) bestens geeignet um die Linie nicht abschalten zu müssen.",
         "features_list": [
-          "firstin-firstaut",
+          "firstin-firstout",
           "variable Staukapazität einstellbar in beide Richtungen"
         ],
         "images": [
@@ -492,7 +492,7 @@
         "id": "dynac",
         "description": "Produktspeichersystem in verschiedenen Größen und längen. Produkt-Berührungssloses System, welches die Taktleistung davor- und nachgeschalteter Maschinen ausgleicht und so den Wirkungsfrad der Linie deutlich erhöht. Für Mikrostörungen (zB. Etikettenwechsel) bestens geeignet um die Linie nicht abschalten zu müssen.",
         "features_list": [
-          "firstin-firstaut",
+          "firstin-firstout",
           "variable Staukapazität einstellbar in beide Richtungen"
         ],
         "images": [
