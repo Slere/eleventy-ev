@@ -101,7 +101,7 @@
     --color-primary-foreground: #fafdff;
     --color-border: #efefef;
     --color-border-light: #f7f7f7;
-    --color-foreground-headline: #14335a;
+    --color-foreground-headline: #27436f;
     --color-accent: #f7c333;
     --color-background: #fdfdfe;
     --color-muted: #f3f5f7;
@@ -1499,7 +1499,7 @@
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
   .from-foreground-headline\/40 {
-    --tw-gradient-from: color-mix(in srgb, #14335a 40%, transparent);
+    --tw-gradient-from: color-mix(in srgb, #27436f 40%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       --tw-gradient-from: color-mix(in oklab, var(--color-foreground-headline) 40%, transparent);
     }
@@ -1709,9 +1709,6 @@
   .pt-8 {
     padding-top: calc(var(--spacing) * 8);
   }
-  .pt-12 {
-    padding-top: calc(var(--spacing) * 12);
-  }
   .pt-32 {
     padding-top: calc(var(--spacing) * 32);
   }
@@ -1724,17 +1721,14 @@
   .pb-4 {
     padding-bottom: calc(var(--spacing) * 4);
   }
-  .pb-8 {
-    padding-bottom: calc(var(--spacing) * 8);
-  }
   .pb-16 {
     padding-bottom: calc(var(--spacing) * 16);
   }
-  .pb-20 {
-    padding-bottom: calc(var(--spacing) * 20);
+  .pl-0 {
+    padding-left: calc(var(--spacing) * 0);
   }
-  .pl-1 {
-    padding-left: calc(var(--spacing) * 1);
+  .pl-0\.5 {
+    padding-left: calc(var(--spacing) * 0.5);
   }
   .pl-3 {
     padding-left: calc(var(--spacing) * 3);
@@ -2723,6 +2717,11 @@
       margin-top: calc(var(--spacing) * 0);
     }
   }
+  .md\:mb-8 {
+    @media (width >= 48rem) {
+      margin-bottom: calc(var(--spacing) * 8);
+    }
+  }
   .md\:block {
     @media (width >= 48rem) {
       display: block;
@@ -2905,9 +2904,19 @@
       padding-top: calc(var(--spacing) * 0);
     }
   }
+  .md\:pt-12 {
+    @media (width >= 48rem) {
+      padding-top: calc(var(--spacing) * 12);
+    }
+  }
   .md\:pb-2 {
     @media (width >= 48rem) {
       padding-bottom: calc(var(--spacing) * 2);
+    }
+  }
+  .md\:pb-8 {
+    @media (width >= 48rem) {
+      padding-bottom: calc(var(--spacing) * 8);
     }
   }
   .md\:pb-20 {
