@@ -24,23 +24,26 @@
     --color-secondary: #f3f6fa; /* #f0f0f0; */
     --color-foreground-muted: #566171;
     --color-secondary-foreground: #204163;/*  oklch(0.4498 0.0298 257.68); */
+    --color-secondary-foreground-muted: #58708a;
     --color-primary: oklch(0.448 0.108 255.9);
     --color-primary-foreground: #fafdff;
     --color-border: #efefef;
     --color-border-light: #f7f7f7;
+    --color-border-dark: #ddddde;
     --color-border-blue: #5984bb;
     --color-secondary-headline: #0d3966; /* oklch(0.2685 0.0616 267.83); */
     --color-foreground-headline: #27436f;
-    --color-accent: #f7c333;
+    --color-accent: #f7a233;
     --color-accent-foreground: #3e342d;
     --color-border-secondary: #dfe4ea;
     --color-background: #fdfdfe;
     --color-muted: #f3f5f7;
     --color-card: #ffffff;
-    --shadow-card: 0 8px 30px -8px hsla(208, 56%, 26%, 0.12);
+    --color-link: #1c72db;
+    --shadow-card: 0 8px 30px -8px hsla(208, 56%, 26%, 0.10);
     --shadow-hover: 0 12px 40px -10px hsl(208 56% 26% / 0.2);
-    --shadow-soft: 0 4px 20px hsl(208 56% 26% / 0.08);
-    --shadow-button: 0 4px 20px hsl(208 56% 26% / 0.05);
+    --shadow-soft: 0 4px 20px hsl(208 56% 26% / 0.06);
+    --shadow-button: 0 4px 20px hsl(208 56% 26% / 0.04);
 
     --text-small: 0.9375rem;
     --text-headline: 2.125rem;
