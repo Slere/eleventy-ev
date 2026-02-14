@@ -65,6 +65,7 @@
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --tracking-tight: -0.025em;
+    --tracking-normal: 0em;
     --tracking-wide: 0.025em;
     --tracking-wider: 0.05em;
     --tracking-widest: 0.1em;
@@ -1316,12 +1317,6 @@
   .bg-\[\#f9fafb\] {
     background-color: #f9fafb;
   }
-  .bg-\[\#fbfbfb\] {
-    background-color: #fbfbfb;
-  }
-  .bg-\[\#fefefe\] {
-    background-color: #fefefe;
-  }
   .bg-background {
     background-color: var(--color-background);
   }
@@ -1826,14 +1821,6 @@
   .text-body-sm {
     font-size: var(--text-small);
   }
-  .leading-1 {
-    --tw-leading: calc(var(--spacing) * 1);
-    line-height: calc(var(--spacing) * 1);
-  }
-  .leading-1\.5 {
-    --tw-leading: calc(var(--spacing) * 1.5);
-    line-height: calc(var(--spacing) * 1.5);
-  }
   .leading-loose {
     --tw-leading: var(--leading-loose);
     line-height: var(--leading-loose);
@@ -1882,9 +1869,17 @@
     --tw-tracking: -0.01em;
     letter-spacing: -0.01em;
   }
+  .tracking-\[-0\.025em\] {
+    --tw-tracking: -0.025em;
+    letter-spacing: -0.025em;
+  }
   .tracking-\[0\.01em\] {
     --tw-tracking: 0.01em;
     letter-spacing: 0.01em;
+  }
+  .tracking-normal {
+    --tw-tracking: var(--tracking-normal);
+    letter-spacing: var(--tracking-normal);
   }
   .tracking-tight {
     --tw-tracking: var(--tracking-tight);
@@ -2782,6 +2777,18 @@
       font-size: var(--text-small);
     }
   }
+  .sm\:tracking-\[-0\.01em\] {
+    @media (width >= 40rem) {
+      --tw-tracking: -0.01em;
+      letter-spacing: -0.01em;
+    }
+  }
+  .sm\:tracking-\[-0\.015em\] {
+    @media (width >= 40rem) {
+      --tw-tracking: -0.015em;
+      letter-spacing: -0.015em;
+    }
+  }
   .sm\:tracking-tight {
     @media (width >= 40rem) {
       --tw-tracking: var(--tracking-tight);
@@ -2958,6 +2965,11 @@
       gap: calc(var(--spacing) * 4);
     }
   }
+  .md\:gap-6 {
+    @media (width >= 48rem) {
+      gap: calc(var(--spacing) * 6);
+    }
+  }
   .md\:gap-16 {
     @media (width >= 48rem) {
       gap: calc(var(--spacing) * 16);
@@ -2995,24 +3007,9 @@
       border-style: none;
     }
   }
-  .md\:bg-\[\#f9f9f9\] {
-    @media (width >= 48rem) {
-      background-color: #f9f9f9;
-    }
-  }
-  .md\:bg-\[\#fafafa\] {
-    @media (width >= 48rem) {
-      background-color: #fafafa;
-    }
-  }
   .md\:bg-\[\#fbfbfb\] {
     @media (width >= 48rem) {
       background-color: #fbfbfb;
-    }
-  }
-  .md\:bg-\[\#fcfcfc\] {
-    @media (width >= 48rem) {
-      background-color: #fcfcfc;
     }
   }
   .md\:bg-white {
@@ -3065,6 +3062,11 @@
       padding-inline-start: calc(var(--spacing) * 5);
     }
   }
+  .md\:pt-6 {
+    @media (width >= 48rem) {
+      padding-top: calc(var(--spacing) * 6);
+    }
+  }
   .md\:pt-8 {
     @media (width >= 48rem) {
       padding-top: calc(var(--spacing) * 8);
@@ -3113,6 +3115,18 @@
     @media (width >= 48rem) {
       font-size: var(--text-xl);
       line-height: var(--tw-leading, var(--text-xl--line-height));
+    }
+  }
+  .md\:tracking-\[-0\.01em\] {
+    @media (width >= 48rem) {
+      --tw-tracking: -0.01em;
+      letter-spacing: -0.01em;
+    }
+  }
+  .md\:tracking-\[-0\.015em\] {
+    @media (width >= 48rem) {
+      --tw-tracking: -0.015em;
+      letter-spacing: -0.015em;
     }
   }
   .md\:hyphens-none {
@@ -3323,6 +3337,60 @@
     @media (width >= 64rem) {
       font-size: var(--text-sm);
       line-height: var(--tw-leading, var(--text-sm--line-height));
+    }
+  }
+  .lg\:tracking-\[-0\.00em\] {
+    @media (width >= 64rem) {
+      --tw-tracking: -0.00em;
+      letter-spacing: -0.00em;
+    }
+  }
+  .lg\:tracking-\[-0\.01em\] {
+    @media (width >= 64rem) {
+      --tw-tracking: -0.01em;
+      letter-spacing: -0.01em;
+    }
+  }
+  .lg\:tracking-\[-0\.1em\] {
+    @media (width >= 64rem) {
+      --tw-tracking: -0.1em;
+      letter-spacing: -0.1em;
+    }
+  }
+  .lg\:tracking-\[-0\.02em\] {
+    @media (width >= 64rem) {
+      --tw-tracking: -0.02em;
+      letter-spacing: -0.02em;
+    }
+  }
+  .lg\:tracking-\[-0\.015em\] {
+    @media (width >= 64rem) {
+      --tw-tracking: -0.015em;
+      letter-spacing: -0.015em;
+    }
+  }
+  .lg\:tracking-\[-0\.025em\] {
+    @media (width >= 64rem) {
+      --tw-tracking: -0.025em;
+      letter-spacing: -0.025em;
+    }
+  }
+  .lg\:tracking-\[0\.0em\] {
+    @media (width >= 64rem) {
+      --tw-tracking: 0.0em;
+      letter-spacing: 0.0em;
+    }
+  }
+  .lg\:tracking-\[0\.01em\] {
+    @media (width >= 64rem) {
+      --tw-tracking: 0.01em;
+      letter-spacing: 0.01em;
+    }
+  }
+  .lg\:tracking-\[0\.1em\] {
+    @media (width >= 64rem) {
+      --tw-tracking: 0.1em;
+      letter-spacing: 0.1em;
     }
   }
   .\32 xl\:px-0 {
