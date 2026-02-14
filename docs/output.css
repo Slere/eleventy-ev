@@ -1728,9 +1728,6 @@
   .pt-4 {
     padding-top: calc(var(--spacing) * 4);
   }
-  .pt-6 {
-    padding-top: calc(var(--spacing) * 6);
-  }
   .pt-8 {
     padding-top: calc(var(--spacing) * 8);
   }
@@ -1865,21 +1862,9 @@
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
   }
-  .tracking-\[-0\.01em\] {
-    --tw-tracking: -0.01em;
-    letter-spacing: -0.01em;
-  }
-  .tracking-\[-0\.025em\] {
-    --tw-tracking: -0.025em;
-    letter-spacing: -0.025em;
-  }
   .tracking-\[0\.01em\] {
     --tw-tracking: 0.01em;
     letter-spacing: 0.01em;
-  }
-  .tracking-normal {
-    --tw-tracking: var(--tracking-normal);
-    letter-spacing: var(--tracking-normal);
   }
   .tracking-tight {
     --tw-tracking: var(--tracking-tight);
@@ -2777,12 +2762,6 @@
       font-size: var(--text-small);
     }
   }
-  .sm\:tracking-\[-0\.01em\] {
-    @media (width >= 40rem) {
-      --tw-tracking: -0.01em;
-      letter-spacing: -0.01em;
-    }
-  }
   .sm\:tracking-\[-0\.015em\] {
     @media (width >= 40rem) {
       --tw-tracking: -0.015em;
@@ -3007,9 +2986,19 @@
       border-style: none;
     }
   }
-  .md\:bg-\[\#fbfbfb\] {
+  .md\:bg-\[\#fcfcfd\] {
     @media (width >= 48rem) {
-      background-color: #fbfbfb;
+      background-color: #fcfcfd;
+    }
+  }
+  .md\:bg-\[\#fdfdfd\] {
+    @media (width >= 48rem) {
+      background-color: #fdfdfd;
+    }
+  }
+  .md\:bg-\[\#fdfdfe\] {
+    @media (width >= 48rem) {
+      background-color: #fdfdfe;
     }
   }
   .md\:bg-white {
@@ -3115,18 +3104,6 @@
     @media (width >= 48rem) {
       font-size: var(--text-xl);
       line-height: var(--tw-leading, var(--text-xl--line-height));
-    }
-  }
-  .md\:tracking-\[-0\.01em\] {
-    @media (width >= 48rem) {
-      --tw-tracking: -0.01em;
-      letter-spacing: -0.01em;
-    }
-  }
-  .md\:tracking-\[-0\.015em\] {
-    @media (width >= 48rem) {
-      --tw-tracking: -0.015em;
-      letter-spacing: -0.015em;
     }
   }
   .md\:hyphens-none {
@@ -3337,60 +3314,6 @@
     @media (width >= 64rem) {
       font-size: var(--text-sm);
       line-height: var(--tw-leading, var(--text-sm--line-height));
-    }
-  }
-  .lg\:tracking-\[-0\.00em\] {
-    @media (width >= 64rem) {
-      --tw-tracking: -0.00em;
-      letter-spacing: -0.00em;
-    }
-  }
-  .lg\:tracking-\[-0\.01em\] {
-    @media (width >= 64rem) {
-      --tw-tracking: -0.01em;
-      letter-spacing: -0.01em;
-    }
-  }
-  .lg\:tracking-\[-0\.1em\] {
-    @media (width >= 64rem) {
-      --tw-tracking: -0.1em;
-      letter-spacing: -0.1em;
-    }
-  }
-  .lg\:tracking-\[-0\.02em\] {
-    @media (width >= 64rem) {
-      --tw-tracking: -0.02em;
-      letter-spacing: -0.02em;
-    }
-  }
-  .lg\:tracking-\[-0\.015em\] {
-    @media (width >= 64rem) {
-      --tw-tracking: -0.015em;
-      letter-spacing: -0.015em;
-    }
-  }
-  .lg\:tracking-\[-0\.025em\] {
-    @media (width >= 64rem) {
-      --tw-tracking: -0.025em;
-      letter-spacing: -0.025em;
-    }
-  }
-  .lg\:tracking-\[0\.0em\] {
-    @media (width >= 64rem) {
-      --tw-tracking: 0.0em;
-      letter-spacing: 0.0em;
-    }
-  }
-  .lg\:tracking-\[0\.01em\] {
-    @media (width >= 64rem) {
-      --tw-tracking: 0.01em;
-      letter-spacing: 0.01em;
-    }
-  }
-  .lg\:tracking-\[0\.1em\] {
-    @media (width >= 64rem) {
-      --tw-tracking: 0.1em;
-      letter-spacing: 0.1em;
     }
   }
   .\32 xl\:px-0 {
