@@ -101,7 +101,7 @@ eleventyComputed:
                                     <p class="text-foreground-darker leading-relaxed text-sm sm:text-base max-w-4xl hyphens-auto break-words">{{ product.description | safe }}</p>
                                 
                                 {% if product.variants and product.variants.length > 0 %}
-                                    <div class="flex flex-col md:flex-row gap-3 md:gap-4 mt-4">
+                                    <div class="flex flex-col lg:flex-row gap-3 md:gap-4 mt-4">
                                         <h3 class="font-headline border-none border-border font-bold text-xs text-foreground   tracking-wide 
                                                  ">
                                             Ähnliche Maschinen
@@ -110,8 +110,8 @@ eleventyComputed:
                                             {% for variant in product.variants %}
                                                 {% set variant_machine = machines.byId[variant] %}
                                                 {# eleventy and nunjucks is weird this is a good way of looking up machines but we do not look inside machines of this file #}
-                                                <a href="{{ ("/" ~ variant_machine.category_slug ~"#"~variant_machine.id) | url }}" class="leading-none inline-flex items-center gap-1.5 text-xs md:text-xs tracking-[0.01em]   bg-transparent border-b md:border-none  decoration-muted underline-offset-4   pb-2 md:pb-2 md:pt-0  border-border
-                                                                                                                                                                text-link transition-colors">
+                                                <a href="{{ ("/" ~ variant_machine.category_slug ~"#"~variant_machine.id) | url }}" class="leading-none inline-flex items-center gap-1.5 text-xs  tracking-[0.01em]   bg-transparent border-b lg:border-none  decoration-muted underline-offset-4   pb-2  lg:pt-0  border-border
+                                                                                                                                                                text-foreground transition-colors">
                                                     {{ variant_machine.name }}<svg
                                                         xmlns="http://www.w3.org/2000/svg"
                                                         width="24"
@@ -122,7 +122,7 @@ eleventyComputed:
                                                         stroke-width="2"
                                                         stroke-linecap="round"
                                                         stroke-linejoin="round"
-                                                        class="lucide lucide-arrow-right-icon lucide-arrow-right size-4 text-link"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
+                                                        class="lucide lucide-arrow-right-icon lucide-arrow-right size-4 text-primary"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
                                                     </svg>
                                                 </a>
                                             {% endfor %}
@@ -165,7 +165,7 @@ eleventyComputed:
                                     </div>
                                 {% endif %}
                             </div>
-                            <div class="col-span-3 md:col-span-2 lg:col-span-1 flex flex-col h-full gap-6 md:bg-[#fefefe] md:border-l-1 border-border-dark p-6 md:p-8">
+                            <div class="col-span-3 md:col-span-2 lg:col-span-1 flex flex-col h-full gap-6 md:bg-[#f9f9f9] md:border-l-1 border-border-dark p-6 md:p-8">
                                 <div class="flex items-start flex-col gap-2">         
                                         <div class="">
                                             <img src="{{ product.manufacturer_logo | url }}" alt="manufacturer_logo" class=" w-20 sm:w-24 h-auto "/>
@@ -265,7 +265,7 @@ eleventyComputed:
                                         aria-expanded="false"
                                       
                                         > #}
-                                        <span class="tracking-wide text-link font-semibold text-xs sm:text-sm ">Weitere Infos beim Hersteller</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right-icon lucide-arrow-right text-link size-4 stroke-[2.5] ml-1"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                                        <span class="tracking-wide text-link md:text-primary font-semibold text-xs sm:text-sm ">Weitere Infos beim Hersteller</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right-icon lucide-arrow-right text-link md:text-primary size-4 stroke-[2.5] ml-1"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
                                     {# </button> #}
                                     </a>
                                     <!-- Modal -->
