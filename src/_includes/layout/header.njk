@@ -72,7 +72,7 @@
             <button
               id="hs-mega-menu"
               type="button"
-              class="hs-dropdown-toggle md:p-2 flex items-center w-full  text-foreground-darker text-body-sm md:text-base tracking-[-0.01em] font-medium   hover:text-primary
+              class="hs-dropdown-toggle md:p-2 flex items-center w-full  text-foreground-muted text-body-sm  tracking-[-0.01em] font-medium   hover:text-primary
                 focus:outline-hidden focus:text-primary cursor-pointer"
               aria-haspopup="menu"
               aria-expanded="false"
@@ -106,7 +106,7 @@
                       <!-- Trigger -->
                       <a class="hs-dropdown-toggle flex items-center gap-3 p-3 py-2 rounded-lg hover:bg-muted hs-dropdown-open:bg-muted transition-colors text-foreground-muted">
                         <div class="flex-1">
-                          <p class=" text-sm tracking-normal font-medium text-foreground">
+                          <p class=" text-sm tracking-normal font-medium text-foreground-muted">
                             {{ category.name }}
                           </p>
                         </div>
@@ -138,7 +138,7 @@
                           {% for subcategory in category["sub-categories"] %}
                             <a href="{{ ("/"~category.url~"-"~subcategory.url~"/") | url }}" class="block md:rounded-md px-3 py-2 text-sm hover:bg-muted border-b md:border-none border-border">
                               <div>
-                                <p class=" text-sm capitalize font-medium text-foreground">{{ subcategory.name }}</p>
+                                <p class=" text-sm capitalize font-medium text-foreground-muted">{{ subcategory.name }}</p>
                               </div>
                             </a>
                           {% endfor %}
@@ -148,7 +148,7 @@
                   {% else %}
                     <a href="{{ ("/"~category.url~"/") | url }}" class="flex items-center gap-3 p-3 py-2 rounded-lg hover:bg-muted transition-colors text-foreground-muted">
                       <div class="flex-1">
-                        <p class="  text-sm font-medium text-foreground">{{ category.name }}</p>
+                        <p class="text-sm font-medium text-foreground-muted">{{ category.name }}</p>
                       </div>
                     </a>
                   {% endif %}
@@ -157,11 +157,11 @@
             </div>
           </div>
           <!-- mega menu  end-->
-          <a class=" text-foreground-darker text-body-sm md:text-base tracking-[-0.01em] font-medium  hover:text-primary focus:outline-hidden focus:text-primary" href="{{ "/messetermine" | url }}">
+          <a class=" text-foreground-muted text-body-sm  tracking-[-0.01em] font-medium  hover:text-primary focus:outline-hidden focus:text-primary" href="{{ "/messetermine" | url }}">
             Messetermine</a>
-          <a class=" text-foreground-darker text-body-sm md:text-base tracking-[-0.01em] font-medium  hover:text-primary focus:outline-hidden focus:text-primary" href="{{ "/Kontakt/" | url }}">
+          <a class=" text-foreground-muted text-body-sm  tracking-[-0.01em] font-medium  hover:text-primary focus:outline-hidden focus:text-primary" href="{{ "/Kontakt/" | url }}">
             Kontakt</a>
-          <a class=" text-foreground-darker text-body-sm md:text-base tracking-[-0.01em] font-medium  hover:text-primary focus:outline-hidden focus:text-primary" href="{{ "/Impressum/" | url }}">
+          <a class=" text-foreground-muted text-body-sm  tracking-[-0.01em] font-medium  hover:text-primary focus:outline-hidden focus:text-primary" href="{{ "/Impressum/" | url }}">
             Impressum</a>
         </div>
       </div>

@@ -39,11 +39,12 @@
     --color-background: #fdfdfe;
     --color-muted: #f3f5f7;
     --color-card: #ffffff;
-    --color-link: #1c72db;
+    --color-link: #108cc6;
     --shadow-card: 0 8px 30px -8px hsla(208, 56%, 26%, 0.10);
     --shadow-hover: 0 12px 40px -10px hsl(208 56% 26% / 0.2);
     --shadow-soft: 0 4px 20px hsl(208 56% 26% / 0.06);
     --shadow-button: 0 4px 20px hsl(208 56% 26% / 0.04);
+    --color-navy: #14253d;
 
     --text-small: 0.9375rem;
     --text-headline: 2.125rem;
