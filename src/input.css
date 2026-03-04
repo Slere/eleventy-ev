@@ -6,6 +6,11 @@
 @import '@fontsource-variable/ibm-plex-sans';
 @import '@fontsource-variable/oswald';
 @import '@fontsource-variable/montserrat';
+@import '@fontsource/barlow-condensed/400.css';
+@import '@fontsource/barlow-condensed/500.css';
+@import '@fontsource/barlow-condensed/600.css';
+@import '@fontsource/barlow-condensed/700.css';
+@import '@fontsource-variable/dm-sans';
 @source "./src/*.{html,js}";
 @theme {  
     --custom-font: "Inter Variable";
@@ -14,6 +19,8 @@
     --font-ibmplexsans: "IBM Plex Sans Variable";
     --font-oswald: "Oswald Variable";
     --font-montserrat: "Montserrat Variable";
+    --font-barlow-condensed: "Barlow Condensed";
+    --font-dm-sans: "DM Sans Variable";
      --breakpoint-xs: 30rem;
     --breakpoint-3xl: 112rem;
     --breakpoint-4xl: 128rem;
@@ -58,7 +65,7 @@
 @import "preline/variants.css";
 @plugin "@tailwindcss/forms";
 @layer base{ html,:host{
-font-family:var(--custom-font),var(--default-font-family);
+font-family:var(--font-dm-sans),var(--default-font-family);
 }}
 
   @utility text-body-sm {
@@ -79,7 +86,7 @@ font-family:var(--custom-font),var(--default-font-family);
 
 @layer utilities {
   .font-headline {
-    font-family: var(--font-montserrat), var(--default-font-family);
+    font-family: var(--custom-font), var(--default-font-family);
   }
   .font-light-normal {
     font-weight: 350;

@@ -63,7 +63,7 @@ eleventyComputed:
     {% set backUrl = '/' %}
 {% endif %}
 {% set backUrl = backUrl | replaceAll(' ', '-') %}
-<section class="pt-28 pb-4 md:pb-6 border-b border-border-dark  section-gradient-light">
+<section class="pt-28 pb-4 md:pb-6 border-b border-border  section-gradient-light">
     <div class="max-w-8xl mx-auto px-6">
         <nav aria-label="breadcrumb" class="mb-4 md:mb-6">
             {%- from "components/breadcrumbs.njk" import breadcrumbs -%}
@@ -88,21 +88,21 @@ eleventyComputed:
         </div>
     </div>
 </section>
-<section class=" pb-12 md:pb-24 bg-[#f9fafb] flex-1">
-    <div class=" mx-auto px-0">
-        <div class="space-y-8 md:space-y-0">
+<section class=" bg-[#f9fafb] flex-1">
+    <div class="mx-auto px-0">
+        <div class="space-y-0 md:space-y-0">
             {% for product in machines.machines %}
                 {% if product.url != page.url %}
                     <div class="group scroll-my-24" id="{{ product.id }}">
-                        <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-0 items-start  overflow-hidden group-last:border-b group-last:border-border-dark">
-                            <div class="col-span-3 md:col-span-2 h-full flex flex-col gap-7 p-6 pb-3 md:pb-8 md:p-8 lg:p-10 bg-white">
-                                <div class="">
-                                    <h2 class="font-headline text-lg sm:text-xl lg:text-xl text-foreground-headline font-bold tracking-[-0.005em] hyphens-auto break-words mb-1">{{ product.name | safe }}</h2>
-                                    <p class="text-foreground-muted text-sm sm:text-base max-w-4xl hyphens-auto break-words">{{ product.description | safe }}</p>
+                        <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-0 items-start  overflow-hidden ">
+                            <div class="col-span-3 md:col-span-2 h-full flex flex-col gap-7 p-6 pb-3 md:pb-8 md:p-8 lg:p-10 bg-[#eeeff1] md:bg-white">
+                                <div class="max-w-5xl self-center w-full">
+                                    <h2 class="font-headline text-lg sm:text-xl lg:text-2xl text-foreground-headline font-bold tracking-[-0.005em] hyphens-auto break-words mb-1">{{ product.name | safe }}</h2>
+                                    <p class="text-navy/80 md:text-foreground-muted text-sm sm:text-base max-w-4xl hyphens-auto break-words">{{ product.description | safe }}</p>
                                 
                                 {% if product.variants and product.variants.length > 0 %}
                                     <div class="flex flex-col lg:flex-row gap-2 md:gap-4 mt-4">
-                                        <h3 class="font-headline border-none border-border font-bold text-xs text-foreground-muted   tracking-wide 
+                                        <h3 class="font-headline border-none border-border font-bold text-xs text-navy/60 md:text-foreground-muted   tracking-wide 
                                                  ">
                                             Ähnliche Maschinen
                                         </h3>
@@ -110,7 +110,7 @@ eleventyComputed:
                                             {% for variant in product.variants %}
                                                 {% set variant_machine = machines.byId[variant] %}
                                                 {# eleventy and nunjucks is weird this is a good way of looking up machines but we do not look inside machines of this file #}
-                                                <a href="{{ ("/" ~ variant_machine.category_slug ~"#"~variant_machine.id) | url }}" class="leading-none inline-flex items-center gap-1.5 text-xs  tracking-[0.01em]   bg-transparent border-b lg:border-none  decoration-muted underline-offset-4   pb-2  lg:pt-0  border-border
+                                                <a href="{{ ("/" ~ variant_machine.category_slug ~"#"~variant_machine.id) | url }}" class="leading-none inline-flex items-center gap-1.5 text-xs  tracking-[0.01em]   bg-transparent border-b lg:border-none  decoration-muted underline-offset-4   pb-2  lg:pt-0  border-border-dark md:border-border
                                                                                                                                                                 text-link transition-colors">
                                                     {{ variant_machine.name }}<svg
                                                         xmlns="http://www.w3.org/2000/svg"
@@ -122,7 +122,7 @@ eleventyComputed:
                                                         stroke-width="2"
                                                         stroke-linecap="round"
                                                         stroke-linejoin="round"
-                                                        class="lucide lucide-arrow-right-icon lucide-arrow-right size-4 text-link"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
+                                                        class="lucide lucide-arrow-right-icon lucide-arrow-right size-3.5 text-link"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
                                                     </svg>
                                                 </a>
                                             {% endfor %}
@@ -131,7 +131,7 @@ eleventyComputed:
                                 {% endif %}
                                 </div>
                                 {% if product.images and product.images.length > 1 %}
-                                    <div class="embla">
+                                    <div class="embla max-w-5xl self-center">
                                         <div class="embla__viewport overflow-hidden">
                                             <div class="embla__container flex  touch-pan-y touch-pinch-zoom">
                                                 {% for image in product.images %}
@@ -158,14 +158,14 @@ eleventyComputed:
                                         </div>
                                     </div>
                                 {% else %}
-                                    <div class="grow-1 flex items-center justify-center">
+                                    <div class="grow-1 flex items-center justify-center max-w-5xl self-center">
                                         <div class=" overflow-hidden rounded-lg">
                                             <img src="{{ product.images[0] | url }}" alt="{{ product.name }}" class=" inset-0 max-h-[min(70vh,43rem)] object-contain "/>
                                         </div>
                                     </div>
                                 {% endif %}
                             </div>
-                            <div class="col-span-3 md:col-span-2 lg:col-span-2 flex flex-col h-full gap-4 md:gap-5 bg-transparent border-l border-border-dark group-odd:md:bg-[#eeeff1] group-even:md:bg-[#eeeff1] p-6 pt-3 md:pt-8 md:p-8 lg:p-10 md:pb-16 group-last:pb-8">
+                            <div class="col-span-3 md:col-span-2 lg:col-span-2 flex flex-col h-full gap-4 md:gap-5  bg-[#eeeff1] p-6 pt-3 md:pt-8 md:p-8 lg:p-10 md:pb-16 group-last:pb-8">
                                 <div class="flex items-start flex-col gap-2 border-b border-border-dark pb-5">         
                                         <div class="">
                                             <img src="{{ product.manufacturer_logo | url }}" alt="manufacturer_logo" class="w-full max-w-20 sm:max-w-24 h-auto max-h-12 "/>
@@ -239,14 +239,14 @@ eleventyComputed:
                                     </ul>
                                 </div>
                                 {% endif %}
-                                <div class="max-w-md sm:max-w-lg">
+                                <div class="max-w-md sm:max-w-md">
                                     <div class="flex flex-col sm:flex-col  md:flex-col lg:flex-col items-start gap-3  ">
                                         {% if product.manufacturer_information %}
                                         <div>
                                             <h3 class="font-headline text-sm text-[size:13px] sm:text-sm tracking-wide capitalize font-bold text-navy/60
                                                     ">
                                                 Merkmale</h3>
-                                            <div class="text-sm  text-navy/80 hyphens-auto break-words leading-snug">
+                                            <div class="text-sm  text-navy/80 text-pretty leading-snug">
                                                 {{ product.manufacturer_information | safe }}
                                             </div>
                                         </div>
@@ -267,7 +267,7 @@ eleventyComputed:
                                         aria-expanded="false"
                                       
                                         > #}
-                                        <span class="tracking-wide text-link font-medium text-sm ">Weitere Infos beim Hersteller</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right-icon lucide-arrow-right text-link size-4 stroke-[2.5] ml-1"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                                        <span class="tracking-wide text-link font-medium text-sm ">Weitere Infos beim Hersteller</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right-icon lucide-arrow-right text-link size-3.5 stroke-[2.5] ml-1"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
                                     {# </button> #}
                                     </a>
                                     <!-- Modal -->

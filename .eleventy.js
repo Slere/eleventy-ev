@@ -18,8 +18,14 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy({
         "./node_modules/@fontsource-variable/montserrat/files": "files"
     });
+        eleventyConfig.addPassthroughCopy({
+        "./node_modules/@fontsource-variable/dm-sans/files": "files"
+    });
     eleventyConfig.addPassthroughCopy({
         "./node_modules/@fontsource/bebas-neue/files": "files"
+    });
+    eleventyConfig.addPassthroughCopy({
+        "./node_modules/@fontsource/barlow-condensed/files": "files"
     });
     eleventyConfig.addPassthroughCopy({ "./src/assets": "assets/" });
     eleventyConfig.addFilter("breadcrumbs", function (url) {
