@@ -92,7 +92,6 @@
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --custom-font: "Inter Variable";
-    --font-oswald: "Oswald Variable";
     --font-dm-sans: "DM Sans Variable";
     --color-foreground: #212831;
     --color-foreground-darker: #0f1318;
@@ -1308,6 +1307,9 @@
   .\!bg-white {
     background-color: var(--color-white) !important;
   }
+  .bg-\[\#e8ebee\] {
+    background-color: #e8ebee;
+  }
   .bg-\[\#eeeff1\] {
     background-color: #eeeff1;
   }
@@ -1628,9 +1630,6 @@
   }
   .stroke-\[2\.5\] {
     stroke-width: 2.5;
-  }
-  .stroke-\[2\] {
-    stroke-width: 2;
   }
   .object-contain {
     object-fit: contain;
@@ -2791,11 +2790,6 @@
       line-height: var(--tw-leading, var(--text-xl--line-height));
     }
   }
-  .sm\:text-body-sm {
-    @media (width >= 40rem) {
-      font-size: var(--text-small);
-    }
-  }
   .sm\:tracking-tight {
     @media (width >= 40rem) {
       --tw-tracking: var(--tracking-tight);
@@ -3346,12 +3340,6 @@
     @media (width >= 64rem) {
       font-size: var(--text-sm);
       line-height: var(--tw-leading, var(--text-sm--line-height));
-    }
-  }
-  .lg\:text-xl {
-    @media (width >= 64rem) {
-      font-size: var(--text-xl);
-      line-height: var(--tw-leading, var(--text-xl--line-height));
     }
   }
   .\32 xl\:px-0 {
