@@ -63,14 +63,14 @@ eleventyComputed:
     {% set backUrl = '/' %}
 {% endif %}
 {% set backUrl = backUrl | replaceAll(' ', '-') %}
-<section class="pt-28 pb-4 md:pb-6 border-b border-border  section-gradient-light">
+<section class="pt-24 pb-4 md:pb-6">
     <div class="max-w-8xl mx-auto px-6">
-        <nav aria-label="breadcrumb" class="mb-4 md:mb-6">
+        <nav aria-label="breadcrumb" >
             {%- from "components/breadcrumbs.njk" import breadcrumbs -%}
             {% set crumbs = page.url | breadcrumbs %}
             {{ breadcrumbs(crumbs) }}
         </nav>
-        <div class="max-w-3xl">  
+      {#   <div class="max-w-3xl">  
                
             <h1 class="font-headline font-bold text-2xl md:text-3xl text-foreground-headline  break-words 
                     hyphens-auto md:hyphens-none tracking-tight">
@@ -85,17 +85,17 @@ eleventyComputed:
                 {% endif %}
             </span>    
             
-        </div>
+        </div> #}
     </div>
 </section>
-<section class=" bg-[#f9fafb] flex-1">
+<section class=" flex-1">
     <div class="mx-auto px-0">
         <div class="space-y-0 md:space-y-0">
             {% for product in machines.machines %}
                 {% if product.url != page.url %}
                     <div class="group scroll-my-24" id="{{ product.id }}">
                         <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-0 items-start  overflow-hidden ">
-                            <div class="col-span-3 md:col-span-2 h-full flex flex-col gap-7 p-6 pb-3 md:pb-8 md:p-8 lg:p-10 bg-[#eeeff1] md:bg-white">
+                            <div class="col-span-3 md:col-span-2 h-full flex flex-col gap-7 p-6 pb-3 md:pb-8 md:p-8 lg:p-10 group-odd:md:bg-white group-even:md:bg-[#fdfdfd]">
                                 <div class="max-w-5xl self-center w-full">
                                     <h2 class="font-headline text-lg sm:text-xl lg:text-2xl text-foreground-headline font-bold tracking-[-0.005em] hyphens-auto break-words mb-1">{{ product.name | safe }}</h2>
                                     <p class="text-navy/80 md:text-foreground-muted text-sm sm:text-base max-w-4xl hyphens-auto break-words">{{ product.description | safe }}</p>
@@ -110,7 +110,7 @@ eleventyComputed:
                                             {% for variant in product.variants %}
                                                 {% set variant_machine = machines.byId[variant] %}
                                                 {# eleventy and nunjucks is weird this is a good way of looking up machines but we do not look inside machines of this file #}
-                                                <a href="{{ ("/" ~ variant_machine.category_slug ~"#"~variant_machine.id) | url }}" class="leading-none inline-flex items-center gap-1.5 text-xs  tracking-[0.01em]   bg-transparent border-b lg:border-none  decoration-muted underline-offset-4   pb-2  lg:pt-0  border-border-dark md:border-border
+                                                <a href="{{ ("/" ~ variant_machine.category_slug ~"#"~variant_machine.id) | url }}" class="leading-none inline-flex items-center gap-1.5 text-xs  tracking-[0.01em]   bg-transparent border-b lg:border-none  decoration-muted underline-offset-4   pb-2  lg:pt-0  border-border md:border-border
                                                                                                                                                                 text-link transition-colors">
                                                     {{ variant_machine.name }}<svg
                                                         xmlns="http://www.w3.org/2000/svg"
@@ -167,8 +167,8 @@ eleventyComputed:
                                     </div>
                                 {% endif %}
                             </div>
-                            <div class="col-span-3 md:col-span-2 lg:col-span-2 flex flex-col h-full gap-4 md:gap-5  bg-[#eeeff1] p-6 pt-3 md:pt-8 md:p-8 lg:p-10 md:pb-16 group-last:pb-8">
-                                <div class="flex items-start flex-col gap-2 border-b border-border-dark pb-5">         
+                            <div class="col-span-3 md:col-span-2 lg:col-span-2 flex flex-col h-full gap-4 md:gap-5  group-odd:md:bg-[#f9fafb] group-even:md:bg-[#f6f7f8] p-6 pt-3 md:pt-8 md:p-8 lg:p-10 md:pb-16 group-last:pb-8">
+                                <div class="flex items-start flex-col gap-2 border-b border-border-light md:border-border pb-5">         
                                         <div class="">
                                             <img src="{{ product.manufacturer_logo | url }}" alt="manufacturer_logo" class="w-full max-w-20 sm:max-w-24 h-auto max-h-12 "/>
                                         </div>          
@@ -248,7 +248,7 @@ eleventyComputed:
                                             <h3 class="font-headline text-sm text-[size:13px] sm:text-sm tracking-wide capitalize font-bold text-navy/60
                                                     ">
                                                 Merkmale</h3>
-                                            <div class="text-sm  text-navy/80 text-pretty leading-snug">
+                                            <div class="text-sm  text-navy/80 text-pretty leading-snug tracking-[0.01em]">
                                                 {{ product.manufacturer_information | safe }}
                                             </div>
                                         </div>
@@ -257,7 +257,7 @@ eleventyComputed:
                                 </div>
                                 <div
                                     class="mx-auto w-full  flex-1 items-end flex">
-                                     <a href="{{ product.manufacturer_product_page | url }}" target="_blank" rel="noopener noreferrer" class="pt-4 md:pt-5  border-t border-border-dark flex items-center w-full"> 
+                                     <a href="{{ product.manufacturer_product_page | url }}" target="_blank" rel="noopener noreferrer" class="pt-4 md:pt-5  border-t border-border-light md:border-border flex items-center w-full"> 
                                     {# <button
                                         class=" inline-flex items-center justify-center gap-2 whitespace-wrap rounded-full text-sm font-medium 
                                             ring-offset-background transition-all duration-300 focus-visible:outline-none focus-visible:ring-2

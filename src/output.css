@@ -102,7 +102,6 @@
     --color-primary-foreground: #fafdff;
     --color-border: #efefef;
     --color-border-light: #f7f7f7;
-    --color-border-dark: #ddddde;
     --color-foreground-headline: #0D3768;
     --color-accent: #f7a233;
     --color-background: #fdfdfe;
@@ -1262,9 +1261,6 @@
   .border-border {
     border-color: var(--color-border);
   }
-  .border-border-dark {
-    border-color: var(--color-border-dark);
-  }
   .border-border-light {
     border-color: var(--color-border-light);
   }
@@ -1306,12 +1302,6 @@
   }
   .\!bg-white {
     background-color: var(--color-white) !important;
-  }
-  .bg-\[\#e8ebee\] {
-    background-color: #e8ebee;
-  }
-  .bg-\[\#eeeff1\] {
-    background-color: #eeeff1;
   }
   .bg-\[\#f8f8f9\] {
     background-color: #f8f8f9;
@@ -1733,8 +1723,8 @@
   .pt-8 {
     padding-top: calc(var(--spacing) * 8);
   }
-  .pt-28 {
-    padding-top: calc(var(--spacing) * 28);
+  .pt-24 {
+    padding-top: calc(var(--spacing) * 24);
   }
   .pt-32 {
     padding-top: calc(var(--spacing) * 32);
@@ -2856,11 +2846,6 @@
       margin-top: calc(var(--spacing) * 0);
     }
   }
-  .md\:mb-6 {
-    @media (width >= 48rem) {
-      margin-bottom: calc(var(--spacing) * 6);
-    }
-  }
   .md\:block {
     @media (width >= 48rem) {
       display: block;
@@ -3192,6 +3177,34 @@
   .md\:\[--trigger\:hover\] {
     @media (width >= 48rem) {
       --trigger: hover;
+    }
+  }
+  .group-odd\:md\:bg-\[\#f9fafb\] {
+    &:is(:where(.group):nth-child(odd) *) {
+      @media (width >= 48rem) {
+        background-color: #f9fafb;
+      }
+    }
+  }
+  .group-odd\:md\:bg-white {
+    &:is(:where(.group):nth-child(odd) *) {
+      @media (width >= 48rem) {
+        background-color: var(--color-white);
+      }
+    }
+  }
+  .group-even\:md\:bg-\[\#f6f7f8\] {
+    &:is(:where(.group):nth-child(even) *) {
+      @media (width >= 48rem) {
+        background-color: #f6f7f8;
+      }
+    }
+  }
+  .group-even\:md\:bg-\[\#fdfdfd\] {
+    &:is(:where(.group):nth-child(even) *) {
+      @media (width >= 48rem) {
+        background-color: #fdfdfd;
+      }
     }
   }
   .lg\:col-span-2 {
@@ -4148,12 +4161,6 @@
   }
   .font-light-normal {
     font-weight: 350;
-  }
-  .border-border {
-    border-color: var(--color-border);
-  }
-  .border-border-light {
-    border-color: var(--color-border-light);
   }
   .text-headline-foreground {
     color: var(--color-foreground-headline);
