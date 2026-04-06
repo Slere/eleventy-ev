@@ -309,18 +309,18 @@
       ]
     },
     {
-      "name": "Defolierer",
+      "name": "Auspacken",
       "description": "info folgt",
       "machines_count": 1,
       "image": "/assets/img/machines/J11A.jpg",
-      "url": "defolierer",
+      "url": "auspacken",
       "sub-categories": [
         {
-          "name": "Defolierer",
+          "name": "Auspacken",
           "description": "info folgt",
           "machines_count": 1,
           "image": "info folgt",
-          "url": "defolierer",
+          "url": "auspacken",
           "machines": [
             { "name": "Defotech", "description": "info folgt", "image": "info folgt", "url": "defotech" }
           ]

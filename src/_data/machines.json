@@ -557,9 +557,16 @@
         "id": "msk-Roboter",
         "description": "MSK Palettierroboter palettieren Produkte flexibel und präzise in gewünschten Lagenbildern oder depalettieren Produkte im Wareneingang auf engstem Raum und mit hoher Effizienz.",
         "features_list": [
-          "Lagengerechte Palettierung",
+          "Vollautomatische Palettierung",
           "alle gängigen Palettenformate - auch EWP",
-          "Zwischenblatteinleger"
+          "Boden- / Zwischenblatteinleger",
+          "Hohe Flexibilität bei wechselnden Produkten",
+          "Geringer Platzbedarf",
+          "Hohe Taktzahlen",
+          "Einfache Wartung und geringer Verschleiß",
+          "Modulares Design mit individuellen End-of-Arm-Tools",
+          "Zusatzmodule wie Gebindetransport, Leerpaletten- / Traymagazin",
+          "Schrumpf- / Stretchverpackungssystem und Fördertechnik integrierbar für komplettes End-of-Line-System"
         ],
         "images": [
           "/assets/img/machines/G12.jpg"
@@ -627,9 +634,14 @@
         "id": "msk-lagenpalettierer",
         "description": "Für das automatische Palettieren und Depalettieren unterschiedlicher Produkte und jede erforderliche Maschinenleistung",
         "features_list": [
-          "Lagengerechte Palettierung",
+          "Vollautomatische Palettierung",
           "alle gängigen Palettenformate - auch EWP",
-          "Zwischenblatteinleger"
+          "Übernahme ganzer Produktlagen",
+          "Modulares Design mit individuellen Palettierköpfen",
+          "Drehsäulen- und Portalpalettierlösungen",
+          "Einfache Wartung und geringer Verschleiß",
+          "Zusatzmodule wie Gebindetransport, Lagenbildung, Leerpaletten- / Traymagazin, Boden- / Zwischenblatteinleger",
+          "Schrumpf- / Stretchverpackungssystem und Fórdertechnik integrierbar für komplettes End-of-Line System"
         ],
         "images": [
           "/assets/img/machines/G23.webp"
@@ -658,7 +670,11 @@
           "stufenlose Palettenhöhenanpassung",
           "alle gängigen Palettenformate - auch EWP",
           "bis zu 6 Folienformate im Wechsel",
-          "Foliendicke bis 250µ",
+          "Geschlossene Haube als Schutz vor Diebstahl und Schmutz",
+          "Foliendicke 30 - 120µm",
+          "Rezyklathaltige sowie voll recycelbare Folie",
+          "bis 80 Paletten pro Stunde(Euro- / Industriepaletten)",
+          "Wartungsfreie Zahnriementechnik",
           "Palettenfußausformvorrichtung",
           "auch mit Elektrorahmen erhältlich",
           "Unterschrumpf",
@@ -671,7 +687,7 @@
         "position": 1,
         "manufacturer_name": "MSK Verpackungs-Systeme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/msk.svg",
-        "manufacturer_information": "- EMSY Visualisierungssystem in 6. Generation<br>- hohe, intuitive Bedienfreundlichkeit<br>- Massive Stahl-Schweißkonstruktion<br>- Siemenssteuerung<br>- optional mit Covershrink für bis zu 40% Energieeinsparung",
+        "manufacturer_information": "- EMSY Visualisierungssystem in 6. Generation<br>- hohe, intuitive Bedienfreundlichkeit<br>- Stabile Stahlkonstruktion<br>- Siemenssteuerung<br>- optional mit Covershrink für bis zu 40% Energieeinsparung",
         "manufacturer_product_page": "https://www.msk.de/loesungen/verpackungssysteme/stretchverpackungsanlagen/"
       },
       {
@@ -681,8 +697,12 @@
         "description": "Die Schrumpffolien-Banderoliermaschine Flowtech wurde speziell für das kosteneffiziente Verpacken von beliebig vielen und sehr unterschiedlichen Paletten- oder Produktformaten entwickelt.",
         "features_list": [
           "stufenlose Anpassung der Palettenlänge und Breite",
-          "Foliendicke bis 250µ",
-          "Wartungsarbeiten bodennahe, ohne Bühne"
+          "Rezklathaltige sowie voll recycelbare Folie",
+          "Bis zu 6 Folienformate",
+          "Wartungsfreie Zahnriementechnik",
+          "Einfacher Folienrollenwechsel",
+          "Foliendeckblatt für 5-seitig geschlossene Verpackung",
+          ""
         ],
         "images": [
           "/assets/img/machines/H12.webp"
@@ -691,7 +711,7 @@
         "position": 2,
         "manufacturer_name": "MSK Verpackungs-Systeme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/msk.svg",
-        "manufacturer_information": "- EMSY Visualisierungssystem in 6. Generation<br>- hohe, intuitive Bedienfreundlichkeit<br>- Massive Stahl-Schweißkonstruktion<br>- Siemenssteuerung",
+        "manufacturer_information": "- EMSY Visualisierungssystem in 6. Generation<br>- hohe, intuitive Bedienfreundlichkeit<br>- Stabile Stahlkonstruktion<br>- Siemenssteuerung",
         "manufacturer_product_page": "https://www.msk.de/loesungen/verpackungssysteme/stretchverpackungsanlagen/"
       },
       {
@@ -705,7 +725,12 @@
           "Foliendicke bis 250µ",
           "Palettenfußausformvorrichtung",
           "Unterschrumpf",
-          "Wartungsarbeiten bodennahe, ohne Bühne"
+          "Wartungsarbeiten bodennahe, ohne Bühne",
+          "Für teil- und vollautomatische Verpackungslösungen",
+          "Energieeinsparung durch Wármerückgewinnung",
+          "Dünne Folien möglich durch schonenden Schrumpfprozess",
+          "Als Gas- oder Elektroschrumpfrahmen erhältlich",
+          "5 Jahre Gewährleistung auf MSK Heizelemente"
         ],
         "images": [
           "/assets/img/machines/H13.jpg"
@@ -714,7 +739,7 @@
         "position": 3,
         "manufacturer_name": "MSK Verpackungs-Systeme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/msk.svg",
-        "manufacturer_information": "- EMSY Visualisierungssystem in 6. Generation<br>- hohe, intuitive Bedienfreundlichkeit<br>- Massive Stahl-Schweißkonstruktion<br>- Siemenssteuerung<br>- auch mit Elektrorahmen erhältlich",
+        "manufacturer_information": "- EMSY Visualisierungssystem in 6. Generation<br>- hohe, intuitive Bedienfreundlichkeit<br>- Stabile Stahlkonstruktion<br>- Siemenssteuerung<br>- auch mit Elektrorahmen erhältlich",
         "manufacturer_product_page": ""
       },
       {
@@ -723,9 +748,10 @@
         "id": "haubenueberzieher",
         "description": "Der MSK Haubenspender bereitet Folienhauben automatisch aus einem Endlosschlauch vor und positioniert sie über der Palette.",
         "features_list": [
-          "wählbare Palettenhöhenanpassung",
+          "wählbare Paletten- / Produkthöhenanpassung",
           "alle gängigen Palettenformate - auch EWP",
-          "Foliendicke bis 250µ"
+          "verschiedenste Foliendicken möglich",
+          "hochwertige Schweißnaht für verlässliche Folienhauben"
         ],
         "images": [
           "/assets/img/machines/H14.jpg"
@@ -734,7 +760,7 @@
         "position": 4,
         "manufacturer_name": "MSK Verpackungs-Systeme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/msk.svg",
-        "manufacturer_information": "- EMSY Visualisierungssystem in 6. Generation<br>- hohe, intuitive Bedienfreundlichkeit<br>- Massive Stahl-Schweißkonstruktion<br>- Siemenssteuerung",
+        "manufacturer_information": "- hohe, intuitive Bedienfreundlichkeit<br>- Stabile Stahlkonstruktion<br>",
         "manufacturer_product_page": ""
       },
       {
@@ -745,7 +771,8 @@
         "features_list": [
           "wählbare Haubenlänge",
           "für alle gängigen Palettenformate - auch EWP",
-          "Foliendicke bis 250µ"
+          "verschiedenste Foliendicken möglich",
+          "hochwertige Schweißnaht für verlässliche Folienhauben"
         ],
         "images": [
           "/assets/img/machines/H15.jpg"
@@ -754,7 +781,7 @@
         "position": 5,
         "manufacturer_name": "MSK Verpackungs-Systeme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/msk.svg",
-        "manufacturer_information": "- hohe, intuitive Bedienfreundlichkeit<br>- Massive Stahl-Schweißkonstruktion<br>- Siemenssteuerung",
+        "manufacturer_information": "- hohe, intuitive Bedienfreundlichkeit<br>- Stabile Stahlkonstruktion",
         "manufacturer_product_page": ""
       }
     ]
@@ -774,9 +801,14 @@
           "stufenlose Palettenhöhenanpassung",
           "alle gängigen Palettenformate - auch EWP",
           "bis zu 6 Folienformate im Wechsel",
-          "Foliendicke bis 250µ",
+          "Dünnste Folien bis 20µm",
           "Wartungsarbeiten bodennahe, ohne Bühne",
-          "verschiedene Modelle, bis zu 120 Paletten/Stunde"
+          "verschiedene Modelle, bis zu 180 Paletten/Stunde (Euro- / Industriepaletten)",
+          "Erhöhter Diebstahlschutz durch geschlossene Haube",
+          "Zuverlässig kalkulierbarer Folienverbrauch",
+          "Fúr rezyklathaltige Folie geeignet",
+          "Wartungsfreie Zahnriementechnik",
+          "Wartungsarbeiten bodennahe, ohne Búhne oder Leitern"
         ],
         "images": [
           "/assets/img/machines/H21.jpg"
@@ -785,7 +817,7 @@
         "position": 1,
         "manufacturer_name": "MSK Verpackungs-Systeme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/msk.svg",
-        "manufacturer_information": "- EMSY Visualisierungssystem in 6. Generation<br>- hohe, intuitive Bedienfreundlichkeit<br>- Massive Stahl-Schweißkonstruktion<br>- Siemenssteuerung",
+        "manufacturer_information": "- EMSY Visualisierungssystem in 6. Generation<br>- hohe, intuitive Bedienfreundlichkeit<br>- Stabile Stahlkonstruktion<br>- Siemenssteuerung",
         "manufacturer_product_page": "https://www.msk.de/loesungen/verpackungssysteme/schrumpfverpackungsanlagen/"
       }
     ]
@@ -802,9 +834,12 @@
         "id": "spannhaube-schrumpfen",
         "description": "MSK bietet auch Hybridlösungen an, d.h. Verpackungsanlagen, die Paletten sowohl mit einer Stretchhaube als auch mit einer Schrumpfhaube verpacken können. ",
         "features_list": [
-          "stufenlose Palettenhöhenanpassung",
+          "Maximale Flexibilität bei wechselnden Produkten",
+          "Stretchfolie, Schrumpffolie und dehnbare Schrumpffolie möglich",
+          "stufenlose Paletten- / Produkthöhenanpassung",
           "alle gängigen Palettenformate - auch EWP",
-          "Foliendicke bis 250µ",
+          "Wartungsarbeiten bodennahe, ohne Bühne",
+          "bist zu 6 Folienformate oder Folienstärken möglich",
           "Wartungsarbeiten bodennahe, ohne Bühne"
         ],
         "images": [
@@ -814,7 +849,7 @@
         "position": 1,
         "manufacturer_name": "MSK Verpackungs-Systeme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/msk.svg",
-        "manufacturer_information": "- EMSY Visualisierungssystem in 6. Generation<br>- hohe, intuitive Bedienfreundlichkeit<br>- Massive Stahl-Schweißkonstruktion<br>- Siemenssteuerung",
+        "manufacturer_information": "- EMSY Visualisierungssystem in 6. Generation<br>- hohe, intuitive Bedienfreundlichkeit<br>- Stabile Stahlkonstruktion<br>- Siemenssteuerung",
         "manufacturer_product_page": "https://www.msk.de/loesungen/verpackungssysteme/schrumpfverpackungsanlagen/"
       }
     ]
@@ -834,7 +869,11 @@
           "stufenlose Anpassung der Palettenlänge und Breite",
           "bedruckbare Folie zu Werbezweck",
           "Foliendicke bis 50µ",
-          "Wartungsarbeiten bodennahe, ohne Bühne"
+          "Wartungsarbeiten bodennahe, ohne Bühne",
+          "Sicherung unverpackter Ladungen für den internenTransport",
+          "Gezielte Stabilisierung kritischer Ladungsbereiche oder Lagen",
+          "Integriert in Palettiersystem oder als Stand-alone-Lösung",
+          "100% recycelbare Folie"
         ],
         "images": [
           "/assets/img/machines/H41A.jpg",
@@ -844,7 +883,7 @@
         "position": 1,
         "manufacturer_name": "MSK Verpackungs-Systeme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/msk.svg",
-        "manufacturer_information": "- EMSY Visualisierungssystem in 6. Generation<br>- hohe, intuitive Bedienfreundlichkeit<br>- Massive Stahl-Schweißkonstruktion<br>- Siemenssteuerung",
+        "manufacturer_information": "- EMSY Visualisierungssystem in 6. Generation<br>- hohe, intuitive Bedienfreundlichkeit<br>- Stabile Stahlkonstruktion<br>- Siemenssteuerung",
         "manufacturer_product_page": "https://www.msk.de/loesungen/palettiersysteme/palettiersysteme-fuer-die-logistikbranche/"
       }
     ]
@@ -899,7 +938,13 @@
           "Eckumsetzer",
           "Hubelemente",
           "Palettendoppler",
-          "Palettenaufzüge"
+          "Palettenaufzüge",
+          "Vollautomatisches Palettenlogistiksystem vom Wareneingang bis zur LKW-Verladung",
+          "Maßgeschneidert und integriert in Palettier- und Verpackungssysteme",
+          "Ruhiger und sicherer Produktionsfluss ohne Gabelstaplerverkehr",
+          "Transparente und lückenlose Warenrückverfolgung",
+          "Langlebige Premiumkomponenten",
+          "Kommunikationsschnittstellen zum internen ERP-System und Peripheriegeräten"
         ],
         "images": [
           "/assets/img/machines/I21A.jpg",
@@ -914,15 +959,15 @@
         "position": 1,
         "manufacturer_name": "MSK Verpackungs-Systeme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/msk.svg",
-        "manufacturer_information": "- EMSY Visualisierungssystem in 6. Generation<br>- Massive Stahl-Schweißkonstruktion<br>- Siemenssteuerung",
+        "manufacturer_information": "- EMSY Visualisierungssystem in 6. Generation<br>- Stabile Stahlkonstruktion<br>- Siemenssteuerung",
         "manufacturer_product_page": "info folgt"
       }
     ]
   },
   {
-    "title": "Defolierer",
-    "slug": "defolierer",
-    "parent_category": "Defolierer",
+    "title": "Auspacken",
+    "slug": "auspacken",
+    "parent_category": "Auspacken",
     "description": "info folgt",
     "machines": [
       {
@@ -931,10 +976,15 @@
         "id": "defotech",
         "description": "Das automatsche Auspacken folierter Paletten und das Entfernen von Umreifungsbändern bietet MSK als Einzellösungen oder als Gesamtsystem an.",
         "features_list": [
-          "für alle Folienverpackte Paletten geeignet",
-          "alle gängigen Palettenformate - auch EWP",
-          "für Foliendicke bis 250µ",
-          "Wartungsarbeiten bodennahe, ohne Bühne"
+          "Automatisch Entfernung von Verpackungsfolie vor der Depalettierung",
+          "für stretch- und schrumpffolienverpackte Paletten geeignet",
+          "Schnrumpffolien: 80 - 120µm, Stretchfolien: auf Anfrage",
+          "bis 60 Paletten pro Stunde",
+          "Euro- / Industrie-Palettenformate",
+          "Vermeidung risikobehafteter Tätigkeiten für das Personal",
+          "Personalkosteneinsparung durch Automatisierung",
+          "Platzsparende Standfläche",
+          "Automatischer Folienabtransport zu Ballenpresse oder Außencontaienr für das Recycling"
         ],
         "images": [
           "/assets/img/machines/J11A.jpg",
@@ -942,6 +992,30 @@
         ],
         "variants": [],
         "position": 1,
+        "manufacturer_name": "MSK Verpackungs-Systeme GmbH",
+        "manufacturer_logo": "/assets/img/manufacturers/msk.svg",
+        "manufacturer_information": "- EMSY Visualisierungssystem in 6. Generation<br>- Massive Stahl-Schweißkonstruktion<br>- Siemenssteuerung",
+        "manufacturer_product_page": "info folgt"
+      },
+      {
+        "machine_id": "J12",
+        "name": "Destraptech",
+        "id": "destraptech",
+        "description": "destraptech info",
+        "features_list": [
+          "Automatisches Entfernen von Umreifungsband",
+          "Geeignet für vertikal verlaufende Kunststoff-Umreifungsbänder",
+          "bis zu einem 4 x 4 Umreifungsmuster",
+          "bis zu 45 Paletten pro Stunde",
+          "Euro- / Industrie-Palettenformate",
+          "Vermeidung risikobehafteter Tätigkeiten für das Personal",
+          "Personalkosteneinsparung durch Automatisierung",
+          "Platzsparende Standfläche",
+          "Automatisches SChreddern der Bänder"
+        ],
+        "images": [],
+        "variants": [],
+        "position": 2,
         "manufacturer_name": "MSK Verpackungs-Systeme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/msk.svg",
         "manufacturer_information": "- EMSY Visualisierungssystem in 6. Generation<br>- Massive Stahl-Schweißkonstruktion<br>- Siemenssteuerung",
