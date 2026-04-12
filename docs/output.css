@@ -63,6 +63,7 @@
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
     --tracking-tight: -0.025em;
     --tracking-normal: 0em;
     --tracking-wide: 0.025em;
@@ -77,7 +78,6 @@
     --radius-lg: 0.5rem;
     --radius-xl: 0.75rem;
     --radius-2xl: 1rem;
-    --radius-3xl: 1.5rem;
     --ease-out: cubic-bezier(0, 0, 0.2, 1);
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
     --animate-spin: spin 1s linear infinite;
@@ -101,12 +101,14 @@
     --color-primary-foreground: #fafdff;
     --color-border: #efefef;
     --color-border-light: #f7f7f7;
+    --color-border-dark: #ddddde;
+    --color-border-blue: #5984bb;
     --color-foreground-headline: #0D3768;
     --color-accent: #f7a233;
     --color-background: #fdfdfe;
     --color-muted: #f3f5f7;
     --color-card: #ffffff;
-    --color-link: #108cc6;
+    --color-link: #159dee;
     --color-navy: #14253d;
     --text-small: 0.9375rem;
     --container-8xl: 88rem;
@@ -521,6 +523,9 @@
   }
   .mb-10 {
     margin-bottom: calc(var(--spacing) * 10);
+  }
+  .mb-12 {
+    margin-bottom: calc(var(--spacing) * 12);
   }
   .mb-16 {
     margin-bottom: calc(var(--spacing) * 16);
@@ -1453,11 +1458,29 @@
   .bg-\[url\(\/eleventy-ev\/assets\/img\/machines\/I21G\.jpg\)\] {
     background-image: url(/eleventy-ev/assets/img/machines/I21G.jpg);
   }
+  .bg-\[url\(\/eleventy-ev\/assets\/img\/machines\/I21H\.jpg\)\] {
+    background-image: url(/eleventy-ev/assets/img/machines/I21H.jpg);
+  }
+  .bg-\[url\(\/eleventy-ev\/assets\/img\/machines\/I21I\.jpg\)\] {
+    background-image: url(/eleventy-ev/assets/img/machines/I21I.jpg);
+  }
+  .bg-\[url\(\/eleventy-ev\/assets\/img\/machines\/I21J\.jpg\)\] {
+    background-image: url(/eleventy-ev/assets/img/machines/I21J.jpg);
+  }
+  .bg-\[url\(\/eleventy-ev\/assets\/img\/machines\/I21K\.jpg\)\] {
+    background-image: url(/eleventy-ev/assets/img/machines/I21K.jpg);
+  }
   .bg-\[url\(\/eleventy-ev\/assets\/img\/machines\/J11A\.jpg\)\] {
     background-image: url(/eleventy-ev/assets/img/machines/J11A.jpg);
   }
   .bg-\[url\(\/eleventy-ev\/assets\/img\/machines\/J11B\.jpg\)\] {
     background-image: url(/eleventy-ev/assets/img/machines/J11B.jpg);
+  }
+  .bg-\[url\(\/eleventy-ev\/assets\/img\/machines\/J12A\.jpg\)\] {
+    background-image: url(/eleventy-ev/assets/img/machines/J12A.jpg);
+  }
+  .bg-\[url\(\/eleventy-ev\/assets\/img\/machines\/J12B\.jpg\)\] {
+    background-image: url(/eleventy-ev/assets/img/machines/J12B.jpg);
   }
   .bg-\[url\(\/eleventy-ev\/assets\/img\/sectors\/papierverpackung\.png\)\] {
     background-image: url(/eleventy-ev/assets/img/sectors/papierverpackung.png);
@@ -1833,6 +1856,10 @@
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
+  }
+  .font-extrabold {
+    --tw-font-weight: var(--font-weight-extrabold);
+    font-weight: var(--font-weight-extrabold);
   }
   .font-light {
     --tw-font-weight: var(--font-weight-light);
@@ -2772,6 +2799,12 @@
       line-height: var(--tw-leading, var(--text-base--line-height));
     }
   }
+  .sm\:text-lg {
+    @media (width >= 40rem) {
+      font-size: var(--text-lg);
+      line-height: var(--tw-leading, var(--text-lg--line-height));
+    }
+  }
   .sm\:text-xl {
     @media (width >= 40rem) {
       font-size: var(--text-xl);
@@ -2824,9 +2857,24 @@
       margin-top: calc(var(--spacing) * 0);
     }
   }
-  .md\:mt-0\.5 {
+  .md\:mt-1 {
     @media (width >= 48rem) {
-      margin-top: calc(var(--spacing) * 0.5);
+      margin-top: calc(var(--spacing) * 1);
+    }
+  }
+  .md\:mb-2 {
+    @media (width >= 48rem) {
+      margin-bottom: calc(var(--spacing) * 2);
+    }
+  }
+  .md\:mb-2\.5 {
+    @media (width >= 48rem) {
+      margin-bottom: calc(var(--spacing) * 2.5);
+    }
+  }
+  .md\:mb-3 {
+    @media (width >= 48rem) {
+      margin-bottom: calc(var(--spacing) * 3);
     }
   }
   .md\:mb-20 {
@@ -3231,6 +3279,11 @@
       margin-inline: calc(var(--spacing) * 0);
     }
   }
+  .lg\:mb-2 {
+    @media (width >= 64rem) {
+      margin-bottom: calc(var(--spacing) * 2);
+    }
+  }
   .lg\:block {
     @media (width >= 64rem) {
       display: block;
@@ -3363,10 +3416,28 @@
       line-height: var(--tw-leading, var(--text-2xl--line-height));
     }
   }
+  .lg\:text-3xl {
+    @media (width >= 64rem) {
+      font-size: var(--text-3xl);
+      line-height: var(--tw-leading, var(--text-3xl--line-height));
+    }
+  }
+  .lg\:text-4xl {
+    @media (width >= 64rem) {
+      font-size: var(--text-4xl);
+      line-height: var(--tw-leading, var(--text-4xl--line-height));
+    }
+  }
   .lg\:text-sm {
     @media (width >= 64rem) {
       font-size: var(--text-sm);
       line-height: var(--tw-leading, var(--text-sm--line-height));
+    }
+  }
+  .lg\:tracking-normal {
+    @media (width >= 64rem) {
+      --tw-tracking: var(--tracking-normal);
+      letter-spacing: var(--tracking-normal);
     }
   }
   .xl\:mr-6 {
@@ -3387,6 +3458,12 @@
   .xl\:rounded-br-xl {
     @media (width >= 80rem) {
       border-bottom-right-radius: var(--radius-xl);
+    }
+  }
+  .xl\:text-3xl {
+    @media (width >= 80rem) {
+      font-size: var(--text-3xl);
+      line-height: var(--tw-leading, var(--text-3xl--line-height));
     }
   }
   .\32 xl\:px-0 {

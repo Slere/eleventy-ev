@@ -681,7 +681,7 @@
           "Wartungsarbeiten bodennahe, ohne Bühne"
         ],
         "images": [
-          "/assets/img/machines/H11.jpg"
+          "/assets/img/machines/H11B.jpg"
         ],
         "variants": [],
         "position": 1,
@@ -732,7 +732,7 @@
           "5 Jahre Gewährleistung auf MSK Heizelemente"
         ],
         "images": [
-          "/assets/img/machines/H13.jpg"
+          "/assets/img/machines/H13B.jpg"
         ],
         "variants": [],
         "position": 3,
@@ -952,7 +952,11 @@
           "/assets/img/machines/I21D.jpg",
           "/assets/img/machines/I21E.jpg",
           "/assets/img/machines/I21F.jpg",
-          "/assets/img/machines/I21G.jpg"
+          "/assets/img/machines/I21G.jpg",
+          "/assets/img/machines/I21H.jpg",
+          "/assets/img/machines/I21I.jpg",
+          "/assets/img/machines/I21J.jpg",
+          "/assets/img/machines/I21K.jpg"
         ],
         "variants": [],
         "position": 1,
@@ -1012,7 +1016,7 @@
           "Platzsparende Standfläche",
           "Automatisches SChreddern der Bänder"
         ],
-        "images": [],
+        "images": ["/assets/img/machines/J12A.jpg","/assets/img/machines/J12B.jpg"],
         "variants": [],
         "position": 2,
         "manufacturer_name": "MSK Verpackungs-Systeme GmbH",
