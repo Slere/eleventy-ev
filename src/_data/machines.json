@@ -147,9 +147,7 @@
           "Zuführung InLine bis zu 3-Bahnen",
           "1-6 Produkte einreihig oder 2 reihig"
         ],
-        "images": [
-          "/assets/img/machines/B12.png"
-        ],
+        "images": [],
         "variants": [
           "A12",
           "D12"
@@ -220,9 +218,7 @@
         "id": "setzpacker",
         "description": "INFO folgt",
         "features_list": [],
-        "images": [
-          "/assets/img/machines/B22.webp"
-        ],
+        "images": [],
         "variants": [],
         "position": 2,
         "manufacturer_name": "meurer Verpackungssysteme GmbH",
@@ -292,9 +288,7 @@
         "id": "brc",
         "description": "INFO folgt",
         "features_list": [],
-        "images": [
-          "/assets/img/machines/B34.jpg"
-        ],
+        "images": [],
         "variants": [],
         "position": 4,
         "manufacturer_name": "LANGEN Packaging Automation",
@@ -348,9 +342,7 @@
           "<strong>Ohne Formatteile,</strong> wie zB. Einlegeplatten",
           "<strong>Max. 60sec. Umstellung auf Knopfdruck</strong>"
         ],
-        "images": [
-          "/assets/img/machines/C11.png"
-        ],
+        "images": [],
         "variants": [],
         "position": 1,
         "manufacturer_name": "meurer Verpackungssysteme GmbH",
@@ -369,9 +361,7 @@
           "Heißleimverklebung",
           "bis zu 6 Trays/min"
         ],
-        "images": [
-          "/assets/img/machines/C12.png"
-        ],
+        "images": [],
         "variants": [],
         "position": 2,
         "manufacturer_name": "MSK Verpackungs-Systeme GmbH",
@@ -441,9 +431,7 @@
         "id": "ha-tragegriffapplikator",
         "description": "INFO folgt",
         "features_list": [],
-        "images": [
-          "/assets/img/machines/E11.png"
-        ],
+        "images": [],
         "variants": [],
         "position": 1,
         "manufacturer_name": "meurer Verpackungssysteme GmbH",
@@ -541,9 +529,7 @@
           "Leerpalettenmagazin",
           "Folienwickler integrierbar"
         ],
-        "images": [
-          "/assets/img/machines/G11.png"
-        ],
+        "images": [],
         "variants": [],
         "position": 1,
         "manufacturer_name": "CSi palletising",
@@ -597,9 +583,7 @@
           "Zwischenblatteinleger",
           "Verarbeitung von Tray´s mit Stapelnasen"
         ],
-        "images": [
-          "/assets/img/machines/G21.png"
-        ],
+        "images": [],
         "variants": [],
         "position": 1,
         "manufacturer_name": "CSi palletising",
@@ -618,9 +602,7 @@
           "Zwischenblatteinleger",
           "Verarbeitung von Tray´s mit Stapelnasen"
         ],
-        "images": [
-          "/assets/img/machines/G22.png"
-        ],
+        "images": [],
         "variants": [],
         "position": 2,
         "manufacturer_name": "CSi palletising",
@@ -1016,7 +998,10 @@
           "Platzsparende Standfläche",
           "Automatisches SChreddern der Bänder"
         ],
-        "images": ["/assets/img/machines/J12A.jpg","/assets/img/machines/J12B.jpg"],
+        "images": [
+          "/assets/img/machines/J12A.jpg",
+          "/assets/img/machines/J12B.jpg"
+        ],
         "variants": [],
         "position": 2,
         "manufacturer_name": "MSK Verpackungs-Systeme GmbH",
@@ -1033,16 +1018,12 @@
     "description": "info folgt",
     "machines": [
       {
-        "name": "x",
+        "name": "Sonderlösungen",
         "id": "x",
         "description": "info folgt",
         "features_list": [],
-        "images": [
-          "/assets/img/machines/K11.png"
-        ],
-        "variants": [
-          "K11"
-        ],
+        "images": [],
+        "variants": [],
         "position": 1,
         "manufacturer_name": "meurer Verpackungssysteme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/meurer.svg",
