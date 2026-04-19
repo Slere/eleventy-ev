@@ -127,7 +127,7 @@
           "automatischer Traystapelnachschub",
           "Zwischenstegeinleger",
           "Gefachemagazin",
-          "Optional: Drehbeladung automatisch von der Palette"
+          "Optional: Autotrayload von der Palette"
         ],
         "images": [
           "/assets/img/machines/B11A.webp",
@@ -239,7 +239,7 @@
         "manufacturer_name": "meurer Verpackungssysteme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/meurer.svg",
         "manufacturer_information": "Alle MEURER-Maschinen werden in Modularer und robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.<br>- Maschineneffiktivität bis 98%<br>- Durchgehende Einzeladerbeschriftung<br>- optional Einzeraderverlegung<br>- Clean Design<br>- Servoantrieb und Steuerung",
-        "manufacturer_product_page": "Kartonverpackung"
+        "manufacturer_product_page": ""
       }
     ]
   },
@@ -309,7 +309,7 @@
         "manufacturer_name": "LANGEN Packaging Automation",
         "manufacturer_logo": "/assets/img/manufacturers/langen.jpg",
         "manufacturer_information": "",
-        "manufacturer_product_page": "https://mpac-group.com/products/"
+        "manufacturer_product_page": ""
       }
     ]
   },
@@ -326,7 +326,6 @@
         "description": "INFO folgt",
         "features_list": [],
         "images": [
-          "/assets/img/machines/B41A.png",
           "/assets/img/machines/B41B.png"
         ],
         "variants": [],
@@ -334,7 +333,7 @@
         "manufacturer_name": "LANGEN Packaging Automation",
         "manufacturer_logo": "/assets/img/manufacturers/langen.jpg",
         "manufacturer_information": "",
-        "manufacturer_product_page": "Bing-Video"
+        "manufacturer_product_page": "https://mpac-langen.com/machine/trf-200/"
       },
       {
         "machine_id": "B42",
@@ -348,7 +347,7 @@
         "manufacturer_name": "LANGEN Packaging Automation",
         "manufacturer_logo": "/assets/img/manufacturers/langen.jpg",
         "manufacturer_information": "",
-        "manufacturer_product_page": "Bing-Video"
+        "manufacturer_product_page": ""
       }
     ]
   },
@@ -378,7 +377,7 @@
         "manufacturer_name": "meurer Verpackungssysteme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/meurer.svg",
         "manufacturer_information": "Alle MEURER-Maschinen werden in Modularer und robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.<br>- Maschineneffiktivität bis 98%<br>- Durchgehende Einzeladerbeschriftung<br>- optional Einzeraderverlegung<br>- Clean Design<br>- Servoantrieb und Steuerung",
-        "manufacturer_product_page": "Folienverpackung"
+        "manufacturer_product_page": ""
       },
       {
         "machine_id": "C12",
@@ -397,7 +396,7 @@
         "manufacturer_name": "MSK Verpackungs-Systeme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/msk.svg",
         "manufacturer_information": "info folgt",
-        "manufacturer_product_page": "Folienverpackung"
+        "manufacturer_product_page": ""
       }
     ]
   },
@@ -478,7 +477,7 @@
         "manufacturer_name": "meurer Verpackungssysteme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/meurer.svg",
         "manufacturer_information": "Alle MEURER-Maschinen werden in Modularer und robuster Bauweise aus Edelstahl und rostfreiem Material gefertigt und sind daher für Nassreinigung geeignet.<br>- Maschineneffiktivität bis 98%<br>- Durchgehende Einzeladerbeschriftung<br>- optional Einzeraderverlegung<br>- Clean Design<br>- Servoantrieb und Steuerung",
-        "manufacturer_product_page": "info folgt"
+        "manufacturer_product_page": ""
       }
     ]
   },
@@ -711,7 +710,7 @@
         "manufacturer_name": "MSK Verpackungs-Systeme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/msk.svg",
         "manufacturer_information": "- EMSY Visualisierungssystem in 6. Generation<br>- hohe, intuitive Bedienfreundlichkeit<br>- Stabile Stahlkonstruktion<br>- Siemenssteuerung<br>- optional mit Covershrink für bis zu 40% Energieeinsparung",
-        "manufacturer_product_page": "https://www.msk.de/loesungen/verpackungssysteme/stretchverpackungsanlagen/"
+        "manufacturer_product_page": "https://www.msk.de/loesungen/verpackungssysteme/schrumpfverpackungsanlagen/"
       },
       {
         "machine_id": "H12",
@@ -762,7 +761,7 @@
         "manufacturer_name": "MSK Verpackungs-Systeme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/msk.svg",
         "manufacturer_information": "- EMSY Visualisierungssystem in 6. Generation<br>- hohe, intuitive Bedienfreundlichkeit<br>- Stabile Stahlkonstruktion<br>- Siemenssteuerung<br>- auch mit Elektrorahmen erhältlich",
-        "manufacturer_product_page": ""
+        "manufacturer_product_page": "https://www.msk.de/loesungen/verpackungssysteme/halbautomatische-verpackungssysteme/#msk_econotech"
       },
       {
         "machine_id": "H14",
@@ -783,7 +782,7 @@
         "manufacturer_name": "MSK Verpackungs-Systeme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/msk.svg",
         "manufacturer_information": "- hohe, intuitive Bedienfreundlichkeit<br>- Stabile Stahlkonstruktion<br>",
-        "manufacturer_product_page": ""
+        "manufacturer_product_page": "https://www.msk.de/loesungen/verpackungssysteme/halbautomatische-verpackungssysteme/#msk_econotech"
       },
       {
         "machine_id": "H15",
@@ -804,7 +803,7 @@
         "manufacturer_name": "MSK Verpackungs-Systeme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/msk.svg",
         "manufacturer_information": "- hohe, intuitive Bedienfreundlichkeit<br>- Stabile Stahlkonstruktion",
-        "manufacturer_product_page": ""
+        "manufacturer_product_page": "https://www.msk.de/loesungen/verpackungssysteme/halbautomatische-verpackungssysteme/#msk_econotech"
       }
     ]
   },
@@ -840,7 +839,7 @@
         "manufacturer_name": "MSK Verpackungs-Systeme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/msk.svg",
         "manufacturer_information": "- EMSY Visualisierungssystem in 6. Generation<br>- hohe, intuitive Bedienfreundlichkeit<br>- Stabile Stahlkonstruktion<br>- Siemenssteuerung",
-        "manufacturer_product_page": "https://www.msk.de/loesungen/verpackungssysteme/schrumpfverpackungsanlagen/"
+        "manufacturer_product_page": "https://www.msk.de/loesungen/verpackungssysteme/stretchverpackungsanlagen/"
       }
     ]
   },
@@ -872,7 +871,7 @@
         "manufacturer_name": "MSK Verpackungs-Systeme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/msk.svg",
         "manufacturer_information": "- EMSY Visualisierungssystem in 6. Generation<br>- hohe, intuitive Bedienfreundlichkeit<br>- Stabile Stahlkonstruktion<br>- Siemenssteuerung",
-        "manufacturer_product_page": "https://www.msk.de/loesungen/verpackungssysteme/schrumpfverpackungsanlagen/"
+        "manufacturer_product_page": "https://www.msk.de/loesungen/verpackungssysteme/hybride-verpackungsmaschinen/"
       }
     ]
   },
@@ -986,7 +985,7 @@
         "manufacturer_name": "MSK Verpackungs-Systeme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/msk.svg",
         "manufacturer_information": "- EMSY Visualisierungssystem in 6. Generation<br>- Stabile Stahlkonstruktion<br>- Siemenssteuerung",
-        "manufacturer_product_page": "info folgt"
+        "manufacturer_product_page": "https://www.msk.de/loesungen/foerdersysteme/"
       }
     ]
   },
@@ -1021,7 +1020,7 @@
         "manufacturer_name": "MSK Verpackungs-Systeme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/msk.svg",
         "manufacturer_information": "- EMSY Visualisierungssystem in 6. Generation<br>- Massive Stahl-Schweißkonstruktion<br>- Siemenssteuerung",
-        "manufacturer_product_page": "info folgt"
+        "manufacturer_product_page": "https://www.msk.de/loesungen/auspacksysteme/"
       },
       {
         "machine_id": "J12",
@@ -1048,7 +1047,7 @@
         "manufacturer_name": "MSK Verpackungs-Systeme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/msk.svg",
         "manufacturer_information": "- EMSY Visualisierungssystem in 6. Generation<br>- Massive Stahl-Schweißkonstruktion<br>- Siemenssteuerung",
-        "manufacturer_product_page": "info folgt"
+        "manufacturer_product_page": ""
       }
     ]
   },
