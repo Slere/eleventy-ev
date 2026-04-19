@@ -41,7 +41,9 @@
           "1-6 Produkte einreihig und bis zu 3 reihig"
         ],
         "images": [
-          "/assets/img/machines/A12.webp"
+          "/assets/img/machines/A12A.webp",
+          "/assets/img/machines/A12B.jpg",
+          "/assets/img/machines/A12C.jpg"
         ],
         "variants": [
           "B12",
@@ -88,7 +90,7 @@
         "machine_id": "A22",
         "name": "FL SERVOSTRAFFER-Filmline",
         "id": "fl-servostraffer",
-        "description": "Getaktete Maschine mit Schweißsystem. Mit dieser Maschine sind feste Gebinde ohne Schrumpftunnel möglich. Dabei kommt eine spezielle PE-Dehnfolie mit max. 35° zum Einsatz, die sich bei Verpacken sauber über die Kanten legt. Natürlich kann durch Einsatz eines Schrumpftunnel herkömmliche PE-Folie auch verarbeitet werden.",
+        "description": "Getaktete Maschine mit Schweißsystem. Mit dieser Maschine sind feste Gebinde ohne Schrumpftunnel möglich. Dabei kommt eine spezielle PE-Dehnfolie mit max. 35μ zum Einsatz, die sich bei Verpacken sauber über die Kanten legt. Natürlich kann durch Einsatz eines Schrumpftunnel herkömmliche PE-Folie auch verarbeitet werden.",
         "features_list": [
           "Zuführung InLine oder seitlich",
           "Straffeinrichtung für Folien- und Energiereduzierung",
@@ -124,10 +126,12 @@
           "seitliches, liegendes Traymagazin in Bodennähe",
           "automatischer Traystapelnachschub",
           "Zwischenstegeinleger",
-          "Gefachemagazin"
+          "Gefachemagazin",
+          "Optional: Drehbeladung automatisch von der Palette"
         ],
         "images": [
-          "/assets/img/machines/B11.webp"
+          "/assets/img/machines/B11A.webp",
+          "/assets/img/machines/B11B.jpg"
         ],
         "variants": [
           "C11"
@@ -140,14 +144,21 @@
       },
       {
         "machine_id": "B12",
-        "name": "CSP-Cartonsleev 120",
-        "id": "csp-cartonsleev-120",
-        "description": "Kontinuierlich laufende Maschine für einzel, oder Sammelgebinde in Karton oder Kraftpapier mit bis zu 120 Gebinde/min",
+        "name": "CSP-Cartonsleev 45",
+        "id": "csp-cartonsleev-45",
+        "description": "Kontinuierlich laufende Maschine für einzel, oder Sammelgebinde in Karton oder Kraftpapier mit bis zu 45 Gebinde/min",
         "features_list": [
           "Zuführung InLine bis zu 3-Bahnen",
           "1-6 Produkte einreihig oder 2 reihig"
         ],
-        "images": [],
+        "images": [
+          "/assets/img/machines/B12A.jpg",
+          "/assets/img/machines/B12B.jpg",
+          "/assets/img/machines/B12C.jpg",
+          "/assets/img/machines/B12D.jpg",
+          "/assets/img/machines/B12E.jpg",
+          "/assets/img/machines/B12F.jpg"
+        ],
         "variants": [
           "A12",
           "D12"
@@ -168,7 +179,11 @@
           "1-6 Produkte einreihig oder 2 reihig"
         ],
         "images": [
-          "/assets/img/machines/B13.webp"
+          "/assets/img/machines/B13A.webp",
+          "/assets/img/machines/B13B.jpg",
+          "/assets/img/machines/B13C.jpg",
+          "/assets/img/machines/B13D.jpg",
+          "/assets/img/machines/B13E.jpg"
         ],
         "variants": [
           "A12",
@@ -248,7 +263,7 @@
         "manufacturer_name": "LANGEN Packaging Automation",
         "manufacturer_logo": "/assets/img/manufacturers/langen.jpg",
         "manufacturer_information": "",
-        "manufacturer_product_page": "https://mpac-group.com/products/cartoning-machines-mpac-automation-ecosystems/langen-maestro-c/"
+        "manufacturer_product_page": "https://mpac-langen.com/machine/maestro-series/"
       },
       {
         "machine_id": "B32",
@@ -264,7 +279,7 @@
         "manufacturer_name": "LANGEN Packaging Automation",
         "manufacturer_logo": "/assets/img/manufacturers/langen.jpg",
         "manufacturer_information": "",
-        "manufacturer_product_page": "https://mpac-group.com/products/cartoning-machines-mpac-automation-ecosystems/langen-vento-i/"
+        "manufacturer_product_page": "https://mpac-langen.com/machine/vento-series/"
       },
       {
         "machine_id": "B33",
@@ -280,7 +295,7 @@
         "manufacturer_name": "LANGEN Packaging Automation",
         "manufacturer_logo": "/assets/img/manufacturers/langen.jpg",
         "manufacturer_information": "",
-        "manufacturer_product_page": "https://mpac-group.com/products/cartoning-machines-mpac-automation-ecosystems/langen-air-side-load-cartoner/"
+        "manufacturer_product_page": "https://mpac-langen.com/machine/air-series/"
       },
       {
         "machine_id": "B34",
@@ -311,10 +326,25 @@
         "description": "INFO folgt",
         "features_list": [],
         "images": [
-          "/assets/img/machines/B41.png"
+          "/assets/img/machines/B41A.png",
+          "/assets/img/machines/B41B.png"
         ],
         "variants": [],
         "position": 1,
+        "manufacturer_name": "LANGEN Packaging Automation",
+        "manufacturer_logo": "/assets/img/manufacturers/langen.jpg",
+        "manufacturer_information": "",
+        "manufacturer_product_page": "Bing-Video"
+      },
+      {
+        "machine_id": "B42",
+        "name": "Kartonaufrichter",
+        "id": "kfr",
+        "description": "INFO folgt",
+        "features_list": [],
+        "images": ["/assets/img/machines/B42.jpg"],
+        "variants": [],
+        "position": 2,
         "manufacturer_name": "LANGEN Packaging Automation",
         "manufacturer_logo": "/assets/img/manufacturers/langen.jpg",
         "manufacturer_information": "",
@@ -387,9 +417,14 @@
           "Verklebung mit Hotmelt"
         ],
         "images": [
-          "/assets/img/machines/D11.webp"
+          "/assets/img/machines/D11A.webp",
+          "/assets/img/machines/D11B.jpg",
+          "/assets/img/machines/D11C.jpg",
+          "/assets/img/machines/D11D.jpg",
+          "/assets/img/machines/D11E.jpg",
+          "/assets/img/machines/D11F.jpg"
         ],
-        "variants": [],
+        "variants": ["A11"],
         "position": 1,
         "manufacturer_name": "meurer Verpackungssysteme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/meurer.svg",
@@ -406,7 +441,13 @@
           "1-6 Produkte einreihig oder 2 reihig"
         ],
         "images": [
-          "/assets/img/machines/D12.png"
+          "/assets/img/machines/D12A.png",
+          "/assets/img/machines/D12B.jpg",
+          "/assets/img/machines/D12C.jpg",
+          "/assets/img/machines/D12D.jpg",
+          "/assets/img/machines/D12E.jpg",
+          "/assets/img/machines/D12F.jpg",
+          "/assets/img/machines/D12G.jpg"
         ],
         "variants": [
           "A12"
@@ -562,7 +603,7 @@
         "manufacturer_name": "MSK Verpackungs-Systeme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/msk.svg",
         "manufacturer_information": "- EMSY Visualisierungssystem in 6. Generation<br>- hohe, intuitive Bedienfreundlichkeit<br>- Massive Stahl-Schweißkonstruktion<br>- Siemenssteuerung",
-        "manufacturer_product_page": ""
+        "manufacturer_product_page": "https://www.msk.de/loesungen/palettiersysteme/palettierroboter/"
       }
     ]
   },
@@ -633,7 +674,7 @@
         "manufacturer_name": "MSK Verpackungs-Systeme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/msk.svg",
         "manufacturer_information": "- EMSY Visualisierungssystem in 6. Generation<br>- hohe, intuitive Bedienfreundlichkeit<br>- Massive Stahl-Schweißkonstruktion<br>- Siemenssteuerung",
-        "manufacturer_product_page": ""
+        "manufacturer_product_page": "https://www.msk.de/loesungen/palettiersysteme/konventionelle-msk-palettiertechnik/"
       }
     ]
   },
@@ -693,7 +734,7 @@
         "manufacturer_name": "MSK Verpackungs-Systeme GmbH",
         "manufacturer_logo": "/assets/img/manufacturers/msk.svg",
         "manufacturer_information": "- EMSY Visualisierungssystem in 6. Generation<br>- hohe, intuitive Bedienfreundlichkeit<br>- Stabile Stahlkonstruktion<br>- Siemenssteuerung",
-        "manufacturer_product_page": "https://www.msk.de/loesungen/verpackungssysteme/stretchverpackungsanlagen/"
+        "manufacturer_product_page": "https://www.msk.de/loesungen/verpackungssysteme/schrumpfverpackungsmaschine-pa/"
       },
       {
         "machine_id": "H13",
