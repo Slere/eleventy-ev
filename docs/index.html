@@ -529,160 +529,285 @@
   </header>
     <main class=" grow-1 w-full flex flex-col">
       <script type="text/javascript">
-document.addEventListener("DOMContentLoaded", () => {
-  const emblaNode = document.querySelector('.embla')
-  const options = { loop: false }
-  const emblaApi = EmblaCarousel(emblaNode, options)
+  document.addEventListener("DOMContentLoaded", () => {
+    const hero = document.querySelector(".hero-embla")
+    if (!hero || typeof EmblaCarousel === "undefined") return
 
-  console.log(emblaApi.slideNodes()) // Access API
+    const viewport = hero.querySelector(".hero-embla__viewport")
+    const previousButton = hero.querySelector("[data-hero-embla-prev]")
+    const nextButton = hero.querySelector("[data-hero-embla-next]")
+    const dots = hero.querySelectorAll("[data-hero-embla-dot]")
+    if (!viewport) return
+
+    const embla = EmblaCarousel(viewport, {
+      loop: true,
+      align: "start"
+    })
+
+    const setSelectedDot = () => {
+      const selectedIndex = embla.selectedScrollSnap()
+      dots.forEach((dot, index) => {
+        dot.classList.toggle("bg-primary", index === selectedIndex)
+        dot.classList.toggle("bg-primary-foreground/70", index !== selectedIndex)
+        dot.classList.toggle("w-8", index === selectedIndex)
+        dot.classList.toggle("w-2.5", index !== selectedIndex)
+        dot.setAttribute("aria-current", index === selectedIndex ? "true" : "false")
+      })
+    }
+
+    previousButton?.addEventListener("click", () => embla.scrollPrev())
+    nextButton?.addEventListener("click", () => embla.scrollNext())
+    dots.forEach((dot, index) => {
+      dot.addEventListener("click", () => embla.scrollTo(index))
+    })
+
+    embla.on("select", setSelectedDot).on("reInit", setSelectedDot)
+    setSelectedDot()
   });
 </script>
 
-<div
-  class="max-w-9xl w-full mx-auto">
-  <!-- Slider -->
-  <div data-hs-carousel='{
-    "loadingClasses": "opacity-0",
-    "dotsItemClasses": "hs-carousel-active:bg-background size-3 bg-secondary/75 rounded-full cursor-pointer",
-    "isAutoPlay": false,
-    "isDraggable": true,
-    "slidesQty":1
-  }' class="relative flex flex-col left-[50%] -translate-x-1/2">
-    <div class="hs-carousel relative overflow-hidden w-full  flex-1 bg-white rounded-none">
-      <div
-        class="hs-carousel-body relative flex flex-nowrap transition-transform duration-700 opacity-0
-          hs-carousel-dragging:transition-none hs-carousel-dragging:cursor-grabbing cursor-grab">
-        <!-- slide -->
-        <div class="hs-carousel-slide aspect-[4/3] md:aspect-video flex">
-          <div class="relative flex justify-center items-center py-24 w-full bg-gray-100 p-6 bg-[url(/assets/img/sectors/papierverpackung.png)]
-              bg-cover ">
-            
-            
-            
-              <div class="hidden md:flex max-w-8xl w-full mx-auto sm:px-6 relative z-10 mt-20 h-full items-end justify-end"> <div
-                class=" flex flex-col justify-between lg:min-h-92 p-8 bg-background/90 backdrop-blur-lg rounded-xl max-w-md">
-                
-                <div>
-                  <h1 class="font-headline  font-bold text-2xl text-foreground-headline leading-none mb-4
-                      hyphens-auto break-words">
-                    Papierverpackung
-                  </h1>
-                  <p class="text-base leading-normal  text-foreground/90 max-w-sm lg:max-w-md mb-10">
-                    Für eine nachhaltigere Zukunft mit unseren Papierlösungen – Verpacken Sie mit Kraftpapier oder Papierklebestreifen.</p>
-                </div>
-                <div class="flex flex-col sm:flex-row gap-4">
-                  <a href="/papierverpackung/" class="inline-flex items-center justify-center gap-2 ring-offset-background transition-all duration-300
-                                            focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2
-                                            disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary
-                                            text-primary-foreground font-semibold hover:bg-primary/90 shadow-button hover:shadow-hover hover:scale-105 tracking-wider h-11 
-                                            rounded-full px-10 text-sm  lg:text-sm cursor-pointer ">
-                    Unsere Papierlösungen<svg
+<section class="relative w-full overflow-hidden bg-secondary/50 pt-18">
+  <div class="absolute inset-y-0 right-8 top-18 hidden md:block md:w-[52%]">
+    <div class="absolute inset-0 bg-[url(/assets/img/machines/D11A.webp)] bg-contain bg-center bg-no-repeat"></div>
+    <div class="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-[#f9fafc] via-[#f9fafc] to-transparent lg:w-32"></div>
+    <div class="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-transparent to-transparent"></div>
+  </div>
+  <div class="relative mx-auto grid min-h-[34rem] max-w-8xl items-end px-6 pb-12 pt-16 md:min-h-[38rem] md:grid-cols-[minmax(0,0.48fr)_minmax(0,0.52fr)] md:pb-20 md:pt-32">
+    <div class="max-w-xl">
+      <p class="mb-4 text-sm font-semibold uppercase text-primary">Papierverpackung</p>
+      <h1 class="font-headline text-4xl font-semibold tracking-tight text-foreground-headline sm:text-5xl md:text-6xl">
+        Stepping ahead in the era of Paperization
+      </h1>
+      <p class="mt-5 max-w-xl text-base leading-relaxed text-foreground-muted md:text-lg">
+        Für eine nachhaltigere Zukunft mit unseren Papierlösungen - Verpacken Sie mit Kraftpapier oder Papierklebestreifen.
+      </p>
+      <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+        <a href="/papierverpackung/" class="inline-flex h-11 items-center justify-center gap-2 rounded-full bg-primary px-6 text-sm font-semibold text-primary-foreground shadow-button transition-all hover:bg-primary/90 hover:shadow-hover">
+          Maschinen ansehen
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-arrow-right size-4"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path>
+          </svg>
+        </a>
+        <a href="/Kontakt/" class="inline-flex h-11 items-center justify-center rounded-full border border-primary/20 bg-background/70 px-6 text-sm font-semibold text-secondary-foreground transition-colors hover:border-primary/40 hover:bg-background">
+          Kontakt aufnehmen
+        </a>
+      </div>
+    </div>
+    <div class="mt-10 aspect-[16/10] overflow-hidden bg-[url(/assets/img/machines/D11A.webp)] bg-cover bg-center md:hidden"></div>
+  </div>
+</section>
+
+<section class="hero-embla hidden relative w-full overflow-hidden bg-transparent pt-18">
+  <div class="hero-embla__viewport overflow-hidden">
+    <div class="hero-embla__container flex touch-pan-y touch-pinch-zoom">
+      <div class="hero-embla__slide min-w-0 basis-full shrink-0 grow-0">
+        <div class="relative flex min-h-[34rem] items-end bg-[url(/assets/img/machines/D11A.webp)] bg-cover bg-center md:min-h-[38rem]">
+          <div class="absolute inset-0 bg-gradient-to-r from-foreground-darker/85 via-foreground-darker/50 to-foreground-darker/10"></div>
+          <div class="relative z-10 w-full">
+            <div class="mx-auto max-w-8xl px-6 pb-16 pt-32 md:pb-20">
+              <div class="max-w-2xl">
+                <p class="mb-4 text-sm font-semibold uppercase text-primary-foreground/80">Papierverpackung</p>
+                <h1 class="font-headline text-4xl font-semibold tracking-tight text-primary-foreground sm:text-5xl md:text-6xl">
+                  Stepping ahead in the era of Paperization
+                </h1>
+                <p class="mt-5 max-w-xl text-base leading-relaxed text-primary-foreground/85 md:text-lg">
+                 Für eine nachhaltigere Zukunft mit unseren Papierlösungen - Verpacken Sie mit Kraftpapier oder Papierklebestreifen
+                </p>
+                <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+                  <a href="/papierverpackung/" class="inline-flex h-11 items-center justify-center gap-2 rounded-full bg-primary px-6 text-sm font-semibold text-primary-foreground shadow-button transition-all hover:bg-primary/90 hover:shadow-hover">
+                    Maschinen ansehen
+                    <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
                       height="24"
-                      viewbox="0 0 24 24"
+                      viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
-                      stroke-width="3"
+                      stroke-width="2.5"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                      class="lucide lucide-arrow-right w-5 h-5">
-                      <path d="M5 12h14"></path>
-                      <path d="m12 5 7 7-7 7"></path>
+                      class="lucide lucide-arrow-right size-4"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path>
                     </svg>
                   </a>
-                  
+                  <a href="/Kontakt/" class="inline-flex h-11 items-center justify-center rounded-full border border-primary-foreground/20 bg-primary-foreground/10 px-6 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary-foreground/20">
+                    Kontakt aufnehmen
+                  </a>
                 </div>
-                
               </div>
             </div>
           </div>
         </div>
-        <!-- slide end -->
-        <!-- slide -->
-        <div class="hs-carousel-slide">
-          <div class="relative flex justify-center h-full bg-secondary/50 p-6 bg-[url(/assets/img/machines/I21A.jpg)] bg-cover
-              bg-center">
-            <div class="absolute inset-0 bg-gradient-to-b from-background/50 via-transparent to-transparent"></div>
-            <span class="self-center text-4xl text-gray-800 transition duration-700 "></span>
+      </div>
+      <div class="hero-embla__slide min-w-0 basis-full shrink-0 grow-0">
+        <div class="relative flex min-h-[34rem] items-end bg-[url(/assets/img/machines/I21A.jpg)] bg-cover bg-center md:min-h-[38rem]">
+          <div class="absolute inset-0 bg-gradient-to-r from-foreground-darker/65 via-foreground-darker/45 to-foreground-darker/30 md:from-foreground-darker/85 md:via-foreground-darker/45 md:to-foreground-darker/10"></div>
+          <div class="relative z-10 w-full">
+            <div class="mx-auto max-w-8xl px-6 pb-16 pt-32 md:pb-20">
+              <div class="max-w-2xl">
+                <p class="mb-4 text-sm font-semibold uppercase text-primary-foreground/80">Fördertechnik</p>
+                <h2 class="font-headline text-4xl font-semibold tracking-tight text-primary-foreground sm:text-5xl md:text-6xl">
+                  Durchgängige Prozesse vom Produkt bis zur Palette
+                </h2>
+                <p class="mt-5 max-w-xl text-base leading-relaxed text-primary-foreground/85 md:text-lg">
+                  Robuste Transport- und Verpackungssysteme für sichere Materialflüsse in modernen Produktionsumgebungen.
+                </p>
+                <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+                  <a href="/fördertechnik-palettentransport/" class="inline-flex h-11 items-center justify-center gap-2 rounded-full bg-primary px-6 text-sm font-semibold text-primary-foreground shadow-button transition-all hover:bg-primary/90 hover:shadow-hover">
+                    Maschinen ansehen
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-arrow-right size-4"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path>
+                    </svg>
+                  </a>
+                  <a href="/Kontakt/" class="inline-flex h-11 items-center justify-center rounded-full border border-primary-foreground/20 bg-primary-foreground/10 px-6 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary-foreground/20">
+                    Kontakt aufnehmen
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <!-- slide end -->
-        <!-- slide -->
-        <div class="hs-carousel-slide">
-          <div class="relative flex justify-center h-full bg-secondary/50 p-6 bg-[url(/assets/img/machines/B31.jpg)] bg-cover
-              bg-center">
-            <div class="absolute top-0 left-0 h-18 w-full bg-background backdrop-blur-sm"></div>
-            <span class="self-center text-4xl text-gray-800 transition duration-700 "></span>
+      </div>
+      <div class="hero-embla__slide min-w-0 basis-full shrink-0 grow-0">
+        <div class="relative flex min-h-[34rem] items-end bg-[url(/assets/img/machines/B42.jpg)] bg-cover bg-center md:min-h-[38rem]">
+          <div class="absolute inset-0 bg-gradient-to-r from-foreground-darker/60 via-foreground-darker/50 to-foreground-darker/30 md:from-foreground-darker/85 md:via-foreground-darker/50 md:to-foreground-darker/10"></div>
+          <div class="relative z-10 w-full">
+            <div class="mx-auto max-w-8xl px-6 pb-16 pt-32 md:pb-20">
+              <div class="max-w-2xl">
+                <p class="mb-4 text-sm font-semibold uppercase text-primary-foreground/80">Kartonverpackung</p>
+                <h2 class="font-headline text-4xl font-semibold tracking-tight text-primary-foreground sm:text-5xl md:text-6xl">
+                  Verpackungslösungen passend zu Produkt und Linie
+                </h2>
+                <p class="mt-5 max-w-xl text-base leading-relaxed text-primary-foreground/85 md:text-lg">
+                  Von Einzelmaschine bis Systemintegration: technisch passende Lösungen für Ihre Anwendung.
+                </p>
+                <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+                  <a href="/karton-kontinuierlich/" class="inline-flex h-11 items-center justify-center gap-2 rounded-full bg-primary px-6 text-sm font-semibold text-primary-foreground shadow-button transition-all hover:bg-primary/90 hover:shadow-hover">
+                    Maschinen ansehen
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-arrow-right size-4"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path>
+                    </svg>
+                  </a>
+                  <a href="/Kontakt/" class="inline-flex h-11 items-center justify-center rounded-full border border-primary-foreground/20 bg-primary-foreground/10 px-6 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary-foreground/20">
+                    Kontakt aufnehmen
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <!-- slide end -->
       </div>
     </div>
-    <button
-      type="button"
-      class="hs-carousel-prev hs-carousel-disabled:opacity-50 hs-carousel-disabled:pointer-events-none absolute inset-y-0
-        start-0 inline-flex justify-center items-center w-11.5 h-full text-gray-800 hover:bg-gray-800/10 focus:outline-hidden
-        focus:bg-gray-800/10 rounded-s-lg dark:text-white dark:hover:bg-white/10 dark:focus:bg-white/10">
-      <span class="text-2xl" aria-hidden="true">
-        <svg
-          class="shrink-0 size-5"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewbox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round">
-          <path d="m15 18-6-6 6-6"></path>
-        </svg>
-      </span>
-      <span class="sr-only">Previous</span>
-    </button>
-    <button
-      type="button"
-      class="hs-carousel-next hs-carousel-disabled:opacity-50 hs-carousel-disabled:pointer-events-none absolute inset-y-0 end-0
-        inline-flex justify-center items-center w-11.5 h-full text-gray-800 hover:bg-gray-800/10 focus:outline-hidden
-        focus:bg-gray-800/10 rounded-e-lg dark:text-white dark:hover:bg-white/10 dark:focus:bg-white/10">
-      <span class="sr-only">Next</span>
-      <span class="text-2xl" aria-hidden="true">
-        <svg
-          class="shrink-0 size-5"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewbox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round">
-          <path d="m9 18 6-6-6-6"></path>
-        </svg>
-      </span>
-    </button>
-    <div class="hs-carousel-pagination flex justify-center absolute bottom-3 start-0 end-0 gap-x-2"></div>
   </div>
-</div>
+  <button
+    type="button"
+    data-hero-embla-prev
+    class="absolute left-4 top-1/2 hidden size-10 -translate-y-1/2 items-center justify-center rounded-full border border-primary-foreground/25 bg-foreground-darker/30 text-primary-foreground backdrop-blur transition-colors hover:bg-foreground-darker/50 md:inline-flex"
+    aria-label="Vorherige Folie">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      class="lucide lucide-chevron-left size-5"><path d="m15 18-6-6 6-6"></path>
+    </svg>
+  </button>
+  <button
+    type="button"
+    data-hero-embla-next
+    class="absolute right-4 top-1/2 hidden size-10 -translate-y-1/2 items-center justify-center rounded-full border border-primary-foreground/25 bg-foreground-darker/30 text-primary-foreground backdrop-blur transition-colors hover:bg-foreground-darker/50 md:inline-flex"
+    aria-label="Nächste Folie">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      class="lucide lucide-chevron-right size-5"><path d="m9 18 6-6-6-6"></path>
+    </svg>
+  </button>
+  <div class="absolute bottom-6 left-0 right-0 z-10 flex justify-center gap-2">
+    <button type="button" data-hero-embla-dot class="h-2.5 w-2.5 rounded-full bg-primary-foreground/70 transition-all" aria-label="Folie 1 anzeigen"></button>
+    <button type="button" data-hero-embla-dot class="h-2.5 w-2.5 rounded-full bg-primary-foreground/70 transition-all" aria-label="Folie 2 anzeigen"></button>
+    <button type="button" data-hero-embla-dot class="h-2.5 w-2.5 rounded-full bg-primary-foreground/70 transition-all" aria-label="Folie 3 anzeigen"></button>
+  </div>
+</section>
 <div
   class=" flex flex-col">
   
-  <section id="about" class="px-6 py-12 md:py-16 lg:py-20">
-    <div class=" text-foreground max-w-8xl mx-auto  flex flex-col md:flex-row gap-8 md:gap-16 lg:gap-20 justify-center">
-      <div class="max-w-4xl">
-        <h1 class="text-2xl sm:text-3xl sm:tracking-tight font-headline font-bold text-foreground-headline mb-6 ">
-          Verpackungslösungen – speziell für Ihre Anwendung</h1>
-        <p class="leading-normal text-body-sm sm:text-base text-foreground-darker/90 pb-3 hyphens-auto break-words ">
-          Wir blicken auf über 30 Jahren Erfahrung im Bereich der Endverpackung zurück und arbeiten seit vielen Jahren erfolgreich mit den
-gleichen Herstellern zusammen, die ihre Maschinen weltweit vertreiben:
+  <section id="about" class="px-6 py-12 md:py-16 lg:py-20 bg-background">
+    <div class="max-w-8xl mx-auto grid gap-10 lg:grid-cols-[minmax(0,1.1fr)_minmax(22rem,0.9fr)] lg:items-start">
+      <div class="max-w-3xl">
+        <p class="mb-4 text-sm font-semibold uppercase text-primary">Ensle Verpackungstechnik</p>
+        <h2 class="font-headline text-3xl font-semibold tracking-tight text-foreground-headline sm:text-4xl">
+          Verpackungslösungen speziell für Ihre Anwendung
+        </h2>
+        <p class="mt-5 text-base leading-relaxed text-foreground-muted hyphens-auto">
+          Wir blicken auf über 30 Jahre Erfahrung im Bereich der Endverpackung zurück und unterstützen Unternehmen bei der Auswahl passender Maschinen und Systemlösungen.
         </p>
-        <p class="leading-normal text-body-sm sm:text-base text-foreground-darker/90 break-words hyphens-auto">
-seit 2003 Fa. MEURER aus Fürsteneau (BRD) <br />
-seit 2008 Fa. LANGENPACK aus BV Wijchen (NL) <br />
-seit 2011 Fa. MSK aus Kleve (BRD)
-        </p>
+      </div>
+      <div class="border-t border-border pt-6 lg:border-t-0 lg:border-l lg:pl-8 lg:pt-0">
+        <h3 class="font-headline text-xl font-semibold text-foreground-headline">
+          Langjährige Herstellerpartnerschaften
+        </h3>
+        <div class="mt-6 space-y-4">
+          <div class="flex items-start gap-4">
+            <div class="w-20 shrink-0 text-sm font-semibold text-primary">seit 2003</div>
+            <div>
+              <p class="font-semibold text-foreground-headline">MEURER</p>
+              <p class="text-sm text-foreground-muted">Fürstenau, Deutschland</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-20 shrink-0 text-sm font-semibold text-primary">seit 2008</div>
+            <div>
+              <p class="font-semibold text-foreground-headline">LANGENPACK</p>
+              <p class="text-sm text-foreground-muted">Wijchen, Niederlande</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-20 shrink-0 text-sm font-semibold text-primary">seit 2011</div>
+            <div>
+              <p class="font-semibold text-foreground-headline">MSK</p>
+              <p class="text-sm text-foreground-muted">Kleve, Deutschland</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -1305,6 +1430,7 @@ seit 2011 Fa. MSK aus Kleve (BRD)
                     </div>
                   </section>
                   <!-- Contact End -->
+
     </main> 
       <footer class="mt-auto w-full bg-card border-t border-border">
 
