@@ -45,42 +45,61 @@ isHome: true
 </script>
 
 <section class="relative w-full overflow-hidden bg-secondary/50 pt-18">
-  <div class="absolute inset-y-0 right-8 top-18 hidden md:block md:w-[52%]">
-    <div class="absolute inset-0 bg-[url({{ hero_banner_image_1 | url }})] bg-contain bg-center bg-no-repeat"></div>
-    <div class="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-[#f9fafc] via-[#f9fafc] to-transparent lg:w-32"></div>
-    <div class="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-transparent to-transparent"></div>
-  </div>
-  <div class="relative mx-auto grid min-h-[34rem] max-w-8xl items-end px-6 pb-12 pt-16 md:min-h-[38rem] md:grid-cols-[minmax(0,0.48fr)_minmax(0,0.52fr)] md:pb-20 md:pt-32">
-    <div class="max-w-xl">
-      <p class="mb-4 text-sm font-semibold uppercase text-primary">Papierverpackung</p>
-      <h1 class="font-headline text-4xl font-semibold tracking-tight text-foreground-headline sm:text-5xl md:text-6xl">
-        Stepping ahead in the era of Paperization
-      </h1>
-      <p class="mt-5 max-w-xl text-base leading-relaxed text-foreground-muted md:text-lg">
-        Für eine nachhaltigere Zukunft mit unseren Papierlösungen - Verpacken Sie mit Kraftpapier oder Papierklebestreifen.
-      </p>
-      <div class="mt-8 flex flex-col gap-3 sm:flex-row">
-        <a href="{{ "/papierverpackung/" | url }}" class="inline-flex h-11 items-center justify-center gap-2 rounded-full bg-primary px-6 text-sm font-semibold text-primary-foreground shadow-button transition-all hover:bg-primary/90 hover:shadow-hover">
-          Maschinen ansehen
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-arrow-right size-4"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path>
-          </svg>
-        </a>
-        <a href="{{ "/Kontakt/" | url }}" class="inline-flex h-11 items-center justify-center rounded-full border border-primary/20 bg-background/70 px-6 text-sm font-semibold text-secondary-foreground transition-colors hover:border-primary/40 hover:bg-background">
-          Kontakt aufnehmen
-        </a>
-      </div>
+  <div class="relative mx-auto max-w-8xl">
+    <!-- Desktop image -->
+    <div class="absolute inset-y-0 right-0 md:right-4 top-18 hidden md:block md:w-[52%]">
+      <div class="absolute inset-0 bg-[url({{ hero_banner_image_1 | url }})] bg-contain bg-center bg-no-repeat"></div>
+      <div class="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-[#f9fafc] via-[#f9fafc] to-transparent lg:w-32"></div>
+      <div class="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-transparent to-transparent"></div>
     </div>
-    <div class="mt-10 aspect-[16/10] overflow-hidden bg-[url({{ hero_banner_image_1 | url }})] bg-cover bg-center md:hidden"></div>
+
+    <div class="relative grid min-h-[34rem] items-end px-6 pb-12 pt-16 md:min-h-[38rem] md:grid-cols-[minmax(0,0.48fr)_minmax(0,0.52fr)] md:pb-20 md:pt-32">
+      <div class="max-w-xl">
+        <p class="mb-4 text-sm font-semibold uppercase text-primary">Papierverpackung</p>
+
+        <h1 class="font-headline text-4xl font-semibold tracking-tight text-foreground-headline sm:text-5xl md:text-6xl">
+          Stepping ahead in the era of Paperization
+        </h1>
+
+        <p class="mt-5 max-w-xl text-base leading-relaxed text-foreground-muted md:text-lg">
+          Für eine nachhaltigere Zukunft mit unseren Papierlösungen - Verpacken Sie mit Kraftpapier oder Papierklebestreifen.
+        </p>
+
+        <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+          <a
+            href="{{ "/papierverpackung/" | url }}"
+            class="inline-flex h-11 items-center justify-center gap-2 rounded-full bg-primary px-6 text-sm font-semibold text-primary-foreground shadow-button transition-all hover:bg-primary/90 hover:shadow-hover">
+            Maschinen ansehen
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-arrow-right size-4">
+              <path d="M5 12h14"></path>
+              <path d="m12 5 7 7-7 7"></path>
+            </svg>
+          </a>
+
+          <a
+            href="{{ "/Kontakt/" | url }}"
+            class="inline-flex h-11 items-center justify-center rounded-full border border-primary/20 bg-background/70 px-6 text-sm font-semibold text-secondary-foreground transition-colors hover:border-primary/40 hover:bg-background">
+            Kontakt aufnehmen
+          </a>
+        </div>
+      </div>
+
+      <!-- Empty second column so the text stays in the left column -->
+      <div class="hidden md:block"></div>
+
+      <!-- Mobile image -->
+      <div class="mt-10 aspect-[16/10] overflow-hidden bg-[url({{ hero_banner_image_1 | url }})] bg-cover bg-center md:hidden"></div>
+    </div>
   </div>
 </section>
 
