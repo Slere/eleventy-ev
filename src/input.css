@@ -1,25 +1,10 @@
 @import "tailwindcss";
 /* @import '@fontsource-variable/nunito-sans'; */
 @import "@fontsource-variable/inter";
-@import "@fontsource-variable/figtree";
-@import '@fontsource/bebas-neue';
-@import '@fontsource-variable/ibm-plex-sans';
-@import '@fontsource-variable/oswald';
-@import '@fontsource-variable/montserrat';
-@import '@fontsource/barlow-condensed/400.css';
-@import '@fontsource/barlow-condensed/500.css';
-@import '@fontsource/barlow-condensed/600.css';
-@import '@fontsource/barlow-condensed/700.css';
 @import '@fontsource-variable/dm-sans';
 @source "./src/*.{html,js}";
 @theme {  
     --custom-font: "Inter Variable";
-    --font-figtree: "Figtree Variable";
-    --font-bebasneue: "Bebas Neue";
-    --font-ibmplexsans: "IBM Plex Sans Variable";
-    --font-oswald: "Oswald Variable";
-    --font-montserrat: "Montserrat Variable";
-    --font-barlow-condensed: "Barlow Condensed";
     --font-dm-sans: "DM Sans Variable";
      --breakpoint-xs: 30rem;
     --breakpoint-3xl: 112rem;

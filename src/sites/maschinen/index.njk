@@ -4,7 +4,7 @@ layout: layout/app.njk
 test_image: /assets/img/sectors/folienverpackung.jpg
 ---
 
-<section class="pt-32 pb-16 section-gradient-light">
+<section class="pt-24 pb-16 section-gradient-light">
     <div class="max-w-8xl mx-auto px-6">
         <nav aria-label="breadcrumb" class="mb-8">
             {%- from "components/breadcrumbs.njk" import breadcrumbs -%}
@@ -16,10 +16,10 @@ test_image: /assets/img/sectors/folienverpackung.jpg
                 Maschinenübersicht
             </span>
             <h1 class="font-headline font-semibold text-4xl sm:text-4xl md:text-5xl text-foreground-headline mb-6 tracking-tight hyphens-auto break-words">
-                Bereiche und Unterbereiche
+                Unser Sortiment
             </h1>
             <p class="text-foreground-muted text-lg md:text-xl max-w-2xl font-light">
-                Eine kompakte Übersicht aller Verpackungsmaschinen, gruppiert nach Hauptbereich und Unterbereich.
+                Alle Verpackungsbereiche auf einen Blick
             </p>
         </div>
     </div>
@@ -32,20 +32,6 @@ test_image: /assets/img/sectors/folienverpackung.jpg
                 <section class="grid gap-4 border border-border-light bg-card p-5 shadow-soft md:grid-cols-[16rem_minmax(0,1fr)] md:p-6">
                     <div>
                         <div class="flex items-center gap-3">
-                            <div class="size-10 shrink-0 rounded-md bg-primary/10 text-primary flex items-center justify-center">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="2"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    class="lucide lucide-package size-5"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"></path><path d="M12 22V12"></path><path d="m3.3 7 7.703 4.734a2 2 0 0 0 1.994 0L20.7 7"></path><path d="m7.5 4.27 9 5.15"></path>
-                                </svg>
-                            </div>
                             <div>
                                 <h2 class="font-headline text-xl font-semibold text-foreground-headline">
                                     {{ sector.name | safe }}
@@ -77,7 +63,7 @@ test_image: /assets/img/sectors/folienverpackung.jpg
                     <div class="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
                         {% for group in machines.list %}
                             {% if group.parent_category == sector.name %}
-                                <a href="{{ ("/" ~ group.slug ~ "/") | url }}" class="group flex items-center justify-between gap-3 border border-border bg-background px-4 py-3 transition-colors hover:border-primary/30 hover:bg-secondary">
+                                <a href="{{ ("/maschinen/" ~ group.slug ~ "/") | url }}" class="group flex items-center justify-between gap-3 border border-border bg-background px-4 py-3 transition-colors hover:border-primary/30 hover:bg-secondary">
                                     <span class="min-w-0">
                                         <span class="block truncate text-sm font-semibold text-secondary-foreground group-hover:text-primary">
                                             {{ group.title | safe }}
