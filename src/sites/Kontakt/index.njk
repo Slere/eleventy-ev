@@ -55,8 +55,13 @@ form.addEventListener('submit', async (e) => {
 
  <!-- Contact Start -->
             <section
-            id="contact" class="grow-1 py-24 md:py-28 lg:py-32 bg-background relative overflow-hidden section-gradient-light"> {#  <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-primary/5 via-primary/5 to-transparent"></div> #}
+            id="contact" class="grow-1 pt-24 bg-background relative overflow-hidden"> {#  <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-primary/5 via-primary/5 to-transparent"></div> #}
             <div class="max-w-8xl mx-auto px-6 relative z-10">
+               <nav aria-label="breadcrumb" class="mb-8">
+            {%- from "components/breadcrumbs.njk" import breadcrumbs -%}
+            {% set crumbs = page.url | breadcrumbs %}
+            {{ breadcrumbs(crumbs) }}
+        </nav>
               <div class="grid gap-16 items-start transition-all duration-500 ease-out lg:grid-cols-2">
                 <div class="transition-all duration-500 text-left">
                   <span class="text-primary text-sm uppercase tracking-wider font-medium">Kontakt aufnehmen</span>
