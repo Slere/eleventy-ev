@@ -554,9 +554,6 @@
   .aspect-\[16\/10\] {
     aspect-ratio: 16/10;
   }
-  .aspect-\[21\/9\] {
-    aspect-ratio: 21/9;
-  }
   .size-3 {
     width: calc(var(--spacing) * 3);
     height: calc(var(--spacing) * 3);
@@ -1069,20 +1066,6 @@
   .gap-y-2 {
     row-gap: calc(var(--spacing) * 2);
   }
-  .divide-y {
-    :where(& > :not(:last-child)) {
-      --tw-divide-y-reverse: 0;
-      border-bottom-style: var(--tw-border-style);
-      border-top-style: var(--tw-border-style);
-      border-top-width: calc(1px * var(--tw-divide-y-reverse));
-      border-bottom-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
-    }
-  }
-  .divide-border {
-    :where(& > :not(:last-child)) {
-      border-color: var(--color-border);
-    }
-  }
   .self-center {
     align-self: center;
   }
@@ -1228,9 +1211,6 @@
   .\!bg-white {
     background-color: var(--color-white) !important;
   }
-  .bg-\[\#f8f8f9\] {
-    background-color: #f8f8f9;
-  }
   .bg-\[\#f9fafb\] {
     background-color: #f9fafb;
   }
@@ -1344,156 +1324,6 @@
   .bg-gradient-to-t {
     --tw-gradient-position: to top in oklab;
     background-image: linear-gradient(var(--tw-gradient-stops));
-  }
-  .bg-\[url\(\/assets\/img\/machines\/A12A\.webp\)\] {
-    background-image: url(/assets/img/machines/A12A.webp);
-  }
-  .bg-\[url\(\/assets\/img\/machines\/A12B\.jpg\)\] {
-    background-image: url(/assets/img/machines/A12B.jpg);
-  }
-  .bg-\[url\(\/assets\/img\/machines\/A12C\.jpg\)\] {
-    background-image: url(/assets/img/machines/A12C.jpg);
-  }
-  .bg-\[url\(\/assets\/img\/machines\/B11A\.webp\)\] {
-    background-image: url(/assets/img/machines/B11A.webp);
-  }
-  .bg-\[url\(\/assets\/img\/machines\/B11B\.jpg\)\] {
-    background-image: url(/assets/img/machines/B11B.jpg);
-  }
-  .bg-\[url\(\/assets\/img\/machines\/B12A\.jpg\)\] {
-    background-image: url(/assets/img/machines/B12A.jpg);
-  }
-  .bg-\[url\(\/assets\/img\/machines\/B12B\.jpg\)\] {
-    background-image: url(/assets/img/machines/B12B.jpg);
-  }
-  .bg-\[url\(\/assets\/img\/machines\/B12C\.jpg\)\] {
-    background-image: url(/assets/img/machines/B12C.jpg);
-  }
-  .bg-\[url\(\/assets\/img\/machines\/B12D\.jpg\)\] {
-    background-image: url(/assets/img/machines/B12D.jpg);
-  }
-  .bg-\[url\(\/assets\/img\/machines\/B12E\.jpg\)\] {
-    background-image: url(/assets/img/machines/B12E.jpg);
-  }
-  .bg-\[url\(\/assets\/img\/machines\/B12F\.jpg\)\] {
-    background-image: url(/assets/img/machines/B12F.jpg);
-  }
-  .bg-\[url\(\/assets\/img\/machines\/B13A\.webp\)\] {
-    background-image: url(/assets/img/machines/B13A.webp);
-  }
-  .bg-\[url\(\/assets\/img\/machines\/B13B\.jpg\)\] {
-    background-image: url(/assets/img/machines/B13B.jpg);
-  }
-  .bg-\[url\(\/assets\/img\/machines\/B13C\.jpg\)\] {
-    background-image: url(/assets/img/machines/B13C.jpg);
-  }
-  .bg-\[url\(\/assets\/img\/machines\/B13D\.jpg\)\] {
-    background-image: url(/assets/img/machines/B13D.jpg);
-  }
-  .bg-\[url\(\/assets\/img\/machines\/B13E\.jpg\)\] {
-    background-image: url(/assets/img/machines/B13E.jpg);
-  }
-  .bg-\[url\(\/assets\/img\/machines\/B42\.jpg\)\] {
-    background-image: url(/assets/img/machines/B42.jpg);
-  }
-  .bg-\[url\(\/assets\/img\/machines\/D11A\.webp\)\] {
-    background-image: url(/assets/img/machines/D11A.webp);
-  }
-  .bg-\[url\(\/assets\/img\/machines\/D11B\.jpg\)\] {
-    background-image: url(/assets/img/machines/D11B.jpg);
-  }
-  .bg-\[url\(\/assets\/img\/machines\/D11C\.jpg\)\] {
-    background-image: url(/assets/img/machines/D11C.jpg);
-  }
-  .bg-\[url\(\/assets\/img\/machines\/D11D\.jpg\)\] {
-    background-image: url(/assets/img/machines/D11D.jpg);
-  }
-  .bg-\[url\(\/assets\/img\/machines\/D11E\.jpg\)\] {
-    background-image: url(/assets/img/machines/D11E.jpg);
-  }
-  .bg-\[url\(\/assets\/img\/machines\/D11F\.jpg\)\] {
-    background-image: url(/assets/img/machines/D11F.jpg);
-  }
-  .bg-\[url\(\/assets\/img\/machines\/D12A\.png\)\] {
-    background-image: url(/assets/img/machines/D12A.png);
-  }
-  .bg-\[url\(\/assets\/img\/machines\/D12B\.jpg\)\] {
-    background-image: url(/assets/img/machines/D12B.jpg);
-  }
-  .bg-\[url\(\/assets\/img\/machines\/D12C\.jpg\)\] {
-    background-image: url(/assets/img/machines/D12C.jpg);
-  }
-  .bg-\[url\(\/assets\/img\/machines\/D12D\.jpg\)\] {
-    background-image: url(/assets/img/machines/D12D.jpg);
-  }
-  .bg-\[url\(\/assets\/img\/machines\/D12E\.jpg\)\] {
-    background-image: url(/assets/img/machines/D12E.jpg);
-  }
-  .bg-\[url\(\/assets\/img\/machines\/D12F\.jpg\)\] {
-    background-image: url(/assets/img/machines/D12F.jpg);
-  }
-  .bg-\[url\(\/assets\/img\/machines\/D12G\.jpg\)\] {
-    background-image: url(/assets/img/machines/D12G.jpg);
-  }
-  .bg-\[url\(\/assets\/img\/machines\/H41A\.jpg\)\] {
-    background-image: url(/assets/img/machines/H41A.jpg);
-  }
-  .bg-\[url\(\/assets\/img\/machines\/H41B\.jpg\)\] {
-    background-image: url(/assets/img/machines/H41B.jpg);
-  }
-  .bg-\[url\(\/assets\/img\/machines\/I11A\.jpg\)\] {
-    background-image: url(/assets/img/machines/I11A.jpg);
-  }
-  .bg-\[url\(\/assets\/img\/machines\/I11B\.jpg\)\] {
-    background-image: url(/assets/img/machines/I11B.jpg);
-  }
-  .bg-\[url\(\/assets\/img\/machines\/I11C\.jpg\)\] {
-    background-image: url(/assets/img/machines/I11C.jpg);
-  }
-  .bg-\[url\(\/assets\/img\/machines\/I21A\.jpg\)\] {
-    background-image: url(/assets/img/machines/I21A.jpg);
-  }
-  .bg-\[url\(\/assets\/img\/machines\/I21B\.jpg\)\] {
-    background-image: url(/assets/img/machines/I21B.jpg);
-  }
-  .bg-\[url\(\/assets\/img\/machines\/I21C\.jpg\)\] {
-    background-image: url(/assets/img/machines/I21C.jpg);
-  }
-  .bg-\[url\(\/assets\/img\/machines\/I21D\.jpg\)\] {
-    background-image: url(/assets/img/machines/I21D.jpg);
-  }
-  .bg-\[url\(\/assets\/img\/machines\/I21E\.jpg\)\] {
-    background-image: url(/assets/img/machines/I21E.jpg);
-  }
-  .bg-\[url\(\/assets\/img\/machines\/I21F\.jpg\)\] {
-    background-image: url(/assets/img/machines/I21F.jpg);
-  }
-  .bg-\[url\(\/assets\/img\/machines\/I21G\.jpg\)\] {
-    background-image: url(/assets/img/machines/I21G.jpg);
-  }
-  .bg-\[url\(\/assets\/img\/machines\/I21H\.jpg\)\] {
-    background-image: url(/assets/img/machines/I21H.jpg);
-  }
-  .bg-\[url\(\/assets\/img\/machines\/I21I\.jpg\)\] {
-    background-image: url(/assets/img/machines/I21I.jpg);
-  }
-  .bg-\[url\(\/assets\/img\/machines\/I21J\.jpg\)\] {
-    background-image: url(/assets/img/machines/I21J.jpg);
-  }
-  .bg-\[url\(\/assets\/img\/machines\/I21K\.jpg\)\] {
-    background-image: url(/assets/img/machines/I21K.jpg);
-  }
-  .bg-\[url\(\/assets\/img\/machines\/J11A\.jpg\)\] {
-    background-image: url(/assets/img/machines/J11A.jpg);
-  }
-  .bg-\[url\(\/assets\/img\/machines\/J11B\.jpg\)\] {
-    background-image: url(/assets/img/machines/J11B.jpg);
-  }
-  .bg-\[url\(\/assets\/img\/machines\/J12A\.jpg\)\] {
-    background-image: url(/assets/img/machines/J12A.jpg);
-  }
-  .bg-\[url\(\/assets\/img\/machines\/J12B\.jpg\)\] {
-    background-image: url(/assets/img/machines/J12B.jpg);
   }
   .bg-\[url\(\/eleventy-ev\/assets\/img\/machines\/A12A\.webp\)\] {
     background-image: url(/eleventy-ev/assets/img/machines/A12A.webp);
@@ -1689,13 +1519,6 @@
     }
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
-  .from-foreground\/40 {
-    --tw-gradient-from: color-mix(in srgb, #212831 40%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      --tw-gradient-from: color-mix(in oklab, var(--color-foreground) 40%, transparent);
-    }
-    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-  }
   .from-muted {
     --tw-gradient-from: var(--color-muted);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
@@ -1770,11 +1593,6 @@
     @supports (color: color-mix(in lab, red, red)) {
       --tw-gradient-via: color-mix(in oklab, var(--color-primary) 5%, transparent);
     }
-    --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
-    --tw-gradient-stops: var(--tw-gradient-via-stops);
-  }
-  .via-transparent {
-    --tw-gradient-via: transparent;
     --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
     --tw-gradient-stops: var(--tw-gradient-via-stops);
   }
@@ -1898,9 +1716,6 @@
   }
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
-  }
-  .py-4 {
-    padding-block: calc(var(--spacing) * 4);
   }
   .py-5 {
     padding-block: calc(var(--spacing) * 5);
@@ -2125,6 +1940,12 @@
   .text-foreground-muted {
     color: var(--color-foreground-muted);
   }
+  .text-foreground\/90 {
+    color: color-mix(in srgb, #212831 90%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-foreground) 90%, transparent);
+    }
+  }
   .text-gray-500 {
     color: var(--color-gray-500);
   }
@@ -2175,9 +1996,6 @@
   }
   .uppercase {
     text-transform: uppercase;
-  }
-  .italic {
-    font-style: italic;
   }
   .underline {
     text-decoration-line: underline;
@@ -2329,14 +2147,6 @@
       }
     }
   }
-  .group-hover\:translate-x-2 {
-    &:is(:where(.group):hover *) {
-      @media (hover: hover) {
-        --tw-translate-x: calc(var(--spacing) * 2);
-        translate: var(--tw-translate-x) var(--tw-translate-y);
-      }
-    }
-  }
   .group-hover\:scale-105 {
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
@@ -2408,16 +2218,6 @@
       z-index: 1;
     }
   }
-  .first\:pt-0 {
-    &:first-child {
-      padding-top: calc(var(--spacing) * 0);
-    }
-  }
-  .last\:pb-0 {
-    &:last-child {
-      padding-bottom: calc(var(--spacing) * 0);
-    }
-  }
   .hover\:-translate-y-2 {
     &:hover {
       @media (hover: hover) {
@@ -2450,16 +2250,6 @@
     &:hover {
       @media (hover: hover) {
         border-color: var(--color-primary);
-      }
-    }
-  }
-  .hover\:border-primary\/10 {
-    &:hover {
-      @media (hover: hover) {
-        border-color: color-mix(in srgb, #0854a1 10%, transparent);
-        @supports (color: color-mix(in lab, red, red)) {
-          border-color: color-mix(in oklab, var(--color-primary) 10%, transparent);
-        }
       }
     }
   }
@@ -3292,11 +3082,6 @@
       margin-right: calc(var(--spacing) * 6);
     }
   }
-  .lg\:w-2\/5 {
-    @media (width >= 64rem) {
-      width: calc(2/5 * 100%);
-    }
-  }
   .lg\:w-32 {
     @media (width >= 64rem) {
       width: calc(var(--spacing) * 32);
@@ -3355,11 +3140,6 @@
   .lg\:justify-between {
     @media (width >= 64rem) {
       justify-content: space-between;
-    }
-  }
-  .lg\:gap-10 {
-    @media (width >= 64rem) {
-      gap: calc(var(--spacing) * 10);
     }
   }
   .lg\:border-t-0 {
@@ -3423,6 +3203,11 @@
   .\32 xl\:px-0 {
     @media (width >= 96rem) {
       padding-inline: calc(var(--spacing) * 0);
+    }
+  }
+  .\32 xl\:px-6 {
+    @media (width >= 96rem) {
+      padding-inline: calc(var(--spacing) * 6);
     }
   }
   .dark\:\!border-neutral-700 {
@@ -4059,11 +3844,6 @@
   inherits: false;
   initial-value: 0;
 }
-@property --tw-divide-y-reverse {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0;
-}
 @property --tw-border-style {
   syntax: "*";
   inherits: false;
@@ -4331,7 +4111,6 @@
       --tw-pinch-zoom: initial;
       --tw-space-y-reverse: 0;
       --tw-space-x-reverse: 0;
-      --tw-divide-y-reverse: 0;
       --tw-border-style: solid;
       --tw-gradient-position: initial;
       --tw-gradient-from: #0000;

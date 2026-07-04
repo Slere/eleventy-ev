@@ -1,8 +1,23 @@
 ---
 title: Impressum / Offenlegung gemäß § 5 ECG
-layout: layout/page-wrapper-with-breadcrumbs.njk
+layout: layout/app.njk
 ---
-<div class="max-w-8xl mx-auto mt-8 mb-24 px-6 2xl:px-0">
+
+{% set crumbs = page.url | breadcrumbs %}
+{% set idx = (crumbs | length) - 2 %}
+{% if idx >= 0 %}
+    {% set backUrl = crumbs[idx].url %}
+{% else %}
+    {% set backUrl = '/' %}
+{% endif %}
+{% set backUrl = backUrl | replaceAll(' ', '-') %}
+
+<div class="max-w-8xl w-full mx-auto mb-24 px-6 2xl:px-6 pt-24">
+     <nav aria-label="breadcrumb" class="mb-8">
+            {%- from "components/breadcrumbs.njk" import breadcrumbs -%}
+            {% set crumbs = page.url | breadcrumbs %}
+            {{ breadcrumbs(crumbs) }}
+        </nav>
     <div class="max-w-3xl">
         <h1 class="font-headline text-2xl md:text-3xl text-foreground-headline font-bold mb-8">Impressum / Offenlegung gemäß § 5 ECG</h1>
         <div class="prose prose-invert max-w-none space-y-8">
