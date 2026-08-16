@@ -489,7 +489,7 @@
     "machines": [
       {
         "machine_id": "F11",
-        "name": "HSP-Horizintalspeichertisch",
+        "name": "HSP-Horizontalspeichertisch",
         "id": "hsp-speichertisch",
         "description": "Produktspeichersystem in verschiedenen Größen und längen. Produkt-Berührungssloses System, welches die Taktleistung davor- und nachgeschalteter Maschinen ausgleicht und so den Wirkungsfrad der Linie deutlich erhöht. Für Mikrostörungen (zB. Etikettenwechsel) bestens geeignet um die Linie nicht abschalten zu müssen.",
         "features_list": [
